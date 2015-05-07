@@ -1,0 +1,355 @@
+diff --git a/LICENSE b/LICENSE
+deleted file mode 100644
+index e40854d..0000000
+--- a/LICENSE
++++ /dev/null
+@@ -1,21 +0,0 @@
+-The MIT License (MIT)
+-
+-Copyright (c) 2015 Giampaolo Bellavite
+-
+-Permission is hereby granted, free of charge, to any person obtaining a copy
+-of this software and associated documentation files (the "Software"), to deal
+-in the Software without restriction, including without limitation the rights
+-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+-copies of the Software, and to permit persons to whom the Software is
+-furnished to do so, subject to the following conditions:
+-
+-The above copyright notice and this permission notice shall be included in all
+-copies or substantial portions of the Software.
+-
+-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+-SOFTWARE.
+diff --git a/README.md b/README.md
+index f76af51..37249bb 100644
+--- a/README.md
++++ b/README.md
+@@ -1,28 +1,10 @@
+-# isomorphic500
++#Screen Project
+ 
+-[Isomorphic500](https://isomorphic500.herokuapp.com) is a small isomorphic web application featuring photos from [500px](http://500px.com).
+-
+-It is built on [express](http://expressjs.com) using [React](https://facebook.github.io/react) and [Flux](https://facebook.github.io/flux) with [yahoo/fluxible](http://fluxible.io). It is developed with [webpack](http://webpack.github.io) and [react-hot-loader](http://gaearon.github.io/react-hot-loader/) and written with [babeljs](http://babeljs.io) with the help of [eslint](http://eslint.org). It supports multiple languages using [react-intl](http://formatjs.io/react/).
+-
+-<a href="https://isomorphic500.herokuapp.com"><img src="https://cloud.githubusercontent.com/assets/120693/6992728/d93c61c8-dadb-11e4-82b3-f08f8bee24c3.png" width="700"></a>
+-
+-[![Join the chat at https://gitter.im/gpbl/isomorphic500](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gpbl/isomorphic500?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+-
+-The intent of this project is to solidify my experience with these technologies and (maybe) to inspire other developers in their journey with React and Flux. It works also as example of a javascript development environment with all the cool recent stuff :-)
+-
+-- see the demo on [isomorphic500.herokuapp.com](https://isomorphic500.herokuapp.com) (with source maps!)
+-- clone this repo and run the server to confirm it is actually working
+-- edit a react component or a css style, and see the updated app as you save your changes!
+-- read on for some technical details
+-- [write issues](https://github.com/gpbl/isomorphic500/issues) and [join the gitter chat](https://gitter.im/gpbl/isomorphic500?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to discuss :-)
+-
+-**Clone this repo**
++###Cloned and modified from https://github.com/gpbl/isomorphic500
+ 
+ > **Note** This app has been tested on node 0.12.x
+ 
+ ```
+-git clone https://github.com/gpbl/isomorphic500.git
+-cd isomorphic500
+ npm install
+ ```
+ 
+diff --git a/config/dev.js b/config/dev.js
+index 9c8f137..5e768e5 100644
+--- a/config/dev.js
++++ b/config/dev.js
+@@ -2,12 +2,12 @@
+ // Do not require this directly. Use ./src/config instead.
+ 
+ export default {
+-  apiRoot: "https://api.500px.com/v1",
++  apiRoot: "/api/vi",
+ 
+   // 500px consumer key
+-  consumerKey: "CLmpqnpwGLKetORtjc5gb9tC2hllfd6cqdfzHqFD",
++  apiKey: "onscreentodaycommediaart",
+ 
+   // Supported locales
+-  locales: ["en", "it"]
++  // locales: ["en", "it"]
+ 
+ }
+diff --git a/config/prod.js b/config/prod.js
+index cec72c0..be13cf5 100644
+--- a/config/prod.js
++++ b/config/prod.js
+@@ -2,13 +2,13 @@
+ // Do not require this directly. Use ./src/config instead.
+ 
+ export default {
+-  apiRoot: "https://api.500px.com/v1",
++  apiRoot: "/api/vi",
+ 
+   // 500px consumer key
+-  consumerKey: "CLmpqnpwGLKetORtjc5gb9tC2hllfd6cqdfzHqFD",
++  apiKey: "onscreentodaycommediaart",
+ 
+   // Google Analytics tracking id (skipped on dev)
+-  trackingId: "UA-46857126-2",
++  trackingId: "UA-62091544-1",
+ 
+   // Supported locales
+   locales: ["en", "it"]
+diff --git a/package.json b/package.json
+index e866a54..fc915b0 100644
+--- a/package.json
++++ b/package.json
+@@ -1,12 +1,12 @@
+ {
+-  "name": "isomorphic500",
+-  "version": "2.0.0",
+-  "description": "Example of an isomorphic React app using fluxible and webpack",
++  "name": "screen",
++  "version": "1.0.0",
++  "description": "The Screen Project",
+   "main": "index.js",
+   "scripts": {
+     "start": "NODE_ENV=production node index",
+-    "dev": "NODE_ENV=development DEBUG=isomorphic500 node index",
+-    "prod": "NODE_ENV=production PORT=8080 DEBUG=isomorphic500 node index",
++    "dev": "NODE_ENV=development DEBUG=screen node index",
++    "prod": "NODE_ENV=production PORT=8080 DEBUG=screen node index",
+     "build": "webpack --stats --progress --config ./webpack/prod.config.js",
+     "postinstall": "npm run build",
+     "linter": "eslint src && jscs src",
+diff --git a/src/Application.js b/src/Application.js
+index 996ef04..dfe9118 100644
+--- a/src/Application.js
++++ b/src/Application.js
+@@ -11,10 +11,11 @@ import ErrorPage from "./pages/ErrorPage";
+ import LoadingPage from "./pages/LoadingPage";
+ import PhotoPage from "./pages/PhotoPage";
+ import FeaturedPage from "./pages/FeaturedPage";
++import AboutPage from "./pages/AboutPage";
+ 
+ import trackPageView from "./utils/trackPageView";
+ 
+-const debug = require("debug")("isomorphic500");
++const debug = require("debug")("screen");
+ 
+ if (process.env.BROWSER) {
+   require("./style/Application.scss");
+@@ -94,6 +95,8 @@ let Application = React.createClass({
+       case "photo":
+         RouteHandler = PhotoPage;
+       break;
++      case "about":
++        RouteHandler = AboutPage;
+       default:
+         console.warn(`Missing handler for route with name ${route.name}`);
+         RouteHandler = NotFoundPage;
+diff --git a/src/constants/Actions.js b/src/constants/Actions.js
+index 8819e85..5923e60 100644
+--- a/src/constants/Actions.js
++++ b/src/constants/Actions.js
+@@ -17,7 +17,12 @@ const Actions = keyMirror({
+   LOAD_PHOTO_SUCCESS: null,
+   LOAD_PHOTO_FAILURE: null,
+ 
+-  LOAD_INTL: null
++  LOAD_INTL: null,
++
++  LOAD_ABOUT_DATA: null,
++  LOAD_ABOUT_DATA_SUCCESS: null,
++  SHOW_BIO: null,
++  HIDE_BIO: null
+ 
+ });
+ 
+diff --git a/src/pages/RouteActions.js b/src/pages/RouteActions.js
+index 5972120..0af093a 100644
+--- a/src/pages/RouteActions.js
++++ b/src/pages/RouteActions.js
+@@ -19,6 +19,20 @@ const RouteActions = {
+     });
+   },
+ 
++  aboutPage(context, payload, done) {
++    context.executeAction(AboutActionCreators.loadAboutData, {
++      aboutData: payload.params.aboutData
++    }, (err) => {
++
++      if (err) {
++        return done(err);
++      }
++
++      // set the html <head> only once we have the store filled with data
++      context.executeAction(setHtmlHead, payload, done);
++    });
++  },
++
+   photoPage(context, payload, done) {
+     context.executeAction(PhotoActionCreators.loadPhoto, {
+       id: payload.params.id
+diff --git a/src/routes.js b/src/routes.js
+index 37cd829..2ff5c65 100644
+--- a/src/routes.js
++++ b/src/routes.js
+@@ -11,6 +11,12 @@ export default {
+     action: RouteActions.featuredPage
+   },
+ 
++  about: {
++    path: "/",
++    method: "get",
++    action: RouteActions.aboutPage
++  },
++
+   featured: {
+     path: `/featured/:feature(${features.join("|")})`,
+     method: "get",
+diff --git a/src/server.js b/src/server.js
+index ce541ec..bb5c91e 100644
+--- a/src/server.js
++++ b/src/server.js
+@@ -10,6 +10,7 @@ import locale from "locale";
+ import app from "./app";
+ import config from "./config";
+ import render from "./server/render";
++import Api from "../api"
+ import setLocale from "./server/setLocale";
+ 
+ // Initialize express server
+@@ -46,6 +47,7 @@ server.use(csurf({ cookie: true }));
+ const fetchr = app.getPlugin("FetchrPlugin");
+ fetchr.registerService(require("./services/photos"));
+ fetchr.registerService(require("./services/photo"));
++fetchr.registerService(require("./services/about"));
+ 
+ // Use the fetchr middleware (will enable requests from /api)
+ 
+@@ -78,6 +80,9 @@ server.use((err, req, res, next) => {
+   res.status(500).send("Something bad happened");
+ });
+ 
++// Apis
++require("../api")(server);
++
+ // Finally, start the express server
+ 
+ server.set("port", process.env.PORT || 3000);
+diff --git a/src/server/renderAction.js b/src/server/renderAction.js
+index b15af09..298b6fe 100644
+--- a/src/server/renderAction.js
++++ b/src/server/renderAction.js
+@@ -21,7 +21,7 @@ function renderAction(context, { locale, url }, done) {
+     let err = null;
+ 
+     if (actionErrors) {
+-      err = actionErrors.navigate || actionErrors.loadIntlMessages;
++      err = actionErrors.navigate ; //|| actionErrors.loadIntlMessages;
+     }
+ 
+     done(err);
+diff --git a/src/server/setLocale.js b/src/server/setLocale.js
+index cfa77bc..c694348 100644
+--- a/src/server/setLocale.js
++++ b/src/server/setLocale.js
+@@ -2,25 +2,25 @@
+ 
+ import config from "../config";
+ 
+-const debug = require("debug")("isomorphic500");
++const debug = require("debug")("screen");
+ 
+ const setLocale = (req, res, next) => {
+   debug("Detected locale (from browser) is %s", req.locale);
+ 
+-  // Locale can be changed by passing ?hl=<locale> in the querystring
++  // Locale can be changed by passing ?config=<locale> in the querystring
+ 
+-  if (req.query.hl) {
++  if (req.query.config) {
+     // But only the supported ones!
+-    if (config.locales.indexOf(req.query.hl) > -1) {
+-      req.locale = req.query.hl;
++    if (config.locales.indexOf(req.query.config) > -1) {
++      req.locale = req.query.config;
+       debug("Locale has been set from querystring: %s", req.locale);
+     }
+   }
+ 
+-  // Or by setting a `hl` cookie
+-  else if (req.cookies.hl) {
+-    if (config.locales.indexOf(req.cookies.hl) > -1) {
+-      req.locale = req.cookies.hl;
++  // Or by setting a `config` cookie
++  else if (req.cookies.config) {
++    if (config.locales.indexOf(req.cookies.config) > -1) {
++      req.locale = req.cookies.config;
+       debug("Locale has been set from cookie: %s", req.locale);
+     }
+   }
+diff --git a/src/style/constants/colors.scss b/src/style/constants/colors.scss
+index 322b152..9f1216d 100644
+--- a/src/style/constants/colors.scss
++++ b/src/style/constants/colors.scss
+@@ -4,3 +4,11 @@ $color-primary: #000;
+ $color-secondary: #53A0FD;
+ $color-border: #CCC;
+ $color-background: #EAEAEA;
++
++
++$color-yellow: #FFC200;
++$color-black : #000000;
++$color-white: #ffffff;
++$color-grey: #BDC3C7;
++$color-blue-light: #3498DB;
++$color-blue-dark: #2980B9;
+\ No newline at end of file
+diff --git a/src/utils/APIUtils.js b/src/utils/APIUtils.js
+index d62d4f5..38ea76e 100644
+--- a/src/utils/APIUtils.js
++++ b/src/utils/APIUtils.js
+@@ -1,11 +1,11 @@
+-// Utils to send requests to the 500px API endpoint
++// Utils to send requests to our data api endpoint
+ 
+ import request from "superagent";
+ import { assign } from "lodash";
+ 
+ import config from "../config";
+ 
+-const debug = require("debug")("isomorphic500");
++const debug = require("debug")("screen");
+ 
+ const APIUtils = {
+ 
+@@ -21,11 +21,11 @@ const APIUtils = {
+ 
+     // Customer key is required by the API
+     query = assign(query, {
+-      "consumer_key": config.consumerKey
++      "api_key": config.apiKey
+     });
+ 
+     request.get(url)
+-      .set("accept-language", locale)
++      // .set("accept-language", locale)
+       .query(query)
+       .end((err, res) => {
+         debug("Received response %s from %s", res.status, url);
+diff --git a/webpack/server.js b/webpack/server.js
+index e5b017c..881875a 100644
+--- a/webpack/server.js
++++ b/webpack/server.js
+@@ -4,7 +4,7 @@ import WebpackDevServer from "webpack-dev-server";
+ import webpack from "webpack";
+ import config from "./dev.config";
+ 
+-const debug = require("debug")("isomorphic500");
++const debug = require("debug")("screen");
+ 
+ const WEBPACK_HOST = process.env.HOST || "localhost";
+ const WEBPACK_PORT = parseInt(process.env.PORT) + 1 || 3001;

@@ -20,10 +20,16 @@ const APIUtils = {
     debug("Sending GET request to %s", url, query);
 
     // Customer key is required by the API
+    // query = assign(query, {
+    //   "api_key": config.apiKey
+    // });
+
     query = assign(query, {
       "consumer_key": config.consumerKey
     });
 
+    console.log("APIUtils url", url);
+    
     request.get(url)
       .set("accept-language", locale)
       .query(query)

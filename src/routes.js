@@ -11,6 +11,12 @@ export default {
     action: RouteActions.featuredPage
   },
 
+  about: {
+    path: "/about",
+    method: "get",
+    action: RouteActions.aboutPage
+  },
+
   featured: {
     path: `/featured/:feature(${features.join("|")})`,
     method: "get",

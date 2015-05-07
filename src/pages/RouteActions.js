@@ -1,9 +1,22 @@
 // Actions to run when the router matches a route. Used in ./routes.js
 
 import PhotoActionCreators from "../actions/PhotoActionCreators";
+import AboutActionCreators from "../actions/AboutActionCreators";
 import { setHtmlHead } from "../actions/HtmlHeadActionCreators";
 
 const RouteActions = {
+
+  aboutPage(context, payload, done) {
+    context.executeAction(AboutActionCreators.loadAboutData, {}, (err) => {
+
+      if (err) {
+        return done(err);
+      }
+
+      // set the html <head> only once we have the store filled with data
+      context.executeAction(setHtmlHead, payload, done);
+    });
+  },
 
   featuredPage(context, payload, done) {
     context.executeAction(PhotoActionCreators.loadFeaturedPhotos, {

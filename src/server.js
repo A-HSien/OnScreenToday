@@ -22,7 +22,7 @@ server.use(morgan(server.get("env") === "production" ? "combined" : "dev"));
 server.use(bodyParser.json());
 server.use(cookieParser());
 server.use(compression());
-server.use(favicon(path.resolve(__dirname, "./assets/favicon.png")));
+server.use(favicon(path.resolve(__dirname, "./assets/favicon.ico")));
 
 // Set the default locale
 
@@ -46,6 +46,7 @@ server.use(csurf({ cookie: true }));
 const fetchr = app.getPlugin("FetchrPlugin");
 fetchr.registerService(require("./services/photos"));
 fetchr.registerService(require("./services/photo"));
+fetchr.registerService(require("./services/about"));
 
 // Use the fetchr middleware (will enable requests from /api)
 
@@ -54,11 +55,9 @@ server.use(fetchr.getXhrPath(), fetchr.getMiddleware());
 // On production, use the public directory for static files
 // This directory is created by webpack on build time.
 
-if (server.get("env") === "production") {
-  server.use(express.static(path.resolve(__dirname, "../public"), {
-    maxAge: 365 * 24 * 60 * 60
-  }));
-}
+server.use(express.static(path.resolve(__dirname, "../public"), {
+maxAge: 365 * 24 * 60 * 60
+}));
 
 // On development, serve the static files from the webpack dev server.
 
@@ -77,6 +76,12 @@ server.use((err, req, res, next) => {
   console.log(err.stack);
   res.status(500).send("Something bad happened");
 });
+
+
+// Apis
+// require("../api")(server);
+
+
 
 // Finally, start the express server
 

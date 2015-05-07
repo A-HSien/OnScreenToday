@@ -17,7 +17,14 @@ const Actions = keyMirror({
   LOAD_PHOTO_SUCCESS: null,
   LOAD_PHOTO_FAILURE: null,
 
-  LOAD_INTL: null
+  LOAD_INTL: null,
+
+
+  LOAD_ABOUT_DATA: null,
+  LOAD_ABOUT_DATA_SUCCESS: null,
+  LOAD_ABOUT_DATA_FAILURE: null,
+  SHOW_BIO: null,
+  HIDE_BIO: null
 
 });
 
