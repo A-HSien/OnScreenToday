@@ -1,55 +1,19 @@
-/**
- * From https://raw.githubusercontent.com/MajorBreakfast/fancy-sprites-scss/master/fancy-sprites.scss
- */
+@import "../bourbon/bourbon";
 
-@function sprite-name($sprite) { @return nth($sprite, 1); }
-@function sprite-info($sprite-sheet-name, $sprite) {
-  @each $info in $sprite {
-    @if type-of($info) == list { // First item is a string (the name)
-      @if sprite-info-sprite-sheet-name($info) == $sprite-sheet-name { @return $info; }
-    }
-  }
-  @return null;
+$sprite-image: url('/images/sprites.png');
+
+@mixin sprite-image($sprite-image) {
+  @include background-image($sprite-image);
+  background-repeat: no-repeat;
 }
 
-@function sprite-info-sprite-sheet-name($info) { @return nth($info, 1); }
-@function sprite-info-x($info) { @return nth($info, 2); }
-@function sprite-info-y($info) { @return nth($info, 3); }
-@function sprite-info-width($info) { @return nth($info, 4); }
-@function sprite-info-height($info) { @return nth($info, 5); }
-@function sprite-info-sprite-sheet-width($info) { @return nth($info, 6); }
-@function sprite-info-sprite-sheet-height($info) { @return nth($info, 7); }
-
-
-
-@mixin sprite($sprite) {
-  $info-1x: sprite-info("1x", $sprite);
-  $info-2x: sprite-info("2x", $sprite);
-  
-  @if $info-1x {
-    background-image: url("#{$sprites-path}#{sprite-info-sprite-sheet-name($info-1x)}.png");
-    background-position: (- sprite-info-x($info-1x)) (- sprite-info-y($info-1x));
-    width: sprite-info-width($info-1x);
-    height: sprite-info-height($info-1x);
-  }
-  
-  @if $info-2x {
-    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-      background-image: url("#{$sprites-path}#{sprite-info-sprite-sheet-name($info-2x)}.png");
-      background-position: (- sprite-info-x($info-2x)*0.5) (- sprite-info-y($info-2x)*0.5);
-      width: sprite-info-width($info-2x)*0.5;
-      height: sprite-info-height($info-2x)*0.5;
-      background-size: sprite-info-sprite-sheet-width($info-2x)*0.5 sprite-info-sprite-sheet-height($info-2x)*0.5;
-    }
-  }
+@mixin sprite-pos($x, $y, $grid) {
+  background-position-x: -($x*$grid*1px);    
+  background-position-y: -($y*$grid*1px);
 }
 
-
-
-// Create sprite css classes
-@mixin sprite-classes {
-  @each $sprite in $sprites {
-    .sprite-#{sprite-name($sprite)} { @include sprite($sprite); }
-    span.sprite-#{sprite-name($sprite)} { display: inline-block; vertical-align: top; }
-  }
+@mixin sprite($x, $y, $image: $sprite-image) {
+  @include sprite-image($image);
+  @include sprite-pos($x, $y, 1);
 }
+

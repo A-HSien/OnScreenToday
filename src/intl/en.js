@@ -4,8 +4,8 @@ export default {
   messages: {
 
     "meta": {
-      "title": "isomorphic500",
-      "description": "Demo application made with React and Fluxible",
+      "title": "SCREEN | 介面",
+      "description": "Look on SCREEN for the sharpest image of media art today. Through news coverage, art criticism and curatorial projects, we aim to collect information about media art in one online space.",
       "loadingTitle": "Loading…",
       "errorTitle": "Error displaying this page",
       "notFoundTitle": "Page not found"

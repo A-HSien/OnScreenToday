@@ -66,6 +66,7 @@ function API (app) {
 	});
 
 	app.get('/api/v1/lang', function(req, res, next) {
+		console.log("lang");
 		res.status(200).send({
 			lang: "eng"
 		});

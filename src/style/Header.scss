@@ -1,0 +1,139 @@
+@import "constants/colors";
+@import "constants/zIndex";
+@import "mixins/sprite";
+
+.header {
+  position: fixed;
+  height: 80px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 20px 0px;
+  border-bottom: 10px solid $color-yellow;
+  width: 100%;
+  z-index: $zIndex-10;
+  background-color: $color-white;
+
+  a:hover {
+    color: $color-blue-dark;
+  }
+
+  .navbar {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    .navbar-cell {
+
+      &.navlinks {
+
+      }
+
+      .logo {
+        width: 227px;
+        height: 40px;
+        background-size: cover;
+        background-image: url("/images/logo.png");
+        zoom: .7;
+      }
+
+      .nav-item {
+        position: relative;
+        display: inline-block;
+        padding: 15px 10px;
+        vertical-align: middle;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: bold;
+
+
+        &.active {
+          color: $color-yellow;
+          font-weight: bold;
+        }
+      }
+    }
+    .nav-right {
+      position: absolute;
+      right:0px;
+      text-align: right;
+      line-height: 46px;
+
+      .search {
+        display: inline-block;
+        vertical-align: bottom;
+
+        .input {
+          float: left;
+          border: none;
+          border-bottom: 4px solid #000000;
+          height: 35px;
+          &:focus {
+            border: none;
+          }
+        }
+        .icon-search {
+          width: 37px;
+          height: 33px;
+          float: left;
+          @include sprite(0, 0);
+        }
+      }
+      
+    }
+    .menu-responsive {
+      position: absolute;
+      width: 50px;
+      top: -5px;
+      right: 0px;
+      text-align: right;
+      font-size: 30px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// For Language
+.lang {
+  padding: 0px 10px;
+  font-weight: 900;
+  color: #c3c3c3;
+  display: inline-block;
+
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  .lang-item {
+    padding: 0px 3px;
+    cursor: pointer;
+
+    &.selected {
+      color: $color-yellow;
+    }
+
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+}
+
+.nav-sub {
+  .lang {
+    float: right;
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+
+

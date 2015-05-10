@@ -1,0 +1,98 @@
+
+@import "../constants/colors";
+@import "../mixins/sprite";
+.page.about {
+	
+	.about-main {
+		margin-top: 30px;
+
+		.about-content {
+			max-width: 60%;
+			line-height: 30px;
+		}
+
+		.about-list-row {
+			margin: 20px 0px;
+
+			.about-bio {
+				padding: 0px 15px;
+				border-bottom: 5px solid $color-yellow;
+				display: none;
+
+				&.shown {
+					display: block;
+				}
+
+				p {
+					margin-top: 20px;
+				}
+			}
+
+			.about-list-item {
+				text-align: center;
+				padding: 0px;
+
+				&.selected {
+					.about-arrow {
+						display: block;
+					}
+					.about-name, .about-title {
+						color: $color-yellow;
+					}
+					.about-bio, .about-bio-sm { 
+						display: block;
+					}
+
+					&:after {
+						content: " ";
+						height: 40px;
+
+					}
+				}
+
+				.about-bio-sm {
+					padding: 0px 15px;
+					margin-bottom: 10px;
+					border-bottom: 5px solid $color-yellow;
+					display: none;
+				}
+
+				.about-name {
+					margin-top: 5px;
+					text-transform: uppercase;
+					font-weight: 900;
+				}
+
+				.photoCredit {
+					font-size: 14px;
+					font-style: italic;
+				}
+
+				.about-title {
+					font-weight: 400;
+				}
+
+				.about-image-container {
+					margin: 0 auto;
+					max-height: 240px;
+					max-width: 240px;
+
+					.about-image {
+						width: 240px;
+						height: 240px;
+						margin: 0 auto;
+						background-color: $color-yellow;
+					}
+				}
+
+				.about-arrow {
+					display: none;
+					width: 45px;
+					height: 45px;
+					margin: 0 auto;
+					@include sprite(0, 723);
+				}
+			}
+		}
+	}
+}

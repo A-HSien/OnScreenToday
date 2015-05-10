@@ -11,10 +11,20 @@ var Zepto = require('zepto-node');
 var window = domino.createWindow();
 var $ = Zepto(window);
 
+if (process.env.BROWSER) {
+  require("../style/pages/About.scss");
+}
+
 
 class AboutPage extends Component {
 
+	constructor (props) {
+		super(props);
+
+	}
+
   static propTypes = {
+	lang: PropTypes.string.isRequired,
     aboutData: PropTypes.object.isRequired,
     bioData: PropTypes.object.isRequired,
     bioTargetRef: PropTypes.object.isRequired
@@ -24,9 +34,10 @@ class AboutPage extends Component {
     executeAction: PropTypes.func.isRequired
   }
 
+
   render() {
-		var lang = "eng";
-		var {aboutData} = this.props;
+		//var lang = "eng";
+		var {aboutData, lang} = this.props;
 
 		var about = aboutData.about[lang],
 			contact = aboutData.contact,
@@ -185,11 +196,12 @@ class AboutPage extends Component {
 
 }
 
-AboutPage = connectToStores(AboutPage, ["AboutStore"], (stores) => {
+AboutPage = connectToStores(AboutPage, ["AboutStore", "LanguageStore"], (stores) => {
 
 	var data = stores.AboutStore.getData();
-	// console.log("AboutPage AboutStore", data);
+	var {lang} = stores.LanguageStore.getData();
 	return {
+		lang: lang,
 		aboutData: data.aboutData,
 		bioData: data.bioData,
 		bioTargetRef: data.bioTargetRef

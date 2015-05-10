@@ -12,6 +12,7 @@ import IntlStore from "./stores/IntlStore";
 import PhotoStore from "./stores/PhotoStore";
 import RouteStore from "./stores/RouteStore";
 import AboutStore from "./stores/AboutStore";
+import LanguageStore from "./stores/LanguageStore";
 
 const app = new Fluxible({
 
@@ -43,7 +44,7 @@ const app = new Fluxible({
 });
 
 app.plug(fetchrPlugin({
-  xhrPath: "/api"
+  xhrPath: "/api/v1"
 }));
 
 app.plug(routrPlugin({
@@ -56,5 +57,6 @@ app.registerStore(IntlStore);
 app.registerStore(PhotoStore);
 app.registerStore(RouteStore);
 app.registerStore(AboutStore);
+app.registerStore(LanguageStore);
 
 export default app;

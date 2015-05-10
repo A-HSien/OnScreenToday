@@ -2,6 +2,10 @@
 
 import React, { PropTypes } from "react";
 
+if (process.env.BROWSER) {
+  require("../style/components/SubHeader.scss");
+}
+
 class SubHeader extends React.Component {
 
 

@@ -31,7 +31,7 @@ class HtmlDocument extends React.Component {
     return (
       <html lang={lang}>
         <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
           <title>{ htmlHead.getTitle() }</title>
 
@@ -41,6 +41,8 @@ class HtmlDocument extends React.Component {
           <meta property="og:title" content={ htmlHead.getTitle() } />
           <meta property="og:description" content={ htmlHead.getDescription() } />
           <meta property="og:url" content={ htmlHead.getCurrentUrl() } />
+          <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+          <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
           { htmlHead.getImages().map(url => <meta property="og:image" content={ url } />) }
 

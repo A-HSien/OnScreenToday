@@ -1,4 +1,5 @@
 @import 'constants/colors';
+@import "mixins/sprite";
 
 .footer {
 //	max-width: 940px;
@@ -11,7 +12,7 @@
   .logo {
   	width: 80px;
   	height: 32px;
-		// .sprite-v1(0, 644, 1);
+		@include sprite(0, 644);
   }
 
   .link-1 {
@@ -36,21 +37,21 @@
       display: inline-block;
       margin: 0px 2px;
 
-    //   &.fb {
-				// .sprite-v1(0, 394, 1);
-    //   }
+      &.fb {
+				@include sprite(0, 394);
+      }
 
-    //   &.twitter {
-				// .sprite-v1(-5, 490, 1);
-    //   }
+      &.twitter {
+				@include sprite(-5, 490);
+      }
 
-    //   &.instagram {
-				// .sprite-v1(0, 607, 1);
-    //   }
+      &.instagram {
+				@include sprite(0, 607);
+      }
 
-    //   &:hover {
-    //     color: $color-blue-dark;
-    //   }
+      &:hover {
+        color: $color-blue-dark;
+      }
     }
   }
 }
@@ -59,7 +60,7 @@
   .footer {
     .logo {
       zoom: .7;
-      // .sprite-v1(0, 646, 1);
+      @include sprite(0, 646);
     }  
   }
 }

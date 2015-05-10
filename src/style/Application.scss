@@ -1,31 +1,87 @@
 @import 'constants/colors';
 @import 'constants/typography';
 @import 'utils/normalize';
+@import 'vendors/bootstrap';
 
-html {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+// Base
 
 body {
-  color: $color-primary;
-  background: $color-white;
-
-  font-size: $font-size;
+  background: #fff;
+  color: #000000;
   font-family: $font-family;
-  font-weight: 300;
+  font-size: $font-size;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
 }
 
-html,
-body,
-#root {
-  height: 100%;
+blockquote {
+  background: #f8f8f8 url(/image/style/quote.png) no-repeat 17px 21px;
+  font: italic 15px/1.6 $font-family;
+  padding: 20px 20px 20px 55px;
 }
 
-a {
-  color: $color-secondary;
+blockquote.simple {
+background: none;
+border-left: 2px solid #FFC200;
+color: #bbb;
+font-size: 15px;
+margin: 0;
+padding: 0 0 0 10px;
 }
 
-h1 {
-  font-weight: 300;
-  text-align: center;
+blockquote p:last-of-type { margin-bottom: 0; }
+
+blockquote small { font-size: 12px; }
+
+p {
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.section {
+  margin: 40px 0px;
+}
+
+.section-title {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/*==========  Links  ==========*/
+a:hover,
+a:hover > *{
+  color: $color-yellow;
+}
+
+/*==========  Shadow  ==========*/
+
+.hover-shadow {
+  display: block;
+  width: 100%;
+  position: relative;
+
+  &:hover:after {
+             opacity: 0.5;
+              -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+              filter: alpha(opacity=50);
+          }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-yellow;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.33s;
+    -moz-transition: opacity 0.33s;
+    -o-transition: opacity 0.33s;
+    -ms-transition: opacity 0.33s;
+    transition: opacity 0.33s;
+  }
 }

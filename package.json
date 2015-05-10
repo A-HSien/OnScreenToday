@@ -72,6 +72,7 @@
     "babel-eslint": "^3.0.1",
     "babel-jest": "*",
     "chai": "^2.2.0",
+    "classnames": "^2.1.1",
     "domino": "^1.0.18",
     "esprima-fb": "^14001.1.0-dev-harmony-fb",
     "isparta": "^3.0.3",

@@ -40,6 +40,19 @@ server.use(setLocale);
 
 server.use(csurf({ cookie: true }));
 
+
+// Apis
+// require("../api")(server);
+
+// server.get('/api/v1/lang', function(req, res, next) {
+// 	console.log("lang");
+// 	// res.status(200).send({
+// 	// 	lang: "eng"
+// 	// });
+// 	next();
+
+// });
+
 // Configure fetchr (for doing api calls server and client-side)
 // and register its services
 
@@ -47,6 +60,7 @@ const fetchr = app.getPlugin("FetchrPlugin");
 fetchr.registerService(require("./services/photos"));
 fetchr.registerService(require("./services/photo"));
 fetchr.registerService(require("./services/about"));
+fetchr.registerService(require("./services/language"));
 
 // Use the fetchr middleware (will enable requests from /api)
 
@@ -78,8 +92,6 @@ server.use((err, req, res, next) => {
 });
 
 
-// Apis
-// require("../api")(server);
 
 
 

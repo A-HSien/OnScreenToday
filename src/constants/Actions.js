@@ -24,7 +24,12 @@ const Actions = keyMirror({
   LOAD_ABOUT_DATA_SUCCESS: null,
   LOAD_ABOUT_DATA_FAILURE: null,
   SHOW_BIO: null,
-  HIDE_BIO: null
+  HIDE_BIO: null,
+
+
+  CHANGE_LANG: null,
+  GET_LANG_PREFERENCE: null,
+  LOAD_LANG_PREFERENCE: null
 
 });
 

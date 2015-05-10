@@ -10,6 +10,7 @@ export default {
     const options = {
       locale: req.locale
     };
+
     // console.log("services/about.js: ", data_about);
     done(null, data_about);
   }

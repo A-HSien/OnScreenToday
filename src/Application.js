@@ -15,6 +15,8 @@ import AboutPage from "./pages/AboutPage";
 
 import trackPageView from "./utils/trackPageView";
 
+
+
 const debug = require("debug")("isomorphic500");
 
 if (process.env.BROWSER) {

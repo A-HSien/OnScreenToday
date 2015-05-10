@@ -8,7 +8,7 @@ export default {
   // 500px consumer key
   consumerKey: "CLmpqnpwGLKetORtjc5gb9tC2hllfd6cqdfzHqFD",
 
-  apiRoot: "/api/vi",
+  apiRoot: "/api/v1",
 
   // apiKey: "onscreentodaycommediaart",
 

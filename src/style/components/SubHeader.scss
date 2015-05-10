@@ -1,0 +1,95 @@
+@import "../constants/colors";
+@import "../mixins/sprite";
+
+.subHeader {
+  background-color: $color-yellow;
+  height: 60px;
+  width: 100%;
+
+  .left {
+    float: left;
+    .title {
+      float: left;
+      line-height: 60px;
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      margin-left: 25px;
+    }
+
+    .subTitle {
+      float: left;
+      height: 60px;
+
+      ul {
+        padding-top: 10px;
+        padding-left: 5px;
+        color: $color-white;
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+        line-height: 19px;
+
+        li {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  
+  .right {
+    float: right;
+    height: 70px;
+    padding-right: 20px;
+
+    .follow {
+      float: left;
+      line-height: 60px;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+
+    .social {
+      float: right;
+      margin-top: 10px;
+      .icon {
+        width: 37px;
+        height: 37px;
+        display: inline-block;
+        margin: 0px 2px;
+
+        &.fb {
+          @include sprite(0, 311);
+        }
+
+        &.twitter {
+          @include sprite(-5, 432);
+        }
+
+        &.instagram {
+          @include sprite(0, 525);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .subHeader {
+    height: 50px;
+    .right, .left {
+      zoom: .7;
+    }
+    .right {
+      padding-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .right {
+    display: none;
+  }
+}
