@@ -5,6 +5,12 @@ import features from "./constants/features";
 
 export default {
 
+  conversations: {
+    path: "/conversations",
+    method: "get",
+    action: RouteActions.conversationListPage
+  },
+
   home: {
     path: "/",
     method: "get",

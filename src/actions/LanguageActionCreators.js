@@ -16,7 +16,6 @@ const LanguageActionCreators = {
               if (err) {
                 return done(err);
               }
-              debugger;
               context.dispatch(Actions.LOAD_LANG_PREFERENCE, data);
               done();
             }
@@ -26,7 +25,6 @@ const LanguageActionCreators = {
 
   changeLanguage(context, payload, done) {
 
-    debugger;
 
     context.service.update("lang",{},  payload, {timeout: 20000 },
         (err, data) => {

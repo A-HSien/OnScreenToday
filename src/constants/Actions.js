@@ -29,7 +29,10 @@ const Actions = keyMirror({
 
   CHANGE_LANG: null,
   GET_LANG_PREFERENCE: null,
-  LOAD_LANG_PREFERENCE: null
+  LOAD_LANG_PREFERENCE: null,
+
+  LOAD_CONVERSATION_DATA_FAILURE: null,
+  LOAD_CONVERSATION_DATA_SUCCESS: null
 
 });
 

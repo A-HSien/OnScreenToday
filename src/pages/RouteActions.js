@@ -2,9 +2,22 @@
 
 import PhotoActionCreators from "../actions/PhotoActionCreators";
 import AboutActionCreators from "../actions/AboutActionCreators";
+import ConversationActionCreators from "../actions/ConversationActionCreators";
 import { setHtmlHead } from "../actions/HtmlHeadActionCreators";
 
 const RouteActions = {
+
+
+  conversationListPage(context, payload, done) {
+    context.executeAction(ConversationActionCreators.loadConversationData, {}, (err) => {
+      if (err) {
+        return done(err);
+      }
+
+      // set the html <head> only once we have the store filled with data
+      context.executeAction(setHtmlHead, payload, done);
+    });
+  },
 
   aboutPage(context, payload, done) {
     context.executeAction(AboutActionCreators.loadAboutData, {}, (err) => {

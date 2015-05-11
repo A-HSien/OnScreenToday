@@ -13,6 +13,7 @@ import PhotoStore from "./stores/PhotoStore";
 import RouteStore from "./stores/RouteStore";
 import AboutStore from "./stores/AboutStore";
 import LanguageStore from "./stores/LanguageStore";
+import ConversationStore from "./stores/ConversationStore";
 
 const app = new Fluxible({
 
@@ -58,5 +59,6 @@ app.registerStore(PhotoStore);
 app.registerStore(RouteStore);
 app.registerStore(AboutStore);
 app.registerStore(LanguageStore);
+app.registerStore(ConversationStore);
 
 export default app;
