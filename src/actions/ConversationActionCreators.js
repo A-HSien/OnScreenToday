@@ -22,16 +22,26 @@ const ConversationActionCreators = {
     );
   },
 
-  // showBio(context, payload, done) {
+  loadConversationDetail(context, {slug}, done) {
 
-  //   context.dispatch(Actions.SHOW_BIO, payload);
-  //   done();
-  // },
+    if (context.getStore("ConversationStore").getConversationBySlug(slug)) {
+      return done();
+    }
 
-  // hideBio(context, {}, done) {
-  //   context.dispatch(Actions.HIDE_BIO, {});
-  //   done();
-  // }
+
+    context.service.read("conversationDetail", { slug}, { timeout: 20000 },
+      (err, data) => {
+        if (err) {
+          context.dispatch(Actions.LOAD_CONVERSATION_DETAIL_FAILURE, {slug});
+          return done(err);
+        }
+
+        context.dispatch(Actions.LOAD_CONVERSATION_DETAIL_SUCCESS, data);
+        done();
+      }
+
+    );
+  }
 
 };
 

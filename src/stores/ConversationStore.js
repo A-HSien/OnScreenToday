@@ -2,6 +2,7 @@
 
 import { BaseStore } from "fluxible/addons";
 import Actions from "../constants/Actions";
+import _ from "lodash";
 
 /*
 This is a "list store", i.e. it holds only ids referring to another
@@ -32,6 +33,12 @@ class ConversationStore extends BaseStore {
     return {
       conversationData:  this.conversationData
     };
+  }
+
+  getConversationBySlug(slug) {
+    return _.find(this.conversationData, conversation => {
+      conversation.slug === slug
+    });
   }
 
   dehydrate() {

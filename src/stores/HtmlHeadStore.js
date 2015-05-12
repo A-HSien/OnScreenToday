@@ -56,9 +56,10 @@ class HtmlHeadStore extends BaseStore {
   }
 
   formatMessage(message, values={}) {
-    const store = this.dispatcher.getStore("IntlStore");
-    const msg = new IntlMessageFormat(store.getMessage(message), store.getLocales());
-    return msg.format(values);
+    //const store = this.dispatcher.getStore("IntlStore");
+    //const msg = new IntlMessageFormat(store.getMessage(message), store.getLocales());
+    //return msg.format(values);
+    return "TODO";
   }
 
   onHtmlHeadSet(route) {

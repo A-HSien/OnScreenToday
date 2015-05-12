@@ -11,6 +11,12 @@ export default {
     action: RouteActions.conversationListPage
   },
 
+  conversation: {
+    path: "/conversation/:slug",
+    method: "get",
+    action: RouteActions.conversationDetailPage
+  },
+
   home: {
     path: "/",
     method: "get",

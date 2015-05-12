@@ -3,7 +3,7 @@ import Logo from "../components/Logo";
 import { NavLink } from "flux-router-component";
 
 import features from "../constants/features";
-import LocaleSwitcher from "../components/LocaleSwitcher";
+//import LocaleSwitcher from "../components/LocaleSwitcher";
 import FormattedMessage from "../utils/FormattedMessage";
 
 if (process.env.BROWSER) {
@@ -49,7 +49,7 @@ class NavBar extends Component {
           }
         </div>
         <div className="NavBar-locales">
-          <LocaleSwitcher />
+          //<LocaleSwitcher />
         </div>
       </div>
     );

@@ -30,7 +30,14 @@ export default {
     loaders: [
       { test: /\.(jpe?g|png|gif|svg)$/, loader: "file" },
       { test: /\.js$/, exclude: /node_modules/, loaders: ["react-hot", "babel"] },
-      { test: /\.scss$/, loader: "style!css!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded&sourceMap=true&sourceMapContents=true" }
+      { test: /\.jsx/, loaders: ["react-hot", "babel"] },
+      { test: /\.?css$/, loader: "style!css!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded&sourceMap=true&sourceMapContents=true" },
+      // { test: /\.css/, loader: "style-loader!css-loader" },
+
+      { test: /\.woff$/,   loader: "url-loader?prefix=font/&limit=5000&mimetype=application/font-woff" },
+      { test: /\.ttf$/,    loader: "file-loader" },
+      { test: /\.eot$/,    loader: "file-loader" },
+      { test: /\.svg$/,    loader: "file-loader" },
     ]
   },
   progress: true,

@@ -8,6 +8,19 @@ import { setHtmlHead } from "../actions/HtmlHeadActionCreators";
 const RouteActions = {
 
 
+  conversationDetailPage(context, payload, done) {
+    context.executeAction(ConversationActionCreators.loadConversationDetail, {
+      slug: payload.params.slug
+    }, (err) => {
+
+      if (err) {
+        return done(err);
+      }
+
+      context.executeAction(setHtmlHead, payload, done);
+    });
+  },
+
   conversationListPage(context, payload, done) {
     context.executeAction(ConversationActionCreators.loadConversationData, {}, (err) => {
       if (err) {

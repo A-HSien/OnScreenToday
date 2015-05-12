@@ -3,7 +3,7 @@ import React, { PropTypes, Component } from "react";
 import { connectToStores } from "fluxible/addons";
 
 import Photo from "../components/Photo";
-import PhotoMeta from "../components/PhotoMeta";
+//import PhotoMeta from "../components/PhotoMeta";
 
 class PhotoPage extends Component {
 
@@ -18,7 +18,7 @@ class PhotoPage extends Component {
     return (
       <div>
         <h1>{ photo.name }</h1>
-        <PhotoMeta photo={ photo } />
+        //<PhotoMeta photo={ photo } />
         <Photo imageSize={4} photo={photo} />
       </div>
     );

@@ -13,6 +13,7 @@ import PhotoPage from "./pages/PhotoPage";
 import FeaturedPage from "./pages/FeaturedPage";
 import AboutPage from "./pages/AboutPage";
 import ConversationListPage from "./pages/ConversationListPage";
+import ConversationDetailPage from "./pages/ConversationDetailPage";
 
 import trackPageView from "./utils/trackPageView";
 
@@ -103,6 +104,9 @@ let Application = React.createClass({
         break;
       case "conversations":
         RouteHandler = ConversationListPage;
+        break;
+      case "conversation":
+        RouteHandler = ConversationDetailPage;
         break;
       default:
         console.warn(`Missing handler for route with name ${route.name}`);

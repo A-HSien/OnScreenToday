@@ -71,16 +71,21 @@
   "devDependencies": {
     "babel-eslint": "^3.0.1",
     "babel-jest": "*",
+    "babel-loader": "^5.0.0",
     "chai": "^2.2.0",
     "classnames": "^2.1.1",
     "domino": "^1.0.18",
     "esprima-fb": "^14001.1.0-dev-harmony-fb",
+    "file-loader": "^0.8.1",
     "isparta": "^3.0.3",
     "jscs": "^1.12.0",
     "jsdom": "^4.1.0",
     "mocha": "^2.2.4",
     "mocha-jsdom": "^0.3.0",
+    "object-assign": "^2.0.0",
     "react-hot-loader": "^1.2.5",
+    "slick-carousel": "^1.5.2",
+    "url-loader": "^0.5.5",
     "webpack-dev-server": "^1.8.2"
   }
 }
