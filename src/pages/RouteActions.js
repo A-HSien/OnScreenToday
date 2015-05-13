@@ -7,6 +7,28 @@ import { setHtmlHead } from "../actions/HtmlHeadActionCreators";
 
 const RouteActions = {
 
+  screenshotPage(context, payload, done) {
+    context.executeAction(ScreenshotActionCreators.loadScreenshotData, {
+    }, (err) => {
+
+      if (err) {
+        return done(err);
+      }
+      context.executeAction(setHtmlHead, payload, done);
+    });
+  },
+
+  screenshotDetailPage(context, payload, done) {
+    context.executeAction(screenshotActionCreators.loadScreenshotDetail, {
+      slug: payload.params.slug
+    }, (err) => {
+
+      if (err) {
+        return done(err);
+      }
+      context.executeAction(setHtmlHead, payload, done);
+    });
+  },
 
   conversationDetailPage(context, payload, done) {
     context.executeAction(ConversationActionCreators.loadConversationDetail, {
@@ -16,7 +38,7 @@ const RouteActions = {
       if (err) {
         return done(err);
       }
-
+      console.log("RouteActions conversationDetailPage ", payload);
       context.executeAction(setHtmlHead, payload, done);
     });
   },

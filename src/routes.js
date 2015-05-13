@@ -5,6 +5,12 @@ import features from "./constants/features";
 
 export default {
 
+  screenshots: {
+    path: "/screenshots",
+    method: "get",
+    action: RouteActions.screenshotPage
+  },
+
   conversations: {
     path: "/conversations",
     method: "get",

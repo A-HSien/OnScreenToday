@@ -23,8 +23,8 @@ const ConversationActionCreators = {
   },
 
   loadConversationDetail(context, {slug}, done) {
-
-    if (context.getStore("ConversationStore").getConversationBySlug(slug)) {
+    debugger;
+    if (context.getStore("ConversationStore").getConversationBySlugFromList(slug)) {
       return done();
     }
 

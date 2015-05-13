@@ -16,11 +16,19 @@ class ConversationStore extends BaseStore {
 
   static handlers = {
     [Actions.LOAD_CONVERSATION_DATA_SUCCESS]: "onLoadConversationDataSuccess",
+    [Actions.LOAD_CONVERSATION_DETAIL_SUCCESS]: "onLoadConversationDetailSuccess",
   }
 
   constructor(dispatcher) {
     super(dispatcher);
     this.conversationData = false;
+    this.conversationDetail = false;
+
+  }
+
+  onLoadConversationDetailSuccess(payload) {
+    this.conversationDetail = payload;
+    this.emitChange();
   }
 
   onLoadConversationDataSuccess(payload) {
@@ -31,24 +39,39 @@ class ConversationStore extends BaseStore {
 
   getData() {
     return {
-      conversationData:  this.conversationData
+      conversationData:  this.conversationData,
+      conversationDetail:  this.conversationDetail
     };
   }
 
-  getConversationBySlug(slug) {
+  getConversationBySlugFromList(slug) {
     return _.find(this.conversationData, conversation => {
-      conversation.slug === slug
+      return conversation.slug === slug;
     });
+  }
+
+  getConversationBySlug(slug) {
+
+    var data = this.conversationDetail;
+
+    if (!data) {
+      data = this.getConversationBySlugFromList(slug);
+    }
+
+    return data;
   }
 
   dehydrate() {
     return {
-      conversationData:  this.conversationData
+      conversationData:  this.conversationData,
+      conversationDetail:  this.conversationDetail
     };
   }
 
-  rehydrate({ conversationData}) {
+  rehydrate({ conversationData, conversationDetail}) {
     this.conversationData = conversationData;
+    this.conversationDetail = conversationDetail;
+
   }
 
 }

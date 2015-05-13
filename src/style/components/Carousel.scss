@@ -1,0 +1,101 @@
+
+@import "../constants/colors";
+@import "../mixins/sprite";
+
+.slick-slider {
+
+  .slick-list {
+    width: 100%;
+    
+    .slideItem {
+      background-size: cover;
+      height: 485px;
+
+
+      .container {
+        cursor: pointer;
+        padding: 0px 85px;
+        .title {
+          margin-top: 60px;
+          font-size: 36px;
+          font-weight: 900;
+          color: $color-white;
+          text-transform: uppercase;
+
+          span {
+            background-color: $color-black;
+            padding: 5px 20px;
+          }
+        }
+
+        .description {
+          width: 80%;
+          font-size: 28px;
+          color: white;
+          padding-top: 20px;
+        }
+
+        .more-container {
+          margin-top: 20px;
+
+          .more {
+            font-size: 22px;
+            text-transform: uppercase;
+            font-weight: 900;
+            background-color: $color-yellow;
+            padding: 10px 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .slick-prev {
+    left: 30px;
+    height: 45px;
+    width: 53px;
+    top: 45%;
+    @include sprite(0, 107);
+    
+
+    // Overrid
+    &:before {
+      content: "";
+    }
+  }
+  .slick-next {
+    right: 30px;
+    height: 45px;
+    width: 53px;
+    top: 60%;
+    @include sprite(0, 156);
+    
+
+    // Overrid
+    &:before {
+      content: "";
+    }
+  }
+}
+
+@media (max-width: 500px) { 
+  .slick-slider .slick-list {
+    .slideItem {
+      max-height: 250px;
+      .container {
+        padding: 0px 20px;
+
+        .title {
+          font-size: 20px;
+        }
+        .description {
+          font-size: 16px;
+        }
+        .more-container {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

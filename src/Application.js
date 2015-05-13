@@ -14,10 +14,8 @@ import FeaturedPage from "./pages/FeaturedPage";
 import AboutPage from "./pages/AboutPage";
 import ConversationListPage from "./pages/ConversationListPage";
 import ConversationDetailPage from "./pages/ConversationDetailPage";
-
+import ScreenshotPage from "./pages/ScreenshotPage";
 import trackPageView from "./utils/trackPageView";
-
-
 
 const debug = require("debug")("isomorphic500");
 
@@ -107,6 +105,9 @@ let Application = React.createClass({
         break;
       case "conversation":
         RouteHandler = ConversationDetailPage;
+        break;
+      case "screenshots":
+        RouteHandler = ScreenshotPage;
         break;
       default:
         console.warn(`Missing handler for route with name ${route.name}`);

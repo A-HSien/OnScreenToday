@@ -1,27 +1,27 @@
+/*===============================================
+=            Components for Carousel            =
+===============================================*/
 "use strict";
-
-import React, { Component } from "react";
-import Slider from './vendors/react-slick';
-
-// import * as slickCustomized from 'styles/components/carousel.less';
+import React from 'react';
+import Slider from './vendors/react-slick/index.jsx';
 import defaults from 'lodash/object/defaults';
 
 if (process.env.BROWSER) {
-  require("slick-carousel/slick/slick.css");
-  require("slick-carousel/slick/slick-theme.css");
+  require("../style/components/Carousel.scss");
+  require("slick-carousel/slick/slick.scss");
+  require("slick-carousel/slick/slick-theme.scss");
 }
 
+var Carousel = React.createClass({
 
-class Carousel extends Component {
-	
-	getDefaultProps() {
+    getDefaultProps() {
         return {
 			slides: [],
 			settings: {}
 		}
-    }
+    },
 
-    render () {
+	render () {
 		var _settings = defaults({}, this.props.settings, {
 			dots: false,
 			infinite: true,
@@ -41,6 +41,15 @@ class Carousel extends Component {
 	      </Slider>
 	    );
 	}
-}
 
-export default Carousel;
+});
+
+Carousel.propTypes = {
+    slides: React.PropTypes.array
+};
+
+module.exports = Carousel;
+
+
+/*-----  End of Components for Carousel  ------*/
+

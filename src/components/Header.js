@@ -85,7 +85,7 @@ class Header extends BaseComponent {
             var _nav = navs[i];
             var _class = classnames("nav-item");
             navLinks.push(
-                <NavLink href={_nav.url} className={_class}>
+                <NavLink key={i} href={_nav.url} className={_class}>
                     {_nav.name[lang]}
                     <span className="nav-icon"></span>
                 </NavLink>

@@ -8,7 +8,6 @@ import Application from "./Application";
 
 import FeaturedStore from "./stores/FeaturedStore";
 import HtmlHeadStore from "./stores/HtmlHeadStore";
-import IntlStore from "./stores/IntlStore";
 import PhotoStore from "./stores/PhotoStore";
 import RouteStore from "./stores/RouteStore";
 import AboutStore from "./stores/AboutStore";
@@ -54,7 +53,6 @@ app.plug(routrPlugin({
 
 app.registerStore(FeaturedStore);
 app.registerStore(HtmlHeadStore);
-app.registerStore(IntlStore);
 app.registerStore(PhotoStore);
 app.registerStore(RouteStore);
 app.registerStore(AboutStore);

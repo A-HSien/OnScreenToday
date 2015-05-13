@@ -1,0 +1,50 @@
+@import "../constants/colors";
+
+.conversation.detail {
+	padding-bottom: 50px;
+	
+	.conversation-detail-container {
+		position: relative;
+		height: 100%;
+		padding-top: 30px;
+		
+		.conversation-video {
+			text-align: center;
+		}
+
+		.conversation-content-container {
+			
+			.conversation-carousel {
+				.conversation-image {
+					max-height: 400px;
+					margin: 0 auto;
+				}	
+				.conversation-caption {
+					width: 80%;
+					text-align: center;
+					font-size: 14px;
+					color: $color-grey;
+					margin: 0 auto;
+				}
+			}
+			
+			.conversation-content {
+				line-height: 1.5;
+			}
+		}
+	}	
+}
+
+@media (max-width: 500px) { 
+	.conversation-content {
+		.conversation-carousel {
+			.conversation-image {
+				max-height: 250px !important;
+			}
+
+			.conversation-caption {
+				font-size: 14px;
+			}
+		}
+	}
+}

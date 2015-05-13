@@ -17,7 +17,7 @@ import _ from "lodash";
 // var $ = Zepto(window);
 
 if (process.env.BROWSER) {
-  // require("../style/pages/Conversation.scss");
+  require("../style/pages/ConversationDetail.scss");
 }
 
 
@@ -29,8 +29,9 @@ class ConversationDetailPage extends BaseComponent {
 
 
   static propTypes = {
+	slug: PropTypes.string.isRequired,
 	lang: PropTypes.string.isRequired,
-    conversations: PropTypes.array.isRequired,
+    conversationData: PropTypes.object.isRequired,
   }
 
   static contextTypes = {
@@ -40,9 +41,14 @@ class ConversationDetailPage extends BaseComponent {
 
   render() {
 		//var lang = "eng";
-		var {conversation, lang} = this.props;
+		var {conversationData, lang} = this.props;
 
-		var hero = conversation[lang];
+		if (!conversationData) {
+			return <noscript />;
+		}
+
+
+		var hero =  conversationData[lang];
 		var contents = hero.contents;
 		var jsxVideo = {};
 
@@ -56,7 +62,6 @@ class ConversationDetailPage extends BaseComponent {
 
 		// debugger;
 		var jsxHero = (<div className=" conversation-content-container row clearfix" >
-			<MetaTags title={hero.title} description={hero.subtitle} imageUrl={hero.heroImage.url}/>
 			<div className="conversation-content">
 				
 				<Carousel slides={this._createSlides(hero.images)} settings={{
@@ -138,12 +143,14 @@ class ConversationDetailPage extends BaseComponent {
 }
 
 ConversationDetailPage = connectToStores(ConversationDetailPage, ["ConversationStore", "LanguageStore"], (stores, props) => {
-	var {conversationData} = stores.ConversationStore.getConversationBySlug(props.slug);
+	debugger;
+	console.log("ConversationDetailPage: ", props);
+	var conversationData = stores.ConversationStore.getConversationBySlug(props.slug);
 	var {lang} = stores.LanguageStore.getData();
 
 	return {
 		lang: lang,
-		conversation: conversationData,
+		conversationData: conversationData,
 	};
 });
 

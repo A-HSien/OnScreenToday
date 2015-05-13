@@ -5,13 +5,7 @@ import { connectToStores } from "fluxible/addons";
 import SubHeader from '../components/SubHeader';
 import { NavLink } from "flux-router-component";
 import BaseComponent from "../components/common/BaseComponent";
-// import {showBio, hideBio} from "../actions/AboutActionCreators";
 import _ from "lodash";
-
-// var domino = require('domino');
-// var Zepto = require('zepto-node');
-// var window = domino.createWindow();
-// var $ = Zepto(window);
 
 if (process.env.BROWSER) {
   require("../style/pages/Conversation.scss");

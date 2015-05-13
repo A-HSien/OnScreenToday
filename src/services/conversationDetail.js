@@ -1,5 +1,6 @@
 "use strict";
 var data_conversation = require('../../db/conversation.js');
+import { _ } from "lodash";
 
 // Fetchr service to load the about data
 
@@ -8,7 +9,7 @@ export default {
 
   read(req, resource, {slug}, config, done) {
 
-  	var conversation = _.filter(data_conversation, function (item) {
+  	var conversation = _.find(data_conversation, function (item) {
 			console.log(item.slug);
 
 			return item.slug === slug;
