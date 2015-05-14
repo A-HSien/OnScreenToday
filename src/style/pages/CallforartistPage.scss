@@ -1,0 +1,29 @@
+.callforartist.detail {
+
+	.callforartist-detail-container {
+		padding-top: 20px;
+
+		.callforartist-content-container {
+			
+			.callforartist-image {
+				background-size: cover;
+				min-height: 400px;
+				width: 100%;
+				background-repeat: no-repeat;
+			}
+
+			.callforartist-content-main {
+				ul li {
+					  list-style: initial !important;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 500px) { 
+	.callforartist-image {
+		min-height: 250px !important;
+	}
+}

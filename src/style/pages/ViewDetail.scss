@@ -1,0 +1,28 @@
+.view.page {
+
+	.view-detail-container {
+		padding: 20px 0px;
+		line-height: 1.5;
+		
+		.view-image {
+			background-size: cover;
+			width: 100%;
+			min-height: 400px;
+		}
+
+		.view-image-caption {
+			font-size: 13px;
+		}
+	}
+}
+
+
+@media (max-width: 500px) { 
+
+	.view.page {
+		.view-image {
+			min-height: 250px !important;
+		}
+	}
+
+}

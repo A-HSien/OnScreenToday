@@ -115,13 +115,13 @@ class ConversationListPage extends BaseComponent {
 
 }
 
-ConversationListPage = connectToStores(ConversationListPage, ["ConversationStore", "LanguageStore"], (stores) => {
+ConversationListPage = connectToStores(ConversationListPage, ["ContentStore", "LanguageStore"], (stores) => {
 	debugger;
-	var {conversationData} = stores.ConversationStore.getData();
+	var {contentData} = stores.ContentStore.getData();
 	var {lang} = stores.LanguageStore.getData();
 	return {
 		lang: lang,
-		conversations: conversationData,
+		conversations: contentData,
 	};
 });
 

@@ -1,18 +1,19 @@
 import { get } from "../utils/APIUtils";
-var data_conversation = require('../../db/conversation.js');
+
+var data = require("../../db");
 
 // Fetchr service to load the about data
 
 export default {
-  name: "conversation",
+  name: "content",
 
-  read(req, resource, params, config, done) {
+  read(req, resource, {type}, config, done) {
     const options = {
       locale: req.locale
     };
 
     // console.log("services/about.js: ", data_about);
-    done(null, data_conversation);
+    done(null, data[type]);
   }
 
 };

@@ -1,6 +1,7 @@
 module.exports = [
     {
     id: 0,
+        
         eng: {
             title: "Sabrina Ratté: Common Areas",
             date: "January 9–May 10",

@@ -1,15 +1,16 @@
 module.exports = [
     {   
         id: 0,
+        slug: "On-Terminology-Media-Art-on-SCREEN", 
         eng: {
-            title: "On Terminology: Media Art On SCREEN",
+            title: 'On Terminology: "Media Art" on SCREEN',
             author: "Yu-Chieh Li",
             description: "How does an online platform that reports on media art define and expand such a genre?",
             heroImage: {
                 url: "/images/content/view/0/0.jpg",
                 caption: "<i>Reclining Buddha</i>, 1994/2002. Two-channel video installation with two 9-inch color monitors, reclining stone Buddha. 16 ½ x 20 ½ x 12 in. (41.9 x 52.1 x 30.5 cm). Nam June Paik Estate, Photo: Ben Blackwell"
             },
-            url: "/view/0",
+            url: "/view/On-Terminology-Media-Art-on-SCREEN",
             contents: [
     {
         "blocks": [],
@@ -29,7 +30,7 @@ module.exports = [
                 url: "/images/content/view/0/0.jpg",
                 caption: "<i>Reclining Buddha</i>, 1994/2002. Two-channel video installation with two 9-inch color monitors, reclining stone Buddha. 16 ½ x 20 ½ x 12 in. (41.9 x 52.1 x 30.5 cm). Nam June Paik Estate, Photo: Ben Blackwell"
             },
-            url: "/view/0",
+            url: "/view/On-Terminology-Media-Art-on-SCREEN",
             contents: [
     {
         "blocks": [],
@@ -49,7 +50,7 @@ module.exports = [
                 url: "/images/content/view/0/0.jpg",
                 caption: "<i>Reclining Buddha</i>, 1994/2002. Two-channel video installation with two 9-inch color monitors, reclining stone Buddha. 16 ½ x 20 ½ x 12 in. (41.9 x 52.1 x 30.5 cm). Nam June Paik Estate, Photo: Ben Blackwell"
             },
-            url: "/view/0",
+            url: "/view/On-Terminology-Media-Art-on-SCREEN",
             contents: [
     {
         "blocks": [],

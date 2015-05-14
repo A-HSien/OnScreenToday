@@ -2,56 +2,61 @@
 
 import PhotoActionCreators from "../actions/PhotoActionCreators";
 import AboutActionCreators from "../actions/AboutActionCreators";
-import ConversationActionCreators from "../actions/ConversationActionCreators";
+import ContentActionCreators from "../actions/ContentActionCreators";
 import { setHtmlHead } from "../actions/HtmlHeadActionCreators";
+
+function contentDetailPage(context, {type}, payload, done) {
+  context.executeAction(ContentActionCreators.loadContentDetail, {
+    slug: payload.params.slug,
+    type: type
+  }, (err) => {
+
+    if (err) {
+      return done(err);
+    }
+    context.executeAction(setHtmlHead, payload, done);
+  });
+};
+
+function contentListPage(context, {type}, payload, done) {
+  context.executeAction(ContentActionCreators.loadContentData, {type}, (err) => {
+    if (err) {
+      return done(err);
+    }
+
+    context.executeAction(setHtmlHead, payload, done);
+  });
+};
 
 const RouteActions = {
 
-  screenshotPage(context, payload, done) {
-    context.executeAction(ScreenshotActionCreators.loadScreenshotData, {
-    }, (err) => {
+  callforartistPage(context, payload, done) {
+    contentListPage(context, {type : 'callforartist'}, payload, done);
+  },
 
-      if (err) {
-        return done(err);
-      }
-      context.executeAction(setHtmlHead, payload, done);
-    });
+  tuneinListPage(context, payload, done) {
+    contentListPage(context, {type : 'tunedin'}, payload, done);
+  },
+
+  viewDetailPage(context, payload, done) {
+    contentDetailPage(context, {type: "view"}, payload, done);
   },
 
   screenshotDetailPage(context, payload, done) {
-    context.executeAction(screenshotActionCreators.loadScreenshotDetail, {
-      slug: payload.params.slug
-    }, (err) => {
-
-      if (err) {
-        return done(err);
-      }
-      context.executeAction(setHtmlHead, payload, done);
-    });
+    contentDetailPage(context, {type: "screenshot"}, payload, done);
   },
 
-  conversationDetailPage(context, payload, done) {
-    context.executeAction(ConversationActionCreators.loadConversationDetail, {
-      slug: payload.params.slug
-    }, (err) => {
+  screenshotListPage(context, payload, done) {
+    contentListPage(context, {type : 'screenshot'}, payload, done);
+  },
 
-      if (err) {
-        return done(err);
-      }
-      console.log("RouteActions conversationDetailPage ", payload);
-      context.executeAction(setHtmlHead, payload, done);
-    });
+
+  conversationDetailPage(context, payload, done) {
+    contentDetailPage(context, {type: "conversation"}, payload, done);
   },
 
   conversationListPage(context, payload, done) {
-    context.executeAction(ConversationActionCreators.loadConversationData, {}, (err) => {
-      if (err) {
-        return done(err);
-      }
-
-      // set the html <head> only once we have the store filled with data
-      context.executeAction(setHtmlHead, payload, done);
-    });
+    contentListPage(context, {type : 'conversation'}, payload, done);
   },
 
   aboutPage(context, payload, done) {
@@ -97,8 +102,12 @@ const RouteActions = {
     const err = new Error();
     err.message = "Do not worry, just giving a try.";
     done(err);
-  }
+  },
+
+ 
 
 };
+
+
 
 export default RouteActions;

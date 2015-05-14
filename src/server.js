@@ -48,8 +48,8 @@ fetchr.registerService(require("./services/photos"));
 fetchr.registerService(require("./services/photo"));
 fetchr.registerService(require("./services/about"));
 fetchr.registerService(require("./services/language"));
-fetchr.registerService(require("./services/conversation"));
-fetchr.registerService(require("./services/conversationDetail"));
+fetchr.registerService(require("./services/content"));
+fetchr.registerService(require("./services/contentDetail"));
 
 // Use the fetchr middleware (will enable requests from /api)
 

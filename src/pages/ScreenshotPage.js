@@ -5,10 +5,13 @@ import { connectToStores } from "fluxible/addons";
 import SubHeader from '../components/SubHeader';
 import { NavLink } from "flux-router-component";
 import BaseComponent from "../components/common/BaseComponent";
+import Image from "../components/Image";
+
+
 import _ from "lodash";
 
 if (process.env.BROWSER) {
-  // require("../style/pages/Conversation.scss");
+  require("../style/pages/Screenshot.scss");
 }
 
 
@@ -30,20 +33,18 @@ class ScreenshotPage extends BaseComponent {
 
 
   render() {
+
   		var {screenshots, lang} = this.props;
 		var jsx = <noscript />;
 		if (screenshots.length) {
-			var cloned = clone(screenshots);
+			var cloned = _.clone(screenshots);
 			var hero = cloned.slice(0,1)[0][lang];
-			var listItems = cloned.slice(1).map((item)=> {
-				return item[lang];
-			});
 
 			var jsxHero = (<div className="screenshot-hero row clearfix" >
-				<Link to={hero.url} >
+				<NavLink href={hero.url} >
 				<Image imageUrl={hero.heroImage.url} extraClassnames="screenshot-image" />
 				<div className="screenshot-hero-title">{hero.title}</div>
-				</Link>
+				</NavLink>
 			</div>);
 
 
@@ -55,7 +56,6 @@ class ScreenshotPage extends BaseComponent {
 							{jsxHero}
 						</div>
 						<div className="screenshot-page-main">
-							{this.createGroupList(listItems, 2)}
 						</div>
 					</div>
 				</div>
@@ -104,12 +104,13 @@ class ScreenshotPage extends BaseComponent {
 
 }
 
-ScreenshotPage = connectToStores(ScreenshotPage, ["ScreenshotStore", "LanguageStore"], (stores) => {
-	var {screenshotData} = stores.ScreenshotStore.getData();
+ScreenshotPage = connectToStores(ScreenshotPage, ["ContentStore", "LanguageStore"], (stores) => {
+	debugger;
+	var {contentData} = stores.ContentStore.getData();
 	var {lang} = stores.LanguageStore.getData();
 	return {
 		lang: lang,
-		screenshots: screenshotData,
+		screenshots: contentData,
 	};
 });
 

@@ -1,0 +1,30 @@
+@import "../constants/colors";
+.screenshot.detail {
+	padding-bottom: 50px;
+
+	.screenshot-detail-container {
+		padding-top: 20px;
+
+		.screenshot-image {
+			background-size: contain;
+			min-height: 350px;
+			width: 100%;
+			background-repeat: no-repeat;
+		}
+
+		.caption {
+			width: 80%;
+			text-align: center;
+			font-size: 14px;
+			color: $color-grey;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+@media (max-width: 500px) { 
+	.screenshot-image {
+		min-height: 250px !important;
+	}
+}

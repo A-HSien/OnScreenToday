@@ -5,7 +5,6 @@ import { connectToStores } from "fluxible/addons";
 import SubHeader from '../components/SubHeader';
 import { NavLink } from "flux-router-component";
 import BaseComponent from "../components/common/BaseComponent";
-import Image from "../components/Image";
 import Carousel from '../components/Carousel';
 
 
@@ -142,15 +141,15 @@ class ConversationDetailPage extends BaseComponent {
 
 }
 
-ConversationDetailPage = connectToStores(ConversationDetailPage, ["ConversationStore", "LanguageStore"], (stores, props) => {
+ConversationDetailPage = connectToStores(ConversationDetailPage, ["ContentStore", "LanguageStore"], (stores, props) => {
 	debugger;
 	console.log("ConversationDetailPage: ", props);
-	var conversationData = stores.ConversationStore.getConversationBySlug(props.slug);
+	var contentData = stores.ContentStore.getContentBySlug(props.slug);
 	var {lang} = stores.LanguageStore.getData();
 
 	return {
 		lang: lang,
-		conversationData: conversationData,
+		conversationData: contentData,
 	};
 });
 
