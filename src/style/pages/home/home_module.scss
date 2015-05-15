@@ -1,0 +1,35 @@
+
+@import "../../constants/colors";
+@import "../../mixins/sprite";
+
+.home-module  {
+  margin-top: 15px;
+
+  .title {
+  	.title-name {
+  		float: left;
+  		padding-left: 15px;
+  		text-transform: uppercase;
+	    font-size: 28px;
+	    font-weight: 900;
+	    margin-left: 0px;	
+  		color: $color-yellow;
+  	}
+  	.title-all {
+  		float: right;
+  		padding-right: 15px;
+  		color: $color-yellow;
+  		line-height: 40px;
+  		text-transform: uppercase;
+  		
+  		.title-icon {
+  			float: right;
+  			margin-left: 10px;
+  			margin-top: 10px;
+  			height: 20px;
+  			width: 20px;
+  			@include sprite(0, 675);
+  		}
+  	}
+  }
+}

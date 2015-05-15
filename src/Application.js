@@ -9,8 +9,7 @@ import Page from "./components/Page";
 import NotFoundPage from "./pages/NotFoundPage";
 import ErrorPage from "./pages/ErrorPage";
 import LoadingPage from "./pages/LoadingPage";
-import PhotoPage from "./pages/PhotoPage";
-import FeaturedPage from "./pages/FeaturedPage";
+import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ConversationListPage from "./pages/ConversationListPage";
 import ConversationDetailPage from "./pages/ConversationDetailPage";
@@ -94,12 +93,8 @@ let Application = React.createClass({
     let RouteHandler;
 
     switch (route.name) {
-      case "featured":
       case "home":
-        RouteHandler = FeaturedPage;
-      break;
-      case "photo":
-        RouteHandler = PhotoPage;
+        RouteHandler = HomePage;
       break;
       case "about":
         RouteHandler = AboutPage;

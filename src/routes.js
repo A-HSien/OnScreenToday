@@ -49,25 +49,13 @@ export default {
   home: {
     path: "/",
     method: "get",
-    action: RouteActions.featuredPage
+    action: RouteActions.homePage
   },
 
   about: {
     path: "/about",
     method: "get",
     action: RouteActions.aboutPage
-  },
-
-  featured: {
-    path: `/featured/:feature(${features.join("|")})`,
-    method: "get",
-    action: RouteActions.featuredPage
-  },
-
-  photo: {
-    path: "/photo/:id",
-    method: "get",
-    action: RouteActions.photoPage
   },
 
   bad: {

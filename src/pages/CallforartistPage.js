@@ -3,7 +3,6 @@
 import React, { PropTypes, Component } from "react";
 import { connectToStores } from "fluxible/addons";
 import SubHeader from '../components/SubHeader';
-import { NavLink } from "flux-router-component";
 import BaseComponent from "../components/common/BaseComponent";
 import Image from "../components/Image";
 import _ from "lodash";
@@ -68,7 +67,6 @@ class CallforartistPage extends BaseComponent {
 }
 
 CallforartistPage = connectToStores(CallforartistPage, ["ContentStore", "LanguageStore"], (stores) => {
-	debugger;
 	var {contentData} = stores.ContentStore.getData();
 	var {lang} = stores.LanguageStore.getData();
 	return {

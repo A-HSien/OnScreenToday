@@ -3,7 +3,6 @@
 import React, { PropTypes, Component } from "react";
 import { connectToStores } from "fluxible/addons";
 import SubHeader from '../components/SubHeader';
-import { NavLink } from "flux-router-component";
 import BaseComponent from "../components/common/BaseComponent";
 import Carousel from '../components/Carousel';
 
@@ -142,8 +141,6 @@ class ConversationDetailPage extends BaseComponent {
 }
 
 ConversationDetailPage = connectToStores(ConversationDetailPage, ["ContentStore", "LanguageStore"], (stores, props) => {
-	debugger;
-	console.log("ConversationDetailPage: ", props);
 	var contentData = stores.ContentStore.getContentBySlug(props.slug);
 	var {lang} = stores.LanguageStore.getData();
 

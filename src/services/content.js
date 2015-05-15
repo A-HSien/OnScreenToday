@@ -12,8 +12,11 @@ export default {
       locale: req.locale
     };
 
-    // console.log("services/about.js: ", data_about);
-    done(null, data[type]);
+    if (type !== "all") {
+    	done(null, data[type]);
+	} else {
+		done(null, data);
+	}
   }
 
 };

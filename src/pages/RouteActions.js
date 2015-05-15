@@ -30,6 +30,10 @@ function contentListPage(context, {type}, payload, done) {
 
 const RouteActions = {
 
+  homePage(context, payload, done) {
+    contentListPage(context, {type : 'all'}, payload, done);
+  },
+
   callforartistPage(context, payload, done) {
     contentListPage(context, {type : 'callforartist'}, payload, done);
   },
@@ -67,33 +71,6 @@ const RouteActions = {
       }
 
       // set the html <head> only once we have the store filled with data
-      context.executeAction(setHtmlHead, payload, done);
-    });
-  },
-
-  featuredPage(context, payload, done) {
-    context.executeAction(PhotoActionCreators.loadFeaturedPhotos, {
-      feature: payload.params.feature
-    }, (err) => {
-
-      if (err) {
-        return done(err);
-      }
-
-      // set the html <head> only once we have the store filled with data
-      context.executeAction(setHtmlHead, payload, done);
-    });
-  },
-
-  photoPage(context, payload, done) {
-    context.executeAction(PhotoActionCreators.loadPhoto, {
-      id: payload.params.id
-    }, (err) => {
-
-      if (err) {
-        return done(err);
-      }
-
       context.executeAction(setHtmlHead, payload, done);
     });
   },
