@@ -1,0 +1,12 @@
+{
+  "apps" : [{
+    "name"        : "screen-client",
+    "script"      : "index.js",
+    "watch"       : true,
+    "next_gen_js" : true,
+    "env": {
+        "NODE_ENV": "production",
+        "PORT": "3117"
+    }
+  }]
+}
