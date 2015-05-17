@@ -13,11 +13,6 @@ import HomeFeature from './home/Feature';
 import Carousel from '../components/Carousel';
 import _ from "lodash";
 
-var domino = require('domino');
-var Zepto = require('zepto-node');
-var window = domino.createWindow();
-var $ = Zepto(window);
-
 if (process.env.BROWSER) {
   require("../style/pages/Home.scss");
 }
@@ -43,7 +38,7 @@ class HomePage extends Component {
 
 
 	render() {
-		debugger;
+		// debugger;
 		var {lang, conversationData, screenshotData, viewData} = this.props;
 		var conversations = conversationData.map((c)=> {
 			return c[lang];
@@ -115,7 +110,7 @@ class HomePage extends Component {
 }
 
 HomePage = connectToStores(HomePage, ["ContentStore", "LanguageStore"], (stores) => {
-	debugger;
+	// debugger;
 	var {contentData}  = stores.ContentStore.getData();
 	var {lang} = stores.LanguageStore.getData();
 

@@ -9,11 +9,6 @@ import Carousel from '../components/Carousel';
 
 import _ from "lodash";
 
-// var domino = require('domino');
-// var Zepto = require('zepto-node');
-// var window = domino.createWindow();
-// var $ = Zepto(window);
-
 if (process.env.BROWSER) {
   require("../style/pages/ConversationDetail.scss");
 }

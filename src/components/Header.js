@@ -7,14 +7,6 @@ import { NavLink } from "flux-router-component";
 import classnames from 'classnames';
 import {getLangPreference, changeLanguage} from "../actions/LanguageActionCreators";
 
-
-var domino = require('domino');
-var Zepto = require('zepto-node');
-var window = domino.createWindow();
-var $ = Zepto(window);
-
-// import LanguageMixin from "../mixins/LanguageMixin";
-//
 if (process.env.BROWSER) {
 	require("../style/Header.scss");
 	require("../style/MobileHeader.scss");
@@ -139,7 +131,23 @@ class Header extends BaseComponent {
     }
 
     _toggle () {
-        $(this.refs.header.getDOMNode()).toggleClass("show-mobile-nav");
+        this._toggleClass(this.refs.header.getDOMNode(), "show-mobile-nav");
+    }
+
+    _toggleClass (el, className) {
+        if (el.classList) {
+          el.classList.toggle(className);
+        } else {
+          var classes = el.className.split(' ');
+          var existingIndex = classes.indexOf(className);
+
+          if (existingIndex >= 0)
+            classes.splice(existingIndex, 1);
+          else
+            classes.push(className);
+
+          el.className = classes.join(' ');
+        }
     }
 
 }

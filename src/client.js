@@ -32,9 +32,6 @@ function renderApp() {
   });
 }
 
-// Load the Intl polyfill and required locale data
-const locale = document.documentElement.getAttribute("lang");
-
 renderApp();
 
 

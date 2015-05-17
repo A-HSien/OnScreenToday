@@ -6,11 +6,6 @@ import SubHeader from '../components/SubHeader';
 import {showBio, hideBio} from "../actions/AboutActionCreators";
 import _ from "lodash";
 
-var domino = require('domino');
-var Zepto = require('zepto-node');
-var window = domino.createWindow();
-var $ = Zepto(window);
-
 if (process.env.BROWSER) {
   require("../style/pages/About.scss");
 }
@@ -98,18 +93,18 @@ class AboutPage extends Component {
 	/*==========  Events  ==========*/
 	_onMouseLeave (evt) {
 		var currentTarget = evt.currentTarget;
-		$(currentTarget).removeClass("selected");
+
+		this._removeClass(currentTarget, "selected");
 
 		this.context.executeAction(hideBio, {});
 	}
 
 	_onMouseOver (evt) {
 		var	currentTarget = evt.currentTarget,
-			aboutIntroEl,
-			currentTargetEl = $(currentTarget);
+			aboutIntroEl;
 
-		if (!currentTargetEl.hasClass("selected")) {
-			currentTargetEl.addClass("selected");
+		if (!this._hasClass(currentTarget, "selected")) {
+			this._addClass(currentTarget, "selected");
 		}
 		aboutIntroEl = currentTarget.parentNode.querySelector(".about-bio");
 
@@ -191,6 +186,27 @@ class AboutPage extends Component {
 		}
 
 		return jsxRow;
+	}
+
+	_removeClass (el, className) {
+		if (el.classList)
+		  el.classList.remove(className);
+		else
+		  el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+	}
+
+	_hasClass (el, className) {
+		if (el.classList)
+		  el.classList.contains(className);
+		else
+		  new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
+	}
+
+	_addClass (el, className) {
+		if (el.classList)
+		  el.classList.add(className);
+		else
+		  el.className += ' ' + className;
 	}
 
 

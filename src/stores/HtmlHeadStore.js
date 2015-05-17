@@ -81,7 +81,6 @@ class HtmlHeadStore extends BaseStore {
   formatMessage(path, values={}) {
     const pathParts = path.split(".");
     let message;
-    debugger;
     try {
       message = pathParts.reduce((obj, pathPart) => obj[pathPart], meta_map);
     } finally {
@@ -98,7 +97,7 @@ class HtmlHeadStore extends BaseStore {
   }
 
   onHtmlHeadSet(route) {
-    console.log(route);
+    // console.log(route);
     let {lang} = this.dispatcher.getStore("LanguageStore");
 
     switch (route.name) {

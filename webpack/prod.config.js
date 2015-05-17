@@ -59,11 +59,8 @@ module.exports = {
     // optimizations
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-          warnings: false
-        }
-    }),
+    new webpack.optimize.UglifyJsPlugin(),
+ 
 
     // stats
     function() { this.plugin("done", writeStats); }

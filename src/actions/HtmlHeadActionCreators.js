@@ -9,7 +9,7 @@ const HtmlHeadActionCreators = {
       if (err) {
         return done(err);
       }
-      console.log("setHtmlHead payload", payload);
+      // console.log("setHtmlHead payload", payload);
       context.dispatch(Actions.SET_HTML_HEAD, payload);
 
       done();

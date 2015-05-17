@@ -67,7 +67,7 @@ function render(req, res, next) {
     }
   });
 
-  console.log("server/render.js render lang:", req.locale);
+  // console.log("server/render.js render lang:", req.locale);
 
   context.executeAction(renderAction, { url: req.url, lang: req.locale}, (err) => {
 
