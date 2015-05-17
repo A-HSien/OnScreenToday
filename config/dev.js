@@ -6,13 +6,13 @@ export default {
   // apiRoot: "https://api.500px.com/v1",
 
   // 500px consumer key
-  consumerKey: "CLmpqnpwGLKetORtjc5gb9tC2hllfd6cqdfzHqFD",
+  apiKey: "onscreen201531415926",
 
   apiRoot: "/api/v1",
 
   // apiKey: "onscreentodaycommediaart",
 
   // Supported locales
-  locales: ["en", "it"]
+  locales: ["eng", "chn", "chnt"]
 
 }

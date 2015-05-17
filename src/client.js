@@ -1,5 +1,4 @@
 import React from "react";
-import IntlUtils from "./utils/IntlUtils";
 
 // Add promise support for browser not supporting it
 import es6Promise from "es6-promise";
@@ -36,6 +35,6 @@ function renderApp() {
 // Load the Intl polyfill and required locale data
 const locale = document.documentElement.getAttribute("lang");
 
-IntlUtils.loadIntlPolyfill(locale)
-  .then(IntlUtils.loadLocaleData.bind(null, locale))
-  .then(renderApp);
+renderApp();
+
+

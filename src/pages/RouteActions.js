@@ -1,6 +1,5 @@
 // Actions to run when the router matches a route. Used in ./routes.js
 
-import PhotoActionCreators from "../actions/PhotoActionCreators";
 import AboutActionCreators from "../actions/AboutActionCreators";
 import ContentActionCreators from "../actions/ContentActionCreators";
 import { setHtmlHead } from "../actions/HtmlHeadActionCreators";

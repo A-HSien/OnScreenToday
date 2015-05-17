@@ -67,7 +67,9 @@ function render(req, res, next) {
     }
   });
 
-  context.executeAction(renderAction, { url: req.url}, (err) => {
+  console.log("server/render.js render lang:", req.locale);
+
+  context.executeAction(renderAction, { url: req.url, lang: req.locale}, (err) => {
 
     // If the action return an errors, execute another action to make
     // the RouteStore register the error and show the relative page.

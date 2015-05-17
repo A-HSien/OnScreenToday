@@ -28,10 +28,8 @@ export default {
     "photo": {
 
       "documentTitle": "{name} – by {user}",
-      "documentDescription": "{name} is a photo by {user} published on 500px",
+      "documentDescription": "{description}"
 
-      "attribution": "Photo by {userLink}",
-      "rating": "Rating {rating}"
     }
   }
 };

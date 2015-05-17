@@ -22,7 +22,7 @@ server.use(morgan(server.get("env") === "production" ? "combined" : "dev"));
 server.use(bodyParser.json());
 server.use(cookieParser());
 server.use(compression());
-server.use(favicon(path.resolve(__dirname, "./assets/favicon.ico")));
+server.use(favicon(path.resolve(__dirname, "./assets/favicon1.ico")));
 
 // Set the default locale
 

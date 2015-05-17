@@ -62,7 +62,7 @@
       position: absolute;
       right:0px;
       text-align: right;
-      line-height: 46px;
+      line-height: 20px;
 
       .search {
         display: inline-block;
@@ -132,6 +132,13 @@
     float: right;
     padding: 10px;
     margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+      height: 60px;
+      padding: 10px 0px;
   }
 }
 

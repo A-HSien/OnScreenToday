@@ -7,6 +7,7 @@ module.exports = [
             author: "Yu-Chieh Li",
             translator:"Yu-Chieh Li",
             slug:"che-onejoon-seeing-north-korea-through-the-lens-of-africa",
+            description: "Che Onejoon’s documentary film Mansudae Master Class (2013-2015), currently on view at the New Museum Triennial: Surround Audience (Feb 25-May 24, 2015), is an unfinished version of a feature length film and part of Che’s ongoing project of the same title, Mansudae Master Class. Its title derives from Mansudae, a North Korean art studio focused on official propaganda founded during the time of Kim Il-sung; it has established branches in at least 16 African countries since 1969. The studio’s mission is diplomatic: through the design and construction of memorial monuments, statues and architecture to illustrate the local government’s power (while also promoting the ideology of North Korean socialism), the DPRK has hoped to build foreign support in the United Nations. In short, the project is a survey of the North Korean projection of soft power in Africa through architecture and sculpture—works nowhere to be seen in South Korea.",
             heroImage: {
                     url:"/images/content/screenshot/0/1.jpg",
                     captions:"Che Onejoon. <i>Mansudae Master Class</i>. Film Stills of HD three channel video, 40min. 2013-2015 (Ongoing project). © 2015 the artist."
@@ -62,6 +63,7 @@ module.exports = [
             author: "李雨洁（Yu-Chieh Li）",
             translator:"",
             slug:"che-onejoon-seeing-north-korea-through-the-lens-of-africa-cn",
+            description: "Che Onejoon’s documentary film Mansudae Master Class (2013-2015), currently on view at the New Museum Triennial: Surround Audience (Feb 25-May 24, 2015), is an unfinished version of a feature length film and part of Che’s ongoing project of the same title, Mansudae Master Class. Its title derives from Mansudae, a North Korean art studio focused on official propaganda founded during the time of Kim Il-sung; it has established branches in at least 16 African countries since 1969. The studio’s mission is diplomatic: through the design and construction of memorial monuments, statues and architecture to illustrate the local government’s power (while also promoting the ideology of North Korean socialism), the DPRK has hoped to build foreign support in the United Nations. In short, the project is a survey of the North Korean projection of soft power in Africa through architecture and sculpture—works nowhere to be seen in South Korea.",
             heroImage: {
                     url:"/images/content/screenshot/0/1.jpg",
                     captions:"Che Onejoon. <i>Mansudae Master Class</i>. Film Stills of HD three channel video, 40min. 2013-2015 (Ongoing project). © 2015 the artist."
@@ -117,6 +119,7 @@ module.exports = [
             author: "李雨潔（Yu-Chieh Li）",
             translator:"",
             slug:"che-onejoon-seeing-north-korea-through-the-lens-of-africa-ct",
+            description: "Che Onejoon’s documentary film Mansudae Master Class (2013-2015), currently on view at the New Museum Triennial: Surround Audience (Feb 25-May 24, 2015), is an unfinished version of a feature length film and part of Che’s ongoing project of the same title, Mansudae Master Class. Its title derives from Mansudae, a North Korean art studio focused on official propaganda founded during the time of Kim Il-sung; it has established branches in at least 16 African countries since 1969. The studio’s mission is diplomatic: through the design and construction of memorial monuments, statues and architecture to illustrate the local government’s power (while also promoting the ideology of North Korean socialism), the DPRK has hoped to build foreign support in the United Nations. In short, the project is a survey of the North Korean projection of soft power in Africa through architecture and sculpture—works nowhere to be seen in South Korea.",
             heroImage: {
                     url:"/images/content/screenshot/0/1.jpg",
                     captions:"Che Onejoon. <i>Mansudae Master Class</i>. Film Stills of HD three channel video, 40min. 2013-2015 (Ongoing project). © 2015 the artist."

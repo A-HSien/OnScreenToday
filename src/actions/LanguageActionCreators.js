@@ -24,7 +24,7 @@ const LanguageActionCreators = {
   },
 
   changeLanguage(context, payload, done) {
-
+    debugger;
 
     context.service.update("lang",{},  payload, {timeout: 20000 },
         (err, data) => {
