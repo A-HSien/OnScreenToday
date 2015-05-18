@@ -84,12 +84,10 @@
     "jsdom": "^4.1.0",
     "mocha": "^2.2.4",
     "mocha-jsdom": "^0.3.0",
-    "nodeQuery": "0.0.9-1",
     "object-assign": "^2.0.0",
     "react-hot-loader": "^1.2.5",
     "slick-carousel": "^1.5.2",
     "url-loader": "^0.5.5",
-    "webpack-dev-server": "^1.8.2",
-    "zepto-node": "^1.0.0"
+    "webpack-dev-server": "^1.8.2"
   }
 }
