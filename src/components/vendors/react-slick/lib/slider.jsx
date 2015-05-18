@@ -4,10 +4,6 @@ import _ from "lodash";
 var React = require('react');
 
 var InnerSlider = require('./inner-slider.jsx');
-var _sortBy = _.sortby;//require('lodash.sortby');
-var _pluck = _.pluck;//require('lodash.pluck');
-var _filter = _.filter;//require('lodash.filter');
-var _assign = _.assign;//require('lodash.assign');
 var json2mq = require('json2mq');
 var ResponsiveMixin = require('react-responsive-mixin');
 
@@ -19,7 +15,7 @@ var Slider = React.createClass({
     };
   },
   componentDidMount: function () {
-    var breakpoints = _sortBy(_pluck(this.props.responsive, 'breakpoint'));
+    var breakpoints = _.sortBy(_.pluck(this.props.responsive, 'breakpoint'));
 
     breakpoints.forEach(function (breakpoint, index) {
       var query;
@@ -45,8 +41,8 @@ var Slider = React.createClass({
     var newProps;
     var jsx;
     if (this.state.breakpoint) {
-      newProps = _filter(this.props.responsive, {breakpoint: this.state.breakpoint});
-      settings = _assign({}, this.props, newProps[0].settings);
+      newProps = _.filter(this.props.responsive, {breakpoint: this.state.breakpoint});
+      settings = _.assign({}, this.props, newProps[0].settings);
     } else {
       settings = this.props;
     }
