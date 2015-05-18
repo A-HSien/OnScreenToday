@@ -1,12 +1,13 @@
 "use strict";
 
+import _ from "lodash";
 var React = require('react');
 
 var InnerSlider = require('./inner-slider.jsx');
-var _sortBy = require('lodash.sortby');
-var _pluck = require('lodash.pluck');
-var _filter = require('lodash.filter');
-var _assign = require('lodash.assign');
+var _sortBy = _.sortby;//require('lodash.sortby');
+var _pluck = _.pluck;//require('lodash.pluck');
+var _filter = _.filter;//require('lodash.filter');
+var _assign = _.assign;//require('lodash.assign');
 var json2mq = require('json2mq');
 var ResponsiveMixin = require('react-responsive-mixin');
 
