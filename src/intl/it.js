@@ -4,7 +4,7 @@ export default {
   messages: {
 
     "meta": {
-      "title": "isomorphic500",
+      "title": "onscreentoday",
       "description": "Applicazione dimostrativa creata con React e Fluxible",
       "loadingTitle": "Caricamento…",
       "errorTitle": "Errore caricando la pagina",

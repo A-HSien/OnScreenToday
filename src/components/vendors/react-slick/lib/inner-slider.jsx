@@ -7,7 +7,8 @@ var EventHandlersMixin = require('./mixins/event-handlers');
 var HelpersMixin = require('./mixins/helpers');
 var initialState = require('./initial-state');
 var defaultProps = require('./default-props');
-var _assign = require('lodash.assign');
+var _ = require('lodash');
+var _assign = _.assign;
 
 var Slider = React.createClass({
   mixins: [EventHandlersMixin, HelpersMixin],

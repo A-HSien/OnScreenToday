@@ -20,7 +20,7 @@ import TunedinPage from "./pages/Tunedin";
 import CallforartistPage from "./pages/CallforartistPage";
 import trackPageView from "./utils/trackPageView";
 
-const debug = require("debug")("isomorphic500");
+const debug = require("debug")("onscreentoday");
 
 if (process.env.BROWSER) {
   require("./style/Application.scss");

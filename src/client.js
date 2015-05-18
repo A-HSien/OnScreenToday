@@ -6,7 +6,7 @@ es6Promise.polyfill();
 
 window.debug = require("debug");
 
-const debug = window.debug("isomorphic500");
+const debug = window.debug("onscreentoday");
 
 const mountNode = document.getElementById("root");
 const dehydratedState = window.App;

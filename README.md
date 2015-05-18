@@ -1,28 +1,28 @@
-# isomorphic500
+# onscreentoday
 
-[Isomorphic500](https://isomorphic500.herokuapp.com) is a small isomorphic web application featuring photos from [500px](http://500px.com).
+[onscreentoday](https://onscreentoday.herokuapp.com) is a small isomorphic web application featuring photos from [500px](http://500px.com).
 
 It is built on [express](http://expressjs.com) using [React](https://facebook.github.io/react) and [Flux](https://facebook.github.io/flux) with [yahoo/fluxible](http://fluxible.io). It is developed with [webpack](http://webpack.github.io) and [react-hot-loader](http://gaearon.github.io/react-hot-loader/) and written with [babeljs](http://babeljs.io) with the help of [eslint](http://eslint.org). It supports multiple languages using [react-intl](http://formatjs.io/react/).
 
-<a href="https://isomorphic500.herokuapp.com"><img src="https://cloud.githubusercontent.com/assets/120693/6992728/d93c61c8-dadb-11e4-82b3-f08f8bee24c3.png" width="700"></a>
+<a href="https://onscreentoday.herokuapp.com"><img src="https://cloud.githubusercontent.com/assets/120693/6992728/d93c61c8-dadb-11e4-82b3-f08f8bee24c3.png" width="700"></a>
 
-[![Join the chat at https://gitter.im/gpbl/isomorphic500](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gpbl/isomorphic500?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/gpbl/onscreentoday](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gpbl/onscreentoday?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 The intent of this project is to solidify my experience with these technologies and (maybe) to inspire other developers in their journey with React and Flux. It works also as example of a javascript development environment with all the cool recent stuff :-)
 
-- see the demo on [isomorphic500.herokuapp.com](https://isomorphic500.herokuapp.com) (with source maps!)
+- see the demo on [onscreentoday.herokuapp.com](https://onscreentoday.herokuapp.com) (with source maps!)
 - clone this repo and run the server to confirm it is actually working
 - edit a react component or a css style, and see the updated app as you save your changes!
 - read on for some technical details
-- [write issues](https://github.com/gpbl/isomorphic500/issues) and [join the gitter chat](https://gitter.im/gpbl/isomorphic500?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to discuss :-)
+- [write issues](https://github.com/gpbl/onscreentoday/issues) and [join the gitter chat](https://gitter.im/gpbl/onscreentoday?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to discuss :-)
 
 **Clone this repo**
 
 > **Note** This app has been tested on node 0.12.x
 
 ```
-git clone https://github.com/gpbl/isomorphic500.git
-cd isomorphic500
+git clone https://github.com/gpbl/onscreentoday.git
+cd onscreentoday
 npm install
 ```
 
@@ -160,7 +160,7 @@ The `onHtmlHeadSet` handler set the data according to the current route. This st
 
 ## Internationalization (i18n)
 
-To give an example on how to implement i18n in a React application, isomorphic500 supports English and [Italian](https://www.youtube.com/watch?v=9JhuOicPFZY).
+To give an example on how to implement i18n in a React application, onscreentoday supports English and [Italian](https://www.youtube.com/watch?v=9JhuOicPFZY).
 
 Here, for "internationalization" I mean:
 
@@ -269,8 +269,8 @@ npm run coverage
 The app uses [debug](https://www.npmjs.com/package/debug) to log debug messages. You can enable/disable the logging from Node by setting the `DEBUG` environment variable before running the server:
 
 ```bash
-# enable logging for isomorphic500 and Fluxible
-DEBUG=isomorphic500,Fluxible node index
+# enable logging for onscreentoday and Fluxible
+DEBUG=onscreentoday,Fluxible node index
 
 # disable logging
 DEBUG= node index
@@ -279,7 +279,7 @@ DEBUG= node index
 From the **browser**, you can enable/disable them by sending this command in the JavaScript console:
 
 ```js
-debug.enable('isomorphic500')
+debug.enable('onscreentoday')
 debug.disable()
 // then, refresh!
 ```
