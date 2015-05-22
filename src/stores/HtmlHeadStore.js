@@ -10,6 +10,7 @@ const meta_map = {
       "title": "SCREEN | 介面",
       "description": "Look on SCREEN for the sharpest image of media art today. Through news coverage, art criticism and curatorial projects, we aim to collect information about media art in one online space.",
       "loadingTitle": "Loading…",
+      "keywords":"art,media art,media,art,new york,artnews",
       "errorTitle": "Error displaying this page",
       "notFoundTitle": "Page not found"
     },
@@ -22,6 +23,9 @@ const meta_map = {
       },
       "documentDescription": ({description}) => {
         return `${description}`;
+      },
+      "documentKeywords": ({keywords}) => {
+        return `${keywords}`;
       }
 
     }
@@ -52,6 +56,7 @@ class HtmlHeadStore extends BaseStore {
     this.title = this.formatMessage("meta.title");
     this.description = this.formatMessage("meta.description");
     this.images = [];
+    this.keywords = this.formatMessage("meta.keywords");
   }
 
   getTitle() {
@@ -64,6 +69,10 @@ class HtmlHeadStore extends BaseStore {
 
   getSiteName() {
     return this.siteName;
+  }
+
+  getKeywords() {
+    return this.keywords;
   }
 
   getCurrentUrl() {
@@ -105,20 +114,27 @@ class HtmlHeadStore extends BaseStore {
       case "view":
       case "screenshot":
         let store = this.dispatcher.getStore("ContentStore");
-        let content = store.getContentBySlug(route.params.slug)[lang];
-        let images = _.map(content.images, function(img) {
-          return BASE_URL + img.url;
-        });
+        let content = store.getContentBySlug(route.params.slug)[lang] || undefined;
+        let images = [];
+
+        if (content && content.images) {
+          images = _.map(content.images, function(img) {
+            return BASE_URL + img.url;
+          });
+        }
 
         this.title = this.formatMessage("content.documentTitle", {
-          name: content.title,
-          user: content.author
+          name: content.title || "",
+          user: content.author || ""
         });
 
         this.description = this.formatMessage("content.documentDescription", {
-          description: content.description
+          description: content.description || ""
         });
 
+        this.keywords = this.formatMessage("content.documentKeywords", {
+          keywords: content.keywords || ""
+        });
 
 
 

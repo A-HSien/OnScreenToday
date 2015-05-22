@@ -36,6 +36,7 @@ class HtmlDocument extends React.Component {
           <title>{ htmlHead.getTitle() }</title>
 
           <meta name="description" content={ htmlHead.getDescription() } />
+          <meta name="keywords" content={ htmlHead.getKeywords() } />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content={ htmlHead.getSiteName() } />
           <meta property="og:title" content={ htmlHead.getTitle() } />
