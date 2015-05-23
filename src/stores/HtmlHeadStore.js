@@ -10,7 +10,7 @@ const meta_map = {
       "title": "SCREEN | 介面",
       "description": "Look on SCREEN for the sharpest image of media art today. Through news coverage, art criticism and curatorial projects, we aim to collect information about media art in one online space.",
       "loadingTitle": "Loading…",
-      "keywords":"art,media art,media,art,new york,artnews",
+      "keywords":"internet art,time-based art,video,moving image,film installation,lens-based work,experimental art,interview,performance art,chinese comtemporary art,art,media art,media,art,new york,artnews",
       "errorTitle": "Error displaying this page",
       "notFoundTitle": "Page not found"
     },

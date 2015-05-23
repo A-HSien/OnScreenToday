@@ -37,7 +37,7 @@ class Header extends BaseComponent {
             {
                 url: '/conversations',
                 name: {
-                    eng: "conversation",
+                    eng: "conversations",
                     chn: "对话",
                     chnt: "對話",
                 }

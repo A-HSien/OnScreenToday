@@ -92,9 +92,15 @@ class ConversationDetailPage extends BaseComponent {
 					<h2>{hero.title}</h2>
 					<h3>{hero.subtitle}</h3>
 					<div>
-						<strong>By {hero.author}</strong>
+						{this._createAuthor(hero.author)}
+						
 					</div>
-					
+					<div>
+						{this._createVideoContributor(hero.camera)}
+					</div>
+					<div>
+						{this._createIntroContributor(hero.introduction)}
+					</div>
 					<br></br>
 					{jsxDivs}
 				</div>
@@ -116,6 +122,42 @@ class ConversationDetailPage extends BaseComponent {
 			</div>
 
 		</div>;
+	}
+
+	_createAuthor (content) {
+
+		var authorJsx = <noscript />;
+
+		if (content) {
+			authorJsx = <strong>By <i>{content}</i></strong>;
+		}
+
+		return authorJsx;
+
+	}
+
+	_createVideoContributor (content) {
+
+		var authorJsx = <noscript />;
+
+		if (content) {
+			authorJsx = <strong>Video by <i>{content}</i></strong>;
+		}
+
+		return authorJsx;
+
+	}
+
+	_createIntroContributor (content) {
+
+		var authorJsx = <noscript />;
+
+		if (content) {
+			authorJsx = <strong>Intro by <i>{content}</i></strong>;
+		}
+
+		return authorJsx;
+
 	}
 
 	_createSlides (images) {
