@@ -1,27 +1,14 @@
 # onscreentoday
 
-[onscreentoday](https://onscreentoday.herokuapp.com) is a small isomorphic web application featuring photos from [500px](http://500px.com).
 
-It is built on [express](http://expressjs.com) using [React](https://facebook.github.io/react) and [Flux](https://facebook.github.io/flux) with [yahoo/fluxible](http://fluxible.io). It is developed with [webpack](http://webpack.github.io) and [react-hot-loader](http://gaearon.github.io/react-hot-loader/) and written with [babeljs](http://babeljs.io) with the help of [eslint](http://eslint.org). It supports multiple languages using [react-intl](http://formatjs.io/react/).
+It is built on [express](http://expressjs.com) using [React](https://facebook.github.io/react) and [Flux](https://facebook.github.io/flux) with [yahoo/fluxible](http://fluxible.io). It is developed with [webpack](http://webpack.github.io) and [react-hot-loader](http://gaearon.github.io/react-hot-loader/) and written with [babeljs](http://babeljs.io) with the help of [eslint](http://eslint.org).
 
-<a href="https://onscreentoday.herokuapp.com"><img src="https://cloud.githubusercontent.com/assets/120693/6992728/d93c61c8-dadb-11e4-82b3-f08f8bee24c3.png" width="700"></a>
-
-[![Join the chat at https://gitter.im/gpbl/onscreentoday](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gpbl/onscreentoday?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-The intent of this project is to solidify my experience with these technologies and (maybe) to inspire other developers in their journey with React and Flux. It works also as example of a javascript development environment with all the cool recent stuff :-)
-
-- see the demo on [onscreentoday.herokuapp.com](https://onscreentoday.herokuapp.com) (with source maps!)
-- clone this repo and run the server to confirm it is actually working
-- edit a react component or a css style, and see the updated app as you save your changes!
-- read on for some technical details
-- [write issues](https://github.com/gpbl/onscreentoday/issues) and [join the gitter chat](https://gitter.im/gpbl/onscreentoday?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to discuss :-)
 
 **Clone this repo**
 
 > **Note** This app has been tested on node 0.12.x
 
 ```
-git clone https://github.com/gpbl/onscreentoday.git
 cd onscreentoday
 npm install
 ```
@@ -118,23 +105,20 @@ I used [Fetchr](https://github.com/yahoo/fetchr) and the relative [fluxible-plug
 
 Using [fluxible-plugin-routr](https://github.com/yahoo/fluxible-plugin-routr), I could keep the router in a "flux flow": the current route is stored in the [RouteStore](src/stores/RouteStore.js), and the [Application component](src/Application.js) listens to it to know which [page component](src/pages) should render.
 
-Before setting the route, this plugin can execute an action to prefill the stores with the required data. (see the `action` attributes in the routes’s [config](src/routes.js)).
+Before setting the route, this plugin can execute an action to prefill the stores with the required data. (see the `action` attributes in the routes’s [config](src/routes.js).
 
 > Note that these actions can send an error to the `done()` callback, so that we can render an error page, as explained below in the "RouteStore" section.
 
 ### Stores
 
-Instead of directly listening to stores, components are wrapped in an high-order component using the fluxible `connectToStores` add-on. See for example the [PhotoPage](src/pages/PhotoPage.js) or the [FeaturedPage](src/pages/FeaturedPage.js).
+Instead of directly listening to stores, components are wrapped in an high-order component using the fluxible `connectToStores` add-on. See for example the [ConversationDetailPage](src/pages/ConversationDetailPage.js.
 
-Other components need to access the store data without listening to the stores: they make use of the fluxible context, requiring the `getStore` function in the context's type. This is the case of [NavBar](src/components/NavBar.js) or [LocaleSwitcher](src/components/LocaleSwitcher.js).
+Other components need to access the store data without listening to the stores: they make use of the fluxible context, requiring the `getStore` function in the context's type. This is the case of [NavBar](src/components/NavBar.js).
 
 #### Resource stores
 
-While REST APIs usually return collections as arrays, a resource store keeps items as big object – like the [PhotoStore](src/stores/PhotoStore.js). This simplifies the progressive resource updates that may happen during the app’s life.
+While REST APIs usually return collections as arrays, a resource store keeps items as big object – like the [ContentStore](src/stores/ContentStore.js). This simplifies the progressive resource updates that may happen during the app’s life.
 
-#### List stores
-
-A list store keeps references to a resource store, as the [FeaturedStore](src/stores/FeaturedStore.js) holds the ids of the photos in [PhotoStore](src/stores/PhotoStore.js).
 
 #### The RouteStore
 
@@ -158,52 +142,14 @@ The [HtmlHeadStore](src/stores/HtmlHeadStore.js) is a special store used to set 
 
 The `onHtmlHeadSet` handler set the data according to the current route. This store uses data from other stores, such the titles of the photos, or the intl messages from the `IntlStore`. It is important that this handler is executed after the other stores have been filled up with their data. The HtmlHeadStore listens to the `SET_HTML_HEAD` action (dispatched by an action creator in [RouteActions](src/pages/RouteActions.js)) *only* after fetching the data required to render a page.
 
-## Internationalization (i18n)
-
-To give an example on how to implement i18n in a React application, onscreentoday supports English and [Italian](https://www.youtube.com/watch?v=9JhuOicPFZY).
-
-Here, for "internationalization" I mean:
-
-- to format numbers/currencies and dates/times according to the user's locale
-- to provide translated strings for the texts displayed in the components.
-
-This app adopts [React Intl](http://formatjs.io/react/), which is a solid library for this purpose.
-
-### How the user’s locale is detected
-
-The app sniffs the browser's `accept-language` request header. The [locale](https://github.com/jed/locale) npm module has a nice express middleware for that. Locales are restricted to those set in the app's [config](../config).
-
-The user may want to override the detected locale: the [LocaleSwitcher](src/components/LocaleSwitcher.js) component set a cookie when the user chooses a language. Also, we enable the `?hl` parameter in the query string to override it. Server-side, cookie and query string are detected by the [setLocale](src/server/setLocale.js) middleware.
-
-So, the `locale` middleware will attach the desired locale to `req.locale`, which come useful to set the `lang` attribute in the `<html>` tag. This attribute it is also used by `client.js` to load the locale data client-side.
-
-### The difficult parts
-
-React-intl requires some boilerplate to work properly. Difficulties here arise mainly for two reasons:
-
-1. React Intl relies on the [Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) *global* API, not always available on node.js or some browsers (e.g. Safari). Luckly there's an [Intl polyfill](https://www.npmjs.com/package/intl): on the server we can just "require" it – however on the browser we want to download it *only* when `Intl` is not supported.
-
-2. For each language, we need to load a set of *locale data* (used by `Intl` to format numbers and dates) and the translated strings, called *messages* (used by `react-intl`). While on node.js we can load them in memory, on the client they need to be downloaded first – and we want to download only the relevant data for the current locale.
-
-**On the server** the solution is easy: as said, the server [loads a polyfill](src/server/intl-polyfill) including both `Intl` and the locale data. For supporting the browser, we can instead rely on our technology stack, i.e. flux and webpack.
 
 ### Webpack on the rescue
-
-**On the client**, we have to load the `Intl` polyfill and its locale data *before* rendering the app, i.e. in [client.js](src/client.js).
 
 For this purpose, I used webpack's `require.ensure()` to split `Intl` and localized data in multiple chunks. Only after they have been downloaded, the app can be mounted. See the `loadIntlPolyfill()` and `loadLocaleData()` functions in [IntlUtils](src/utils/IntlUtils.js): they return a promise that is resolved when the webpack chunks are downloaded and `require`d.
 
 They are used in [client.js](client.js) before mounting the app.
 
 > **Important**: since `react-intl` assumes `Intl` is already in the global scope, we can't import the fluxible app (which imports react-intl in some of its components) *before* polyfilling `Intl`. That's why you see in [client.js](src/client.js) `require("./app")` inside the in the `renderApp()` function, and not as `import` on the top of the file.
-
-### Internationalization, the flux way
-
-Lets talk about the data that react-intl needs to deliver translated content. It is saved for each language in the [intl](src/intl) directory and **can be shared between client and server** using a store, i.e. the [IntlStore](stores/IntlStore).
-
-The store listens to a `LOAD_INTL` action dispatched by [IntlActionCreator](src/actions/IntlActionCreators.js). We execute this action **server side** before rendering the HtmlDocument component in [server/render.js](src/server/render.js), together with the usual `navigateAction`. The store will be rehydrate by Fluxible as usual.
-
-An higher-order component would pass the store state to the react-intl components as props. For doing this, I used a custom implementation of [FormattedMessage](src/utils/FormattedMessage.js) and [FormattedNumber](src/utils/FormattedNumber.js), adopting a small [connectToIntlStore](src/utils/connectToIntlStore.js) utils.
 
 ### Sending the locale to the API
 
