@@ -8,6 +8,7 @@ module.exports = [
             author: "Jiayin Chen",
             translator:"Jiayin Chen",
             slug:"paul-chan-I-dont-hoestly-know",
+            keywords: "paul chan,multi-media,political activist,Hugo Boss Prize,New Lovers,Badlands Unlimited,new work Nonprojections,Nonprojections mocks viewers,Marcel Duchamp,Saddam Hussein",
             type:"artist",
             description: "Many labels are associated with Paul Chan: multi-media artist, political activist, and publisher, to say the least. Categories seems rather futile for understanding his practice. Selected as the winning artist of 2014 Hugo Boss Prize, Chan is clearly well loved by the art world at the moment; curators praise his work as “wide-ranging” and “multidisciplinary”, while he seems deliberately to keep some distance from traditional notions of being an artist. In this regard, Chan has made a precise push at the boundary of the artist’s jurisdiction.",
             videos: [
@@ -93,6 +94,7 @@ module.exports = [
             author: "陈佳音（Jiayin Chen）",
             translator:"陈佳音（Jiayin Chen）",
             slug:"paul-chan-I-dont-hoestly-know",
+            keywords: "paul chan,multi-media,political activist,Hugo Boss Prize,New Lovers,Badlands Unlimited,new work Nonprojections,Nonprojections mocks viewers,Marcel Duchamp,Saddam Hussein",
             type:"艺术家",
             description: "陈佩之（Paul Chan）是媒体艺术家丶政治活跃份子丶出版人…许多不同的身份标签在这位华裔美籍的艺术家身上，尽管分类对于理解他的创作而言，似乎一点也不重要。陈佩之目前显然是艺术圈的金童，甫获2014年Hugo Boss 艺术奖（Hugo Boss Prize），策展人称他的创作「范畴宽广」丶「跨领域」，然而，他又似乎刻意不遵循传统的艺术家定义。或许正是如此，他推进了当代艺术的界限。",
             videos: [
@@ -178,6 +180,7 @@ module.exports = [
             author: "陳佳音（Jiayin Chen）",
             translator:"陳佳音（Jiayin Chen）",
             slug:"paul-chan-I-dont-hoestly-know",
+            keywords: "paul chan,multi-media,political activist,Hugo Boss Prize,New Lovers,Badlands Unlimited,new work Nonprojections,Nonprojections mocks viewers,Marcel Duchamp,Saddam Hussein",
             type:"藝術家",
             description: "陳佩之（Paul Chan）是媒體藝術家、政治活躍份子、出版人…許多不同的身份標籤在這位華裔美籍的藝術家身上，儘管分類對於理解他的創作而言，似乎一點也不重要。陳佩之目前顯然是藝術圈的金童，甫獲2014年Hugo Boss 藝術獎（Hugo Boss Prize），策展人稱他的創作「範疇寬廣」、「跨領域」，然而，他又似乎刻意不遵循傳統的藝術家定義。或許正是如此，他推進了當代藝術的界限。",
             videos: [
@@ -267,6 +270,7 @@ module.exports = [
             author: "Yu-chieh Li",
             tranlator:"",
             slug:"david-horvitz-all-about-foxes",
+            keywords:"David Horvitz,Chinese incense clock,Kristina Lee Podesva,Creative Time,California,Limerick,MoMA,Brooklyn",
             type:"artist",
             description: "David Horvitz’s date of birth is always written differently in the wall texts of his exhibitions. He is an artist who reflects upon and interferes with ways of message circulation invented by human being, including books, mail, email, internet, clock, telegram, twitter, and Wikipedia. He lives and works in Brooklyn, New York.",
             heroImage: {
@@ -343,6 +347,7 @@ module.exports = [
             author: "李雨洁（Yu-chieh Li）",
             tranlator:"李雨洁（Yu-chieh Li）",
             slug:"david-horvitz-all-about-foxes",
+            keywords:"David Horvitz,Chinese incense clock,Kristina Lee Podesva,Creative Time,California,Limerick,MoMA,Brooklyn",
             type:"艺术家",
             description: "大卫霍微兹（David Horvitz）的出生日期在每个展览中呈现的都不一样，他的作品往往旨在思考讯息传递的过程还有干涉媒体，他使用过的媒介包括书，邮件，电子邮件，网路，钟，电报，推特，甚至还有维基百科。他目前在纽约布鲁克林生活与工作。",
             heroImage: {
@@ -418,6 +423,7 @@ module.exports = [
             author: "李雨潔(Yu-Chieh Li)",
             tranlator:"李雨潔(Yu-Chieh Li)",
             slug:"david-horvitz-all-about-foxes",
+            keywords:"David Horvitz,Chinese incense clock,Kristina Lee Podesva,Creative Time,California,Limerick,MoMA,Brooklyn",
             type:"藝術家",
             description: "大衛霍微茲（David Horvitz）的出生日期在每個展覽中呈現的都不一樣，他的作品往往旨在思考訊息傳遞的過程還有干涉媒體，他使用過的媒介包括書，郵件，電子郵件，網路，鐘，電報，推特，甚至還有維基百科。他目前在紐約布魯克林生活與工作。",
             heroImage: {
@@ -497,6 +503,7 @@ module.exports = [
             author: "Jiayin Chen",
             translator:"Jiayin Chen",
             slug:"michael-jacobs-it-might-surprise-us-yet",
+            keywords:"Li Ming,contemporary art,Cheng Ran,video art,Chinese video art,Whitebox Art Center,Chinese contemporary art,Photography Exhibition Committee,Whitney Museum,Jimmy Wang,Art Acquisition Committee",
             type:"collector",
             description: "Dr. Michael Jacobs was one of the first collectors to pay attention to Chinese video art. Last year, Whitebox Art Center in New York presented an exhibition featuring beautiful video works by a group of young Chinese artists, which drew entirely from the collection of Michael Jacobs. From photojournalism to art photography, and from collecting photography to video art, Michael Jacobs seems a little proud of his eye in contemporary art; he has been supporting artists Li Ming, Sun Xun, Cheng Ran and Wang Xin from the early years of their careers. The same exhibition later traveled to an art fair in Turkey, Contemporary Istanbul, and recently also developed into an online presence as the website Now You See. In this interview, Michael Jacobs shares his ideas on collecting, storing and displaying videos.",
             images: [
@@ -569,6 +576,7 @@ module.exports = [
             author: "陈佳音（Jiayin Chen）",
             translator:"Jiayin Chen",
             slug:"michael-jacobs-it-might-surprise-us-yet",
+            keywords:"Li Ming,contemporary art,Cheng Ran,video art,Chinese video art,Whitebox Art Center,Chinese contemporary art,Photography Exhibition Committee,Whitney Museum,Jimmy Wang,Art Acquisition Committee",
             type:"藏家",
             description: "迈克.雅各布斯是早期开始收藏中国录像的藏家之一，去年，纽约白盒子艺术中心举办了一个中国当代录像艺术群展，作品皆来自於雅各布斯的收藏。从纪实摄影到艺术摄影，从收藏摄影到收藏录像，雅各布斯对於自己的艺术眼光有些自负，但是确实，包括李明丶孙逊丶程然以及王欣等人，都是他从早期就持续关注与支持的艺术家。雅各布斯的收藏展也受邀至伊斯坦堡艺术博览会Contemporary Istanbul 展出，除此之外，近期他更为了展览制作了线上展示的网站。这次访谈中，迈克.雅各布斯分享了他的收藏经验：从存放丶展示到保存录像的心得。",
             images: [
@@ -641,6 +649,7 @@ module.exports = [
             author: "陳佳音（Jiayin Chen）",
             translator:"陳佳音（Jiayin Chen",
             slug:"michael-jacobs-it-might-surprise-us-yet",
+            keywords:"Li Ming,contemporary art,Cheng Ran,video art,Chinese video art,Whitebox Art Center,Chinese contemporary art,Photography Exhibition Committee,Whitney Museum,Jimmy Wang,Art Acquisition Committee",
             type:"藏家",
             description: "邁克.雅各布斯是早期開始收藏中國錄像的藏家之一，去年，紐約白盒子藝術中心舉辦了一個中國當代錄像藝術群展，作品皆來自於雅各布斯的收藏。從紀實攝影到藝術攝影，從收藏攝影到收藏錄像，雅各布斯對於自己的藝術眼光有些自負，但是確實，包括李明、孫遜、程然以及王欣等人，都是他從早期就持續關注與支持的藝術家。雅各布斯的收藏展也受邀至伊斯坦堡藝術博覽會Contemporary Istanbul 展出，除此之外，近期他更為了展覽製作了線上展示的網站。這次訪談中，邁克.雅各布斯分享了他的收藏經驗：從存放、展示到保存錄像的心得。",
             images: [
@@ -717,6 +726,7 @@ module.exports = [
             author: "Shih-yu Hsu",
             translator:"Shih-yu Hsu",
             slug:"tori-wraanes-that-human-electricity",
+            keywords:"Mark Beasley,Tori Wrånes,new york,Turbine Hall,Hanne Kolsto,Jan Erik Mikalsen,Simona Barbera,BangladeshNew York",
             type:"artist",
             description: "Tori Wraanes’ works focus on the sounds made, space occupied and energy generated in the processes of living. Growing up in a village near sea and forest, she has vivid memory of following the treetops home while running in the woods: the question of human exceptionalism can take on an absurd tone in the relative quiet of the Scandinavian landscape. In Nature Enough?, as musicians sit on a tree and play it with saws, she dangles from a mere single hair. Its a performance that draws contrasts between natural and artificial, humorous and precarious.",
             heroImage: {
@@ -788,6 +798,7 @@ module.exports = [
             author: "徐诗雨（Shih-Yu Hsu）",
             translator:"徐诗雨（Shih-Yu Hsu）",
             slug:"tori-wraanes-that-human-electricity",
+            keywords:"Mark Beasley,Tori Wrånes,new york,Turbine Hall,Hanne Kolsto,Jan Erik Mikalsen,Simona Barbera,BangladeshNew York",
             type:"艺术家",
             description: "托莉朗涅斯（Tori Wraanes）的作品是关于人类的存在 ：我们发出的声音，占据的空间以及散放出的能量。出生在一个靠海与森林的村庄，朗涅斯对循着树端形成的天际线穿越林子回家有着鲜明的记忆，这也让她开始思考空间的可能性。我们到底何为人类，这个无解的问题在她的诠释下成为了一种自嘲的幽默夹杂着斯堪地那维亚的独特诗意。《在够自然吗？》，朗涅斯将自己的重量寄托在头发，悬挂在树梢，形成一个脆弱的平衡。乐手们盘坐在树干上用锯子来回拉扯着金属条。这个动作若将接受者金属条换成树干，就会威胁施作者目前存在的状态。矛盾也出现在观众们在自然森林中观赏由这麽多的不自然事物组成的演出。这种二元对立在朗涅斯的作品中随处可见。",
             heroImage: {
@@ -859,6 +870,7 @@ module.exports = [
             author: "徐詩雨（Shih-Yu Hsu）",
             translator:"徐詩雨（Shih-Yu Hsu）",
             slug:"tori-wraanes-that-human-electricity",
+            keywords:"Mark Beasley,Tori Wrånes,new york,Turbine Hall,Hanne Kolsto,Jan Erik Mikalsen,Simona Barbera,BangladeshNew York",
             type:"藝術家",
             description: "托莉朗涅斯（Tori Wraanes）的作品是關於人類的存在 ：我們發出的聲音，佔據的空間以及散放出的能量。出生在一個靠海與森林的村莊，朗涅斯對循著樹端形成的天際線穿越林子回家有著鮮明的記憶，這也讓她開始思考空間的可能性。我們到底何為人類，這個無解的問題在她的詮釋下成為了一種自嘲的幽默夾雜著斯堪地那維亞的獨特詩意。《在夠自然嗎？》，朗涅斯將自己的重量寄託在頭髮，懸掛在樹梢，形成一個脆弱的平衡。樂手們盤坐在樹幹上用鋸子來回拉扯著金屬條。這個動作若將接受者金屬條換成樹幹，就會威脅施作者目前存在的狀態。矛盾也出現在觀眾們在自然森林中觀賞由這麼多的不自然事物組成的演出。這種二元對立在朗涅斯的作品中隨處可見。",
             heroImage: {
@@ -932,6 +944,7 @@ module.exports = [
             title: "NUMMER VEERTIEN, HOME",
             subtitle: "Van der Werve on the road",
             author: "Richard Kuan",
+            keywords:"Van der Werve,Nummer Veertien,sport works,Manhattan,Paris,guido van der,Mount Everest,autobiographical work,Solemn choral music,art school",
             translator:"",
             slug:"Guido-van-der-werve-nummer-veertien-home",
             type:"artist",
@@ -989,6 +1002,7 @@ module.exports = [
             author: "管钧（Richard Kuan）",
             translator:"陈佳音（Jiayin Chen）",
             slug:"Guido-van-der-werve-nummer-veertien-home",
+            keywords:"Van der Werve,Nummer Veertien,sport works,Manhattan,Paris,guido van der,Mount Everest,autobiographical work,Solemn choral music,art school",
             type:"艺术家",
             description: "《第十四号，家》（Nummer Veertien, Home, 2012）圭多·范·德·卫夫（Guido Van Der Werve）54分钟的影像作品，艺术家以跑步丶游泳丶骑车，共1703.85公里，连起肖邦安息地巴黎拉雪兹公墓与故乡波兰之间的距离，最后来到肖邦的墓前递上一杯来自波兰的土壤。庄严的合唱与爆破的声音充盈整座空间，偌大建筑里唯一一件作品，回荡在北京798艺术区一座前身是军火工厂丶占地2500平方尺的M Woods美术馆中。",
             heroImage: {
@@ -1044,6 +1058,7 @@ module.exports = [
             author: "管鈞（Richard Kuan）",
             translator:"陳佳音（Jiayin Chen）",
             slug:"Guido-van-der-werve-nummer-veertien-home",
+            keywords:"Van der Werve,Nummer Veertien,sport works,Manhattan,Paris,guido van der,Mount Everest,autobiographical work,Solemn choral music,art school",
             type:"藝術家",
             description: "《第十四號，家》（Nummer Veertien, Home, 2012）圭多·范·德·维沃（Guido Van DerWerve）54分鐘的影像作品，藝術家以跑步、游泳、單車完成1703.85公里，連起肖邦安息之地巴黎拉雪茲公墓與故鄉波蘭之間的距離，最後來到肖邦的墓前遞上一杯來自波蘭的土壤。莊嚴的合唱與爆破的聲音充盈整座空間，偌大建築裡唯一一件作品，迴盪在北京798藝術區一座前身是軍火工廠、佔地2500平方尺的M Woods美術館中。清晰4K影像與莊重的安魂曲，直截了當的浪漫綴以些許荒唐與諷刺的氣氛。《第十四號，家》奇異而莊嚴，這一趟旅程的企圖雄偉、從盛大遼闊的地理風景，到對於生命的纖細感悟，讓我陷入無語的沈思。儘管如此，思索了一些隻字片語後，我與藝術家坐下談談這件撼動人心的作品。藉著餐廳裡一盤沙拉的時間- 他是素食主義者-我們談到他的家鄉、音樂，Gesamtkunstwerk以及爆破。",
             heroImage: {
@@ -1103,6 +1118,7 @@ module.exports = [
             author: "David Borgojon",
             translator: "",
             slug: "sun-yuan-or-else-your-selfhood-wont-be-utopian-enough",
+            keywords:"Peng Yu,Sun Yuan,guns,Central Academy,stainless steel showroom,Affiliated High School,individualized Western world,art,modern art,artnews,modern art,fine art",
             type:"artist",
             description: "Sun Yuan and his co-conspirator Peng Yu share a taste for camo vests, snowboard pants and military boots. Their work has consistently pushed at the bounds of performance sculpture, posing aggressive thought experiments that often delve into cruel ironieSY: dogs at each other’s throats, ritualized firearm handling, or angels . Their abdundant use of the simulacra of life—taxidermy, resin models, or portraits—recalls the work of iconoclasts like Maurizio Cattelan, though rather than addressing traditional questions of mimesis, their work does not so much represent life but practice it—questions of illusion are simply inappropriate to their practice, which doggedly pursues the possibility of transcendence. Sun Yuan and I met in the studio he shares with Peng Yu and lives in, in a converted factory near 798 in Northeast Beijing.",
             heroImage: {
@@ -1161,6 +1177,7 @@ module.exports = [
             subtitle: "对谈孙原",
             author: "David Borgonjon",
             translator: "陈佳音（Jiayin Chen）",
+            keywords:"Peng Yu,Sun Yuan,guns,Central Academy,stainless steel showroom,Affiliated High School,individualized Western world,art,modern art,artnews,modern art,fine art",
             type:"艺术家",
             slug: "sun-yuan-or-else-your-selfhood-wont-be-utopian-enough",
             description: "孙原和他的同谋彭禹一致欣赏迷彩的马甲丶雪板裤与军靴。冬转春之际，我在798的工作室与他们见面。作为艺术家和策展人，他们的作品件件都拓展了行为性雕塑的极限。天使的标本丶踢球的青年丶失控的水管...接近二十年的创作里频繁出现的主题，这一系列意外的主角以惨酷的幽默映现了对生命的一种指望。原以为我们的对谈要停留在表象的困局，不知不觉中，孙原却从真假之分延伸到神与物的界限，再到人本身。",
@@ -1220,6 +1237,7 @@ module.exports = [
             subtitle: "對談孫原",
             author: "David Borgonjon",
             translator: "陳佳音（Jiayin Chen）",
+            keywords:"Peng Yu,Sun Yuan,guns,Central Academy,stainless steel showroom,Affiliated High School,individualized Western world,art,modern art,artnews,modern art,fine art",
             slug: "sun-yuan-or-else-your-selfhood-wont-be-utopian-enough",
             type:"藝術家",
             description: "孫原和他的同謀彭禹一致欣賞迷彩的馬甲、雪板褲與軍靴。冬轉春之際，我在798的工作室與他們見面。作為藝術家和策展人，他們的作品件件都拓展了行為性雕塑的極限。天使的標本、踢球的青年、失控的水管...接近二十年的創作裏頻繁出現的主題，這一系列意外的主角以慘酷的幽默映現了對生命的一種指望。原以為我們的對談要停留在表象的困局，不知不覺中，孫原卻從真假之分延伸到神與物的界限，再到人本身。",
