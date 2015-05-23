@@ -1,5 +1,343 @@
 module.exports = [
     {   
+        id: 6,
+        slug:"Yoko-Ono-and-Christophe-Cherix-One-woman-running-her-show",
+        eng: {
+            title: "Yoko Ono and Christophe Cherix ",
+            subtitle: "One woman, running her show",
+            author: " Shih-Yu Hsu",
+            camera: "Ara Qiu",
+            introduction:"Yu-Chieh Li",
+            slug:"Yoko-Ono-and-Christophe-Cherix-One-woman-running-her-show",
+            keywords: "1960–1971,Yoko Ono,one woman,one woman running her show,MoMA,Museum of Modern Art,Christophe Cherix,John Lennon,Klaus Biesenbach,Japan Society Gallery,New York,Lila Silverman Collection",
+            type:"artist",
+            description: "Yoko Ono was a pacesetter of conceptual experiments and critical participant of the Fluxus network of the 1960s. Today she is more well-known as a pop culture icon, overshadowed by her late husband, the rock star John Lennon; this might explain why she hasn’t had any major museum solo show in the USA since Yes Yoko Ono (2005) at the Japan Society Gallery. ",
+            videos: [
+                {
+                    embedHTML: '<iframe src="https://player.vimeo.com/video/128614116" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/128614116">Yoko Ono: One Woman Show, 1960-1971</a> from <a href="https://vimeo.com/user39230048">SCREEN</a> on <a href="https://vimeo.com">Vimeo</a>.</p>',
+                    name: "Yoko Ono: One Woman Show, 1960-1971"
+                }
+            ],
+            heroImage: {
+                    url:"/images/content/conversations/6/3.jpg",
+                    captions:"<p>Yoko Ono. <i>Cut Piece</i>. 1964. Film by David and Albert Maysles. Performance by the artist, Carnegie Recital Hall, New York. 1965. Private Collection.  <i>© Yoko Ono 2015</i>.</p>"
+              },
+            images: [
+                 {
+                    url:"/images/content/conversations/6/1.jpg",
+                    captions:"Yoko Ono. <i>Museum of Modern (F)art</i>. 1971. Exhibition catalogue, offset, 30x30x1 cm. Publisher: the artist, New York. The Museum of Modern Art Library. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/2.jpg",
+                    captions:"Yoko Ono. <i>Fly</i>. 1970. 16mm film transferred to DVD (color, sound), 51 min. Private collection. © Yoko Ono 2015."   
+                 },
+                 {
+                    url:"/images/content/conversations/6/3.jpg",
+                    captions:"Yoko Ono. <i>Cut Piece.</i> 1964. Film by David and Albert Maysles. Performance by the artist, Carnegie Recital Hall, New York. 1965. Private Collection.  © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/4.jpg",
+                    captions:"Yoko Ono. Typescript for Grapefruit. 1963-1964. 151 typewritten postcards, some with ink and graphite additions. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/5.jpg",
+                    captions:"Yoko Ono. Grapefruit. 1964. Artist’s book, offset. Publisher: Wunternaum Press (the artist), Tokyo. Edition: 500. The Museum of Modern Art, New York. The Gilbert and Lila Silverman Fluxus Collection Gift, 2008. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/6.jpg",
+                    captions:"Yoko Ono. Grapefruit. 1964. Artist’s book, offset. Publisher: Wunternaum Press (the artist), Tokyo. Edition: 500. The Museum of Modern Art, New York. The Gilbert and Lila Silverman Fluxus Collection Gift, 2008. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/7.jpg",
+                    captions:"Yoko Ono. Apple. 1966. Plexiglas pedestal, brass plaque, and apple. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/8.jpg",
+                    captions:"Yoko Ono. Bed-In. 1969. 16 mm film transferred to DVD (color, sound), 70:56 min. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/9.jpg",
+                    captions:"Yoko Ono. White Chess Set. 1966. Wooden table, two chairs, and chess set, all painted white. 77x61.1x61.1 cm. museum moderner kunst stiftung Ludwig wien. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/10.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/11.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/12.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/13.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 }
+            ],
+            category: "artist",
+            url: "/conversation/Yoko-Ono-and-Christophe-Cherix-One-woman-running-her-show",
+            contents: [
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p>Yoko Ono was a pacesetter of conceptual experiments and critical participant of the Fluxus network of the 1960s. Today she is more well-known as a pop culture icon, overshadowed by her late husband, the rock star John Lennon; this might explain why she hasn’t had any major museum solo show in the USA since <i>Yes Yoko Ono</i> (2005) at the Japan Society Gallery. The Museum of Modern Art (MoMA) took Ono’s 1971 intervention—completed without permission—into its space as a starting point for this monographic survey:  she released flies from a glass container the volume of her body filled with her perfume in MoMA’s sculpture garden. The show traveled with the flies. A documentary video was produced, in which passers-by were asked about their opinion of Yoko Ono’s <i>one woman show</i>: “I haven’t seen it,” “I don’t understand it.” Ono produced a catalog with a collaged photograph on its cover, in which Ono, with a handbag printed with “F” in her hand, transformed the museum’s sign into <i>“The Museum of Modern [F]art.</i>” MoMA has embraced this image as well as the title of the unofficial 1971 exhibition, which was a protest against the lack of  women artists exhibiting at the Museum.&nbsp;</p>",
+                        "text": "Yoko Ono was a pacesetter of conceptual experiments and critical participant of the Fluxus network of the 1960s. Today she is more well-known as a pop culture icon, overshadowed by her late husband, the rock star John Lennon; this might explain why she hasn’t had any major museum solo show in the USA since Yes Yoko Ono (2005) at the Japan Society Gallery. The Museum of Modern Art (MoMA) took Ono’s 1971 intervention—completed without permission—into its space as a starting point for this monographic survey:  she released flies from a glass container the volume of her body filled with her perfume in MoMA’s sculpture garden. The show traveled with the flies. A documentary video was produced, in which passers-by were asked about their opinion of Yoko Ono’s one woman show: “I haven’t seen it,” “I don’t understand it.” Ono produced a catalog with a collaged photograph on its cover, in which Ono, with a handbag printed with “F” in her hand, transformed the museum’s sign into “The Museum of Modern [F]art.” MoMA has embraced this image as well as the title of the unofficial 1971 exhibition, which was a protest against the lack of  women artists exhibiting at the Museum. "
+                    },
+                    "type": "medium"
+                },
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p>Given the anti-institutional tone of her early practice, why would the artist collaborate with an institution? Ono explains that the curators Christophe Cherix and Klaus Biesenbach knew her conceptual exhibition at MoMA more than forty years ago, and are “very sensitive” about her practice. “Ten years ago, there was a call from the Museum of Modern Art, and this person said, we have the record that you have done a show with us, would you tell us what it was about?… And then I got a call from Klaus. Christophe and Klaus knew the show in 1971 and wanted to do a show starting from there.”&nbsp;</p>",
+                        "text": "Given the anti-institutional tone of her early practice, why would the artist collaborate with an institution? Ono explains that the curators Christophe Cherix and Klaus Biesenbach knew her conceptual exhibition at MoMA more than forty years ago, and are “very sensitive” about her practice. “Ten years ago, there was a call from the Museum of Modern Art, and this person said, we have the record that you have done a show with us, would you tell us what it was about?… And then I got a call from Klaus. Christophe and Klaus knew the show in 1971 and wanted to do a show starting from there.” "
+                    },
+                    "type": "medium"
+                },
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p>The title of this MoMA monograph itself is already a curatorial statement, <i>Yoko Ono: One Woman Show, 1960-1971</i>, which receives Ono back to the art world through close examination of her early works, addressing feminism without celebrating Ono’s womanhood. A great number of the works exhibited are from the Gilbert B. and Lila Silverman Collection, donated to MoMA in 2008. Beyond a room dedicated to the MoMA intervention in 1971, the show consist of 125 pieces of works on paper, installation, films, and new realizations of early ephemeral works including those which invite audience participation, such as <i>Painting to Be Stepped On</i> (1961/2015), a piece of canvas thrown on the floor which is painted by the visitors’ footprints, <i>Painting to See In The Dark</i> (1961/2015), and <i>Painting In Three Stanzas</i> (1961/2015). <i>Bag Piece </i>(1964/2015), in which Ono originally used to cover herself and another partner at performances, when they take off and put on clothes, now is transformed into moving sculpture. The 1964 self-publication Grapefruit contains her instruction poems: no. 18 starts with “Give birth to a child. See the world through its eye….” Visitors are invited to climb a steel spiral staircase designed by Yoko Ono for the show, to see the sky above MoMA, a symbolic painting in Ono’s practice. Unlike stereotypical exhibitions about conceptual practices and ephemera, which prone to be monotone, this show does not bore you nor exhaust you. &nbsp;</p>",
+                        "text": "The title of this MoMA monograph itself is already a curatorial statement, Yoko Ono: One Woman Show, 1960-1971, which receives Ono back to the art world through close examination of her early works, addressing feminism without celebrating Ono’s womanhood. A great number of the works exhibited are from the Gilbert B. and Lila Silverman Collection, donated to MoMA in 2008. Beyond a room dedicated to the MoMA intervention in 1971, the show consist of 125 pieces of works on paper, installation, films, and new realizations of early ephemeral works including those which invite audience participation, such as Painting to Be Stepped On (1961/2015), a piece of canvas thrown on the floor which is painted by the visitors’ footprints, Painting to See In The Dark (1961/2015), and Painting In Three Stanzas (1961/2015). Bag Piece (1964/2015), in which Ono originally used to cover herself and another partner at performances, when they take off and put on clothes, now is transformed into moving sculpture. The 1964 self-publication Grapefruit contains her instruction poems: no. 18 starts with “Give birth to a child. See the world through its eye….” Visitors are invited to climb a steel spiral staircase designed by Yoko Ono for the show, to see the sky above MoMA, a symbolic painting in Ono’s practice. Unlike stereotypical exhibitions about conceptual practices and ephemera, which prone to be monotone, this show does not bore you nor exhaust you.  "
+                    },
+                    "type": "medium"
+                },
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p>When asked about the mission of artists today, in relation to global crisis and conflict, Ono replied that everyone is responsible for world peace. She concluded the press conference by reading a piece of her recent writing “<i>Uncover</i>” (2014), which takes pushing an elephant as an analogy to the hardship of sustaining advocacy efforts. Like her other instruction poems, this image has an abundant sharpness and silence.</p>",
+                        "text": "When asked about the mission of artists today, in relation to global crisis and conflict, Ono replied that everyone is responsible for world peace. She concluded the press conference by reading a piece of her recent writing “Uncover” (2014), which takes pushing an elephant as an analogy to the hardship of sustaining advocacy efforts. Like her other instruction poems, this image has an abundant sharpness and silence."
+                    },
+                    "type": "medium"
+                },
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<blockquote><i>One day, I pushed a huge elephant to the water to quench its thirst. I pushed and pushed. But the elephant did not move an inch. Will I keep pushing until I die? Maybe I will get a bravery award for trying. Which do I want, an award or a peaceful world? Of course, a peaceful world. Am I sure? If it’s something we cannot ever get, shall I just keep waving the flag?<br></i><i>World Peace is right in front of our eyes like the image on a drive-in theatre screen. It’s still there.<br></i><i>[…..]<br></i><i>All we had to do was to pave all highways of the planet with solar powered panels so there will be no more need for fighting for oil and gas. It will stop all wars…. and use stem cells to heal.<br></i><i>Uncover, not discover.  Small change we have to make.  But it’s worth it.</i></blockquote>",
+                        "text": "One day, I pushed a huge elephant to the water to quench its thirst. I pushed and pushed. But the elephant did not move an inch. Will I keep pushing until I die? Maybe I will get a bravery award for trying. Which do I want, an award or a peaceful world? Of course, a peaceful world. Am I sure? If it’s something we cannot ever get, shall I just keep waving the flag?World Peace is right in front of our eyes like the image on a drive-in theatre screen. It’s still there.[…..]All we had to do was to pave all highways of the planet with solar powered panels so there will be no more need for fighting for oil and gas. It will stop all wars…. and use stem cells to heal.Uncover, not discover.  Small change we have to make.  But it’s worth it."
+                    },
+                    "type": "medium"
+                },
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p><b>Shi-yu Hsu</b>: Why concentrate on the period 1960-1971?</p><p><b>Christophe Cherix</b>: I think we concentrate on that decade because it’s what we don’t really know. Yoko Ono is very well-known all over the world. But few people know she was a major art figure in New York, in Tokyo, and in London in the 1960s. So when she met John Lennon, she had ten years of very influential work behind her. And she wouldn’t be what she is today without those years. In those years some of the key ideas emerged. That’s when the practice really formed itself. We found it important to bring that back to the public, to say, “There is an aspect of Yoko Ono that you don’t really know, and we are going to concentrate on that.” </p><p><b>SYH</b>:  In the 1960s, collaboration and friendships with male artists was actually an important part of Yoko’s life. This fact is indicated but not elaborated on in the exhibition,. Do you think it would affect Yoko’s originality and genius if the show deals more with her connection to and collaboration with men?</p><p><b>CC</b>: The catalog really addresses people she met and collaborated with. But as a woman artist in the early ’60s, she was often defined by her male peers, and there is something extremely unfair to that. When you work with Rauschenberg or Cage other artists, there is a tendency that a woman artist then gets overshadowed. We feel that she wasn’t given justice in those years. And we really went back to archival documentary, to interview people, to really understand the singularity of her voice. And we came out with a strong belief that her voice is as important as any male artist’s in the 1960s. The catalogue really addresses that. But in the show we wanted to bring her work. We wanted to take everything out, take the anecdotes, the stories, and context out and let the works speak for themselves. And people judge. Is it a strong or not so strong work? The idea is to create a direct introduction to the viewer. And we believe the work can still address people that way.That’s the challenge of the exhibition.</p><p><b>SYH</b>: How does this exhibition reflect the change in gender politics at the museum as well as in the art world in general?</p><p><b>CC</b>: I think there is a new generation of curators at MoMA today. Among our generation it is clear that we need to rethink how we address our last 50 years. And we have to give fair treatment to everyone. There is a common narrative at most museums in the United States, Europe and elsewhere, so that it has been unfair to women and people from different minorities. It’s our role to try to address that directly. Again, to always do the research and try to understand whose voice was influential in a certain time. In that case we are a strong believer that the Yoko Ono show should be brought back.</p>",
+                        "text": "Shi-yu Hsu: Why concentrate on the period 1960-1971?Christophe Cherix: I think we concentrate on that decade because it’s what we don’t really know. Yoko Ono is very well-known all over the world. But few people know she was a major art figure in New York, in Tokyo, and in London in the 1960s. So when she met John Lennon, she had ten years of very influential work behind her. And she wouldn’t be what she is today without those years. In those years some of the key ideas emerged. That’s when the practice really formed itself. We found it important to bring that back to the public, to say, “There is an aspect of Yoko Ono that you don’t really know, and we are going to concentrate on that.” SYH:  In the 1960s, collaboration and friendships with male artists was actually an important part of Yoko’s life. This fact is indicated but not elaborated on in the exhibition,. Do you think it would affect Yoko’s originality and genius if the show deals more with her connection to and collaboration with men?CC: The catalog really addresses people she met and collaborated with. But as a woman artist in the early ’60s, she was often defined by her male peers, and there is something extremely unfair to that. When you work with Rauschenberg or Cage other artists, there is a tendency that a woman artist then gets overshadowed. We feel that she wasn’t given justice in those years. And we really went back to archival documentary, to interview people, to really understand the singularity of her voice. And we came out with a strong belief that her voice is as important as any male artist’s in the 1960s. The catalogue really addresses that. But in the show we wanted to bring her work. We wanted to take everything out, take the anecdotes, the stories, and context out and let the works speak for themselves. And people judge. Is it a strong or not so strong work? The idea is to create a direct introduction to the viewer. And we believe the work can still address people that way.That’s the challenge of the exhibition.SYH: How does this exhibition reflect the change in gender politics at the museum as well as in the art world in general?CC: I think there is a new generation of curators at MoMA today. Among our generation it is clear that we need to rethink how we address our last 50 years. And we have to give fair treatment to everyone. There is a common narrative at most museums in the United States, Europe and elsewhere, so that it has been unfair to women and people from different minorities. It’s our role to try to address that directly. Again, to always do the research and try to understand whose voice was influential in a certain time. In that case we are a strong believer that the Yoko Ono show should be brought back."
+                    },
+                    "type": "medium"
+                }
+            ]
+        },
+        chn: {
+            title: "专访小野洋子和Christophe Cherix",
+            subtitle: "一个女人的MoMA个展",
+            author: "徐诗雨",
+            camera: "秋韵",
+            introduction:"李雨洁",
+            slug:"Yoko-Ono-and-Christophe-Cherix-One-woman-running-her-show",
+            keywords: "1960–1971,Yoko Ono,one woman,one woman running her show,MoMA,Museum of Modern Art,Christophe Cherix,John Lennon,Klaus Biesenbach,Japan Society Gallery,New York,Lila Silverman Collection",
+            type:"artist",
+            description: '小野洋子在1960年代的许多大胆实验引领了概念艺术的发展，她是激浪派(Fluxus)中具批判性的一员，但是直到今日，她较为人知的身份却是摇滚明星约翰列侬(John Lennon)的遗孀——这大概可以解释为何在美国境内，自从她2005年在纽约的日本协会画廊《Yes Yoko Ono》个展之后就没有大机构做过她的个展。纽约现代美术馆(MoMA)将小野洋子1971年对该美术馆的介入作为此展研究的出发，1971年她自己组织的"个展"并没有经过馆方同意: 当时她在MoMA雕塑花园里释放出一个大玻璃瓶中的苍蝇，这个玻璃瓶跟她的身体体积相同，喷洒了她惯用的香水，小野洋子宣称，苍蝇飞去的地方，就是她的个展《小野洋子: 一个女人的艺术展》(Yoko Ono: one woman show) 发生的地方，她拍摄了纪录片，访问路人对此展的看法，有人说，"我没看到这个展览啊。"还有人说，"我看不懂。" 她还印了一本画册，封面是她站在MoMA前面，提著一个印有"F"字母的购物袋, 于是美术馆的名字在照片背景上变成了"现代(放屁)美术馆" (The Museum of Modern [F]art)。原本这个行为是抗议MoMA对女性艺术家的漠视，而现在美术馆欣然接受了这个嘲讽它的图像，还有小野洋子1971年个人秀的标题"一个女人的艺术展"。',
+            videos: [
+                {
+                    embedHTML: '<iframe src="https://player.vimeo.com/video/128614116" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/128614116">Yoko Ono: One Woman Show, 1960-1971</a> from <a href="https://vimeo.com/user39230048">SCREEN</a> on <a href="https://vimeo.com">Vimeo</a>.</p>',
+                    name: "Yoko Ono: One Woman Show, 1960-1971"
+                }
+            ],
+            heroImage: {
+                    url:"/images/content/conversations/6/3.jpg",
+                    captions:"<p>Yoko Ono. <i>Cut Piece</i>. 1964. Film by David and Albert Maysles. Performance by the artist, Carnegie Recital Hall, New York. 1965. Private Collection.  <i>© Yoko Ono 2015</i>.</p>"
+              },
+            images: [
+                 {
+                    url:"/images/content/conversations/6/1.jpg",
+                    captions:"Yoko Ono. <i>Museum of Modern (F)art</i>. 1971. Exhibition catalogue, offset, 30x30x1 cm. Publisher: the artist, New York. The Museum of Modern Art Library. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/2.jpg",
+                    captions:"Yoko Ono. <i>Fly</i>. 1970. 16mm film transferred to DVD (color, sound), 51 min. Private collection. © Yoko Ono 2015."   
+                 },
+                 {
+                    url:"/images/content/conversations/6/3.jpg",
+                    captions:"Yoko Ono. <i>Cut Piece.</i> 1964. Film by David and Albert Maysles. Performance by the artist, Carnegie Recital Hall, New York. 1965. Private Collection.  © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/4.jpg",
+                    captions:"Yoko Ono. Typescript for Grapefruit. 1963-1964. 151 typewritten postcards, some with ink and graphite additions. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/5.jpg",
+                    captions:"Yoko Ono. Grapefruit. 1964. Artist’s book, offset. Publisher: Wunternaum Press (the artist), Tokyo. Edition: 500. The Museum of Modern Art, New York. The Gilbert and Lila Silverman Fluxus Collection Gift, 2008. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/6.jpg",
+                    captions:"Yoko Ono. Grapefruit. 1964. Artist’s book, offset. Publisher: Wunternaum Press (the artist), Tokyo. Edition: 500. The Museum of Modern Art, New York. The Gilbert and Lila Silverman Fluxus Collection Gift, 2008. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/7.jpg",
+                    captions:"Yoko Ono. Apple. 1966. Plexiglas pedestal, brass plaque, and apple. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/8.jpg",
+                    captions:"Yoko Ono. Bed-In. 1969. 16 mm film transferred to DVD (color, sound), 70:56 min. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/9.jpg",
+                    captions:"Yoko Ono. White Chess Set. 1966. Wooden table, two chairs, and chess set, all painted white. 77x61.1x61.1 cm. museum moderner kunst stiftung Ludwig wien. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/10.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/11.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/12.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/13.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 }
+            ],
+            category: "artist",
+            url: "/conversation/Yoko-Ono-and-Christophe-Cherix-One-woman-running-her-show",
+            contents: [
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p>小野洋子在1960年代的许多大胆实验引领了概念艺术的发展，她是激浪派(Fluxus)中具批判性的一员，但是直到今日，她较为人知的身份却是摇滚明星约翰列侬(John Lennon)的遗孀——这大概可以解释为何在美国境内，自从她2005年在纽约的日本协会画廊《Yes Yoko Ono》个展之后就没有大机构做过她的个展。纽约现代美术馆(MoMA)将小野洋子1971年对该美术馆的介入作为此展研究的出发，1971年她自己组织的\"个展\"并没有经过馆方同意: 当时她在MoMA雕塑花园里释放出一个大玻璃瓶中的苍蝇，这个玻璃瓶跟她的身体体积相同，喷洒了她惯用的香水，小野洋子宣称，苍蝇飞去的地方，就是她的个展《小野洋子: 一个女人的艺术展》(Yoko Ono: one woman show) 发生的地方，她拍摄了纪录片，访问路人对此展的看法，有人说，\"我没看到这个展览啊。\"还有人说，\"我看不懂。\" 她还印了一本画册，封面是她站在MoMA前面，提著一个印有\"F\"字母的购物袋, 于是美术馆的名字在照片背景上变成了\"现代(放屁)美术馆\" (The Museum of Modern [F]art)。原本这个行为是抗议MoMA对女性艺术家的漠视，而现在美术馆欣然接受了这个嘲讽它的图像，还有小野洋子1971年个人秀的标题\"一个女人的艺术展\"。</p><p><br></p><p>小野洋子早期的实验是对抗体制的 (anti-institution) ，为何她现在反过来跟美术馆合作了? 在记者会上她说，策展人Christophe Cherix 和 Klaus Biesenbach 知晓她四十年前在MoMA的观念展，他们对于小野洋子的艺术“非常敏锐”，“十年前MoMA有位员工来电，他问我：‘我们有记录您曾在MoMA做过展览，能否请您告诉我，那个展览是有关什么？’…后来Klaus 打电话给我…我发现Christophe 和Klaus了解我1971年的那个展览，他们想从那出发做我的个展。”</p><p>MoMA这个展览的标题本身就已经是一个策展声明，《小野洋子: 一个女人的艺术展，1960-1971》(Yoko Ono: One Woman Show, 1960-1971)，透过仔细检视小野洋子早期的实验，并且透过不过分强调女性特质的方式讨论女性议题，将她迎接回艺术界: 展览本身旨在客观的展示作品，墙上文字除了提供作品的背景故事，没有太多关于她的女性身份的论述。展出作品中有大部分来自2008年进入MoMA馆藏的斯凡曼激浪派收藏 (The Gilbert B. and Lila Silverman Fluxus Collection)，除了一个展间展示1971介入MoMA空间的观念作品之外，这个展容纳了125件纸上作品，装置，影像，还有重新制作早期非永久性的邀请观众参与的作品：比如《一张可踩的画 》 (Painting to Be Stepped On, 1961/2015) 是一张放在地上的画布，经由观众的脚印踩踏成为画作; 其他同时期透过时间，环境，及观众参与完成的画作还有《一张在黑暗中看的画》(Painting to See In The Dark, 1961/2015);《三节诗的画作》 (Painting In Three Stanzas, 1961/2015);《袋子 》(Bag Piece, 1964/2015) 原本是行为表演中使用的道具，小野洋子自己和另一个表演者会在里面把衣服脱下再穿上，现在这些重新制作的黑袋子则用来作为活动式雕塑; 1964年独立出版的艺术书《葡萄柚》(Grapefruit) 包含了她的《引导诗》(Instruction Poems)，第十八号诗的开头是这样的:\"生一个孩子，然后透过他的眼睛看世界…\" ; 观众还可以登上展场中小野洋子设计的一螺旋钢梯，登顶之时可以见到MoMA正对的天空，天空在她的作品中是一象征性的画作。一般有关观念艺术还有非永久性作品的展览往往显得单调，但此展的效果却不生硬无趣或者造成视觉疲劳。</p><p>有人问她，今日艺术家应当如何面对全球的危机以及冲突？，小野洋子答：每个人都应对世界和平贡献力量。她在记者会中朗读了一段最近所写的文章 《揭露》(2014) 作为总结，在文章中大象是隐喻维护世界和平的努力之艰难，这个意象如同她其他的\"指导诗\"，是丰富，尖锐，并且沉静的。&nbsp;</p>",
+                        "text": "小野洋子在1960年代的许多大胆实验引领了概念艺术的发展，她是激浪派(Fluxus)中具批判性的一员，但是直到今日，她较为人知的身份却是摇滚明星约翰列侬(John Lennon)的遗孀——这大概可以解释为何在美国境内，自从她2005年在纽约的日本协会画廊《Yes Yoko Ono》个展之后就没有大机构做过她的个展。纽约现代美术馆(MoMA)将小野洋子1971年对该美术馆的介入作为此展研究的出发，1971年她自己组织的\"个展\"并没有经过馆方同意: 当时她在MoMA雕塑花园里释放出一个大玻璃瓶中的苍蝇，这个玻璃瓶跟她的身体体积相同，喷洒了她惯用的香水，小野洋子宣称，苍蝇飞去的地方，就是她的个展《小野洋子: 一个女人的艺术展》(Yoko Ono: one woman show) 发生的地方，她拍摄了纪录片，访问路人对此展的看法，有人说，\"我没看到这个展览啊。\"还有人说，\"我看不懂。\" 她还印了一本画册，封面是她站在MoMA前面，提著一个印有\"F\"字母的购物袋, 于是美术馆的名字在照片背景上变成了\"现代(放屁)美术馆\" (The Museum of Modern [F]art)。原本这个行为是抗议MoMA对女性艺术家的漠视，而现在美术馆欣然接受了这个嘲讽它的图像，还有小野洋子1971年个人秀的标题\"一个女人的艺术展\"。小野洋子早期的实验是对抗体制的 (anti-institution) ，为何她现在反过来跟美术馆合作了? 在记者会上她说，策展人Christophe Cherix 和 Klaus Biesenbach 知晓她四十年前在MoMA的观念展，他们对于小野洋子的艺术“非常敏锐”，“十年前MoMA有位员工来电，他问我：‘我们有记录您曾在MoMA做过展览，能否请您告诉我，那个展览是有关什么？’…后来Klaus 打电话给我…我发现Christophe 和Klaus了解我1971年的那个展览，他们想从那出发做我的个展。”MoMA这个展览的标题本身就已经是一个策展声明，《小野洋子: 一个女人的艺术展，1960-1971》(Yoko Ono: One Woman Show, 1960-1971)，透过仔细检视小野洋子早期的实验，并且透过不过分强调女性特质的方式讨论女性议题，将她迎接回艺术界: 展览本身旨在客观的展示作品，墙上文字除了提供作品的背景故事，没有太多关于她的女性身份的论述。展出作品中有大部分来自2008年进入MoMA馆藏的斯凡曼激浪派收藏 (The Gilbert B. and Lila Silverman Fluxus Collection)，除了一个展间展示1971介入MoMA空间的观念作品之外，这个展容纳了125件纸上作品，装置，影像，还有重新制作早期非永久性的邀请观众参与的作品：比如《一张可踩的画 》 (Painting to Be Stepped On, 1961/2015) 是一张放在地上的画布，经由观众的脚印踩踏成为画作; 其他同时期透过时间，环境，及观众参与完成的画作还有《一张在黑暗中看的画》(Painting to See In The Dark, 1961/2015);《三节诗的画作》 (Painting In Three Stanzas, 1961/2015);《袋子 》(Bag Piece, 1964/2015) 原本是行为表演中使用的道具，小野洋子自己和另一个表演者会在里面把衣服脱下再穿上，现在这些重新制作的黑袋子则用来作为活动式雕塑; 1964年独立出版的艺术书《葡萄柚》(Grapefruit) 包含了她的《引导诗》(Instruction Poems)，第十八号诗的开头是这样的:\"生一个孩子，然后透过他的眼睛看世界…\" ; 观众还可以登上展场中小野洋子设计的一螺旋钢梯，登顶之时可以见到MoMA正对的天空，天空在她的作品中是一象征性的画作。一般有关观念艺术还有非永久性作品的展览往往显得单调，但此展的效果却不生硬无趣或者造成视觉疲劳。有人问她，今日艺术家应当如何面对全球的危机以及冲突？，小野洋子答：每个人都应对世界和平贡献力量。她在记者会中朗读了一段最近所写的文章 《揭露》(2014) 作为总结，在文章中大象是隐喻维护世界和平的努力之艰难，这个意象如同她其他的\"指导诗\"，是丰富，尖锐，并且沉静的。 "
+                    },
+                    "type": "medium"
+                },
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<blockquote>“有天，我试著将一只大象推到水里好让它解渴，我努力地推呀推，大象却动也不动，我应该继续推，直到我死吗？如果我继续试，可能会得到一个勇士奖吧，我究竟知不知道我想要的是得奖还是世界和平呢?如果世界和平无法达成，我还要继续挥舞旗帜吗？<br>世界和平就在前方，就像露天电影院萤幕上的一个影像，它还在那里。<br> […..]<br>我们应该将地球上所有高速公路都铺满太阳能板，这样的话大家就不用老是争夺石油及天然气等能源，战争也会停止 …… 我们还应该用干细胞来治愈一切。<br>我们要做的是揭露，而不是发现，要做的改变很少，并且是值得的。”&nbsp;</blockquote>",
+                        "text": "“有天，我试著将一只大象推到水里好让它解渴，我努力地推呀推，大象却动也不动，我应该继续推，直到我死吗？如果我继续试，可能会得到一个勇士奖吧，我究竟知不知道我想要的是得奖还是世界和平呢?如果世界和平无法达成，我还要继续挥舞旗帜吗？世界和平就在前方，就像露天电影院萤幕上的一个影像，它还在那里。 […..]我们应该将地球上所有高速公路都铺满太阳能板，这样的话大家就不用老是争夺石油及天然气等能源，战争也会停止 …… 我们还应该用干细胞来治愈一切。我们要做的是揭露，而不是发现，要做的改变很少，并且是值得的。” "
+                    },
+                    "type": "medium"
+                },
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p><b>Shi-yu Hsu</b>: 为什么这个展览专注在1960-1971这个时期？</p><p><b>Christopher Cherix</b>: 我们专注这十年的原因是，大众相对不熟悉小野洋子这十年的作品，全世界都知道她，但是很少人知道她在1960年代在纽约，东京，还有伦敦是一引领艺术界的人物。她在遇到约翰列侬之前已经累积了十年深具影响力的作品，小野洋子要是没有那十年，不会成为今天的她，那时候她有许多关键性的艺术概念成形，并且也确立了她的艺术实践，我们觉得应该将这些介绍给大众: “看，这是你所不知道的小野洋子的另一个面向，我们会着重呈现它给你看。”</p><p> </p><p><b>SYH</b>: 1960年代的时候，与男性艺术家的合作还有友谊是小野洋子生活重要的一部分，这件事在展中有提到，但没有很多讨论，如果说这个展更多地处理一些洋子跟男性艺术家的互动，是否就影响了我们理解她的才华以及独创性？  </p><p><b>CC</b>: 展览图录有讨论到与她相遇并且合作的人们，但是作为在1960年代早期活跃的女性艺术家，她的名字总是与她的男性同侪连上，这是非常不公平的。当讨论男性艺术家比如说劳申柏(Robert Rauschenberg)还有凯基(John Cage)的时候，跟他们有联系的女艺术家通常被他们的名声所遮蔽，所以小野洋子那些年的工作从没有好好的被讨论。我们很细心的查阅了相关的档案资料，访谈了相关的人，从中去了解她的艺术的独特性， 我们认为1960年代的时候她的声音和其他男性艺术家同等重要。展览图录有谈到这点，但是在展览当中，我们想好好呈现她个人的作品，去掉其他的佚事，故事，背景，好让作品自已说明一切，然后观众可以自己决定: 这是一件好的作品吗？这都是为了更好地向观众介绍她的作品，我们相信这些作品可以自己做到这点，这其实也是这个展的挑战所在。  </p><p><b>SYH</b>: 这个展反映出MoMA还有艺术界对于性别政治的态度吗？ </p><p><b>CC</b>: 今日的MoMA有着一个新时代的策展团队，我们都觉得必须重新检视过去50年我们说故事的方法，我们必须平等对待不同的艺术，在北美，欧洲，还有其他地方的美术馆都有种共同的叙事方式，它对于女性艺术家还有少数族群是不公平的，我们必须正视这件事，并且总是应该做好研究工作，用心去理解谁的声音在什么时候是具影响力的，在这样的背景下我们坚定地相信必须将小野洋子迎回美术馆。</p>",
+                        "text": "Shi-yu Hsu: 为什么这个展览专注在1960-1971这个时期？Christopher Cherix: 我们专注这十年的原因是，大众相对不熟悉小野洋子这十年的作品，全世界都知道她，但是很少人知道她在1960年代在纽约，东京，还有伦敦是一引领艺术界的人物。她在遇到约翰列侬之前已经累积了十年深具影响力的作品，小野洋子要是没有那十年，不会成为今天的她，那时候她有许多关键性的艺术概念成形，并且也确立了她的艺术实践，我们觉得应该将这些介绍给大众: “看，这是你所不知道的小野洋子的另一个面向，我们会着重呈现它给你看。” SYH: 1960年代的时候，与男性艺术家的合作还有友谊是小野洋子生活重要的一部分，这件事在展中有提到，但没有很多讨论，如果说这个展更多地处理一些洋子跟男性艺术家的互动，是否就影响了我们理解她的才华以及独创性？  CC: 展览图录有讨论到与她相遇并且合作的人们，但是作为在1960年代早期活跃的女性艺术家，她的名字总是与她的男性同侪连上，这是非常不公平的。当讨论男性艺术家比如说劳申柏(Robert Rauschenberg)还有凯基(John Cage)的时候，跟他们有联系的女艺术家通常被他们的名声所遮蔽，所以小野洋子那些年的工作从没有好好的被讨论。我们很细心的查阅了相关的档案资料，访谈了相关的人，从中去了解她的艺术的独特性， 我们认为1960年代的时候她的声音和其他男性艺术家同等重要。展览图录有谈到这点，但是在展览当中，我们想好好呈现她个人的作品，去掉其他的佚事，故事，背景，好让作品自已说明一切，然后观众可以自己决定: 这是一件好的作品吗？这都是为了更好地向观众介绍她的作品，我们相信这些作品可以自己做到这点，这其实也是这个展的挑战所在。  SYH: 这个展反映出MoMA还有艺术界对于性别政治的态度吗？ CC: 今日的MoMA有着一个新时代的策展团队，我们都觉得必须重新检视过去50年我们说故事的方法，我们必须平等对待不同的艺术，在北美，欧洲，还有其他地方的美术馆都有种共同的叙事方式，它对于女性艺术家还有少数族群是不公平的，我们必须正视这件事，并且总是应该做好研究工作，用心去理解谁的声音在什么时候是具影响力的，在这样的背景下我们坚定地相信必须将小野洋子迎回美术馆。"
+                    },
+                    "type": "medium"
+                }
+            ]
+        },
+        chnt: {
+            title: "專訪小野洋子和Christophe Cherix",
+            subtitle: "一個女人的MoMA個展",
+            author: "徐詩雨",
+            camera: "秋韻",
+            introduction:"李雨潔",
+            slug:"Yoko-Ono-and-Christophe-Cherix-One-woman-running-her-show",
+            keywords: "1960–1971,Yoko Ono,one woman,one woman running her show,MoMA,Museum of Modern Art,Christophe Cherix,John Lennon,Klaus Biesenbach,Japan Society Gallery,New York,Lila Silverman Collection",
+            type:"artist",
+            description: '小野洋子在1960年代的許多大膽實驗引領了概念藝術的發展，她是激浪派(Fluxus)中具批判性的一員，但是直到今日，她較為人知的身份卻是搖滾明星約翰藍儂(John Lennon)的遺孀——這大概可以解釋為何在美國境內，自從她2005年在紐約的日本協會藝廊《Yes Yoko Ono》個展之後就沒有大機構做過她的個展。紐約現代美術館(MoMA)將小野洋子1971年對該美術館的介入作為此展研究的出發，1971年她自己組織的"個展"並沒有經過館方同意: 當時她在MoMA雕塑花園裡釋放出一個大玻璃瓶中的蒼蠅，這個玻璃瓶跟她的身體體積相同，噴灑了她慣用的香水，小野洋子宣稱，蒼蠅飛去的地方，就是她的個展《小野洋子: 一個女人的藝術展》(Yoko Ono: one woman show) 發生的地方，她拍攝了紀錄片，訪問路人對此展的看法，有人說，"我沒看到這個展覽啊。"還有人說，"我看不懂。"她還印了一本畫冊，封面是她站在MoMA前面，提著一個印有"F"字母的購物袋，於是乎美術館的名字在照片背景上變成了"現代(放屁)美術館" (The Museum of Modern [F]art)。原本這個行為是抗議MoMA對女性藝術家的漠視， 而現在美術館欣然接受了這個嘲諷它的圖像，還有小野洋子1971年個人秀的標題"一個女人的藝術展"。
+',
+            videos: [
+                {
+                    embedHTML: '<iframe src="http://v.qq.com/iframe/player.html?vid=x0154glntmf&tiny=0&auto=0""  width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+                    name: "Yoko Ono: One Woman Show, 1960-1971"
+                }
+            ],
+            heroImage: {
+                    url:"/images/content/conversations/6/3.jpg",
+                    captions:"<p>Yoko Ono. <i>Cut Piece</i>. 1964. Film by David and Albert Maysles. Performance by the artist, Carnegie Recital Hall, New York. 1965. Private Collection.  <i>© Yoko Ono 2015</i>.</p>"
+              },
+            images: [
+                 {
+                    url:"/images/content/conversations/6/1.jpg",
+                    captions:"Yoko Ono. <i>Museum of Modern (F)art</i>. 1971. Exhibition catalogue, offset, 30x30x1 cm. Publisher: the artist, New York. The Museum of Modern Art Library. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/2.jpg",
+                    captions:"Yoko Ono. <i>Fly</i>. 1970. 16mm film transferred to DVD (color, sound), 51 min. Private collection. © Yoko Ono 2015."   
+                 },
+                 {
+                    url:"/images/content/conversations/6/3.jpg",
+                    captions:"Yoko Ono. <i>Cut Piece.</i> 1964. Film by David and Albert Maysles. Performance by the artist, Carnegie Recital Hall, New York. 1965. Private Collection.  © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/4.jpg",
+                    captions:"Yoko Ono. Typescript for Grapefruit. 1963-1964. 151 typewritten postcards, some with ink and graphite additions. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/5.jpg",
+                    captions:"Yoko Ono. Grapefruit. 1964. Artist’s book, offset. Publisher: Wunternaum Press (the artist), Tokyo. Edition: 500. The Museum of Modern Art, New York. The Gilbert and Lila Silverman Fluxus Collection Gift, 2008. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/6.jpg",
+                    captions:"Yoko Ono. Grapefruit. 1964. Artist’s book, offset. Publisher: Wunternaum Press (the artist), Tokyo. Edition: 500. The Museum of Modern Art, New York. The Gilbert and Lila Silverman Fluxus Collection Gift, 2008. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/7.jpg",
+                    captions:"Yoko Ono. Apple. 1966. Plexiglas pedestal, brass plaque, and apple. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/8.jpg",
+                    captions:"Yoko Ono. Bed-In. 1969. 16 mm film transferred to DVD (color, sound), 70:56 min. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/9.jpg",
+                    captions:"Yoko Ono. White Chess Set. 1966. Wooden table, two chairs, and chess set, all painted white. 77x61.1x61.1 cm. museum moderner kunst stiftung Ludwig wien. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/10.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/11.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/12.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 },
+                 {
+                    url:"/images/content/conversations/6/13.jpg",
+                    captions:"Yoko Ono. Half a Room. 1967. Domestic objects cut in half, most painted white, dimensions vary. Private collection. © Yoko Ono 2015."
+                 }
+            ],
+            category: "artist",
+            url: "/conversation/Yoko-Ono-and-Christophe-Cherix-One-woman-running-her-show",
+            contents: [
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p>小野洋子在1960年代的許多大膽實驗引領了概念藝術的發展，她是激浪派(Fluxus)中具批判性的一員，但是直到今日，她較為人知的身份卻是搖滾明星約翰藍儂(John Lennon)的遺孀——這大概可以解釋為何在美國境內，自從她2005年在紐約的日本協會藝廊《Yes Yoko Ono》個展之後就沒有大機構做過她的個展。紐約現代美術館(MoMA)將小野洋子1971年對該美術館的介入作為此展研究的出發，1971年她自己組織的\"個展\"並沒有經過館方同意: 當時她在MoMA雕塑花園裡釋放出一個大玻璃瓶中的蒼蠅，這個玻璃瓶跟她的身體體積相同，噴灑了她慣用的香水，小野洋子宣稱，蒼蠅飛去的地方，就是她的個展《小野洋子: 一個女人的藝術展》(Yoko Ono: one woman show) 發生的地方，她拍攝了紀錄片，訪問路人對此展的看法，有人說，\"我沒看到這個展覽啊。\"還有人說，\"我看不懂。\"她還印了一本畫冊，封面是她站在MoMA前面，提著一個印有\"F\"字母的購物袋，於是乎美術館的名字在照片背景上變成了\"現代(放屁)美術館\" (The Museum of Modern [F]art)。原本這個行為是抗議MoMA對女性藝術家的漠視， 而現在美術館欣然接受了這個嘲諷它的圖像，還有小野洋子1971年個人秀的標題\"一個女人的藝術展\"。</p><p>小野洋子早期的實驗是對抗體制的 (anti-institution) ，為何她現在反過來跟美術館合作了? 在記者會上她說，策展人Christophe Cherix 和 Klaus Biesenbach 知曉她四十年前在MoMA的觀念展，他們對於小野洋子的藝術\"非常敏銳\"，\"十年前MoMA有位員工來電，他問我，『我們有記錄您曾在MoMA做過展覽，能否請您告訴我，那個展覽是有關什麼？』…後來Klaus 打電話給我…我發現Christophe 和Klaus了解我1971年的那個展覽，他們想從那出發做我的個展。\"   </p><p>MoMA這個展覽的標題本身就已經是一個策展聲明，《小野洋子: 一個女人的藝術展，1960-1971》(Yoko Ono: One Woman Show, 1960-1971)，透過仔細檢視小野洋子早期的實驗，並且透過不過分強調女性特質的方式討論女性議題，將她迎接回藝術界: 展覽本身旨在客觀的展示作品，牆上文字除了提供作品的背景故事，沒有太多關於她的女性身份的論述。展出作品中有大部分來自2008年進入MoMA館藏的斯凡曼激浪派收藏 (The Gilbert B. and Lila Silverman Fluxus Collection)，除了一個展間展示1971介入MoMA空間的觀念作品之外，這個展容納了125件紙上作品，裝置，影像，還有重新製作早期非永久性的邀請觀眾參與的作品：像是 《一張可踩的畫 》 (Painting to Be Stepped On, 1961/2015) 是一張放在地上的畫布，經由觀眾的腳印踩踏成為畫作; 其他同時期透過時間，環境，及觀眾參與完成的畫作還有《一張在黑暗中看的畫》(Painting to See In The Dark, 1961/2015);《三節詩的畫作》 (Painting In Three Stanzas, 1961/2015);《袋子 》(Bag Piece, 1964/2015) 原本是行為表演中使用的道具，小野洋子自己和另一個表演者會在裡面把衣服脫下再穿上，現在這些重新製作的黑袋子則用來作為活動式雕塑; 1964年獨立出版的藝術書《葡萄柚》(Grapefruit) 包含了她的《引導詩》(Instruction Poems)，第十八號詩的開頭是這樣的:\"生一個孩子，然後透過他的眼睛看世界…。\" ; 觀眾還可以登上展場中小野洋子設計的一螺旋鋼梯，登頂之時可以見到MoMA正對的天空，天空在她的作品中是一象徵性的畫作。一般有關觀念藝術還有非永久性作品的展覽往往顯得單調，但此展的效果卻不生硬無趣或者造成視覺疲勞。 </p><p>有人問她，今日藝術家應當如何面對全球的危機以及衝突？，小野洋子答：每個人都應對世界和平貢獻心力。她在記者會中朗讀了一段最近所寫的文章 《揭露》(2014) 作為總結，在文章中大象是隱喻維護世界和平的努力之艱難，這個意象如同她其他的\"指導詩\"，是豐富，尖銳，並且沈靜的。&nbsp;</p>",
+                        "text": "小野洋子在1960年代的許多大膽實驗引領了概念藝術的發展，她是激浪派(Fluxus)中具批判性的一員，但是直到今日，她較為人知的身份卻是搖滾明星約翰藍儂(John Lennon)的遺孀——這大概可以解釋為何在美國境內，自從她2005年在紐約的日本協會藝廊《Yes Yoko Ono》個展之後就沒有大機構做過她的個展。紐約現代美術館(MoMA)將小野洋子1971年對該美術館的介入作為此展研究的出發，1971年她自己組織的\"個展\"並沒有經過館方同意: 當時她在MoMA雕塑花園裡釋放出一個大玻璃瓶中的蒼蠅，這個玻璃瓶跟她的身體體積相同，噴灑了她慣用的香水，小野洋子宣稱，蒼蠅飛去的地方，就是她的個展《小野洋子: 一個女人的藝術展》(Yoko Ono: one woman show) 發生的地方，她拍攝了紀錄片，訪問路人對此展的看法，有人說，\"我沒看到這個展覽啊。\"還有人說，\"我看不懂。\"她還印了一本畫冊，封面是她站在MoMA前面，提著一個印有\"F\"字母的購物袋，於是乎美術館的名字在照片背景上變成了\"現代(放屁)美術館\" (The Museum of Modern [F]art)。原本這個行為是抗議MoMA對女性藝術家的漠視， 而現在美術館欣然接受了這個嘲諷它的圖像，還有小野洋子1971年個人秀的標題\"一個女人的藝術展\"。小野洋子早期的實驗是對抗體制的 (anti-institution) ，為何她現在反過來跟美術館合作了? 在記者會上她說，策展人Christophe Cherix 和 Klaus Biesenbach 知曉她四十年前在MoMA的觀念展，他們對於小野洋子的藝術\"非常敏銳\"，\"十年前MoMA有位員工來電，他問我，『我們有記錄您曾在MoMA做過展覽，能否請您告訴我，那個展覽是有關什麼？』…後來Klaus 打電話給我…我發現Christophe 和Klaus了解我1971年的那個展覽，他們想從那出發做我的個展。\"   MoMA這個展覽的標題本身就已經是一個策展聲明，《小野洋子: 一個女人的藝術展，1960-1971》(Yoko Ono: One Woman Show, 1960-1971)，透過仔細檢視小野洋子早期的實驗，並且透過不過分強調女性特質的方式討論女性議題，將她迎接回藝術界: 展覽本身旨在客觀的展示作品，牆上文字除了提供作品的背景故事，沒有太多關於她的女性身份的論述。展出作品中有大部分來自2008年進入MoMA館藏的斯凡曼激浪派收藏 (The Gilbert B. and Lila Silverman Fluxus Collection)，除了一個展間展示1971介入MoMA空間的觀念作品之外，這個展容納了125件紙上作品，裝置，影像，還有重新製作早期非永久性的邀請觀眾參與的作品：像是 《一張可踩的畫 》 (Painting to Be Stepped On, 1961/2015) 是一張放在地上的畫布，經由觀眾的腳印踩踏成為畫作; 其他同時期透過時間，環境，及觀眾參與完成的畫作還有《一張在黑暗中看的畫》(Painting to See In The Dark, 1961/2015);《三節詩的畫作》 (Painting In Three Stanzas, 1961/2015);《袋子 》(Bag Piece, 1964/2015) 原本是行為表演中使用的道具，小野洋子自己和另一個表演者會在裡面把衣服脫下再穿上，現在這些重新製作的黑袋子則用來作為活動式雕塑; 1964年獨立出版的藝術書《葡萄柚》(Grapefruit) 包含了她的《引導詩》(Instruction Poems)，第十八號詩的開頭是這樣的:\"生一個孩子，然後透過他的眼睛看世界…。\" ; 觀眾還可以登上展場中小野洋子設計的一螺旋鋼梯，登頂之時可以見到MoMA正對的天空，天空在她的作品中是一象徵性的畫作。一般有關觀念藝術還有非永久性作品的展覽往往顯得單調，但此展的效果卻不生硬無趣或者造成視覺疲勞。 有人問她，今日藝術家應當如何面對全球的危機以及衝突？，小野洋子答：每個人都應對世界和平貢獻心力。她在記者會中朗讀了一段最近所寫的文章 《揭露》(2014) 作為總結，在文章中大象是隱喻維護世界和平的努力之艱難，這個意象如同她其他的\"指導詩\"，是豐富，尖銳，並且沈靜的。 "
+                    },
+                    "type": "medium"
+                },
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<blockquote><p>有天，我試著將一只大象推到水裡好讓它解渴，我努力地推呀推，大象卻動也不動，我應該繼續推，直到我死嗎？如果我繼續試，可能會得到一個勇士獎吧，我究竟知不知道我想要的是得獎還是世界和平呢?如果世界和平無法達成，我還要繼續揮舞旗幟嗎？</p><p>世界和平就在前方，就像露天電影院螢幕上的一個影像，它還在那裡。 </p><p>[…..]</p><p>我們應該將地球上所有高速公路都鋪滿太陽能板，這樣的話大家就不用老是爭奪石油及天然氣等能源，戰爭也會停止….我們還應該用幹細胞來治癒一切。</p><p>我們要做的是揭露，而不是發現，要做的改變很少，並且是值得的。&nbsp;</p></blockquote>",
+                        "text": "有天，我試著將一只大象推到水裡好讓它解渴，我努力地推呀推，大象卻動也不動，我應該繼續推，直到我死嗎？如果我繼續試，可能會得到一個勇士獎吧，我究竟知不知道我想要的是得獎還是世界和平呢?如果世界和平無法達成，我還要繼續揮舞旗幟嗎？世界和平就在前方，就像露天電影院螢幕上的一個影像，它還在那裡。 […..]我們應該將地球上所有高速公路都鋪滿太陽能板，這樣的話大家就不用老是爭奪石油及天然氣等能源，戰爭也會停止….我們還應該用幹細胞來治癒一切。我們要做的是揭露，而不是發現，要做的改變很少，並且是值得的。 "
+                    },
+                    "type": "medium"
+                },
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p><b>Shi-yu Hsu:</b> 為什麼這個展覽專注在1960-1971這個時期？</p><p><b>Christopher Cherix</b>: 我們專注處理這十年的原因是，大眾比較不熟悉小野洋子這十年的作品，全世界都知道她，但是很少人知道她在1960年代在紐約，東京，還有倫敦是一引領藝術界的人物。她在遇到約翰藍儂之前已經累積了十年深具影響力的作品，小野洋子要是沒有那十年，不會成為今天的她，那時候她有許多關鍵性的藝術概念成形，並且也確立了她的藝術實踐，我們覺得應該將這些介紹給大眾: \"看，這是你所不知道的小野洋子的另一個面向，我們會著重呈現它給你看。\"</p><p> </p><p><b>SYH</b>: 1960年代的時候，與男性藝術家的合作還有友誼是小野洋子生活重要的一部分，這件事在展中有提到，但沒有很多討論，如果說這個展更多地處理一些洋子跟男性藝術家的互動，是否就影響了我們理解她的才華以及獨創性？  </p><p><b>CC</b>: 展覽圖錄有討論到與她相遇並且合作的人們，但是作為在1960年代早期活躍的女性藝術家，她的名字總是與她的男性同儕連上，這是非常不公平的。當討論男性藝術家比如說勞申柏(Robert Rauschenberg)還有凱基(John Cage)的時候，跟他們有聯繫的女藝術家通常是被他們的名聲遮蔽，所以小野洋子那些年的工作從沒有好好的被討論。我們很細心的查閱了相關的檔案資料，訪談了相關的人，從中去了解她的藝術的獨特性， 我們認為1960年代的時候她的聲音和其他男性藝術家同等重要。展覽圖錄有談到這點，但是在展覽當中，我們想好好呈現她個人的作品，去掉其他的佚事，故事，背景，好讓作品自已說明一切，然後觀眾可以自己決定: 這是一件好的作品嗎？這都是為了更好地向觀眾介紹她的作品，我們相信這些作品可以自己做到這點，這其實也是這個展的挑戰所在。  </p><p><b>SYH</b>: 這個展反映出MoMA還有藝術界對於性別政治的態度嗎？ </p><p><b>CC</b>: 今日的MoMA有著一個新世代的策展團隊，我們都覺得必須重新檢視過去50年我們說故事的方法，我們必須平等對待不同的藝術，在北美，歐洲，還有其他地方的美術館都有種共同的敘事方式，它對於女性藝術家還有少數族群是不公平的，我們必須正視這件事，並且總是應該做好研究工作，用心去理解誰的聲音在什麼時候是具影響力的，在這樣的背景下我們堅定地相信必須將小野洋子迎回美術館。&nbsp;</p>",
+                        "text": "Shi-yu Hsu: 為什麼這個展覽專注在1960-1971這個時期？Christopher Cherix: 我們專注處理這十年的原因是，大眾比較不熟悉小野洋子這十年的作品，全世界都知道她，但是很少人知道她在1960年代在紐約，東京，還有倫敦是一引領藝術界的人物。她在遇到約翰藍儂之前已經累積了十年深具影響力的作品，小野洋子要是沒有那十年，不會成為今天的她，那時候她有許多關鍵性的藝術概念成形，並且也確立了她的藝術實踐，我們覺得應該將這些介紹給大眾: \"看，這是你所不知道的小野洋子的另一個面向，我們會著重呈現它給你看。\" SYH: 1960年代的時候，與男性藝術家的合作還有友誼是小野洋子生活重要的一部分，這件事在展中有提到，但沒有很多討論，如果說這個展更多地處理一些洋子跟男性藝術家的互動，是否就影響了我們理解她的才華以及獨創性？  CC: 展覽圖錄有討論到與她相遇並且合作的人們，但是作為在1960年代早期活躍的女性藝術家，她的名字總是與她的男性同儕連上，這是非常不公平的。當討論男性藝術家比如說勞申柏(Robert Rauschenberg)還有凱基(John Cage)的時候，跟他們有聯繫的女藝術家通常是被他們的名聲遮蔽，所以小野洋子那些年的工作從沒有好好的被討論。我們很細心的查閱了相關的檔案資料，訪談了相關的人，從中去了解她的藝術的獨特性， 我們認為1960年代的時候她的聲音和其他男性藝術家同等重要。展覽圖錄有談到這點，但是在展覽當中，我們想好好呈現她個人的作品，去掉其他的佚事，故事，背景，好讓作品自已說明一切，然後觀眾可以自己決定: 這是一件好的作品嗎？這都是為了更好地向觀眾介紹她的作品，我們相信這些作品可以自己做到這點，這其實也是這個展的挑戰所在。  SYH: 這個展反映出MoMA還有藝術界對於性別政治的態度嗎？ CC: 今日的MoMA有著一個新世代的策展團隊，我們都覺得必須重新檢視過去50年我們說故事的方法，我們必須平等對待不同的藝術，在北美，歐洲，還有其他地方的美術館都有種共同的敘事方式，它對於女性藝術家還有少數族群是不公平的，我們必須正視這件事，並且總是應該做好研究工作，用心去理解誰的聲音在什麼時候是具影響力的，在這樣的背景下我們堅定地相信必須將小野洋子迎回美術館。 "
+                    },
+                    "type": "medium"
+                }
+            ]
+        }
+        
+    },{   
         id: 0,
         slug:"paul-chan-I-dont-hoestly-know",
         eng: {
