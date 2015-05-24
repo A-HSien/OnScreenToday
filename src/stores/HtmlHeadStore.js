@@ -1,6 +1,5 @@
 import { BaseStore } from "fluxible/addons";
 import Actions from "../constants/Actions";
-import IntlMessageFormat from "intl-messageformat";
 import _ from "lodash";
 
 const SITE_NAME = "SREEN | 介面";
