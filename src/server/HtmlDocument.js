@@ -2,6 +2,7 @@ import React, { PropTypes } from "react";
 
 import { trackingId } from "../config";
 import ga from "./ga";
+import snippet from "./richSnippet";
 import { provideContext } from "fluxible/addons";
 
 class HtmlDocument extends React.Component {
@@ -54,6 +55,11 @@ class HtmlDocument extends React.Component {
           { trackingId &&
             <script dangerouslySetInnerHTML={{__html: ga.replace("{trackingId}", trackingId)}} />
           }
+
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: snippet(htmlHead.getTitle()
+            , 
+            htmlHead.getImages().map(url => `"${url}"`), 
+            htmlHead.getDescription())}} />
 
         </head>
 

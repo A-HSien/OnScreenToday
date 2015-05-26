@@ -33,8 +33,17 @@ class CallforartistPage extends BaseComponent {
 			var {lang, callforartistData} = this.props;
 		var hero = callforartistData[0][lang];
 		var contents = hero.contents;
+		var extraContent = hero.extra;
 
 		var jsxDivs = contents.map((c)=>{
+			if (c.content) {
+				return <div key={c.content} className="callforartist-content-main" dangerouslySetInnerHTML={{__html: c.content.html}}></div>;
+			} else {
+				return <noscript />;
+			}
+		});
+
+		var jsxExtra = extraContent.map((c)=>{
 			if (c.content) {
 				return <div key={c.content} className="callforartist-content-main" dangerouslySetInnerHTML={{__html: c.content.html}}></div>;
 			} else {
@@ -46,6 +55,8 @@ class CallforartistPage extends BaseComponent {
 		var jsxHero = (<div className=" callforartist-content-container clearfix" >
 			<div className="callforartist-content">
 				<Image imageUrl={hero.heroImage.url} extraClassnames="callforartist-image" imageStyle={{backgroundSize: "contain", backgroundColor: "#ffffff"}}/>
+				<br></br>
+				{jsxExtra}
 				<br></br>
 				{jsxDivs}
 			</div>
