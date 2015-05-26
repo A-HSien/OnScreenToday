@@ -61,6 +61,14 @@ class ContentStore extends BaseStore {
     return data;
   }
 
+  getExtraContent(slug) {
+    var extra = _.filter(this.contentData, content => {
+      return content.slug !== slug;
+    });
+
+    return extra;
+  }
+
   dehydrate() {
     return {
       contentData:  this.contentData,

@@ -56,6 +56,7 @@ const RouteActions = {
 
   conversationDetailPage(context, payload, done) {
     contentDetailPage(context, {type: "conversation"}, payload, done);
+    contentListPage(context, {type : 'conversation'}, payload, done);
   },
 
   conversationListPage(context, payload, done) {

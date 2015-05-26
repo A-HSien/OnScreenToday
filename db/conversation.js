@@ -14,7 +14,7 @@ module.exports = [
             description: "Yoko Ono was a pacesetter of conceptual experiments and critical participant of the Fluxus network of the 1960s. Today she is more well-known as a pop culture icon, overshadowed by her late husband, the rock star John Lennon; this might explain why she hasn’t had any major museum solo show in the USA since Yes Yoko Ono (2005) at the Japan Society Gallery. ",
             videos: [
                 {
-                    embedHTML: '<iframe src="https://player.vimeo.com/video/128614116" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/128614116">Yoko Ono: One Woman Show, 1960-1971</a> from <a href="https://vimeo.com/user39230048">SCREEN</a> on <a href="https://vimeo.com">Vimeo</a>.</p>',
+                    embedHTML: '<iframe src="https://player.vimeo.com/video/128614116" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/128614116">Yoko Ono: One Woman Show, 1960-1971</a> from <a href="https://vimeo.com/user39230048">SCREEN</a> on <a href="https://vimeo.com">Vimeo</a>.</p>',
                     name: "Yoko Ono: One Woman Show, 1960-1971"
                 }
             ],
@@ -141,7 +141,7 @@ module.exports = [
             description: '小野洋子在1960年代的许多大胆实验引领了概念艺术的发展，她是激浪派(Fluxus)中具批判性的一员，但是直到今日，她较为人知的身份却是摇滚明星约翰列侬(John Lennon)的遗孀——这大概可以解释为何在美国境内，自从她2005年在纽约的日本协会画廊《Yes Yoko Ono》个展之后就没有大机构做过她的个展。纽约现代美术馆(MoMA)将小野洋子1971年对该美术馆的介入作为此展研究的出发，1971年她自己组织的"个展"并没有经过馆方同意: 当时她在MoMA雕塑花园里释放出一个大玻璃瓶中的苍蝇，这个玻璃瓶跟她的身体体积相同，喷洒了她惯用的香水，小野洋子宣称，苍蝇飞去的地方，就是她的个展《小野洋子: 一个女人的艺术展》(Yoko Ono: one woman show) 发生的地方，她拍摄了纪录片，访问路人对此展的看法，有人说，"我没看到这个展览啊。"还有人说，"我看不懂。" 她还印了一本画册，封面是她站在MoMA前面，提著一个印有"F"字母的购物袋, 于是美术馆的名字在照片背景上变成了"现代(放屁)美术馆" (The Museum of Modern [F]art)。原本这个行为是抗议MoMA对女性艺术家的漠视，而现在美术馆欣然接受了这个嘲讽它的图像，还有小野洋子1971年个人秀的标题"一个女人的艺术展"。',
             videos: [
                 {
-                    embedHTML: '<iframe src="http://v.qq.com/iframe/player.html?vid=x0154glntmf&tiny=0&auto=0""  width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+                    embedHTML: '<iframe src="http://v.qq.com/iframe/player.html?vid=x0154glntmf&tiny=0&auto=0""  width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                     name: "Yoko Ono: One Woman Show, 1960-1971"
                 }
             ],
@@ -244,7 +244,7 @@ module.exports = [
             description: '小野洋子在1960年代的許多大膽實驗引領了概念藝術的發展，她是激浪派(Fluxus)中具批判性的一員，但是直到今日，她較為人知的身份卻是搖滾明星約翰藍儂(John Lennon)的遺孀——這大概可以解釋為何在美國境內，自從她2005年在紐約的日本協會藝廊《Yes Yoko Ono》個展之後就沒有大機構做過她的個展。紐約現代美術館(MoMA)將小野洋子1971年對該美術館的介入作為此展研究的出發，1971年她自己組織的"個展"並沒有經過館方同意: 當時她在MoMA雕塑花園裡釋放出一個大玻璃瓶中的蒼蠅，這個玻璃瓶跟她的身體體積相同，噴灑了她慣用的香水，小野洋子宣稱，蒼蠅飛去的地方，就是她的個展《小野洋子: 一個女人的藝術展》(Yoko Ono: one woman show) 發生的地方，她拍攝了紀錄片，訪問路人對此展的看法，有人說，"我沒看到這個展覽啊。"還有人說，"我看不懂。"她還印了一本畫冊，封面是她站在MoMA前面，提著一個印有"F"字母的購物袋，於是乎美術館的名字在照片背景上變成了"現代(放屁)美術館" (The Museum of Modern [F]art)。原本這個行為是抗議MoMA對女性藝術家的漠視， 而現在美術館欣然接受了這個嘲諷它的圖像，還有小野洋子1971年個人秀的標題"一個女人的藝術展"。',
             videos: [
                 {
-                    embedHTML: '<iframe src="https://player.vimeo.com/video/128614116" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/128614116">Yoko Ono: One Woman Show, 1960-1971</a> from <a href="https://vimeo.com/user39230048">SCREEN</a> on <a href="https://vimeo.com">Vimeo</a>.</p>',
+                    embedHTML: '<iframe src="https://player.vimeo.com/video/128614116" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/128614116">Yoko Ono: One Woman Show, 1960-1971</a> from <a href="https://vimeo.com/user39230048">SCREEN</a> on <a href="https://vimeo.com">Vimeo</a>.</p>',
                     name: "Yoko Ono: One Woman Show, 1960-1971"
                 }
             ],

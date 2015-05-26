@@ -5,6 +5,7 @@ import { connectToStores } from "fluxible/addons";
 import SubHeader from '../components/SubHeader';
 import BaseComponent from "../components/common/BaseComponent";
 import Carousel from '../components/Carousel';
+import { NavLink } from "flux-router-component";
 
 
 import _ from "lodash";
@@ -25,6 +26,7 @@ class ConversationDetailPage extends BaseComponent {
 	slug: PropTypes.string.isRequired,
 	lang: PropTypes.string.isRequired,
     conversationData: PropTypes.object.isRequired,
+    extraContent: PropTypes.array.isRequired
   }
 
   static contextTypes = {
@@ -34,7 +36,7 @@ class ConversationDetailPage extends BaseComponent {
 
   render() {
 		//var lang = "eng";
-		var {conversationData, lang} = this.props;
+		var {conversationData, lang, extraContent} = this.props;
 
 		if (!conversationData) {
 			return <noscript />;
@@ -89,8 +91,13 @@ class ConversationDetailPage extends BaseComponent {
 
 				
 				<div className="container-narrow">
-					<h2>{hero.title}</h2>
-					<h3>{hero.subtitle}</h3>
+					<div className="conversation-content-category clearfix">
+						<span>{hero.type}</span>
+					</div>
+					<h1 className="conversation-content-title clearfix">
+						<span>{hero.title}</span>
+					</h1>
+					<h2 className="conversation-content-subtitle">{hero.subtitle}</h2>
 					<div>
 						{this._createAuthor(hero.author)}
 						
@@ -117,7 +124,14 @@ class ConversationDetailPage extends BaseComponent {
 				
 				<div className="container-fluid">
 					{jsxHero}
-					{jsxVideo}
+					<div className="container-narrow">
+						{jsxVideo}
+					</div>
+					<br></br>
+					<div className="container conversation-content-more">
+						<h2 className="conversation-more">more conversations</h2>
+						<div className="conversation-more-main">{this._createExtra(extraContent, lang)}</div>
+					</div>
 				</div>
 			</div>
 
@@ -174,16 +188,56 @@ class ConversationDetailPage extends BaseComponent {
 		return slides;
 	}
 
+	_createExtra (contents, lang) {
+		var extraContents = <noscript />;
+		var n = 3;
+		var start;
+
+		if (contents && contents.length) {
+			extraContents = contents.map((content) => {
+				var item = content[lang];
+				return <div key={item.title} className={"conversation-list-item " + "col-sm-"+ 12/n} >
+					<NavLink href={item.url} className="conversation-item-link">
+						<div className="conversation-item-header">
+							<div className="conversation-item-category" >{item.type}</div>
+							<div className="conversation-item-category-extra"></div>
+						</div>
+	                    {(item.images && item.images.length)? <div className="conversation-image" style={{backgroundImage: "url(" +item.images[0].url+ ")"}}></div> : <noscript />}
+						<div className="conversation-title">{item.title}</div>
+						<div className="conversation-description">{item.description.substring(0, 200) + "..."}</div>
+						<div className="conversation-more">READ MORE</div>
+					</NavLink>
+				</div>;
+
+			});
+
+			start = Math.floor(Math.random()*extraContents.length);
+
+			// console.log(start);
+
+			var temp = extraContents.slice(start, start + 3) || [];
+			if (temp.length < n) {
+				// debugger;
+				temp.concat(extraContents.slice(0, n - temp.length));
+			}
+
+		}
+
+		return temp;
+	}
+
 
 }
 
 ConversationDetailPage = connectToStores(ConversationDetailPage, ["ContentStore", "LanguageStore"], (stores, props) => {
-	var contentData = stores.ContentStore.getContentBySlug(props.slug);
+	var contentData = stores.ContentStore.getContentBySlug(props.slug) || {};
+	var extraContent = stores.ContentStore.getExtraContent(props.slug) || [];
 	var {lang} = stores.LanguageStore.getData();
 
 	return {
 		lang: lang,
 		conversationData: contentData,
+		extraContent: extraContent
 	};
 });
 

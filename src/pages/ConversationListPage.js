@@ -103,7 +103,7 @@ class ConversationListPage extends BaseComponent {
 		}
 
 		if (jsxItems.length) {
-			jsxRow.push(<div key={jsxItems.length}  className="row conversation-list-row">
+			jsxRow.push(<div key={i + 1}  className="row conversation-list-row">
 					{jsxItems}
 				</div>);
 		}
