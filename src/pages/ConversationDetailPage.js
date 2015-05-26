@@ -230,8 +230,8 @@ class ConversationDetailPage extends BaseComponent {
 }
 
 ConversationDetailPage = connectToStores(ConversationDetailPage, ["ContentStore", "LanguageStore"], (stores, props) => {
-	var contentData = stores.ContentStore.getContentBySlug(props.slug) || {};
-	var extraContent = stores.ContentStore.getExtraContent(props.slug) || [];
+	var contentData = stores.ContentStore.getContentBySlug(props.slug) || false;
+	var extraContent = stores.ContentStore.getExtraContent(props.slug) || false;
 	var {lang} = stores.LanguageStore.getData();
 
 	return {
