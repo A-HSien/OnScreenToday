@@ -194,7 +194,7 @@ class ConversationDetailPage extends BaseComponent {
 		var start;
 
 		if (contents && contents.length) {
-			extraContents = contents.map((content) => {
+			extraContents = _.map(contents, (content) => {
 				var item = content[lang];
 				return <div key={item.title} className={"conversation-list-item " + "col-sm-"+ 12/n} >
 					<NavLink href={item.url} className="conversation-item-link">
