@@ -194,20 +194,25 @@ class ConversationDetailPage extends BaseComponent {
 		var start;
 
 		if (contents && contents.length) {
-			extraContents = _.map(contents, (content) => {
+			extraContents = contents.map((content) => {
 				var item = content[lang];
-				return <div key={item.title} className={"conversation-list-item " + "col-sm-"+ 12/n} >
-					<NavLink href={item.url} className="conversation-item-link">
-						<div className="conversation-item-header">
-							<div className="conversation-item-category" >{item.type}</div>
-							<div className="conversation-item-category-extra"></div>
-						</div>
-	                    {(item.images && item.images.length)? <div className="conversation-image" style={{backgroundImage: "url(" +item.images[0].url+ ")"}}></div> : <noscript />}
-						<div className="conversation-title">{item.title}</div>
-						<div className="conversation-description">{item.description.substring(0, 200) + "..."}</div>
-						<div className="conversation-more">READ MORE</div>
-					</NavLink>
-				</div>;
+				if (item) {
+					return <div key={item.title} className={"conversation-list-item " + "col-sm-"+ 12/n} >
+						<NavLink href={item.url} className="conversation-item-link">
+							<div className="conversation-item-header">
+								<div className="conversation-item-category" >{item.type}</div>
+								<div className="conversation-item-category-extra"></div>
+							</div>
+		                    {(item.images && item.images.length)? <div className="conversation-image" style={{backgroundImage: "url(" +item.images[0].url+ ")"}}></div> : <noscript />}
+							<div className="conversation-title">{item.title}</div>
+							<div className="conversation-description">{item.description.substring(0, 200) + "..."}</div>
+							<div className="conversation-more">READ MORE</div>
+						</NavLink>
+					</div>;
+				} else {
+					return <noscript />;
+				}
+				
 
 			});
 
