@@ -2,6 +2,7 @@
 @import "../constants/colors";
 @import "../mixins/sprite";
 .page.about {
+	padding-top: 80px;
 	
 	.about-main {
 		margin-top: 30px;
@@ -94,5 +95,13 @@
 				}
 			}
 		}
+	}
+}
+
+
+@media (max-width: 500px) { 
+	.page.about {
+		padding-top: 60px !important;
+
 	}
 }

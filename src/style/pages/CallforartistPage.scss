@@ -1,4 +1,5 @@
 .callforartist.detail {
+	padding-top: 80px;
 
 	.callforartist-detail-container {
 		padding-top: 20px;
@@ -23,7 +24,11 @@
 
 
 @media (max-width: 500px) { 
-	.callforartist-image {
-		min-height: 250px !important;
+	.callforartist.detail {
+		padding-top: 60px !important;
+
+		.callforartist-image {
+			min-height: 250px !important;
+		}
 	}
 }

@@ -1,4 +1,5 @@
 .view.page {
+	padding-top: 80px;
 
 	.view-detail-container {
 		padding: 20px 0px;
@@ -20,6 +21,7 @@
 @media (max-width: 500px) { 
 
 	.view.page {
+		padding-top: 60px !important;
 		.view-image {
 			min-height: 250px !important;
 		}

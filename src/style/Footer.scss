@@ -3,8 +3,8 @@
 
 .footer {
 //	max-width: 940px;
-  padding: 20px 0;
-  border-top: 12px solid $color-black;
+  padding: 17px 0;
+  border-top: 10px solid $color-black;
 	ul {
     margin: 0px;
 	}
@@ -35,14 +35,14 @@
       width: 37px;
       height: 37px;
       display: inline-block;
-      margin: 0px 2px;
+      margin: 0px 3px;
 
       &.fb {
 				@include sprite(0, 394);
       }
 
       &.twitter {
-				@include sprite(-5, 490);
+				@include sprite(-5, 489);
       }
 
       &.instagram {

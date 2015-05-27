@@ -58,7 +58,7 @@ class HomePage extends Component {
 
 
 			jsx = (
-				<div className="home">
+				<div className="home page">
 					<SubHeader />
 					<Carousel slides={this._createSlides(cForCarousel)} settings={{autoplay: true}} />
 					<div className="home-main container">

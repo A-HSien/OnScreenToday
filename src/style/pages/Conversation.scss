@@ -1,6 +1,7 @@
 @import "../constants/colors";
 
 .conversation.page {
+	padding-top: 80px;
 
 	.conversation-page-main {
 		.conversation-page-hero {
@@ -15,23 +16,24 @@
 
 	  				.conversation-hero-image-category {
 	  					position: absolute;
-						width: 90px;
-						font-weight: 700;
-						height: 20px;
+						width: 70px;
+						font-weight: 900;
+						height: 15px;
 						background-color: black;
 						text-align: center;
 						text-transform: uppercase;
 						color: white;
-						top: 0px;
+						top: 30px;
 						left: 0px;
+						line-height: 15px;
+  						font-size: 14px;
 	  				}
 
 	  				.conversation-hero-title {
 	  					position: absolute;
-	  					padding: 10px;
-	  					width: 80%;
+	  					padding: 15px 10px;
 	  					font-size: 26px;
-						font-weight: 700;
+						font-weight: 900;
 						background-color: black;
 						text-align: left;
 						text-transform: uppercase;
@@ -55,15 +57,12 @@
 					}
 
 					.conversation-hero-btn {
-						position: absolute;
-						bottom: 20px;
-						left: 20px;
 						width: 115px;
 						padding: 10px;
 						background-color: $color-black;
 						color: $color-white;
 						text-transform: uppercase;
-						font-weight: 700;
+						font-weight: 900;
 						margin-top: 10px;
 					}
 				}
@@ -75,6 +74,7 @@
 			margin-bottom: 50px;
 
 			.conversation-list-item {
+					
 				.conversation-item-header {
 					height: 20px;
 					text-transform: uppercase;
@@ -125,8 +125,12 @@
 }
 
 @media (max-width: 500px) { 
-	.conversation-content-title {
-		font-size: 20px !important;
-		padding: 0px !important;
+	.conversation.page {
+		padding-top: 60px !important;
+
+		.conversation-content-title {
+			font-size: 20px !important;
+			padding: 0px !important;
+		}
 	}
 }
