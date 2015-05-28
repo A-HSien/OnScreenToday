@@ -7,7 +7,7 @@ import { NavLink } from "flux-router-component";
 
 
 if (process.env.BROWSER) {
-    // require("../../style/pages/home/home_module.scss");
+    require("../../style/pages/home/home_module.scss");
 }
 
 

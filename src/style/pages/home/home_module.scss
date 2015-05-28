@@ -32,4 +32,15 @@
   		}
   	}
   }
+
+  &.screenshot {
+    .artwork {
+      .aw-image-container {
+        .image {
+          background-size: cover!important;
+          background-position-y: 50%;
+        }
+      }
+    }
+  }
 }

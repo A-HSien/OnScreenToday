@@ -12,16 +12,6 @@ if (process.env.BROWSER) {
 
 class ArtWork extends Component {
 
-	getDefaultProps() {
-
-        return {
-            headerHeight: '15px',
-            imageHeight: '220px',
-            imageUrl: 'https://d32dm0rphc51dk.cloudfront.net/wfFdmG9EoSrwvaZfGkpm9w/large.jpg',
-            detailUrl: ""
-        };
-    }
-
     render () {
         var classnames = cn("artwork clearfix", this.props.addClassnames);
         var jsx;
