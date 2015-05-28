@@ -74,6 +74,8 @@
 			margin-bottom: 50px;
 
 			.conversation-list-item {
+				margin-bottom: 10px;
+				
 				.conversation-item-header {
 					height: 15px;
 					text-transform: uppercase;
@@ -116,6 +118,7 @@
 
 				.conversation-description {
 					margin: 15px 0px;
+					color: black !important;
 				}
 			}
 		}

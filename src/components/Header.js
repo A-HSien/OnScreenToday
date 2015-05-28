@@ -44,7 +44,7 @@ class Header extends BaseComponent {
             },{
                 url: '/screenshots',
                 name: {
-                    eng: "screenshot",
+                    eng: "screenshots",
                     chn: "短评",
                     chnt: "短評",
                 }

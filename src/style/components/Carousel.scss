@@ -8,6 +8,7 @@
     width: 100%;
     
     .slideItem {
+      background-position-y: 50%; 
       background-size: cover;
       height: 485px;
 
@@ -60,11 +61,13 @@
     width: 53px;
     top: 45%;
     @include sprite(0, 107);
-    
 
-    // Overrid
+    &:hover {
+      @include sprite(0, 210);
+    }
+    // Override
     &:before {
-      content: "";
+      content: " ";
     }
   }
   .slick-next {
@@ -73,6 +76,10 @@
     width: 53px;
     top: 60%;
     @include sprite(0, 156);
+
+    &:hover {
+      @include sprite(0, 260);
+    }
     
 
     // Overrid

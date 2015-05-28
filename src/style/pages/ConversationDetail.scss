@@ -75,6 +75,11 @@
 		.conversation-content-container {
 			
 			.conversation-carousel {
+				opacity: .1;
+				
+				&.slick-center {
+			        opacity: 1;
+			    }
 				.conversation-image {
 					max-height: 400px;
 					margin: 0 auto;

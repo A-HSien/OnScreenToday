@@ -8,8 +8,8 @@ import defaults from 'lodash/object/defaults';
 
 if (process.env.BROWSER) {
   require("../style/components/Carousel.scss");
-  require("slick-carousel/slick/slick.scss");
-  require("slick-carousel/slick/slick-theme.scss");
+  require("../style/vendors/slick-carousel/slick.scss");
+  require("../style/vendors/slick-carousel/slick-theme.scss");
 }
 
 var Carousel = React.createClass({

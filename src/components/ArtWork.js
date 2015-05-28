@@ -28,12 +28,18 @@ class ArtWork extends Component {
         if (this.props.content) {
 
             var image = this.props.content.heroImage;
+            var _styleItem = {
+                backgroundImage: 'url(' + image.url + ')',
+                backgroundSize: "cover",
+                height: 200,
+                backgroundPositionX: '50%'
+            };
             jsx = (
                 <NavLink href={this.props.content.url} className="aw-link">
                 <div className={classnames} >
                     <div className="aw-header"></div>
                     <div className="aw-image-container " >
-                        <img className="image hover-image-effect" src={image.url} />
+                        <div className="image hover-image-effect" style={_styleItem}></div>
                     </div>
                     <div className="aw-title">{this.props.content.title}</div>
                     <div className="aw-subtitle">{this.props.content.subtitle}</div>

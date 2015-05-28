@@ -65,8 +65,8 @@ class ConversationDetailPage extends BaseComponent {
 					infinite: true,
 					// autoplay: true,
 					centerMode: true,
-					centerPadding: '60px',
-					slidesToShow: 2,
+					centerPadding: '80px',
+					slidesToShow: 3,
 					responsive: [
 						{
 						  breakpoint: 768,
@@ -179,8 +179,15 @@ class ConversationDetailPage extends BaseComponent {
 
 		for (var i = 0 ; i < images.length ; i++) {
 			var _image = images[i];
+			var _styleItem = {
+				backgroundImage: 'url(' + _image.url + ')',
+				backgroundSize: "contain",
+				backgroundRepeat: "no-repeat",
+				height: 300,
+				backgroundPositionX: '50%'
+			};
 			slides.push(<div key={i} className="conversation-carousel">
-				<img className="conversation-image" src={_image.url} />
+				<div className="conversation-image" style={_styleItem}></div>
 				<div className="conversation-caption" dangerouslySetInnerHTML={{__html: _image.captions}} ></div>
 			</div>);
 		}
