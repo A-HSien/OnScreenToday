@@ -134,14 +134,21 @@
 	.conversation.detail {
 		padding-top: 60px !important;
 
-		.conversation-content {
-			.conversation-carousel {
-				.conversation-image {
-					max-height: 250px !important;
-				}
+		.conversation-content-container {
 
-				.conversation-caption {
-					font-size: 14px;
+			.conversation-carousel {
+				opacity: 1 !important;
+			}
+
+			.conversation-content {
+				.conversation-carousel {
+					.conversation-image {
+						max-height: 250px !important;
+					}
+
+					.conversation-caption {
+						font-size: 14px;
+					}
 				}
 			}
 		}

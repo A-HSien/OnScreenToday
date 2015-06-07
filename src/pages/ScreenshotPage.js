@@ -36,9 +36,13 @@ class ScreenshotPage extends BaseComponent {
 
   		var {screenshots, lang} = this.props;
 		var jsx = <noscript />;
+		var jsxList = <noscript />;
 		if (screenshots.length) {
 			var cloned = _.clone(screenshots);
 			var hero = cloned.slice(0,1)[0][lang];
+			var listItems = cloned.slice(1).map((item)=> {
+				return item[lang];
+			});
 
 			var jsxHero = (<div className="screenshot-hero row clearfix" >
 				<NavLink href={hero.url} >
@@ -46,6 +50,10 @@ class ScreenshotPage extends BaseComponent {
 				<div className="screenshot-hero-title">{hero.title}</div>
 				</NavLink>
 			</div>);
+
+			if (listItems && listItems.length) {
+				jsxList = this.createGroupList(listItems, 2);
+			}
 
 
 			jsx = <div className="screenshot page">
@@ -56,6 +64,7 @@ class ScreenshotPage extends BaseComponent {
 							{jsxHero}
 						</div>
 						<div className="screenshot-page-main">
+							{jsxList}
 						</div>
 					</div>
 				</div>
@@ -70,6 +79,7 @@ class ScreenshotPage extends BaseComponent {
 			jsxItems = [],
 			item;
 
+
 		for(var i = 0; i < items.length; i++) {
 			item = items[i];
 			if (i % n === 0 && i !== 0) {
@@ -81,12 +91,12 @@ class ScreenshotPage extends BaseComponent {
 			}
 
 			jsxItems.push(<div key={item.title} className={"screenshot-list-item " + "col-sm-"+ 12/n} >
-				<Link to={item.url} className="screenshot-item-link">
+				<NavLink href={item.url} className="screenshot-item-link">
 					<div className="screenshot-item-header">
 					</div>
-                    {(item.img_hero && item.img_hero.length)? <div className="screenshot-image" style={{backgroundImage: "url(" +item.img_hero+ ")"}}></div> : <noscript />}
+                    {(item.heroImage)? <div className="screenshot-image" style={{backgroundImage: "url(" +item.heroImage.url+ ")"}}></div> : <noscript />}
 					<div className="screenshot-title">{item.title}</div>
-				</Link>
+				</NavLink>
 			</div>);
 
 		}
@@ -105,7 +115,6 @@ class ScreenshotPage extends BaseComponent {
 }
 
 ScreenshotPage = connectToStores(ScreenshotPage, ["ContentStore", "LanguageStore"], (stores) => {
-	debugger;
 	var {contentData} = stores.ContentStore.getData();
 	var {lang} = stores.LanguageStore.getData();
 	return {

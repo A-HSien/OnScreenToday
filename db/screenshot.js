@@ -1,6 +1,225 @@
 module.exports = [
+
+
  {
- id: 0,
+ id: 1,
+        slug:"Lost-in-Her-Languages",
+        eng: {
+            title: "Lost in Her Languages",
+            subtitle: "Yintzu Huang’s Aphasia",
+            author: "Yu-Chieh Li",
+            translator:"Yu-Chieh Li",
+            slug:"Lost-in-Her-Languages",
+            description: "“Each of the four women in the video are me, they’re representative portraits of the Taiwanese woman. They all appear to be a little bit morbid, which is caused by the pressure of a grand era they lived in.” In the four channel video installation Aphasia (2014), Yintzu Huang directs herself as multiple women, each inhabiting a separate frame (the golden ovals recall worn daguerrotypes). Not content to remain within their domains, the four women that Huang plays often interact  across their boundaries..",
+            videos: [
+                {
+                    embedHTML: '<iframe src="https://player.vimeo.com/video/104858003" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/104858003">APHASIA 失語 單頻錄像</a> from <a href="https://vimeo.com/yintzuhuang">Yintzu Huang</a> on <a href="https://vimeo.com">Vimeo</a>.</p>',
+                    name: "APHASIA 失語 單頻錄像"
+                }
+            ],
+            heroImage: {
+                    url:"/images/content/screenshot/1/2.png",
+                    captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+            },
+            Images:[
+                {
+                        url:"/images/content/screenshot/1/1.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/2.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/3.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/4.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/5.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/6.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/7.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/8.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/9.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/10.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+            ] ,
+            url: "/screenshot/Lost-in-Her-Languages",
+            contents: [
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p>“Each of the four women in the video are me, they’re representative portraits of the Taiwanese woman. They all appear to be a little bit morbid, which is caused by the pressure of a grand era they lived in.” In the four channel video installation Aphasia (2014), Yintzu Huang directs herself as multiple women, each inhabiting a separate frame (the golden ovals recall worn daguerrotypes). Not content to remain within their domains, the four women that Huang plays often interact  across their boundaries.. </p><p>Beginning with a monologue by a sinicized Taiwanese aboriginal, of the late 19th century, the film first engages with the attenuation of indigenous culture with Han settlement. Dressed in  Han-style clothing, she narrates in Hakka, unlike the second figure, whose pink kimono and Japanese speech indicates later, colonial rule. Her stories and activities center around her husband, who was sent to the battlefield during the Sino-Japanese War. The third woman, dressed in qipao and finery, is spouse of a military officer who fled Shanghai with the defeated Nationalists in  the late 1940s, and the final harks back to Yintzu’s mother in the 1980s, who talks in Mandarin about the movies, studying abroad, a lover —all the trappings of a liberalizing society. </p><p>The four engage in repetitive, monotonous activities and chores; they sew, eat, arrange flowers and hack at fish. The trivial stories they share about food, relationships, dreams and shopping—to name a few—reveal the sociocultural changes of Taiwan’s past century. Even as society shifts, the women stay in lively conversation: perhaps Huang intends to comment on the absorption of female time in repetitive, gendered tasks and waiting for male partners while waiting for their man to come home. (Although men are not to be seen, their presence infiltrates the narratives.) </p><p>Here, the women actively engage in an intimate conversation, with viewers rather than voyeurs. It isn’t until we approach the end of the film that it becomes clear they have difficulties communicating with each other, given the schizophrenic linguistic structure of the piece. In an enthusiastic conversation about a shopping list, despite temporal distance, the kimono woman blurts out, “What are you talking about? I don’t understand a word.” </p><p>These differences in the way they speak are telling. Frequently a temporary shelter for different ethnic groups, languages and cultures on this island have never been unified. The kimono woman speaks Japanese with an accent, while the qipao woman from Shanghai continues speaking her authentic Shanghainese though she lives in the countryside in northern Taiwan. The languages in Taiwan are not merely diverse; they underwent intense pidginization. As languages change with the victors of history,  multiple accents come to be imprinted on the speech patterns of the island. These subtleties aren’t perceivable to all, and Huang is clearly aware of this barrier. Aphasia, or the language disorder that prevents communication, gives way here to a space to murmur freely.</p><p><i>Aphasia was exhibited at the SVA gallery in Chelsea, New York in 2014, and at Reed College, Portland in 2015.</i></p>",
+                        "text": "“Each of the four women in the video are me, they’re representative portraits of the Taiwanese woman. They all appear to be a little bit morbid, which is caused by the pressure of a grand era they lived in.” In the four channel video installation Aphasia (2014), Yintzu Huang directs herself as multiple women, each inhabiting a separate frame (the golden ovals recall worn daguerrotypes). Not content to remain within their domains, the four women that Huang plays often interact  across their boundaries.. Beginning with a monologue by a sinicized Taiwanese aboriginal, of the late 19th century, the film first engages with the attenuation of indigenous culture with Han settlement. Dressed in  Han-style clothing, she narrates in Hakka, unlike the second figure, whose pink kimono and Japanese speech indicates later, colonial rule. Her stories and activities center around her husband, who was sent to the battlefield during the Sino-Japanese War. The third woman, dressed in qipao and finery, is spouse of a military officer who fled Shanghai with the defeated Nationalists in  the late 1940s, and the final harks back to Yintzu’s mother in the 1980s, who talks in Mandarin about the movies, studying abroad, a lover —all the trappings of a liberalizing society. The four engage in repetitive, monotonous activities and chores; they sew, eat, arrange flowers and hack at fish. The trivial stories they share about food, relationships, dreams and shopping—to name a few—reveal the sociocultural changes of Taiwan’s past century. Even as society shifts, the women stay in lively conversation: perhaps Huang intends to comment on the absorption of female time in repetitive, gendered tasks and waiting for male partners while waiting for their man to come home. (Although men are not to be seen, their presence infiltrates the narratives.) Here, the women actively engage in an intimate conversation, with viewers rather than voyeurs. It isn’t until we approach the end of the film that it becomes clear they have difficulties communicating with each other, given the schizophrenic linguistic structure of the piece. In an enthusiastic conversation about a shopping list, despite temporal distance, the kimono woman blurts out, “What are you talking about? I don’t understand a word.” These differences in the way they speak are telling. Frequently a temporary shelter for different ethnic groups, languages and cultures on this island have never been unified. The kimono woman speaks Japanese with an accent, while the qipao woman from Shanghai continues speaking her authentic Shanghainese though she lives in the countryside in northern Taiwan. The languages in Taiwan are not merely diverse; they underwent intense pidginization. As languages change with the victors of history,  multiple accents come to be imprinted on the speech patterns of the island. These subtleties aren’t perceivable to all, and Huang is clearly aware of this barrier. Aphasia, or the language disorder that prevents communication, gives way here to a space to murmur freely.Aphasia was exhibited at the SVA gallery in Chelsea, New York in 2014, and at Reed College, Portland in 2015."
+                    },
+                    "type": "medium"
+                }
+            ]
+        },
+        chn: {
+            title: "《失语》中的女性呓语",
+            subtitle: "黄尹姿录像作品",
+            author: "李雨洁",
+            slug:"Lost-in-Her-Languages",
+            description: `“影像中四个人都是我，代表台湾女人的肖像，每个人都有一点病态，这是大时代女性的压力造成的。” 黄尹姿说。她自导自演的《失语》(2014)是一四频道录像作品，每屏饰有椭圆的金边，好似一些旧时代的肖像摄影。`,
+            videos: [
+                {
+                    embedHTML: '<iframe src="https://player.vimeo.com/video/104858003" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/104858003">APHASIA 失語 單頻錄像</a> from <a href="https://vimeo.com/yintzuhuang">Yintzu Huang</a> on <a href="https://vimeo.com">Vimeo</a>.</p>',
+                    name: "APHASIA 失語 單頻錄像"
+                }
+            ],
+            heroImage: {
+                    url:"/images/content/screenshot/1/2.png",
+                    captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+            },
+            Images:[
+                {
+                        url:"/images/content/screenshot/1/1.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/2.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/3.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/4.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/5.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/6.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/7.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/8.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/9.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/10.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+            ] ,
+            url: "/screenshot/Lost-in-Her-Languages",
+            contents: [
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p>“影像中四个人都是我，代表台湾女人的肖像，每个人都有一点病态，这是大时代女性的压力造成的。” 黄尹姿说。她自导自演的《失语》(2014)是一四频道录像作品，每屏饰有椭圆的金边，好似一些旧时代的肖像摄影。但影像中的角色并非静止无声，他们彼此互动，甚至还越出框框之外。影像由一19世纪末的汉化原住民女子开场，她以客家话诉说着原住民势力在汉人压制下的削弱以及同化; 第二位着粉红色和服的女子则在日本殖民教育下长大，她的丈夫在中日战争当中被送到沙场; 第三位着旗袍的上海女子是跟随蒋介石政府来台的军人家属; 第四位的原型其实是尹姿母亲的少女时代，她用普通话聊着电影，出国深造，还有爱情等等的话题。她们四位从事着重复并且单调的事情，比如缝纫，吃饭，插花，切鱼，她们与观众分享的琐碎之事，包括食物，情感关系，梦境，购物等等，反映了台湾过去一世纪以来的社会文化变迁，一方面社会总是随着时间改变，另一方面这些原本生活在不同时代的女子，她们之间的语言障碍竟然大过于世代差异: 她们能够沟通，大概是由于对于女性来说，时间是冻结的，非线性的，非流动的，总是要靠着重复性劳动来消耗的，否则等待她们良人归来的时间应当做什么呢？虽然在影片中，男性视觉上不在场，这些女子对她们男性伴侣的记忆却穿透了整个叙事。 </p><p>观看有关女性图像的视觉经验通常离不开窥视者(Voyeur)的角度，但与这相反，四个女性角色在这件作品中亲密地与观者分享他们的故事，观者不但是聆听者，也参与了她们语言分裂的状态。一直到影片快要结尾的时候，众人才恍然大悟，她们之间原来有语言沟通上的困难。当四个人结束独白，她们开始热络的谈论起一张购物清单 （虽然这不合理，因为他们应当活在不同时代），突然和服女孩问: “你们在说什么，我一个字都听不懂。” 沟通的困难并不仅仅是她们语言的多样造成的，她们的各色口音中还带有一微妙的讯息: 台湾作为不同族群暂避之处，它的语言和文化从来不是单一的，和服女孩说的日语带有汉人腔调，同时旗袍女子却在台湾北部乡下说着道地的上海话。这个岛上的语言不仅仅多样，它们还经历了剧烈的突变及混种，语言总是随着统治者不断改变，总赶不及熟练任何一种，多重的口音深嵌在岛上语言之中，这些微妙之处是没有这些语言背景的人无法领会的。尹姿了解这一点，她因此在视觉语言上做了一些游戏使之更为丰富，包括自己的表演还有安排四人超出框外的互动(她们传递了一张购物清单)。萤幕提供了女性一个自由呢喃的园地，尽管在以前她们被迫失语。</p><p><i>《失语》2014年在纽约SVA画廊，以及2015年在波特兰的Reed College展出</i></p>",
+                        "text": "“影像中四个人都是我，代表台湾女人的肖像，每个人都有一点病态，这是大时代女性的压力造成的。” 黄尹姿说。她自导自演的《失语》(2014)是一四频道录像作品，每屏饰有椭圆的金边，好似一些旧时代的肖像摄影。但影像中的角色并非静止无声，他们彼此互动，甚至还越出框框之外。影像由一19世纪末的汉化原住民女子开场，她以客家话诉说着原住民势力在汉人压制下的削弱以及同化; 第二位着粉红色和服的女子则在日本殖民教育下长大，她的丈夫在中日战争当中被送到沙场; 第三位着旗袍的上海女子是跟随蒋介石政府来台的军人家属; 第四位的原型其实是尹姿母亲的少女时代，她用普通话聊着电影，出国深造，还有爱情等等的话题。她们四位从事着重复并且单调的事情，比如缝纫，吃饭，插花，切鱼，她们与观众分享的琐碎之事，包括食物，情感关系，梦境，购物等等，反映了台湾过去一世纪以来的社会文化变迁，一方面社会总是随着时间改变，另一方面这些原本生活在不同时代的女子，她们之间的语言障碍竟然大过于世代差异: 她们能够沟通，大概是由于对于女性来说，时间是冻结的，非线性的，非流动的，总是要靠着重复性劳动来消耗的，否则等待她们良人归来的时间应当做什么呢？虽然在影片中，男性视觉上不在场，这些女子对她们男性伴侣的记忆却穿透了整个叙事。 观看有关女性图像的视觉经验通常离不开窥视者(Voyeur)的角度，但与这相反，四个女性角色在这件作品中亲密地与观者分享他们的故事，观者不但是聆听者，也参与了她们语言分裂的状态。一直到影片快要结尾的时候，众人才恍然大悟，她们之间原来有语言沟通上的困难。当四个人结束独白，她们开始热络的谈论起一张购物清单 （虽然这不合理，因为他们应当活在不同时代），突然和服女孩问: “你们在说什么，我一个字都听不懂。” 沟通的困难并不仅仅是她们语言的多样造成的，她们的各色口音中还带有一微妙的讯息: 台湾作为不同族群暂避之处，它的语言和文化从来不是单一的，和服女孩说的日语带有汉人腔调，同时旗袍女子却在台湾北部乡下说着道地的上海话。这个岛上的语言不仅仅多样，它们还经历了剧烈的突变及混种，语言总是随着统治者不断改变，总赶不及熟练任何一种，多重的口音深嵌在岛上语言之中，这些微妙之处是没有这些语言背景的人无法领会的。尹姿了解这一点，她因此在视觉语言上做了一些游戏使之更为丰富，包括自己的表演还有安排四人超出框外的互动(她们传递了一张购物清单)。萤幕提供了女性一个自由呢喃的园地，尽管在以前她们被迫失语。《失语》2014年在纽约SVA画廊，以及2015年在波特兰的Reed College展出"
+                    },
+                    "type": "medium"
+                }
+            ]
+        },
+        chnt: {
+            title: "《失語》中的女性囈語",
+            subtitle: "黃尹姿錄像作品",
+            author: "李雨潔",
+            slug:"Lost-in-Her-Languages",
+            description: `「影像中四個人都是我，代表台灣女人的肖像，每個人都有一點病態，這是大時代女性的壓力造成的。」黃尹姿說。她自導自演的《失語》(2014)是一四頻道錄像作品，每屏飾有橢圓的金邊，好似一些舊時代的肖像攝影。`,
+            videos: [
+                {
+                    embedHTML: '<iframe src="https://player.vimeo.com/video/104858003" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/104858003">APHASIA 失語 單頻錄像</a> from <a href="https://vimeo.com/yintzuhuang">Yintzu Huang</a> on <a href="https://vimeo.com">Vimeo</a>.</p>',
+                    name: "APHASIA 失語 單頻錄像"
+                }
+            ],
+            heroImage: {
+                    url:"/images/content/screenshot/1/2.png",
+                    captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+            },
+            Images:[
+                {
+                        url:"/images/content/screenshot/1/1.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/2.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/3.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/4.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/5.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/6.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/7.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Film still. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/8.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/9.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+                {
+                        url:"/images/content/screenshot/1/10.png",
+                        captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                },
+            ] ,
+            url: "/screenshot/Lost-in-Her-Languages",
+            contents: [
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p>「影像中四個人都是我，代表台灣女人的肖像，每個人都有一點病態，這是大時代女性的壓力造成的。」黃尹姿說。她自導自演的《失語》(2014)是一四頻道錄像作品，每屏飾有橢圓的金邊，好似一些舊時代的肖像攝影。但影像中的角色並非靜止無聲，他們彼此互動，甚至還越出框框之外。影像由一19世紀末的漢化原住民女子開場，她以客家話訴說著原住民勢力在漢人壓制下的削弱以及同化; 第二位著粉紅色和服的女子則在日本殖民教育下長大，她的丈夫在中日戰爭當中被送到沙場; 第三位著旗袍的上海女子是跟隨蔣介石政府來台的軍人家屬; 第四位的原型其實是尹姿母親的少女時代，她用普通話聊著電影，出國深造，還有愛情等等的話題。她們四位從事著重複並且單調的事情，比如縫紉，吃飯，插花，切魚，她們與觀眾分享的瑣碎之事，包括食物，情感關係，夢境，購物等等，反映了台灣過去一世紀以來的社會文化變遷，一方面社會總是隨著時間改變，另一方面這些原本生活在不同時代的女子，她們之間的語言障礙竟然大過於世代差異: 她們能夠溝通，大概是由於對於女性來說，時間是凍結的，非線性的，非流動的，總是要靠著重複性勞動來消耗的，否則等待她們良人歸來的時間應當做什麼呢？雖然在影片中，男性視覺上不在場，這些女子對她們男性伴侶的記憶卻穿透了整個敘事。 </p><p>觀看有關女性圖像的視覺經驗通常離不開窺視者(Voyeur)的角度，但與這相反，四個女性角色在這件作品中親密地與觀者分享他們的故事，觀者不但是聆聽者，也參與了她們語言分裂的狀態。一直到影片快要結尾的時候，眾人才恍然大悟，她們之間原來有語言溝通上的困難。當四個人結束獨白，她們開始熱絡的談論起一張購物清單 （雖然這不合理，因為他們應當活在不同時代），突然和服女孩問: 「你們在說什麼，我一個字都聽不懂。」溝通的困難並不僅僅是她們語言的多樣造成的，她們的各色口音中還帶有一微妙的訊息: 台灣作為不同族群暫避之處，它的語言和文化從來不是單一的，和服女孩說的日語帶有漢人腔調，同時旗袍女子卻在台灣北部鄉下說著道地的上海話。這個島上的語言不僅僅多樣，它們還經歷了劇烈的突變及混種，語言總是隨著統治者不斷改變，總趕不及熟練任何一種，多重的口音深嵌在島上語言之中，這些微妙之處是沒有這些語言背景的人無法領會的。尹姿了解這一點，她因此在視覺語言上做了一些遊戲使之更為豐富，包括自己的表演還有安排四人超出框外的互動(她們傳遞了一張購物清單)。螢幕提供了女性一個自由呢喃的園地，儘管在以前她們被迫失語。</p><p><i>《失語》2014年在紐約SVA畫廊，以及2015年在波特蘭的Reed College展出</i></p>",
+                        "text": "「影像中四個人都是我，代表台灣女人的肖像，每個人都有一點病態，這是大時代女性的壓力造成的。」黃尹姿說。她自導自演的《失語》(2014)是一四頻道錄像作品，每屏飾有橢圓的金邊，好似一些舊時代的肖像攝影。但影像中的角色並非靜止無聲，他們彼此互動，甚至還越出框框之外。影像由一19世紀末的漢化原住民女子開場，她以客家話訴說著原住民勢力在漢人壓制下的削弱以及同化; 第二位著粉紅色和服的女子則在日本殖民教育下長大，她的丈夫在中日戰爭當中被送到沙場; 第三位著旗袍的上海女子是跟隨蔣介石政府來台的軍人家屬; 第四位的原型其實是尹姿母親的少女時代，她用普通話聊著電影，出國深造，還有愛情等等的話題。她們四位從事著重複並且單調的事情，比如縫紉，吃飯，插花，切魚，她們與觀眾分享的瑣碎之事，包括食物，情感關係，夢境，購物等等，反映了台灣過去一世紀以來的社會文化變遷，一方面社會總是隨著時間改變，另一方面這些原本生活在不同時代的女子，她們之間的語言障礙竟然大過於世代差異: 她們能夠溝通，大概是由於對於女性來說，時間是凍結的，非線性的，非流動的，總是要靠著重複性勞動來消耗的，否則等待她們良人歸來的時間應當做什麼呢？雖然在影片中，男性視覺上不在場，這些女子對她們男性伴侶的記憶卻穿透了整個敘事。 觀看有關女性圖像的視覺經驗通常離不開窺視者(Voyeur)的角度，但與這相反，四個女性角色在這件作品中親密地與觀者分享他們的故事，觀者不但是聆聽者，也參與了她們語言分裂的狀態。一直到影片快要結尾的時候，眾人才恍然大悟，她們之間原來有語言溝通上的困難。當四個人結束獨白，她們開始熱絡的談論起一張購物清單 （雖然這不合理，因為他們應當活在不同時代），突然和服女孩問: 「你們在說什麼，我一個字都聽不懂。」溝通的困難並不僅僅是她們語言的多樣造成的，她們的各色口音中還帶有一微妙的訊息: 台灣作為不同族群暫避之處，它的語言和文化從來不是單一的，和服女孩說的日語帶有漢人腔調，同時旗袍女子卻在台灣北部鄉下說著道地的上海話。這個島上的語言不僅僅多樣，它們還經歷了劇烈的突變及混種，語言總是隨著統治者不斷改變，總趕不及熟練任何一種，多重的口音深嵌在島上語言之中，這些微妙之處是沒有這些語言背景的人無法領會的。尹姿了解這一點，她因此在視覺語言上做了一些遊戲使之更為豐富，包括自己的表演還有安排四人超出框外的互動(她們傳遞了一張購物清單)。螢幕提供了女性一個自由呢喃的園地，儘管在以前她們被迫失語。《失語》2014年在紐約SVA畫廊，以及2015年在波特蘭的Reed College展出"
+                    },
+                    "type": "medium"
+                }
+            ]
+        }
+        
+},
+
+ {
+    id: 0,
         slug:"che-onejoon-seeing-north-korea-through-the-lens-of-africa",
         eng: {
             title: "Seeing North Korea Through the Lens of Africa: Mansudae Master Class",

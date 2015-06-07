@@ -37,6 +37,7 @@ class ScreenshotDetailPage extends BaseComponent {
   		var {lang, screenshotData} = this.props;
 		var hero = screenshotData[lang];
 		var contents = hero.contents;
+		var jsxVideo = {};
 
 		var jsxDivs = contents.map((c)=>{
 			if (c.content) {
@@ -61,6 +62,10 @@ class ScreenshotDetailPage extends BaseComponent {
 			</div>
 		</div>);
 
+		if (hero.videos && hero.videos.length) {
+			jsxVideo = <div className="conversation-video" dangerouslySetInnerHTML={{__html: hero.videos[0].embedHTML}} ></div>;
+		}
+
 
 		return <div className="screenshot detail page ">
 			<SubHeader />
@@ -73,6 +78,7 @@ class ScreenshotDetailPage extends BaseComponent {
 						</div>
 						<div className="col-sm-6">
 							{jsxHero}
+							{jsxVideo}
 						</div>
 					</div>
 				</div>
