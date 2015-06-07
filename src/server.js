@@ -11,9 +11,10 @@ import app from "./app";
 import config from "./config";
 import render from "./server/render";
 import setLocale from "./server/setLocale";
+import API from "./server/api";
 
 // Initialize express server
-
+require("express-namespace");
 const server = express();
 
 // Usual express stuff
@@ -25,20 +26,20 @@ server.use(compression());
 server.use(favicon(path.resolve(__dirname, "./assets/favicon1.ico")));
 
 // Set the default locale
-
 locale.Locale.default = config.locales[0];
 
 // Set req.locale based on the browser settings
-
 server.use(locale(config.locales));
 
 // Overwrite req.locale either from cookie or querystring
-
 server.use(setLocale);
 
 // This is used by the fetchr plugin
-
 server.use(csurf({ cookie: true }));
+
+// Setup API
+API(server);
+
 
 // Configure fetchr (for doing api calls server and client-side)
 // and register its services

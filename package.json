@@ -78,6 +78,7 @@
     "domino": "^1.0.18",
     "es6-templates": "^0.2.2",
     "esprima-fb": "^14001.1.0-dev-harmony-fb",
+    "express-namespace": "^0.1.1",
     "file-loader": "^0.8.1",
     "isparta": "^3.0.3",
     "jscs": "^1.12.0",

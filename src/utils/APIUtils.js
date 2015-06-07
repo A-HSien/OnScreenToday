@@ -9,7 +9,7 @@ const debug = require("debug")("onscreentoday");
 
 const APIUtils = {
 
-  get(endpoint, query, { locale }, done) {
+  get(endpoint, query, done) {
     if (arguments.length === 2) {
       done = query;
       query = {};
@@ -24,14 +24,12 @@ const APIUtils = {
     //   "api_key": config.apiKey
     // });
 
-    query = assign(query, {
-      "consumer_key": config.consumerKey
-    });
+    // query = assign(query, {
+    //   "consumer_key": config.consumerKey
+    // });
 
     console.log("APIUtils url", url);
-    
     request.get(url)
-      .set("accept-language", locale)
       .query(query)
       .end((err, res) => {
         debug("Received response %s from %s", res, url);

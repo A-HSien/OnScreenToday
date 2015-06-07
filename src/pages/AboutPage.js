@@ -19,10 +19,10 @@ class AboutPage extends Component {
 	}
 
   static propTypes = {
-	lang: PropTypes.string.isRequired,
-    aboutData: PropTypes.object.isRequired,
-    bioData: PropTypes.object.isRequired,
-    bioTargetRef: PropTypes.object.isRequired
+	lang: PropTypes.string,
+    aboutData: PropTypes.object,
+    bioData: PropTypes.string,
+    bioTargetRef: PropTypes.object
   }
 
   static contextTypes = {

@@ -8,7 +8,7 @@ export default {
   // 500px consumer key
   apiKey: "onscreen201531415926",
 
-  apiRoot: "/api/v1",
+  apiRoot: "localhost:3000/api/v1",
 
   // apiKey: "onscreentodaycommediaart",
 
