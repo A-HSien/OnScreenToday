@@ -52,7 +52,7 @@ class ScreenshotDetailPage extends BaseComponent {
 			<div className="screenshot-content">
 				
 				<h2>{hero.title}</h2>
-				<h3>{hero.subtitle}</h3>
+				<h3><i>{hero.subtitle}</i></h3>
 				<div>
 					<strong>By {hero.author}</strong>
 				</div>
@@ -89,7 +89,6 @@ class ScreenshotDetailPage extends BaseComponent {
 }
 
 ScreenshotDetailPage = connectToStores(ScreenshotDetailPage, ["ContentStore", "LanguageStore"], (stores, props) => {
-	debugger;
 	console.log("ScreenshotDetailPage: ", props);
 	var contentData = stores.ContentStore.getContentBySlug(props.slug);
 	var {lang} = stores.LanguageStore.getData();

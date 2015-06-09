@@ -13,13 +13,13 @@ module.exports = [
             description: "“Each of the four women in the video are me, they’re representative portraits of the Taiwanese woman. They all appear to be a little bit morbid, which is caused by the pressure of a grand era they lived in.” In the four channel video installation Aphasia (2014), Yintzu Huang directs herself as multiple women, each inhabiting a separate frame (the golden ovals recall worn daguerrotypes). Not content to remain within their domains, the four women that Huang plays often interact  across their boundaries..",
             videos: [
                 {
-                    embedHTML: '<iframe src="https://player.vimeo.com/video/104858003" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/104858003">APHASIA 失語 單頻錄像</a> from <a href="https://vimeo.com/yintzuhuang">Yintzu Huang</a> on <a href="https://vimeo.com">Vimeo</a>.</p>',
-                    name: "APHASIA 失語 單頻錄像"
+                    embedHTML: '<iframe src="https://player.vimeo.com/video/104858003" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/104858003">APHASIA</a> from <a href="https://vimeo.com/yintzuhuang">Yintzu Huang</a> on <a href="https://vimeo.com">Vimeo</a>.</p>',
+                    name: "APHASIA"
                 }
             ],
             heroImage: {
                     url:"/images/content/screenshot/1/2.png",
-                    captions:"Chloe Yintzu Huang. Aphasia. 2014. Installation shot. © 2015 the artist."
+                    captions:"Chloe Yintzu Huang. Aphasia. 2014. © 2015 the artist."
             },
             Images:[
                 {
