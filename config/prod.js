@@ -6,9 +6,9 @@ export default {
   apiKey: "onscreen201531415926",
 
   // Google Analytics tracking id (skipped on dev)
-  trackingId: "UA-62091544-1",,
+  trackingId: "UA-62091544-1",
 
-  apiRoot: "onscreentoday.com/api/v1",
+  apiRoot: "localhost:3117/api/v1",
 
   // Supported locales
   locales: ["eng", "chn", "chnt"]
