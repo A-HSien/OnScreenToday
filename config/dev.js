@@ -10,6 +10,8 @@ export default {
 
   apiRoot: "localhost:3000/api/v1",
 
+  mongoUrl: "mongodb://screen:2015screen@dogen.mongohq.com:10023/screen",
+
   // apiKey: "onscreentodaycommediaart",
 
   // Supported locales
