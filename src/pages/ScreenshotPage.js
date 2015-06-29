@@ -39,9 +39,9 @@ class ScreenshotPage extends BaseComponent {
 		var jsxList = <noscript />;
 		if (screenshots.length) {
 			var cloned = _.clone(screenshots);
-			var hero = cloned.slice(0,1)[0][lang];
+			var hero = cloned.slice(0,1)[0]['content'][lang];
 			var listItems = cloned.slice(1).map((item)=> {
-				return item[lang];
+				return item['content'][lang];
 			});
 
 			var jsxHero = (<div className="screenshot-hero row clearfix" >

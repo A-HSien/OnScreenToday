@@ -35,7 +35,7 @@ class ScreenshotDetailPage extends BaseComponent {
   render() {
 
   		var {lang, screenshotData} = this.props;
-		var hero = screenshotData[lang];
+		var hero = screenshotData['content'][lang];
 		var contents = hero.contents;
 		var jsxVideo = {};
 

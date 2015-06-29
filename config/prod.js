@@ -8,7 +8,7 @@ export default {
   // Google Analytics tracking id (skipped on dev)
   trackingId: "UA-62091544-1",
 
-  apiRoot: "localhost:3117/api/v1",
+  apiRoot: "http://screen.haohcraft.com/api",
 
   // Supported locales
   locales: ["eng", "chn", "chnt"]

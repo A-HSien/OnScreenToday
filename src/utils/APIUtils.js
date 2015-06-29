@@ -28,7 +28,7 @@ const APIUtils = {
     //   "consumer_key": config.consumerKey
     // });
 
-    console.log("APIUtils url", url);
+    // console.log("APIUtils url", url);
     request.get(url)
       .query(query)
       .end((err, res) => {
@@ -42,8 +42,11 @@ const APIUtils = {
 
           return done(err);
         }
-
-        done(null, res.body);
+        if (res) {
+          done(null, res.body);
+        } else {
+          done(null, "an empty response");
+        }
       });
   }
 

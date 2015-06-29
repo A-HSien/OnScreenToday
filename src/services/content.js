@@ -7,7 +7,8 @@ export default {
   name: "content",
 
   read(req, resource, {type}, config, done) {
-    get("/content", {type}, done);
+  	var category = type;
+    get("/getContentByType", {category}, done);
   }
 
 };

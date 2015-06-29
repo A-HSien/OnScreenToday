@@ -6,6 +6,7 @@ import SubHeader from '../components/SubHeader';
 import BaseComponent from "../components/common/BaseComponent";
 import Carousel from '../components/Carousel';
 import { NavLink } from "flux-router-component";
+import {composeContent} from "../utils/Common";
 
 
 import _ from "lodash";
@@ -43,17 +44,11 @@ class ConversationDetailPage extends BaseComponent {
 		}
 
 
-		var hero =  conversationData[lang];
-		var contents = hero.contents;
+		var hero =  composeContent(conversationData, lang);
+		var extraContent = _.map(extraContent, function (content) {
+			return composeContent(content, lang);
+		})
 		var jsxVideo = {};
-
-		var jsxDivs = contents.map((c)=>{
-			if (c.content) {
-				return <div dangerouslySetInnerHTML={{__html: c.content.html}}></div>;
-			} else {
-				return <noscript />;
-			}
-		});
 
 		// debugger;
 		var jsxHero = (<div className=" conversation-content-container row clearfix" >
@@ -66,7 +61,7 @@ class ConversationDetailPage extends BaseComponent {
 					// autoplay: true,
 					centerMode: true,
 					centerPadding: '80px',
-					slidesToShow: 3,
+					slidesToShow: hero.images.length > 3 ? 3  : hero.images.length,
 					responsive: [
 						{
 						  breakpoint: 768,
@@ -109,7 +104,7 @@ class ConversationDetailPage extends BaseComponent {
 						{this._createIntroContributor(hero.introduction)}
 					</div>
 					<br></br>
-					{jsxDivs}
+					<div dangerouslySetInnerHTML={{__html: hero.article}}></div>;
 				</div>
 			</div>
 		</div>);
@@ -202,7 +197,7 @@ class ConversationDetailPage extends BaseComponent {
 
 		if (contents && contents.length) {
 			extraContents = contents.map((content) => {
-				var item = content[lang];
+				var item = content;
 				if (item) {
 					return <div key={item.title} className={"conversation-list-item " + "col-sm-"+ 12/n} >
 						<NavLink href={item.url} className="conversation-item-link">
@@ -224,9 +219,6 @@ class ConversationDetailPage extends BaseComponent {
 			});
 
 			start = Math.floor(Math.random()*extraContents.length);
-
-			// console.log(start);
-
 			var temp = extraContents.slice(start, start + 3) || [];
 			if (temp.length < n) {
 				// debugger;
@@ -242,6 +234,7 @@ class ConversationDetailPage extends BaseComponent {
 }
 
 ConversationDetailPage = connectToStores(ConversationDetailPage, ["ContentStore", "LanguageStore"], (stores, props) => {
+	debugger;
 	var contentData = stores.ContentStore.getContentBySlug(props.slug) || false;
 	var extraContent = stores.ContentStore.getExtraContent(props.slug) || false;
 	var {lang} = stores.LanguageStore.getData();

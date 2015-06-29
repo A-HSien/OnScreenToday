@@ -1,6 +1,7 @@
 import { BaseStore } from "fluxible/addons";
 import Actions from "../constants/Actions";
 import _ from "lodash";
+import {composeContent} from '../utils/Common';
 
 const SITE_NAME = "SREEN | 介面";
 const BASE_URL = "http://onscreentoday.com";
@@ -113,13 +114,13 @@ class HtmlHeadStore extends BaseStore {
       case "view":
       case "screenshot":
         let store = this.dispatcher.getStore("ContentStore");
-        let content = store.getContentBySlug(route.params.slug)[lang] || undefined;
+        let content = store.getContentBySlug(route.params.slug) || undefined;
         let images = [];
+        // console.log("detail content: ", content);
+        content = composeContent(content, lang);
 
-        if (content && content.images) {
-          images = _.map(content.images, function(img) {
-            return BASE_URL + img.url;
-          });
+        if (content && content.heroImage) {
+          images = [content.heroImage.url];
         }
 
         this.title = this.formatMessage("content.documentTitle", {
@@ -134,9 +135,6 @@ class HtmlHeadStore extends BaseStore {
         this.keywords = this.formatMessage("content.documentKeywords", {
           keywords: content.keywords || ""
         });
-
-
-
         this.images = images;
       break;
 

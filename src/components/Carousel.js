@@ -35,11 +35,17 @@ var Carousel = React.createClass({
 			]
 		});
 
-	    return (
-	      <Slider {..._settings}>
-		  	{this.props.slides}
-	      </Slider>
-	    );
+		if (this.props.slides.length > 3) {
+			return (
+		      <Slider {..._settings}>
+			  	{this.props.slides}
+		      </Slider>
+		    );
+		} else {
+			return <noscript />;
+		}
+
+	    
 	}
 
 });

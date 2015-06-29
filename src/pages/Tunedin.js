@@ -33,7 +33,7 @@ class Tunedin extends BaseComponent {
   render() {
   		var {lang, tunedins} = this.props;
 		var listItems = tunedins.map((item)=> {
-			return item[lang];
+			return item['content'][lang];
 		});
 
 		return <div className="tunedins page">
