@@ -6,7 +6,7 @@ import SubHeader from '../components/SubHeader';
 import { NavLink } from "flux-router-component";
 import BaseComponent from "../components/common/BaseComponent";
 import _ from "lodash";
-import {composeContent} from "../utils/Common";
+import {composeContent, createGroupList} from "../utils/Common";
 
 if (process.env.BROWSER) {
   require("../style/pages/Conversation.scss");
@@ -71,7 +71,7 @@ class ConversationListPage extends BaseComponent {
 						{jsxHero}
 					</div>
 					<div className="conversation-page-main">
-						{createGroupList(listItemsContent, 3)}
+						{createGroupList(listItemsContent, 3, 'conversation')}
 					</div>
 				</div>
 			</div>

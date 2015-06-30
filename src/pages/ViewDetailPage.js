@@ -4,6 +4,7 @@ import React, { PropTypes, Component } from "react";
 import { connectToStores } from "fluxible/addons";
 import SubHeader from '../components/SubHeader';
 import BaseComponent from "../components/common/BaseComponent";
+import {composeContent} from "../utils/Common";
 
 
 import _ from "lodash";
@@ -36,17 +37,7 @@ class ViewDetailPage extends BaseComponent {
 
   		var {lang, viewData} = this.props;
 
-		var hero = viewData[lang];
-		var contents = hero.contents;
-
-		var jsxDivs = contents.map((c)=>{
-			if (c.content) {
-				return <div dangerouslySetInnerHTML={{__html: c.content.html}}></div>;
-			} else {
-				return <noscript />;
-			}
-		});
-
+		var hero = composeContent(viewData, lang);
 		// debugger;
 		var jsxHero = (<div className=" view-content-container clearfix" >
 			<div className="view-content">
@@ -57,7 +48,7 @@ class ViewDetailPage extends BaseComponent {
 				</div>
 				
 				<br></br>
-				{jsxDivs}
+				<div dangerouslySetInnerHTML={{__html: hero.article}}></div>;
 			</div>
 		</div>);
 

@@ -50,7 +50,7 @@ class Header extends BaseComponent {
                 }
             }, 
             {
-                url: '/view/On-Terminology-Media-Art-on-SCREEN',
+                url: '/view/on-terminology-media-art-on-screen',
                 name: {
                     eng: "views",
                     chn: "观点",
