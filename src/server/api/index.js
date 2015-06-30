@@ -6,7 +6,7 @@ const URL_NAMESPACE = "/api";
 const API_VERSION_1 = "/v1";
 
 const API = (app) => {
-  debug("API");
+  // debug("API");
 
   app.namespace(URL_NAMESPACE, function (req, res, next) {
     

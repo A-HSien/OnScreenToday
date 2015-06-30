@@ -2,6 +2,7 @@
 import { get } from "../utils/APIUtils";
 var data = require("../../db");
 import { _ } from "lodash";
+import configSetting from "../config";
 
 // Fetchr service to load the about data
 
@@ -10,7 +11,8 @@ export default {
 
   read(req, resource, {slug, type}, config, done) {
   	var category = type;
-  	get("/getContentDetailByType", {slug, category}, done);
+  	var publishStat = configSetting.publishStatus;
+  	get("/getContentDetailByType", {slug, category, publishStat}, done);
   }
 
 };

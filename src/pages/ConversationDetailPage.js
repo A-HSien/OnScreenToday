@@ -38,17 +38,13 @@ class ConversationDetailPage extends BaseComponent {
   render() {
 		//var lang = "eng";
 		var {conversationData, lang, extraContent} = this.props;
-
 		if (!conversationData) {
 			return <noscript />;
 		}
-
-
 		var hero =  composeContent(conversationData, lang);
 		var extraContent = _.map(extraContent, function (content) {
 			return composeContent(content, lang);
 		})
-		var jsxVideo = {};
 
 		// debugger;
 		var jsxHero = (<div className=" conversation-content-container row clearfix" >
@@ -109,9 +105,6 @@ class ConversationDetailPage extends BaseComponent {
 			</div>
 		</div>);
 
-		if (hero.videos && hero.videos.length) {
-			jsxVideo = <div className="conversation-video" dangerouslySetInnerHTML={{__html: hero.videos[0].embedHTML}} ></div>;
-		}
 
 		return <div className="conversation detail page ">
 			<SubHeader />
@@ -119,9 +112,6 @@ class ConversationDetailPage extends BaseComponent {
 				
 				<div className="container-fluid">
 					{jsxHero}
-					<div className="container-narrow">
-						{jsxVideo}
-					</div>
 					<br></br>
 					<div className="container conversation-content-more">
 						<h2 className="conversation-more">more conversations</h2>

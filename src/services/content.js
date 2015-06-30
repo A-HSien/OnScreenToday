@@ -1,6 +1,7 @@
 "use strict"
 
 import { get } from "../utils/APIUtils";
+import configSetting from "../config";
 
 // Fetchr service to load the content data
 export default {
@@ -8,7 +9,8 @@ export default {
 
   read(req, resource, {type}, config, done) {
   	var category = type;
-    get("/getContentByType", {category}, done);
+  	var publishStat = configSetting.publishStatus;
+    get("/getContentByType", {category, publishStat}, done);
   }
 
 };

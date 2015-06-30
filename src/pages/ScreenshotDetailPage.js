@@ -4,6 +4,7 @@ import React, { PropTypes, Component } from "react";
 import { connectToStores } from "fluxible/addons";
 import SubHeader from '../components/SubHeader';
 import BaseComponent from "../components/common/BaseComponent";
+import {composeContent} from "../utils/Common";
 
 
 import _ from "lodash";
@@ -19,8 +20,6 @@ class ScreenshotDetailPage extends BaseComponent {
 	constructor() {
 		super();
 	}
-
-
   static propTypes = {
 	slug: PropTypes.string.isRequired,
 	lang: PropTypes.string.isRequired,
@@ -30,22 +29,12 @@ class ScreenshotDetailPage extends BaseComponent {
   static contextTypes = {
     executeAction: PropTypes.func.isRequired
   }
-
-
   render() {
-
+  	debugger;
   		var {lang, screenshotData} = this.props;
-		var hero = screenshotData['content'][lang];
+		var hero = composeContent(screenshotData, lang);
 		var contents = hero.contents;
-		var jsxVideo = {};
-
-		var jsxDivs = contents.map((c)=>{
-			if (c.content) {
-				return <div dangerouslySetInnerHTML={{__html: c.content.html}}></div>;
-			} else {
-				return <noscript />;
-			}
-		});
+		var jsxContent = <noscript />;
 
 		// debugger;
 		var jsxHero = (<div className=" screenshot-content-container clearfix" >
@@ -58,29 +47,30 @@ class ScreenshotDetailPage extends BaseComponent {
 				</div>
 				
 				<br></br>
-				{jsxDivs}
+				<div dangerouslySetInnerHTML={{__html: hero.article}}></div>;
 			</div>
 		</div>);
 
-		if (hero.videos && hero.videos.length) {
-			jsxVideo = <div className="conversation-video" dangerouslySetInnerHTML={{__html: hero.videos[0].embedHTML}} ></div>;
+		if (hero.heroImage && hero.heroImage.url) {
+			jsxContent = (<div className="row">
+				<div className="col-sm-6">
+					<div className="screenshot-image" style={{backgroundImage: 'url(' +  hero.heroImage.url+ ')'}} ></div>
+				</div>
+				<div className="col-sm-6">
+					{jsxHero}
+				</div>
+			</div>);
+		} else {
+			jsxContent = (<div className="row">
+				{jsxHero}
+			</div>);
 		}
-
 
 		return <div className="screenshot detail page ">
 			<SubHeader />
 			<div className="screenshot-detail-container">
 				<div className="container">
-					<div className="row">
-						<div className="col-sm-6">
-							<div className="screenshot-image" style={{backgroundImage: 'url(' + hero.heroImage.url + ')'}} ></div>
-							<div className="caption" dangerouslySetInnerHTML={{__html: hero.heroImage.captions}}></div>
-						</div>
-						<div className="col-sm-6">
-							{jsxHero}
-							{jsxVideo}
-						</div>
-					</div>
+					{jsxContent}
 				</div>
 			</div>
 

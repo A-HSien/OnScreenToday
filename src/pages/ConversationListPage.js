@@ -42,7 +42,7 @@ class ConversationListPage extends BaseComponent {
 		var listItemsContent = _.map(listItems, function (item) {
 			return composeContent(item, lang);
 		})
-		var type = hero.category.name;
+		// console.log("conversationsListPage heroContent: ", heroContent);
 
 		// debugger;
 		var jsxHero = (<div className="conversation-hero row clearfix" >
@@ -71,56 +71,12 @@ class ConversationListPage extends BaseComponent {
 						{jsxHero}
 					</div>
 					<div className="conversation-page-main">
-						{this.createGroupList(listItemsContent, 3)}
+						{createGroupList(listItemsContent, 3)}
 					</div>
 				</div>
 			</div>
 		</div>;
 	}
-
-
-
-	createGroupList(items, n) {
-		var jsxRow = [],
-			jsxItems = [],
-			item;
-
-		for(var i = 0; i < items.length; i++) {
-			item = items[i];
-			if (i % n === 0 && i !== 0) {
-				jsxRow.push(<div key={i}  className="row conversation-list-row">
-					{jsxItems}
-				</div>);
-
-				jsxItems = [];
-			}
-
-			jsxItems.push(<div key={item.title} className={"conversation-list-item " + "col-sm-"+ 12/n} >
-				<NavLink href={item.url} className="conversation-item-link">
-					<div className="conversation-item-header">
-						<div className="conversation-item-category" >{item.type}</div>
-						<div className="conversation-item-category-extra"></div>
-					</div>
-                    {(item.heroImage)? <div className="conversation-image" style={{backgroundImage: "url(" +item.heroImage.url+ ")"}}></div> : <noscript />}
-					<div className="conversation-title">{item.title}</div>
-					<div className="conversation-description" >{item.description.substring(0, 200) + "..."}</div>
-					<div className="conversation-more">READ MORE</div>
-				</NavLink>
-			</div>);
-
-		}
-
-		if (jsxItems.length) {
-			jsxRow.push(<div key={i + 1}  className="row conversation-list-row">
-					{jsxItems}
-				</div>);
-		}
-
-
-		return jsxRow;
-	}
-
-
 }
 
 ConversationListPage = connectToStores(ConversationListPage, ["ContentStore", "LanguageStore"], (stores) => {
