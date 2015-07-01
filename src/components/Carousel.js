@@ -35,7 +35,7 @@ var Carousel = React.createClass({
 			]
 		});
 
-		if (this.props.slides.length > 3) {
+		if (this.props.slides.length > 1) {
 			return (
 		      <Slider {..._settings}>
 			  	{this.props.slides}

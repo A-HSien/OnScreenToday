@@ -12,6 +12,7 @@ import HomeAir from './home/OnAir';
 import HomeFeature from './home/Feature';
 import Carousel from '../components/Carousel';
 import _ from "lodash";
+import {composeContent, createGroupList} from "../utils/Common";
 
 if (process.env.BROWSER) {
   require("../style/pages/Home.scss");
@@ -40,21 +41,21 @@ class HomePage extends Component {
 	render() {
 		debugger;
 		var {lang, conversationData, screenshotData, viewData} = this.props;
-		var conversations = conversationData.map((c)=> {
-			return c[lang];
+		var conversationContents = conversationData.map((c)=> {
+			return composeContent(c, lang);
 		});
-		var screenshots = screenshotData.map((c) => {
-			return c[lang];
+		var screenshotContents = screenshotData.map((c) => {
+			return composeContent(c, lang);
 		});
-		var views = viewData.map((c) => {
-			return c[lang];
+		var viewContents = viewData.map((c) => {
+			return composeContent(c, lang);
 		});
 		var jsx;
 
 
-		if (conversations.length) {
-			var cForCarousel = conversations.slice(0,2);
-			var cForList = conversations.slice(2);
+		if (conversationContents.length) {
+			var cForCarousel = conversationContents.slice(0,2);
+			var cForList = conversationContents.slice(2);
 
 
 			jsx = (
@@ -63,9 +64,9 @@ class HomePage extends Component {
 					<Carousel slides={this._createSlides(cForCarousel)} settings={{autoplay: true}} />
 					<div className="home-main container">
 						<HomeConversation conversations={cForList} />
-						<HomeScreenshot screenshots={screenshots} />
+						<HomeScreenshot screenshots={screenshotContents} />
 						<HomeFeature lang={lang}/>
-						<HomeView views={views} />
+						<HomeView views={viewContents} />
 					</div>
 				</div>
 			);
@@ -82,7 +83,7 @@ class HomePage extends Component {
 		for (var i =0 ; i < contentArray.length ; i++) {
 			var content = contentArray[i];
 			var _styleItem = {
-				backgroundImage: 'url(' + content.images[0].url + ')'
+				backgroundImage: 'url(' + content.heroImage.url + ')'
 			};
 			slides.push(
 				<div key={i} className="slideItem" style={_styleItem}>
@@ -116,9 +117,9 @@ HomePage = connectToStores(HomePage, ["ContentStore", "LanguageStore"], (stores)
 
 	return {
 		lang: lang,
-		conversationData: contentData.conversation,
-		screenshotData: contentData.screenshot,
-		viewData: contentData.view,
+		conversationData: _.filter(contentData, function(content) {return content.category.key === 'conversation'}),
+		screenshotData: _.filter(contentData, function(content) {return content.category.key === 'screenshot'}),
+		viewData: _.filter(contentData, function(content) {return content.category.key === 'view'}),
 
 
 	};
