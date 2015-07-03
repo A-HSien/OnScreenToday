@@ -100,7 +100,7 @@ class ConversationDetailPage extends BaseComponent {
 						{this._createIntroContributor(hero.introduction)}
 					</div>
 					<br></br>
-					<div dangerouslySetInnerHTML={{__html: hero.article}}></div>;
+					<div dangerouslySetInnerHTML={{__html: hero.article}}></div>
 				</div>
 			</div>
 		</div>);

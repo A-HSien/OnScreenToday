@@ -48,7 +48,7 @@ class ViewDetailPage extends BaseComponent {
 				</div>
 				
 				<br></br>
-				<div dangerouslySetInnerHTML={{__html: hero.article}}></div>;
+				<div dangerouslySetInnerHTML={{__html: hero.article}}></div>
 			</div>
 		</div>);
 
@@ -65,16 +65,16 @@ class ViewDetailPage extends BaseComponent {
 				</div>
 			</div>
 
-		</div>;
+		</div>
 	}
 }
 
 ViewDetailPage = connectToStores(ViewDetailPage, ["ContentStore", "LanguageStore"], (stores, props) => {
 	debugger;
-	console.log("ViewDetailPage: ", props);
+	// console.log("ViewDetailPage: ", props);
 	var contentData = stores.ContentStore.getContentBySlug(props.slug);
 	var {lang} = stores.LanguageStore.getData();
-
+	console.log("ViewDetailPage: ", contentData);
 	return {
 		lang: lang,
 		viewData: contentData,

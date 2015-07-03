@@ -11,9 +11,6 @@ const CommonUtils = {
 		if (_.isArray(item)) {
 			item = item[0];
 		}
-		var type = item.category.key;
-		var nameKey = lang === "eng" ? "name" : "name_" + lang;
-		var name = item.author[nameKey]; 
 		var defaultData = {
 			url: "#",
 			heroImage: {},
@@ -25,15 +22,18 @@ const CommonUtils = {
 			subtitle: "",
 			title: ""
 		};
-		var composed = _.extend({
+		var composed = {};
+		var type = _.get(item, 'category.key');
+		var nameKey = lang === "eng" ? "name" : "name_" + lang;
+		var name = item.author[nameKey]; 
+		
+		composed = _.extend({
 			url: "/" + type + "/" + item.slug,
 			heroImage: item.heroImage ? item.heroImage[0] : undefine,
 			images: item.heroImage,
 			author: name.first + " " + name.last,
 			type: item.type 
 		}, item['content'][lang]);
-
-
 		// console.log("composeContent name: ", name);
 
 		return _.extend(defaultData, composed);

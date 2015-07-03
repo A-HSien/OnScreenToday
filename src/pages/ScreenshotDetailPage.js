@@ -30,7 +30,7 @@ class ScreenshotDetailPage extends BaseComponent {
     executeAction: PropTypes.func.isRequired
   }
   render() {
-  	debugger;
+  	// debugger;
   		var {lang, screenshotData} = this.props;
 		var hero = composeContent(screenshotData, lang);
 		var contents = hero.contents;
@@ -47,7 +47,7 @@ class ScreenshotDetailPage extends BaseComponent {
 				</div>
 				
 				<br></br>
-				<div dangerouslySetInnerHTML={{__html: hero.article}}></div>;
+				<div dangerouslySetInnerHTML={{__html: hero.article}}></div>
 			</div>
 		</div>);
 
@@ -79,7 +79,7 @@ class ScreenshotDetailPage extends BaseComponent {
 }
 
 ScreenshotDetailPage = connectToStores(ScreenshotDetailPage, ["ContentStore", "LanguageStore"], (stores, props) => {
-	console.log("ScreenshotDetailPage: ", props);
+	// console.log("ScreenshotDetailPage: ", props);
 	var contentData = stores.ContentStore.getContentBySlug(props.slug);
 	var {lang} = stores.LanguageStore.getData();
 

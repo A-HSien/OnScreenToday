@@ -39,7 +39,7 @@ class HomePage extends Component {
 
 
 	render() {
-		debugger;
+		// debugger;
 		var {lang, conversationData, screenshotData, viewData} = this.props;
 		var conversationContents = conversationData.map((c)=> {
 			return composeContent(c, lang);

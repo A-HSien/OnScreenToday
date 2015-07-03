@@ -23,7 +23,7 @@ const ContentActionCreators = {
   },
 
   loadContentDetail(context, {slug, type}, done) {
-    debugger;
+    // debugger;
     if (context.getStore("ContentStore").getContentBySlugFromList(slug)) {
       return done();
     }

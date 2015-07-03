@@ -116,8 +116,9 @@ class HtmlHeadStore extends BaseStore {
         let store = this.dispatcher.getStore("ContentStore");
         let content = store.getContentBySlug(route.params.slug) || undefined;
         let images = [];
-        // console.log("detail content: ", content);
         content = composeContent(content, lang);
+        console.log("detail content: ", content);
+        
 
         if (content && content.heroImage) {
           images = [content.heroImage.url];
