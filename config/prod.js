@@ -10,7 +10,7 @@ export default {
 
   apiRoot: "http://screen.haohcraft.com/api",
 
-  publishStatus: 'draft',
+  publishStatus: 'published',
 
   // Supported locales
   locales: ["eng", "chn", "chnt"]
