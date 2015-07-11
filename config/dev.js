@@ -12,7 +12,7 @@ export default {
 
   mongoUrl: "mongodb://screen:2015screen@dogen.mongohq.com:10023/screen",
 
-  publishStatus: 'draft',
+  publishStatus: 'published',
 
   // apiKey: "onscreentodaycommediaart",
 
