@@ -14,29 +14,37 @@ const CommonUtils = {
 			images: [],
 			author: "",
 			type: "",
-			article: "",
+			article: {
+				title: "",
+				subtitle: "",
+				description: ""
+			},
 			keywords: "",
 			subtitle: "",
 			title: ""
 		};
-		if (item && item.length) {
-			if (_.isArray(item)) {
-				item = item[0];
-			}
+		// console.log("item: ", item);
+		if (_.isArray(item)) {
+			item = item[0];
+		}
+		if (item) {
+			
 			
 			var type = _.get(item, 'category.key');
 			var nameKey = lang === "eng" ? "name" : "name_" + lang;
-			var name = _.get(item, "author.nameKey"); 
+			var name = _.get(item, "author." + nameKey); 
 			
 			composed = _.extend({
 				url: "/" + type + "/" + item.slug,
 				heroImage: item.heroImage ? item.heroImage[0] : undefine,
 				images: item.heroImage,
-				author: name.first + " " + name.last,
+				author: _.get(name, 'first') + " " + _.get(name, "last"),
 				type: item.type 
 			}, item['content'][lang]);
 			// console.log("composeContent name: ", name);
 		}
+
+		console.log("composed data: ", composed);
 
 		return _.extend(defaultData, composed);
 	},
