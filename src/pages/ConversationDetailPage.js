@@ -129,7 +129,7 @@ class ConversationDetailPage extends BaseComponent {
 					</div>
 					<br></br>
 					<div className="container conversation-content-more">
-						<h2 className="conversation-more">more conversations</h2>
+						<NavLink className="call" href="/conversations"><h2 className="conversation-more">more conversations</h2></NavLink>
 						<div className="conversation-more-main">{this._createExtra(extraContent, lang)}</div>
 					</div>
 				</div>
