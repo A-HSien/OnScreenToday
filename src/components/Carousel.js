@@ -3,7 +3,7 @@
 ===============================================*/
 "use strict";
 import React from 'react';
-import Slider from './vendors/react-slick/index.jsx';
+import Slider from 'react-slick';
 import defaults from 'lodash/object/defaults';
 
 if (process.env.BROWSER) {

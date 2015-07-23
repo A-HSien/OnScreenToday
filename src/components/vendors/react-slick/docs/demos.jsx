@@ -1,5 +1,7 @@
-var React = require('react');
-var Slider = require('../');
+'use strict';
+
+import React from 'react';
+import Slider from '../src/slider';
 
 var SingleItem = React.createClass({
   render: function () {
@@ -8,7 +10,7 @@ var SingleItem = React.createClass({
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1,
+      slidesToScroll: 1
     };
     return (
       <div>
@@ -38,7 +40,7 @@ var MultipleItems = React.createClass({
     };
     return (
       <div>
-        <h2> Multiple items </h2> 
+        <h2> Multiple items </h2>
         <Slider {...settings}>
           <div><h3>1</h3></div>
           <div><h3>2</h3></div>
@@ -84,7 +86,7 @@ var Responsive = React.createClass({
                 slidesToScroll: 1
             }
         }]
-    }
+    };
     return (
       <div>
         <h2> Responsive </h2>
@@ -111,7 +113,7 @@ var UnevenSets = React.createClass({
       speed: 500,
       slidesToScroll: 4,
       slidesToShow: 4
-    }
+    };
     return (
       <div>
         <h2>Uneven sets</h2>
@@ -135,11 +137,15 @@ var CenterMode = React.createClass({
       centerMode: true,
       infinite: true,
       centerPadding: '60px',
-      slidesToShow: 3,
-      speed: 500,   afterChange:function(a){
-        alert("Slider Changed to :"+a);
+      slidesToShow: 7,
+      speed: 500,
+      beforeChange: function (index) {
+        console.log('Slider will change from:' + index);
+      },
+      afterChange: function (currentSlide) {
+        console.log('Slider Changed to :' + (currentSlide + 1));
       }
-    }
+    };
     return (
       <div>
         <h2>Center Mode</h2>
@@ -151,6 +157,9 @@ var CenterMode = React.createClass({
           <div><h3>4</h3></div>
           <div><h3>5</h3></div>
           <div><h3>6</h3></div>
+          <div><h3>7</h3></div>
+          <div><h3>8</h3></div>
+          <div><h3>9</h3></div>
         </Slider>
       </div>
     );
@@ -162,17 +171,18 @@ var CenterModeWithInitial = React.createClass({
     var settings = {
       className: 'center',
       centerMode: true,
-      infinite: false,
+      infinite: true,
       centerPadding: '60px',
       slidesToShow: 3,
       initialSlide: 3,
-      speed: 500,   afterChange:function(index){
-        console.log('%c Slider Changed to:'+index, 'background: #222; color: #bada55');
+      speed: 500,
+      afterChange: function (index) {
+        console.log(`Slider Changed to: ${index + 1}, background: #222; color: #bada55`);
       }
-    }
+    };
     return (
       <div>
-        <h2>Center Mode With InitalSlideSet</h2>
+        <h2>Center Mode With InitialSlide</h2>
         <Slider {...settings}>
           <div><h3>1</h3></div>
           <div><h3>2</h3></div>
@@ -195,8 +205,8 @@ var AutoPlay = React.createClass({
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
-    }
+      autoplaySpeed: 2000
+    };
     return (
       <div>
         <h2>Auto Play</h2>
@@ -223,7 +233,7 @@ var VariableWidth = React.createClass({
       slidesToShow: 1,
       slidesToScroll: 1,
       variableWidth: true
-    }
+    };
     return (
       <div>
         <h2>Variable width</h2>
@@ -249,7 +259,7 @@ var AdaptiveHeight = React.createClass({
       slidesToShow: 1,
       slidesToScroll: 1,
       adaptiveHeight: true
-    }
+    };
     return (
       <div>
         <h2>Adaptive height</h2>
@@ -279,12 +289,62 @@ var AdaptiveHeight = React.createClass({
   }
 });
 
+var LazyLoad = React.createClass({
+
+  render: function () {
+    var settings = {
+      dots: true,
+      lazyLoad: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    return (
+      <div>
+        <h2> Lazy Load</h2>
+        <Slider {...settings}>
+          <div><img src="img/abstract01.jpg" /></div>
+          <div><img src="img/abstract02.jpg" /></div>
+          <div><img src="img/abstract03.jpg" /></div>
+          <div><img src="img/abstract04.jpg" /></div>
+        </Slider>
+      </div>
+    );
+  }
+});
+
+var Fade = React.createClass({
+
+  render: function () {
+    var settings = {
+      dots: true,
+      fade: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    return (
+      <div>
+        <h2>Fade</h2>
+        <Slider {...settings}>
+          <div><img src="img/abstract01.jpg" /></div>
+          <div><img src="img/abstract02.jpg" /></div>
+          <div><img src="img/abstract03.jpg" /></div>
+          <div><img src="img/abstract04.jpg" /></div>
+        </Slider>
+      </div>
+    );
+  }
+});
+
 var App = React.createClass({
   render: function () {
     //need to add variable width and center mode demo
     return (
       <div className='content'>
-          <SingleItem />
+        <SingleItem />
         <MultipleItems />
         <Responsive />
         <UnevenSets />
@@ -293,6 +353,8 @@ var App = React.createClass({
         <AutoPlay />
         <VariableWidth />
         <AdaptiveHeight />
+        <LazyLoad />
+        <Fade />
       </div>
     );
   }

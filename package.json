@@ -93,6 +93,7 @@
     "object-assign": "^2.0.0",
     "react-hot-loader": "^1.2.5",
     "react-responsive-mixin": "^0.3.3",
+    "react-slick": "^0.6.0",
     "slick-carousel": "^1.5.2",
     "url-loader": "^0.5.5",
     "webpack-dev-server": "^1.8.2"

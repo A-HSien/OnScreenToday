@@ -19,7 +19,7 @@ function API (app) {
 
 	app.get('/api/v1/conversation', function(req, res, next) {
 		var conversation = _.filter(data_conversation, function (item) {
-			console.log(item.slug);
+			// console.log(item.slug);
 
 			return item.slug === req.query.slug;
 		});
@@ -66,7 +66,7 @@ function API (app) {
 	});
 
 	app.get('/api/v1/lang', function(req, res, next) {
-		console.log("lang");
+		// console.log("lang");
 		res.status(200).send({
 			lang: "eng"
 		});
