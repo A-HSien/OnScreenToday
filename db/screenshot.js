@@ -1,5 +1,106 @@
 module.exports = [
 
+{
+ id: 2,
+        slug:"In-My-Digital-Opinion",
+        eng: {
+            title: "In My Digital Opinion",
+            subtitle: "Bartholl, Dullaart, Roth and Meyers",
+            author: "Alexandra Gronwald",
+            translator:"Jiayin Chen",
+            slug:"In-My-Digital-Opinion",
+            description: "HeK's booth at Liste functions like a single collage, titled PEBKAC IMHO: a reference to the acronyms for “Problem Exists Between Keyboard And Chair” and “In My Honest Opinion,” mating nostalgia to uncanniness in a single living machine.",
+            videos: [
+                
+            ],
+            heroImage: {
+                    url:"/images/content/screenshot/2/0.jpg",
+                    captions:"PEBKAC IMHO, installation view of wallpaper. Photograph by Alexandra Gronwald. "
+            },
+            Images:[
+                {
+                        url:"/images/content/screenshot/2/0.jpg",
+                        captions:"PEBKAC IMHO, installation view of wallpaper. Photograph by Alexandra Gronwald. "
+                },
+            ] ,
+            url: "/screenshot/In-My-Digital-Opinion",
+            contents: [
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p><span style=\"line-height: 1.75;\">HeK's booth at Liste functions like a single collage, titled PEBKAC IMHO: a reference to the acronyms for “Problem Exists Between Keyboard And Chair” and “In My Honest Opinion,” mating nostalgia to uncanniness in a single living machine.</span><br></p><p> </p><p>Located in the building of the former Warteck brewery, the LISTE is a reprieve from the glam of Art Basel. The House of Electronic Arts Basel (HeK) invited four young media—namely, Aram Bartholl (Germany), Constant Dullaaart (Netherlands), Evan Roth (United States) and Raquel Meyers (Spain)—to occupy a booth together that functions like a single collage, titled PEBKAC IMHO: a reference to the acronyms for “Problem Exists Between Keyboard And Chair” and “In My Honest Opinion.”</p><p> </p><p>After climbing down a narrow staircase, one arrives in a small digital world that should be familiar, yet confuses. Every spot of the floor has been covered with pictures of office chairs. Settling in front of the computer—or inside it?—the visitor can hardly relax, given the continual coming and going in the passage space—quite different from home. With a second look one recognises that the pictures on the floor also don’t show office chairs at home behind the desk, but in courtyards, parks or shopping streets. Just so: isn’t it the office, brought increasingly online, in fact everywhere?</p><p> </p><p>The only real, physical office chair in the show room is not meant for the visitor, but occupied by his loyal friend and companion: the laptop. The screen shows the image results for “Hirsch” (German for “stag”). This work of art, The Sleeping Internet, by Constant Dullaart falls into sleep mode and then jerks back awake every few seconds. Drawing on the context of the art fair, Dullaart synchronised this rhythm with the lights that illuminate the small room between the staircase and the actual gallery hall, such that they come on and off as visitors enter. The whole room enters sleep on occasion, with the other sculptures cast into shadow or light depending on the visitor traffic.</p><p> </p><p>Silhouettes, by Evan Roth, stands in front of Adam Bartholl’s greetings from the internet, a a postcard stand filled with photos of hand-written notes recording passwords and WLAN names. Bartholl collected all these small memos on his journeys in restaurants, hotels and other public spaces, which can be reassuring; the first sight of the handwritten memos leaves one slightly uncomfortable, like a voyeuristic glimpse into someone else’s keyhole.</p><p> </p><p>This password jungle opens onto silhouettes of the internet landscape by Evan Roth. The silhouette, popular in the 19th century in cut paper as a cheaper form of portraiture, is a particularly efficacious means of compressing complex information. Roth applied this technique deftly through laser cutting his personal internet browser data in the shape of an abstract map into black cardboard.</p><p> </p><p>In Bartholl’s work, the first glance emphasized the individual through the handwriting, whereas a closer look invited contemplation on the impersonality of these codes used by hundreds of random people. In contrast, Roth’s work on first impression deceives by showing an arbitrary-seeming cipher, but the artist has in fact visualised one of his more intimate behaviors.</p><p>The sensation of physically inhabiting a machine recurs in this patchwork, evoked not only in Roth’s visualisation of the guts of the web, but also by Dullaart’s sleeping mode light and the sounds coming from Raquel Meyers video installation. Fingers of Doom shows a Commodore 64 animation in which pixel characters (familiar to some of us from old computer games) take shape, dissolve, or transform into different monsters and animals – never standing still and running in an infinite loop. Different from our own computer games, this play cannot be influenced or manipulated by the visitor – neither can the glitchy Game Boy-like music, which recalls sci-fi cockpits and lighter clubs.</p><p> </p><p>The exhibition, or single installation, mates nostalgia to uncanniness in a single living machine. As the infinite loop of the animation and its sounds, the helpless laptop sitting on the office chair, and the breathing patterns of the sleep-mode light, all suggest to the visitor that, rather than using the machine, the machine is using us.</p><p></p>",
+                        "text": "HeK's booth at Liste functions like a single collage, titled PEBKAC IMHO: a reference to the acronyms for “Problem Exists Between Keyboard And Chair” and “In My Honest Opinion,” mating nostalgia to uncanniness in a single living machine. Located in the building of the former Warteck brewery, the LISTE is a reprieve from the glam of Art Basel. The House of Electronic Arts Basel (HeK) invited four young media—namely, Aram Bartholl (Germany), Constant Dullaaart (Netherlands), Evan Roth (United States) and Raquel Meyers (Spain)—to occupy a booth together that functions like a single collage, titled PEBKAC IMHO: a reference to the acronyms for “Problem Exists Between Keyboard And Chair” and “In My Honest Opinion.” After climbing down a narrow staircase, one arrives in a small digital world that should be familiar, yet confuses. Every spot of the floor has been covered with pictures of office chairs. Settling in front of the computer—or inside it?—the visitor can hardly relax, given the continual coming and going in the passage space—quite different from home. With a second look one recognises that the pictures on the floor also don’t show office chairs at home behind the desk, but in courtyards, parks or shopping streets. Just so: isn’t it the office, brought increasingly online, in fact everywhere? The only real, physical office chair in the show room is not meant for the visitor, but occupied by his loyal friend and companion: the laptop. The screen shows the image results for “Hirsch” (German for “stag”). This work of art, The Sleeping Internet, by Constant Dullaart falls into sleep mode and then jerks back awake every few seconds. Drawing on the context of the art fair, Dullaart synchronised this rhythm with the lights that illuminate the small room between the staircase and the actual gallery hall, such that they come on and off as visitors enter. The whole room enters sleep on occasion, with the other sculptures cast into shadow or light depending on the visitor traffic. Silhouettes, by Evan Roth, stands in front of Adam Bartholl’s greetings from the internet, a a postcard stand filled with photos of hand-written notes recording passwords and WLAN names. Bartholl collected all these small memos on his journeys in restaurants, hotels and other public spaces, which can be reassuring; the first sight of the handwritten memos leaves one slightly uncomfortable, like a voyeuristic glimpse into someone else’s keyhole. This password jungle opens onto silhouettes of the internet landscape by Evan Roth. The silhouette, popular in the 19th century in cut paper as a cheaper form of portraiture, is a particularly efficacious means of compressing complex information. Roth applied this technique deftly through laser cutting his personal internet browser data in the shape of an abstract map into black cardboard. In Bartholl’s work, the first glance emphasized the individual through the handwriting, whereas a closer look invited contemplation on the impersonality of these codes used by hundreds of random people. In contrast, Roth’s work on first impression deceives by showing an arbitrary-seeming cipher, but the artist has in fact visualised one of his more intimate behaviors.The sensation of physically inhabiting a machine recurs in this patchwork, evoked not only in Roth’s visualisation of the guts of the web, but also by Dullaart’s sleeping mode light and the sounds coming from Raquel Meyers video installation. Fingers of Doom shows a Commodore 64 animation in which pixel characters (familiar to some of us from old computer games) take shape, dissolve, or transform into different monsters and animals – never standing still and running in an infinite loop. Different from our own computer games, this play cannot be influenced or manipulated by the visitor – neither can the glitchy Game Boy-like music, which recalls sci-fi cockpits and lighter clubs. The exhibition, or single installation, mates nostalgia to uncanniness in a single living machine. As the infinite loop of the animation and its sounds, the helpless laptop sitting on the office chair, and the breathing patterns of the sleep-mode light, all suggest to the visitor that, rather than using the machine, the machine is using us."
+                    },
+                    "type": "medium"
+                }
+            ]
+        },
+        chn: {
+            title: "低科奇幻",
+            subtitle: "六月巴塞尔艺术推荐亮点- LISTE Haus der electronike Kunst ",
+            author: "Alexandra Gronwald",
+            translator:"Jiayin Chen",
+            slug:"In-My-Digital-Opinion",
+            description: `位於Warteck啤酒厂的旧址的LISTE艺博会，充满了一种不寻常的气氛。House of electronic Arts Basel （HeK，巴塞尔电子艺术之家）的展位被安排在地下室，此地聚集的四位艺术家创造了一副巨型数码拼贴PEBKAC IMHO。这乱码似的标题引用了两句网语，“In My Honest Opinion”（本人意见），以及 “Problem Exists Between Keyboard And Chair”（键盘与椅子间存在着问题），这两句话正好反映了观众所遇到的场景。`,
+            videos: [
+                
+            ],
+            heroImage: {
+                    url:"/images/content/screenshot/2/0.jpg",
+                    captions:"PEBKAC IMHO, installation view of wallpaper. Photograph by Alexandra Gronwald. "
+            },
+            Images:[
+                {
+                        url:"/images/content/screenshot/2/0.jpg",
+                        captions:"PEBKAC IMHO, installation view of wallpaper. Photograph by Alexandra Gronwald. "
+                },
+            ] ,
+            url: "/screenshot/In-My-Digital-Opinion",
+            contents: [
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p>位於Warteck啤酒厂的旧址的LISTE艺博会，充满了一种不寻常的气氛。House of electronic Arts Basel （HeK，巴塞尔电子艺术之家）的展位被安排在地下室，此地聚集的四位艺术家创造了一副巨型数码拼贴PEBKAC IMHO。这乱码似的标题引用了两句网语，“In My Honest Opinion”（本人意见），以及 “Problem Exists Between Keyboard And Chair”（键盘与椅子间存在着问题），这两句话正好反映了观众所遇到的场景。</p><p>狭窄阶梯通往一间小小的、似乎再熟悉不过的数码世界。每一角落都占满了无数办公椅的图片，使得感知变为混乱、隐喻了观众稳坐办公的日常仪式，在电脑前、在电脑里、在这窄小的通道中，几乎人人都无法舒适的移动。观众持续的挤入、钻出，不如家里用电脑的舒适。但只要再仔细看一番，就会发觉图像里椅子的背景也不限于家里，而是后院、公园、大街等地方。而办公椅可以进入外界，恰好是因为网络让我们能够随身携带办公室。</p><p>空间中唯一一张真正的椅子，不给观众坐，而是给它最忠实的朋友既伙伴：笔电。银幕上，观众可以看见“Hirsch”（牡鹿的德语）输入在搜寻引擎的“图片”类别中。这件Constant Dullaart的作品几秒就进入睡眠一次，然后又立刻重新开始下一个循环。在这次特别的展览中，艺术家将这个频率与灯光明暗在小房间、楼梯与展间走道的频率同步。</p><p>在这个自给自足的空间，灯光不断地明亮又熄灭，不只是笔电，整个空间都进入一种睡眠状态。几秒中的时间，Evan Roth与Aram Bartholl的作品遁入黑暗又再度复明。在Evan Roth 的作品“Silhouettes”（剪影）前面是Aram Bartholls的作品“Greetings from the internet”（来自网路的问候）。一个明信片架站立着，陈设亲笔写满密码与网路名称的便条纸摄影明信片。艺术家Aram Bartholls在不同旅程中，收集了餐厅、旅馆、其他场所的这些公共无线网络的纸条。作为观者，第一眼，这些手写的密码让人不太自在，彷佛窥见了某些非常私人的东西，直到知道这些资讯都是从公共场所收集而来的才能感到安心，毕竟，这些密码在现今的世界，早已是我们数码身份与私人生活的各种钥匙…</p><p>穿越了重重密码的丛林，观者也将自己登入了网络中，看见艺术家Evan Roth创作的网络的轮廓剪影。显然的，人的轮廓线是最快也最容易辨识个人的形式。Evan Roth运用这个概念，将自己网络浏览器的资讯雷射切割成抽象的地图在黑色纸板上。观者对于这件作品很容易产生与Aram Bartholl作品相反的印象：后者的第一眼似乎更关乎个人，借由手写来表现，但是深入再看，却也非关个人，只是随机任人使用的公共场所密码。相反的，Evan Roth作品的第一印象彷佛故意展示一种武断，并且因为网路地形抽象图案一开始并不容易辨识 ，但是仔细再看，艺术家其实透过视觉，暴露了自己极度私密的一面，产生了数码与实体世界的一种独特连结。这一种观者彷佛寄生在机械内部的感觉，通过Evan Roth将日常不可触及的网路线索视觉化、Constant Dullaaart睡眠模式的灯光，以及Raquel Meyers影像装置的声音表现出来。</p><p>“Fingers of Doom”（手指的命运）是一件以8进制家用电脑Commodore 64制作的动画，低像素的卡通角色引起了对于早期电脑游戏的怀旧感，扭曲的形状、溶解、或是转化成不同的怪兽以及动物。与电脑游戏不同的是，这些角色无法被人操纵，也没有受到那些听上去令人想起古老Gameboys、科幻电影里的太空船座舱以及夜店的电子音乐的影响。</p><p>一种怀旧的情绪：观看的人们被抽入了一个自我运转的机械体。一成不变、无限循环的动画影像、电子声响、坐在办公椅上的笔记型电脑，以及不断进入睡眠模式的灯光，给予观者一种奇异的感受，似乎，这一次不是人类在使用机器，而是数码的机器在使用人类…</p><p>在三百个画廊展位的巨大高端博览会的建筑隔壁，LISTE绝对是今年巴塞尔周最值得探访的亮点。1996年由一群年轻的画廊业者发起，LISTE成为了针对年轻画廊与年轻艺术家最重要的博览会，在79间参展画廊之外，HeK是LISTE今年的特殊邀展项目。在瑞士巴塞尔周期间，邀请了四位年轻媒体艺术家展出：Aram Bartholl （德国）、Constant Dullaaart（荷兰）、Evan Roth（美国）以及Raquel Meyers（西班牙）。</p>",
+                        "text": "位於Warteck啤酒厂的旧址的LISTE艺博会，充满了一种不寻常的气氛。House of electronic Arts Basel （HeK，巴塞尔电子艺术之家）的展位被安排在地下室，此地聚集的四位艺术家创造了一副巨型数码拼贴PEBKAC IMHO。这乱码似的标题引用了两句网语，“In My Honest Opinion”（本人意见），以及 “Problem Exists Between Keyboard And Chair”（键盘与椅子间存在着问题），这两句话正好反映了观众所遇到的场景。狭窄阶梯通往一间小小的、似乎再熟悉不过的数码世界。每一角落都占满了无数办公椅的图片，使得感知变为混乱、隐喻了观众稳坐办公的日常仪式，在电脑前、在电脑里、在这窄小的通道中，几乎人人都无法舒适的移动。观众持续的挤入、钻出，不如家里用电脑的舒适。但只要再仔细看一番，就会发觉图像里椅子的背景也不限于家里，而是后院、公园、大街等地方。而办公椅可以进入外界，恰好是因为网络让我们能够随身携带办公室。空间中唯一一张真正的椅子，不给观众坐，而是给它最忠实的朋友既伙伴：笔电。银幕上，观众可以看见“Hirsch”（牡鹿的德语）输入在搜寻引擎的“图片”类别中。这件Constant Dullaart的作品几秒就进入睡眠一次，然后又立刻重新开始下一个循环。在这次特别的展览中，艺术家将这个频率与灯光明暗在小房间、楼梯与展间走道的频率同步。在这个自给自足的空间，灯光不断地明亮又熄灭，不只是笔电，整个空间都进入一种睡眠状态。几秒中的时间，Evan Roth与Aram Bartholl的作品遁入黑暗又再度复明。在Evan Roth 的作品“Silhouettes”（剪影）前面是Aram Bartholls的作品“Greetings from the internet”（来自网路的问候）。一个明信片架站立着，陈设亲笔写满密码与网路名称的便条纸摄影明信片。艺术家Aram Bartholls在不同旅程中，收集了餐厅、旅馆、其他场所的这些公共无线网络的纸条。作为观者，第一眼，这些手写的密码让人不太自在，彷佛窥见了某些非常私人的东西，直到知道这些资讯都是从公共场所收集而来的才能感到安心，毕竟，这些密码在现今的世界，早已是我们数码身份与私人生活的各种钥匙…穿越了重重密码的丛林，观者也将自己登入了网络中，看见艺术家Evan Roth创作的网络的轮廓剪影。显然的，人的轮廓线是最快也最容易辨识个人的形式。Evan Roth运用这个概念，将自己网络浏览器的资讯雷射切割成抽象的地图在黑色纸板上。观者对于这件作品很容易产生与Aram Bartholl作品相反的印象：后者的第一眼似乎更关乎个人，借由手写来表现，但是深入再看，却也非关个人，只是随机任人使用的公共场所密码。相反的，Evan Roth作品的第一印象彷佛故意展示一种武断，并且因为网路地形抽象图案一开始并不容易辨识 ，但是仔细再看，艺术家其实透过视觉，暴露了自己极度私密的一面，产生了数码与实体世界的一种独特连结。这一种观者彷佛寄生在机械内部的感觉，通过Evan Roth将日常不可触及的网路线索视觉化、Constant Dullaaart睡眠模式的灯光，以及Raquel Meyers影像装置的声音表现出来。“Fingers of Doom”（手指的命运）是一件以8进制家用电脑Commodore 64制作的动画，低像素的卡通角色引起了对于早期电脑游戏的怀旧感，扭曲的形状、溶解、或是转化成不同的怪兽以及动物。与电脑游戏不同的是，这些角色无法被人操纵，也没有受到那些听上去令人想起古老Gameboys、科幻电影里的太空船座舱以及夜店的电子音乐的影响。一种怀旧的情绪：观看的人们被抽入了一个自我运转的机械体。一成不变、无限循环的动画影像、电子声响、坐在办公椅上的笔记型电脑，以及不断进入睡眠模式的灯光，给予观者一种奇异的感受，似乎，这一次不是人类在使用机器，而是数码的机器在使用人类…在三百个画廊展位的巨大高端博览会的建筑隔壁，LISTE绝对是今年巴塞尔周最值得探访的亮点。1996年由一群年轻的画廊业者发起，LISTE成为了针对年轻画廊与年轻艺术家最重要的博览会，在79间参展画廊之外，HeK是LISTE今年的特殊邀展项目。在瑞士巴塞尔周期间，邀请了四位年轻媒体艺术家展出：Aram Bartholl （德国）、Constant Dullaaart（荷兰）、Evan Roth（美国）以及Raquel Meyers（西班牙）。"
+                    },
+                    "type": "medium"
+                }
+            ]
+        },
+        chnt: {
+            title: "六月巴塞爾藝術推薦亮點",
+            subtitle: "LISTE：低科技的奇幻裝置",
+            author: "Alexandra Gronwald",
+            translator:"Jiayin Chen",
+            slug:"In-My-Digital-Opinion",
+            description: "LISTE藝博會位於原來是Warteck啤酒廠，充滿了一種不尋常的氣氛。HeK (House of electronic Arts Basel)的展位被安排在地下室，四位藝術家（並非一人一個展位），而是混合成為一件獨特的巨型（數位）拼貼，標題是“PEBKAC IMHO”. IMHO是“In My Honest Opinion”（我如實的意見），至於“PEBKAC”則是“Problem Exists Between Keyboard And Chair”（鍵盤與椅子間的困擾）的縮寫",
+            videos: [
+                
+            ],
+            heroImage: {
+                    url:"/images/content/screenshot/2/0.jpg",
+                    captions:"PEBKAC IMHO, installation view of wallpaper. Photograph by Alexandra Gronwald. "
+            },
+            Images:[
+                {
+                        url:"/images/content/screenshot/2/0.jpg",
+                        captions:"PEBKAC IMHO, installation view of wallpaper. Photograph by Alexandra Gronwald. "
+                },
+            ] ,
+            url: "/screenshot/In-My-Digital-Opinion",
+            contents: [
+                {
+                    "blocks": [],
+                    "content": {
+                        "html": "<p> </p><p>LISTE藝博會位於原來是Warteck啤酒廠，充滿了一種不尋常的氣氛。HeK (House of electronic Arts Basel)的展位被安排在地下室，四位藝術家（並非一人一個展位），而是混合成為一件獨特的巨型（數位）拼貼，標題是“PEBKAC IMHO”. IMHO是“In My Honest Opinion”（我如實的意見），至於“PEBKAC”則是“Problem Exists Between Keyboard And Chair”（鍵盤與椅子間的困擾）的縮寫 - 後面這句也明示了觀者在這裡將遇到的情況：</p><p>幾乎要用爬下去的狹窄階梯，觀眾進入一個小小的、似乎再熟悉不過的數位世界;感知被混亂。每一個地板的角落都被覆上了無數辦公椅的圖片，是否成為了你坐在電腦前觀看的隱喻？或者，是你進入了電腦裡？在這窄小的通道中，幾乎人人都無法舒適的移動，觀眾持續的擠入、鑽出，不像是在家裡用電腦的感覺，再仔細一看，地板上的椅子圖像，背景也不是家裡，而是各種奇怪的地方，庭院、公園或是大街上。而正不就是所有這些地方（也就是所有的地方）都是我們現在隨時在工作（有網路）的地方？</p><p> </p><p>空間中唯一一張真正的椅子，不給觀眾坐，而是給它最忠實的朋友既夥伴：筆電。螢幕上，觀眾可以看見“Hirsch”（牡鹿的德語）輸入在搜尋引擎的“圖片”類別中。這件Constant Dullaart的作品幾秒就進入睡眠一次，然後又立刻重新開始下一個循環。在這次特別的展覽中，藝術家將這個頻率與燈光明暗在小房間、樓梯與展間走道的頻率同步。</p><p>在這個自給自足的空間，燈光不斷地明亮又熄滅，不只是筆電，整個空間都進入一種睡眠狀態。幾秒中的時間，Evan Roth與Aram Bartholl的作品遁入黑暗又再度復明。在Evan Roth 的作品“Silhouettes”（剪影）前面是Aram Bartholls的作品“Greetings from the internet”（來自網路的問候）。一個明信片架站立著，陳設親筆寫滿密碼與網路名稱的便條紙攝影明信片。藝術家Aram Bartholls在不同旅程中，收集了餐廳、旅館、其他場所的這些wifi紙條。作為觀者，第一眼，這些手寫的密碼讓人不太自在，彷彿窺見了某些非常私人的東西，直到知道這些資訊都是從公共場所收集而來的才能感到安心，畢竟，這些密碼在現今的世界，早已是我們數位身份與私人生活的各種鑰匙…</p><p>穿越了重重密碼的叢林，觀者也將自己登入了網路中，看見藝術家Evan Roth創作的網路的輪廓剪影。顯然的，人的輪廓線是最快也最容易辨識個人的形式。Evan Roth運用這個概念，將自己網路瀏覽器的資訊雷射切割成抽象的地圖在黑色紙板上。觀者對於這件作品很容易產生與Aram Bartholl作品相反的印象：後者的第一眼似乎更關乎個人，藉由手寫來表現，但是深入再看，卻也非關個人，只是隨機任人使用的公共場所密碼。相反的，Evan Roth作品的第一印象彷彿故意展示一種武斷，並且因為網路地形抽象圖案一開始並不容易辨識 ，但是仔細再看，藝術家其實透過視覺，暴露了自己極度私密的一面，產生了數位與實體世界的一種獨特連結。這一種觀者彷彿寄生在機械內部的感覺，通過Evan Roth將日常不可觸及的網路線索視覺化、Constant Dullaaart睡眠模式的燈光，以及Raquel Meyers影像裝置的聲音表現出來。“Fingers of Doom”（手指的命運）是一件以8位元家用電腦Commodore 64製作的動畫，低像素的卡通角色（像是以前電腦遊戲的那種）變換著形狀、溶解、或是轉化成不同的怪獸以及動物- 永遠不停的無限循環。與電腦遊戲不同的是，這些角色無法被人操縱，也沒有受到那些聽上去令人想起古老Gameboys、科幻電影裡的太空船座艙以及夜店的電子音樂的影響。</p><p>一種懷舊的情緒、觀看的人們被抽入了一個自我運轉的機械體。一成不變、無限循環的動畫影像、電子聲響、坐在辦公椅上的筆記型電腦，以及不斷進入睡眠模式的燈光，給予觀者一種奇異的感受，似乎，這一次不是人類在使用機器，而是數位的機器在使用人類…</p><p>後記：在三百個畫廊展位的巨大高端博覽會的建築隔壁，LISTE絕對是今年巴塞爾周最值得探訪的亮點。1996年由一群年輕的畫廊業者發起，LISTE成為了針對年輕畫廊與年輕藝術家最重要的博覽會，在79間參展畫廊之外，HeK是LISTE今年的特殊邀展項目。在瑞士巴塞爾周期間，邀請了四位年輕媒體藝術家展出：Aram Bartholl （德國）、Constant Dullaaart（荷蘭）、Evan Roth（美國）以及Raquel Meyers（西班牙）。</p><p></p>",
+                        "text": " LISTE藝博會位於原來是Warteck啤酒廠，充滿了一種不尋常的氣氛。HeK (House of electronic Arts Basel)的展位被安排在地下室，四位藝術家（並非一人一個展位），而是混合成為一件獨特的巨型（數位）拼貼，標題是“PEBKAC IMHO”. IMHO是“In My Honest Opinion”（我如實的意見），至於“PEBKAC”則是“Problem Exists Between Keyboard And Chair”（鍵盤與椅子間的困擾）的縮寫 - 後面這句也明示了觀者在這裡將遇到的情況：幾乎要用爬下去的狹窄階梯，觀眾進入一個小小的、似乎再熟悉不過的數位世界;感知被混亂。每一個地板的角落都被覆上了無數辦公椅的圖片，是否成為了你坐在電腦前觀看的隱喻？或者，是你進入了電腦裡？在這窄小的通道中，幾乎人人都無法舒適的移動，觀眾持續的擠入、鑽出，不像是在家裡用電腦的感覺，再仔細一看，地板上的椅子圖像，背景也不是家裡，而是各種奇怪的地方，庭院、公園或是大街上。而正不就是所有這些地方（也就是所有的地方）都是我們現在隨時在工作（有網路）的地方？ 空間中唯一一張真正的椅子，不給觀眾坐，而是給它最忠實的朋友既夥伴：筆電。螢幕上，觀眾可以看見“Hirsch”（牡鹿的德語）輸入在搜尋引擎的“圖片”類別中。這件Constant Dullaart的作品幾秒就進入睡眠一次，然後又立刻重新開始下一個循環。在這次特別的展覽中，藝術家將這個頻率與燈光明暗在小房間、樓梯與展間走道的頻率同步。在這個自給自足的空間，燈光不斷地明亮又熄滅，不只是筆電，整個空間都進入一種睡眠狀態。幾秒中的時間，Evan Roth與Aram Bartholl的作品遁入黑暗又再度復明。在Evan Roth 的作品“Silhouettes”（剪影）前面是Aram Bartholls的作品“Greetings from the internet”（來自網路的問候）。一個明信片架站立著，陳設親筆寫滿密碼與網路名稱的便條紙攝影明信片。藝術家Aram Bartholls在不同旅程中，收集了餐廳、旅館、其他場所的這些wifi紙條。作為觀者，第一眼，這些手寫的密碼讓人不太自在，彷彿窺見了某些非常私人的東西，直到知道這些資訊都是從公共場所收集而來的才能感到安心，畢竟，這些密碼在現今的世界，早已是我們數位身份與私人生活的各種鑰匙…穿越了重重密碼的叢林，觀者也將自己登入了網路中，看見藝術家Evan Roth創作的網路的輪廓剪影。顯然的，人的輪廓線是最快也最容易辨識個人的形式。Evan Roth運用這個概念，將自己網路瀏覽器的資訊雷射切割成抽象的地圖在黑色紙板上。觀者對於這件作品很容易產生與Aram Bartholl作品相反的印象：後者的第一眼似乎更關乎個人，藉由手寫來表現，但是深入再看，卻也非關個人，只是隨機任人使用的公共場所密碼。相反的，Evan Roth作品的第一印象彷彿故意展示一種武斷，並且因為網路地形抽象圖案一開始並不容易辨識 ，但是仔細再看，藝術家其實透過視覺，暴露了自己極度私密的一面，產生了數位與實體世界的一種獨特連結。這一種觀者彷彿寄生在機械內部的感覺，通過Evan Roth將日常不可觸及的網路線索視覺化、Constant Dullaaart睡眠模式的燈光，以及Raquel Meyers影像裝置的聲音表現出來。“Fingers of Doom”（手指的命運）是一件以8位元家用電腦Commodore 64製作的動畫，低像素的卡通角色（像是以前電腦遊戲的那種）變換著形狀、溶解、或是轉化成不同的怪獸以及動物- 永遠不停的無限循環。與電腦遊戲不同的是，這些角色無法被人操縱，也沒有受到那些聽上去令人想起古老Gameboys、科幻電影裡的太空船座艙以及夜店的電子音樂的影響。一種懷舊的情緒、觀看的人們被抽入了一個自我運轉的機械體。一成不變、無限循環的動畫影像、電子聲響、坐在辦公椅上的筆記型電腦，以及不斷進入睡眠模式的燈光，給予觀者一種奇異的感受，似乎，這一次不是人類在使用機器，而是數位的機器在使用人類…後記：在三百個畫廊展位的巨大高端博覽會的建築隔壁，LISTE絕對是今年巴塞爾周最值得探訪的亮點。1996年由一群年輕的畫廊業者發起，LISTE成為了針對年輕畫廊與年輕藝術家最重要的博覽會，在79間參展畫廊之外，HeK是LISTE今年的特殊邀展項目。在瑞士巴塞爾周期間，邀請了四位年輕媒體藝術家展出：Aram Bartholl （德國）、Constant Dullaaart（荷蘭）、Evan Roth（美國）以及Raquel Meyers（西班牙）。"
+                    },
+                    "type": "medium"
+                }
+            ]
+        }
+},
+
 
  {
  id: 1,
