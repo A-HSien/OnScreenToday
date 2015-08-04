@@ -54,7 +54,6 @@ const CommonUtils = {
 			jsxItems = [],
 			item;
 
-
 		for(var i = 0; i < items.length; i++) {
 			item = items[i];
 			if (i % n === 0 && i !== 0) {
@@ -77,7 +76,7 @@ const CommonUtils = {
 		}
 
 		if (jsxItems.length) {
-			jsxRow.push(<div key={jsxItems.length}  className={"row "+ type + "-list-row"}>
+			jsxRow.push(<div key={items.length}  className={"row "+ type + "-list-row"}>
 					{jsxItems}
 				</div>);
 		}
