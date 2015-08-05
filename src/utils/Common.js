@@ -21,30 +21,35 @@ const CommonUtils = {
 			},
 			keywords: "",
 			subtitle: "",
-			title: ""
+			title: "",
+			createdAt: ""
 		};
 		// console.log("item: ", item);
 		if (_.isArray(item)) {
 			item = item[0];
 		}
+		
 		if (item) {
-			
+			var options = {
+			weekday: "long", year: "numeric", month:"short", day:"numeric",hour:"2-digit", minute:"2-digit"
+			};
 			
 			var type = _.get(item, 'category.key');
 			var nameKey = lang === "eng" ? "name" : "name_" + lang;
 			var name = _.get(item, "author." + nameKey); 
+			var time = new Date(item.createdAt);
 			
 			composed = _.extend({
 				url: "/" + type + "/" + item.slug,
 				heroImage: item.heroImage ? item.heroImage[0] : undefine,
 				images: item.heroImage,
 				author: _.get(name, 'first') + " " + _.get(name, "last"),
-				type: item.type 
+				type: item.type,
+				createdAt: time.toLocaleString("en-US")
 			}, item['content'][lang]);
-			// console.log("composeContent name: ", name);
 		}
 
-		console.log("composed data: ", composed);
+		//console.log("composed data: ", composed);
 
 		return _.extend(defaultData, composed);
 	},

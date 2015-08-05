@@ -44,7 +44,7 @@ class ViewDetailPage extends BaseComponent {
 				
 				<h2>{hero.title}</h2>
 				<div>
-					<strong>By {hero.author}</strong>
+					<strong>By {hero.author}</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{hero.createdAt}
 				</div>
 				
 				<br></br>

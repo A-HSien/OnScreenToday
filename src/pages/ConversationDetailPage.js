@@ -90,8 +90,7 @@ class ConversationDetailPage extends BaseComponent {
 					</h1>
 					<h2 className="conversation-content-subtitle">{hero.subtitle}</h2>
 					<div>
-						{this._createAuthor(hero.author)}
-						
+						{this._createAuthor(hero.author)} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{hero.createdAt}
 					</div>
 					<div>
 						{this._createVideoContributor(hero.camera)}
