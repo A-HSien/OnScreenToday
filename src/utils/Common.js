@@ -4,6 +4,13 @@ import _ from "lodash";
 import React, { PropTypes, Component } from "react";
 import { NavLink } from "flux-router-component";
 
+function checkTime(i){
+	if(i<10){
+		i="0"+i;
+	}
+	return i;
+}
+
 const CommonUtils = {
 
 	composeContent(item, lang) {
@@ -30,14 +37,17 @@ const CommonUtils = {
 		}
 		
 		if (item) {
-			var options = {
-			weekday: "long", year: "numeric", month:"short", day:"numeric",hour:"2-digit", minute:"2-digit"
-			};
-			
 			var type = _.get(item, 'category.key');
 			var nameKey = lang === "eng" ? "name" : "name_" + lang;
 			var name = _.get(item, "author." + nameKey); 
 			var time = new Date(item.createdAt);
+			var year = time.getFullYear();
+			var month = checkTime(time.getMonth()+1);
+			var date = checkTime(time.getDate());
+			var hour = checkTime(time.getHours());
+			var minute = checkTime(time.getMinutes());
+			var second = checkTime(time.getSeconds());
+			var ap = (hour>11)?"PM":"AM";
 			
 			composed = _.extend({
 				url: "/" + type + "/" + item.slug,
@@ -45,7 +55,7 @@ const CommonUtils = {
 				images: item.heroImage,
 				author: _.get(name, 'first') + " " + _.get(name, "last"),
 				type: item.type,
-				createdAt: time.toLocaleString("en-US")
+				createdAt: year+"-"+month+"-"+date+" "+hour+":"+minute+":"+second+" "+ap
 			}, item['content'][lang]);
 		}
 
