@@ -50,6 +50,7 @@ class ScreenshotPage extends BaseComponent {
 				<NavLink href={heroContent.url} >
 				<Image imageUrl={heroContent.heroImage.url} extraClassnames="screenshot-image" />
 				<div className="screenshot-hero-title">{heroContent.title}</div>
+				<div className="screenshot-hero-time">{heroContent.createdAt}</div>
 				</NavLink>
 			</div>);
 
