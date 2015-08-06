@@ -196,6 +196,7 @@ class ConversationDetailPage extends BaseComponent {
 							</div>
 		                    {(item.images && item.images.length)? <div className="conversation-image" style={{backgroundImage: "url(" +item.images[0].url+ ")"}}></div> : <noscript />}
 							<div className="conversation-title">{item.title}</div>
+							<div className="conversation-time">{item.createdAt}</div>
 							<div className="conversation-description">{item.description.substring(0, 200) + "..."}</div>
 							<div className="conversation-more">READ MORE</div>
 						</NavLink>

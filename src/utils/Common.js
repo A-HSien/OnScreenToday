@@ -85,6 +85,7 @@ const CommonUtils = {
 					</div>
                     {(item.heroImage)? <div className={type + "-image"} style={{backgroundImage: "url(" +item.heroImage.url+ ")"}}></div> : <noscript />}
 					<div className={type + "-title"}>{item.title}</div>
+					<div className={type + "-time"}>{item.createdAt}</div>
 				</NavLink>
 			</div>);
 

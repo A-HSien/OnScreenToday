@@ -37,6 +37,7 @@ class ArtWork extends Component {
                     {jsxImage}
                     <div className="aw-title">{this.props.content.title}</div>
                     <div className="aw-subtitle">{this.props.content.subtitle}</div>
+                    <div className="aw-subtitle">{this.props.content.createdAt}</div>
                 </div>
                 </NavLink>
             );
