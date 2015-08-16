@@ -84,7 +84,8 @@ const CommonUtils = {
 					<div className={type+ "-item-header"}>
 					</div>
                     {(item.heroImage)? <div className={type + "-image"} style={{backgroundImage: "url(" +item.heroImage.url+ ")"}}></div> : <noscript />}
-					<div className={type + "-title"}>{item.title}</div>
+					<div className={type + "-title"}><strong>{item.title}</strong></div>
+					<div className={type + "-subtitle"}>{item.subtitle}</div>
 					<div className={type + "-time"}>{item.createdAt}</div>
 				</NavLink>
 			</div>);
