@@ -1,0 +1,39 @@
+@import "../constants/colors";
+
+.screenshot.page {
+	.screenshot-page-main-container {
+		padding: 20px 0px;
+		
+		.screen-page-hero {
+			
+			.screen-hero-title {
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: 18px;
+			}
+
+			.screen-image {
+				height: 400px;
+			}
+		}
+
+		.screen-page-main {
+			margin-top: 20px;
+			
+			.screen-list-item {
+				.screen-item-header {
+					border-top: 5px solid $color-yellow;
+					padding-top: 5px;
+				}
+
+				.screen-image {
+					width: 100%;
+					height: 300px;
+					background-size: cover;
+					margin: 5px 0px;
+				}
+			}
+		}
+	}
+
+}
