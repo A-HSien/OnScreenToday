@@ -25,7 +25,7 @@ class Feature extends Component {
                 <div className="title-name">feature</div>
             </div>
             <div className="row">
-                <div className="video container"
+                <div className="video"
                     style={{
                         paddingTop: "5px",
                         borderTop: "15px solid #FFC200"
