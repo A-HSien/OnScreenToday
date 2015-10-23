@@ -10,6 +10,7 @@ import HomeScreenshot from './home/Screenshot';
 import HomeView from './home/Views';
 import HomeAir from './home/OnAir';
 import HomeFeature from './home/Feature';
+import HomeAds from './home/Ads';
 import Carousel from '../components/Carousel';
 import _ from "lodash";
 import {composeContent, createGroupList} from "../utils/Common";
@@ -30,7 +31,8 @@ class HomePage extends Component {
 		lang: PropTypes.string.isRequired,
 		conversationData: PropTypes.array.isRequired,
 		screenshotData: PropTypes.array.isRequired,
-		viewData: PropTypes.array.isRequired
+		viewData: PropTypes.array.isRequired,
+		AdsData: PropTypes.array.isRequired
 	}
 
 	static contextTypes = {
@@ -39,8 +41,8 @@ class HomePage extends Component {
 
 
 	render() {
-		// debugger;
-		var {lang, conversationData, screenshotData, viewData} = this.props;
+		//debugger;
+		var {lang, conversationData, screenshotData, viewData, AdsData} = this.props;
 		var conversationContents = conversationData.map((c)=> {
 			return composeContent(c, lang);
 		});
@@ -48,6 +50,9 @@ class HomePage extends Component {
 			return composeContent(c, lang);
 		});
 		var viewContents = viewData.map((c) => {
+			return composeContent(c, lang);
+		});
+		var AdsContents = AdsData.map((c) => {
 			return composeContent(c, lang);
 		});
 		var jsx;
@@ -63,10 +68,27 @@ class HomePage extends Component {
 					<SubHeader />
 					<Carousel slides={this._createSlides(cForCarousel)} settings={{autoplay: true}} />
 					<div className="home-main container">
-						<HomeConversation conversations={cForList} />
-						<HomeScreenshot screenshots={screenshotContents} />
-						<HomeFeature lang={lang}/>
-						<HomeView views={viewContents} />
+						<div className="col-sm-8">
+							<div className="row">
+								<HomeConversation conversations={cForList} />
+							</div>
+							<div className="row">
+								<HomeScreenshot screenshots={screenshotContents} />
+							</div>
+							<div className="row">
+								<HomeFeature lang={lang}/>
+							</div>
+							<div className="row">
+								<HomeView views={viewContents} />
+							</div>
+						</div>
+						<div className="col-sm-4">
+							<div className="row">
+								<div className="col-sm-11 col-sm-offset-1">
+								<HomeAds ads={AdsContents} />
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			);
@@ -120,6 +142,7 @@ HomePage = connectToStores(HomePage, ["ContentStore", "LanguageStore"], (stores)
 		conversationData: _.filter(contentData, function(content) {return content.category.key === 'conversation'}),
 		screenshotData: _.filter(contentData, function(content) {return content.category.key === 'screenshot'}),
 		viewData: _.filter(contentData, function(content) {return content.category.key === 'view'}),
+		AdsData: _.filter(contentData, function(content) {return content.category.key === 'advertisement'})
 
 
 	};
