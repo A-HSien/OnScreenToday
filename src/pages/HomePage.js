@@ -68,7 +68,7 @@ class HomePage extends Component {
 					<SubHeader />
 					<Carousel slides={this._createSlides(cForCarousel)} settings={{autoplay: true}} />
 					<div className="home-main container">
-						<div className="col-sm-8">
+						<div className="col-sm-9">
 							<div className="row">
 								<HomeConversation conversations={cForList} />
 							</div>
@@ -82,9 +82,9 @@ class HomePage extends Component {
 								<HomeView views={viewContents} />
 							</div>
 						</div>
-						<div className="col-sm-4">
+						<div className="col-sm-3">
 							<div className="row">
-								<div className="col-sm-11 col-sm-offset-1">
+								<div className="col-sm-10 col-sm-offset-2">
 								<HomeAds ads={AdsContents} />
 								</div>
 							</div>
