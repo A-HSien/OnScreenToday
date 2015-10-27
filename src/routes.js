@@ -34,6 +34,24 @@ export default {
     action: RouteActions.screenshotListPage
   },
 
+  fullscreen: {
+    path: "/fullscreen/:slug",
+    method: "get",
+    action: RouteActions.fullscreenDetailPage
+  },
+
+  offscreen: {
+    path: "/offscreen/:slug",
+    method: "get",
+    action: RouteActions.offscreenDetailPage
+  },
+
+  screens: {
+    path: "/screens",
+    method: "get",
+    action: RouteActions.screenPage
+  },
+
   conversations: {
     path: "/conversations",
     method: "get",

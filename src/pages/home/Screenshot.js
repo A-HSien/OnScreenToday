@@ -19,7 +19,7 @@ class Screenshot extends Component {
         var screenshots = this.props.screenshots.slice(0, 2);
         var num = screenshots.length;
         var artworks = screenshots.map((screenshot, key) => {
-            return <ArtWork content={screenshot} addClassnames={"col-sm-" + 12/num} key={key} />;
+            return <ArtWork content={screenshot} addClassnames={"col-xs-12 col-sm-" + 12/num} key={key} />;
         });
         if (artworks.length) {
             jsx = (<div className="home-module screenshot">

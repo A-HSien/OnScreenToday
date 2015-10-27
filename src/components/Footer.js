@@ -26,9 +26,6 @@ class Footer extends Component {
                                   <a href="http://goo.gl/forms/JqwPTq1Duz" target="_blank" className="sub">Subscribe</a>
                                 </li>
                                 <NavLink className="ab" href="/about">About</NavLink>
-                                <li>
-                                <NavLink className="call" href="/callforartists">Call for Artists</NavLink>
-                                </li>
 
                             </ul>
                         </div>

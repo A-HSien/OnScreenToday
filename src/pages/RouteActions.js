@@ -53,6 +53,17 @@ const RouteActions = {
     contentListPage(context, {type : 'screenshot'}, payload, done);
   },
 
+  screenPage(context, payload, done) {
+    contentListPage(context, {type: 'all'}, payload, done);
+  },
+
+  fullscreenDetailPage(context, payload, done) {
+    contentDetailPage(context, {type : 'fullscreen'}, payload, done);
+  },
+
+  offscreenDetailPage(context, payload, done) {
+    contentDetailPage(context, {type : 'offscreen'}, payload, done);
+  },
 
   conversationDetailPage(context, payload, done) {
     contentDetailPage(context, {type: "conversation"}, payload, done);

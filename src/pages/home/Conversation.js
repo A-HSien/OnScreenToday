@@ -32,9 +32,9 @@ class Conversation extends Component {
                     </div>
                 </NavLink>
                 <div className="row">
-                        <ArtWork  content={this.props.conversations[0]} addClassnames={"col-xs-4"} key="this.props.conversations[0]" />
-                        <ArtWork  content={this.props.conversations[1]} addClassnames={"col-xs-4"} key="this.props.conversations[1]" />
-                        <ArtWork  content={this.props.conversations[2]} addClassnames={"col-xs-4"} key="this.props.conversations[2]" />          
+                        <ArtWork  content={this.props.conversations[0]} addClassnames={"col-xs-12 col-md-4"} key="this.props.conversations[0]" />
+                        <ArtWork  content={this.props.conversations[1]} addClassnames={"col-xs-12 col-md-4"} key="this.props.conversations[1]" />
+                        <ArtWork  content={this.props.conversations[2]} addClassnames={"col-xs-12 col-md-4"} key="this.props.conversations[2]" />          
                 </div>
             </div>);
         } else {

@@ -87,6 +87,8 @@ const CommonUtils = {
 					<div className={type + "-title"}><strong>{item.title}</strong></div>
 					<div className={type + "-subtitle"}>{item.subtitle}</div>
 					<div className={type + "-time"}>{item.createdAt}</div>
+					<div className={type+ "-item-footer"}>
+					</div>
 				</NavLink>
 			</div>);
 
