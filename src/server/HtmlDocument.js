@@ -61,15 +61,21 @@ class HtmlDocument extends React.Component {
             htmlHead.getImages().map(url => `"${url}"`), 
             htmlHead.getDescription())}} />
 
+
+          <script dangerouslySetInnerHTML={{__html: state}} />
+          
+
+
         </head>
 
         <body>
-          <div id="root" dangerouslySetInnerHTML={{__html: markup}} />
 
-          <script dangerouslySetInnerHTML={{__html: state}} />
-
+          <div id="root"></div>
+          
+          
           { script.map((src, k) => <script key={k} src={src} />) }
-
+          
+          
         </body>
       </html>
     );
