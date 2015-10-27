@@ -7,14 +7,13 @@ import { NavLink } from "flux-router-component";
 import BaseComponent from "../components/common/BaseComponent";
 import Image from "../components/Image";
 import {composeContent, createGroupList} from "../utils/Common";
-
+import HomeAds from './home/Ads';
 
 import _ from "lodash";
 
 if (process.env.BROWSER) {
   require("../style/pages/Screen.scss");
 }
-
 
 class ScreenPage extends BaseComponent {
 
@@ -26,7 +25,8 @@ class ScreenPage extends BaseComponent {
   static propTypes = {
 	lang: PropTypes.string.isRequired,
     fullscreenData: PropTypes.array.isRequired,
-    offscreenData: PropTypes.array.isRequired
+    offscreenData: PropTypes.array.isRequired,
+	AdsData: PropTypes.array.isRequired
   }
 
   static contextTypes = {
@@ -36,24 +36,30 @@ class ScreenPage extends BaseComponent {
 
   render() {
 
-  		var {lang, fullscreenData, offscreenData} = this.props;
+  		var {lang, fullscreenData, offscreenData, AdsData} = this.props;
   		var fullscreenContents = fullscreenData.map((c) => {
 			return composeContent(c, lang);
 		});
 		var offscreenContents = offscreenData.map((c) => {
 			return composeContent(c, lang);
 		});
+		var AdsContents = AdsData.map((c) => {
+			return composeContent(c, lang);
+		});
+
 		var jsx = <noscript />;
+		var fullscreen = <noscript />;
+		var offscreen = <noscript />;
 		if (fullscreenContents.length) {
-			var fullscreenList = fullscreenContents.slice(0,2);
+			var fullscreenList = fullscreenContents.slice(0,1);
 			var offscreenList = offscreenContents;
 
-			if (fullscreenList && fullscreenList.length) {
-				fullscreen = createGroupList(fullscreenList, 1, 'fullscreen');
+			if (fullscreen && fullscreen.length) {
+				fullscreen = createLink(fullscreenList, 1, 'screen');
 			}
 
 			if (offscreenList && offscreenList.length) {
-				offscreen = createGroupList(offscreenList, 2, 'offscreen');
+				offscreen = createGroupList(offscreenList, 2, 'screen');
 			}
 
 
@@ -61,12 +67,35 @@ class ScreenPage extends BaseComponent {
 				<SubHeader />
 				<div className="screen-page-main-container">
 					<div className="container">
-						<div className="col-sm-8">
-							<div className="screen-page-fullscreen">
-								{fullscreen}
+						<div className="col-sm-9">
+
+							<div className="row screen-page-fullscreen">
+								<div className="screen-hero-header">
+									<strong>FULL SCREEN</strong>
+								</div>
+								<div key={fullscreenList[0].title} className="screen-list-item col-sm-12" >
+									<NavLink href={fullscreenList[0].subtitle} target="blank" className="screen-item-link">
+
+					                    <div className="screen-image" style={{backgroundImage: "url(" +fullscreenList[0].heroImage.url+ ")"}}></div>
+										<div className="screen-title"><strong>{fullscreenList[0].title}</strong></div>
+										<div className="screen-time">{fullscreenList[0].createdAt}</div>
+									</NavLink>
+								</div>
+								<div className="screen-hero-footer">
+								</div>
 							</div>
-							<div className="screen-page-offscreen">
+							<div className="row screen-page-offscreen">
+								<div className="screen-offscreen-header">
+									<strong>OFF SCREEN</strong>
+								</div>
 								{offscreen}
+							</div>
+						</div>
+						<div className="col-sm-3">
+							<div className="row">
+								<div className="col-xs-12 col-sm-10 col-sm-offset-2">
+								<HomeAds ads={AdsContents} />
+								</div>
 							</div>
 						</div>
 					</div>
@@ -76,56 +105,17 @@ class ScreenPage extends BaseComponent {
 
 		return jsx;
 	}
-
-	// createGroupList(items, n) {
-	// 	var jsxRow = [],
-	// 		jsxItems = [],
-	// 		item;
-
-
-	// 	for(var i = 0; i < items.length; i++) {
-	// 		item = items[i];
-	// 		if (i % n === 0 && i !== 0) {
-	// 			jsxRow.push(<div key={i}  className="row screenshot-list-row">
-	// 				{jsxItems}
-	// 			</div>);
-
-	// 			jsxItems = [];
-	// 		}
-
-	// 		jsxItems.push(<div key={item.title} className={"screenshot-list-item " + "col-sm-"+ 12/n} >
-	// 			<NavLink href={item.url} className="screenshot-item-link">
-	// 				<div className="screenshot-item-header">
-	// 				</div>
- //                    {(item.heroImage)? <div className="screenshot-image" style={{backgroundImage: "url(" +item.heroImage.url+ ")"}}></div> : <noscript />}
-	// 				<div className="screenshot-title">{item.title}</div>
-	// 			</NavLink>
-	// 		</div>);
-
-	// 	}
-
-	// 	if (jsxItems.length) {
-	// 		jsxRow.push(<div key={jsxItems.length}  className="row screenshot-list-row">
-	// 				{jsxItems}
-	// 			</div>);
-	// 	}
-
-
-	// 	return jsxRow;
-	// }
-
-
 }
 
-ScreenshotPage = connectToStores(ScreenPage, ["ContentStore", "LanguageStore"], (stores) => {
+ScreenPage = connectToStores(ScreenPage, ["ContentStore", "LanguageStore"], (stores) => {
 	var {contentData} = stores.ContentStore.getData();
 	var {lang} = stores.LanguageStore.getData();
 	return {
 		lang: lang,
 		fullscreenData: _.filter(contentData, function(content) {return content.category.key === 'fullscreen'}),
-		offscreenData: _.filter(contentData, function(content) {return content.category.key === 'offscreen'})
-
+		offscreenData: _.filter(contentData, function(content) {return content.category.key === 'offscreen'}),
+		AdsData: _.filter(contentData, function(content) {return content.category.key === 'advertisement'})
 	};
 });
 
-export default ScreenshotPage;
+export default ScreenPage;

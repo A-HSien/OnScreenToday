@@ -64,11 +64,11 @@ class Header extends BaseComponent {
                     chnt: "上映中"
                 }
             }, {
-                url: '/callforartists',
+                url: '/screens',
                 name: {
-                    eng: "call for artists",
-                    chn: "作品征集",
-                    chnt: "作品徵集"
+                    eng: "*screen",
+                    chn: "*介面",
+                    chnt: "*介面"
                 }
             }
         ];

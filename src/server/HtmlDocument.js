@@ -70,6 +70,7 @@ class HtmlDocument extends React.Component {
 
         <body>
           <div id="root"></div>
+          
           <script dangerouslySetInnerHTML={{__html: state}} />
           { script.map((src, k) => <script key={k} src={src} />) }
         </body>

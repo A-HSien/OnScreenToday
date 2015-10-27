@@ -84,7 +84,7 @@ class HomePage extends Component {
 						</div>
 						<div className="col-sm-3">
 							<div className="row">
-								<div className="col-sm-10 col-sm-offset-2">
+								<div className="col-xs-12 col-sm-10 col-sm-offset-2">
 								<HomeAds ads={AdsContents} />
 								</div>
 							</div>

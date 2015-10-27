@@ -1,11 +1,11 @@
 @import "../constants/colors";
-.screenshot.detail {
+.screen.detail {
 	padding-bottom: 50px;
 
-	.screenshot-detail-container {
+	.screen-detail-container {
 		padding-top: 20px;
 
-		.screenshot-image {
+		.screen-image {
 			background-size: contain;
 			min-height: 350px;
 			width: 100%;
@@ -24,7 +24,7 @@
 
 
 @media (max-width: 500px) { 
-	.screenshot-image {
+	.screen-image {
 		min-height: 250px !important;
 	}
 }

@@ -1,36 +1,57 @@
 @import "../constants/colors";
 
-.screenshot.page {
-	.screenshot-page-main-container {
-		padding: 20px 0px;
+.screen.page {
+	.screen-page-main-container {
+		padding: 30px 0px;
 		
-		.screen-page-hero {
+		.screen-page-fullscreen {
 			
+			.screen-hero-header {
+				border-bottom: 15px solid $color-black;
+				padding-bottom: 15px;
+				font-size: 28px;
+			}
+
 			.screen-hero-title {
 				text-transform: uppercase;
 				font-weight: 600;
 				font-size: 18px;
 			}
 
+			.screen-hero-footer {
+				height: 50px;
+			}
+
 			.screen-image {
-				height: 400px;
+				width: 100%;
+				height: 350px;
+				background-size: cover;
+				margin: 15px 0px;
 			}
 		}
 
-		.screen-page-main {
-			margin-top: 20px;
-			
+		.screen-page-offscreen {
+			.screen-offscreen-header {
+				padding-top:50px;
+				border-bottom: 15px solid $color-black;
+				padding-bottom: 15px;
+				font-size: 28px;
+			}
+
 			.screen-list-item {
 				.screen-item-header {
-					border-top: 5px solid $color-yellow;
-					padding-top: 5px;
+
 				}
 
 				.screen-image {
 					width: 100%;
 					height: 300px;
 					background-size: cover;
-					margin: 5px 0px;
+					margin: 20px 0px;
+				}
+
+				.screen-item-footer {
+
 				}
 			}
 		}
