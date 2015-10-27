@@ -51,15 +51,15 @@ class ScreenPage extends BaseComponent {
 		var fullscreen = <noscript />;
 		var offscreen = <noscript />;
 		if (fullscreenContents.length) {
-			var fullscreenList = fullscreenContents.slice(0,1);
+			var fullscreenList = fullscreenContents.slice(0,2);
 			var offscreenList = offscreenContents;
 
-			if (fullscreen && fullscreen.length) {
-				fullscreen = createLink(fullscreenList, 1, 'screen');
+			if (fullscreenList && fullscreenList.length) {
+				fullscreen = createGroupList(fullscreenList, 1, 'fullscreen');
 			}
 
 			if (offscreenList && offscreenList.length) {
-				offscreen = createGroupList(offscreenList, 2, 'screen');
+				offscreen = createGroupList(offscreenList, 2, 'offscreen');
 			}
 
 
@@ -119,3 +119,4 @@ ScreenPage = connectToStores(ScreenPage, ["ContentStore", "LanguageStore"], (sto
 });
 
 export default ScreenPage;
+
