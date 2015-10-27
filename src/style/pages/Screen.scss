@@ -1,6 +1,5 @@
 @import "../constants/colors";
 
-
 .screen.page {
 	.screen-page-main-container {
 		padding: 30px 0px;
@@ -12,27 +11,24 @@
 				padding-bottom: 15px;
 				font-size: 28px;
 			}
-		
-			.screen-page-hero {
-	
-				.screen-hero-title {
-					text-transform: uppercase;
-					font-weight: 600;
-					font-size: 18px;
-				}
 
-
-				.screen-hero-footer {
-					height: 50px;
-				}
-
-				.screen-image {
-					width: 100%;
-					height: 350px;
-					background-size: cover;
-					margin: 15px 0px;
-				}
+			.screen-hero-title {
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: 18px;
 			}
+
+			.screen-hero-footer {
+				height: 50px;
+			}
+
+			.screen-image {
+				width: 100%;
+				height: 350px;
+				background-size: cover;
+				margin: 15px 0px;
+			}
+		}
 
 		.screen-page-offscreen {
 			.screen-offscreen-header {
@@ -45,8 +41,18 @@
 			.screen-list-item {
 				.screen-item-header {
 
-			.screen-image {
-				height: 400px;
+				}
+
+				.screen-image {
+					width: 100%;
+					height: 300px;
+					background-size: cover;
+					margin: 20px 0px;
+				}
+
+				.screen-item-footer {
+
+				}
 			}
 		}
 	}
