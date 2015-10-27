@@ -59,14 +59,14 @@ class HomePage extends Component {
 
 
 		if (conversationContents.length) {
-			var cForCarousel = conversationContents.slice(0,2);
-			var cForList = conversationContents.slice(2);
+			var cForCarousel = conversationContents.slice(0,4);
+			var cForList = conversationContents.slice(4);
 
 
 			jsx = (
 				<div className="home page">
 					<SubHeader />
-					<Carousel slides={this._createSlides(cForCarousel)} settings={{autoplay: true}} />
+					<Carousel slides={this._createSlides(cForCarousel)} />
 					<div className="home-main container">
 						<div className="col-sm-9">
 							<div className="row">
@@ -91,6 +91,7 @@ class HomePage extends Component {
 						</div>
 					</div>
 				</div>
+
 			);
 		} else {
 			jsx = <noscript />;
@@ -126,10 +127,6 @@ class HomePage extends Component {
 
 		return slides;
 	}
-
-	
-
-
 }
 
 HomePage = connectToStores(HomePage, ["ContentStore", "LanguageStore"], (stores) => {
