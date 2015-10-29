@@ -18,8 +18,8 @@ class SubHeader extends React.Component {
                     <div className="title">介面</div>
                     <div className="subTitle">
                         <ul>
-                            <li>BROADCASTING</li>
                             <li>MEDIA ART</li>
+                            <li>ART MEDIA</li>
                         </ul>
                     </div>
                 </div>

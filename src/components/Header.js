@@ -57,13 +57,6 @@ class Header extends BaseComponent {
                     chnt: "觀點"
                 }
             }, {
-                url: '/tunedin',
-                name: {
-                    eng: "tuned in",
-                    chn: "上映中",
-                    chnt: "上映中"
-                }
-            }, {
                 url: '/screens',
                 name: {
                     eng: "*screen",
