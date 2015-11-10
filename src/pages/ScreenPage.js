@@ -51,11 +51,11 @@ class ScreenPage extends BaseComponent {
 		var fullscreen = <noscript />;
 		var offscreen = <noscript />;
 		if (fullscreenContents.length) {
-			var fullscreenList = fullscreenContents.slice(0,1);
+			var fullscreenList = fullscreenContents.slice(0,2);
 			var offscreenList = offscreenContents;
 
 			if (fullscreen && fullscreen.length) {
-				fullscreen = createLink(fullscreenList, 1, 'screen');
+				//fullscreen = createLink(fullscreenList, 1, 'screen');
 			}
 
 			if (offscreenList && offscreenList.length) {
@@ -79,6 +79,14 @@ class ScreenPage extends BaseComponent {
 					                    <div className="screen-image" style={{backgroundImage: "url(" +fullscreenList[0].heroImage.url+ ")"}}></div>
 										<div className="screen-title"><strong>{fullscreenList[0].title}</strong></div>
 										<div className="screen-time">{fullscreenList[0].createdAt}</div>
+									</NavLink>
+								</div>
+								<div key={fullscreenList[1].title} className="screen-list-item col-sm-12" >
+									<NavLink href={fullscreenList[1].subtitle} target="blank" className="screen-item-link">
+
+					                    <div className="screen-image" style={{backgroundImage: "url(" +fullscreenList[1].heroImage.url+ ")"}}></div>
+										<div className="screen-title"><strong>{fullscreenList[1].title}</strong></div>
+										<div className="screen-time">{fullscreenList[1].createdAt}</div>
 									</NavLink>
 								</div>
 								<div className="screen-hero-footer">
