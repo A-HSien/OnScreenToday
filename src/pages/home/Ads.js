@@ -39,7 +39,24 @@ class Ads extends Component {
                     <image height="150px" src={this.props.ads[2].heroImage.url}/>
                 </NavLink>
             </div>  
-            <br/>                      
+            <br/>
+            <div>
+                <NavLink href={this.props.ads[3].title} target="blanket">
+                    <image height="150px" src={this.props.ads[3].heroImage.url}/>
+                </NavLink>
+            </div>
+            <br/>
+            <div>
+                <NavLink href={this.props.ads[4].title} target="blanket">
+                    <image height="150px" src={this.props.ads[4].heroImage.url}/>
+                </NavLink>
+            </div>  
+            <br/>
+            <div>
+                <NavLink href={this.props.ads[5].title} target="blanket">
+                    <image height="150px" src={this.props.ads[5].heroImage.url}/>
+                </NavLink>
+            </div>                     
         </div>);
 
 
