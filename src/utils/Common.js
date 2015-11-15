@@ -44,10 +44,10 @@ const CommonUtils = {
 			var year = time.getFullYear();
 			var month = checkTime(time.getMonth()+1);
 			var date = checkTime(time.getDate());
-			var hour = checkTime(time.getHours());
-			var minute = checkTime(time.getMinutes());
-			var second = checkTime(time.getSeconds());
-			var ap = (hour>11)?"PM":"AM";
+			//var hour = checkTime(time.getHours());
+			//var minute = checkTime(time.getMinutes());
+			//var second = checkTime(time.getSeconds());
+			//var ap = (hour>11)?"PM":"AM";
 			
 			composed = _.extend({
 				url: "/" + type + "/" + item.slug,
@@ -55,7 +55,7 @@ const CommonUtils = {
 				images: item.heroImage,
 				author: _.get(name, 'first') + " " + _.get(name, "last"),
 				type: item.type,
-				createdAt: year+"-"+month+"-"+date+" "+hour+":"+minute+":"+second+" "+ap
+				createdAt: year+"-"+month+"-"+date
 			}, item['content'][lang]);
 		}
 
