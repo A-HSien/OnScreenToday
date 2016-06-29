@@ -43,7 +43,7 @@ const app = new Fluxible({
 });
 
 app.plug(fetchrPlugin({
-  xhrPath: "/api/v1"
+  xhrPath: "/api/v2"
 }));
 
 app.plug(routrPlugin({

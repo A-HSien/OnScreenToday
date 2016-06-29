@@ -2,11 +2,31 @@
 
 import data_about from '../../../../db/about.js';
 import _ from "lodash";
+var mcache = require('memory-cache');
 var data = require("../../../../db");
+
+var cache = (duration) => {
+  return (req, res, next) => {
+    let key = '__express__' + req.originalUrl || req.url
+    console.log("cache key", key);
+    let cachedBody = mcache.get(key)
+    if (cachedBody) {
+      res.send(cachedBody)
+      return
+    } else {
+      res.sendResponse = res.send
+      res.send = (body) => {
+        mcache.put(key, body, duration * 1000);
+        res.sendResponse(body)
+      }
+      next()
+    }
+  }
+}
 
 const API_v2 = (app) => {
 
-	app.namespace("/content", function(req, res, next) {
+	app.namespace("/content", cache(10), function(req, res, next) {
 		app.get("/", function(req, res, next) {
 			var type = req.query.type;
 			if (type) {
@@ -23,7 +43,7 @@ const API_v2 = (app) => {
 		});
 	});
 
-	app.namespace("/contentDetail", function(req, res, next) {
+	app.namespace("/contentDetail", cache(10), function(req, res, next) {
 		app.get("/", function(req, res, next) {
 			var type = req.query.type;
 			var slug = req.query.slug;
@@ -41,7 +61,7 @@ const API_v2 = (app) => {
 		});
 	});
 
-	app.namespace("/about", function(req, res, next) {
+	app.namespace("/about", cache(10), function(req, res, next) {
 		app.get("/", function(req, res, next) {
 		  res.status(200).send(data_about);
 		});

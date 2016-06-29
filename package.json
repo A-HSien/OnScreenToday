@@ -87,6 +87,7 @@
     "jscs": "^1.12.0",
     "jsdom": "^4.1.0",
     "json2mq": "^0.2.0",
+    "memory-cache": "^0.1.6",
     "mocha": "^2.2.4",
     "mocha-jsdom": "^0.3.0",
     "mongodb": "^1.4.38",

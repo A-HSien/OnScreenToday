@@ -50,6 +50,7 @@ export default {
     }),
 
     new webpack.DefinePlugin({
+      _DEVELOPMENT_: false,
       "process.env": {
         BROWSER: JSON.stringify(true),
         NODE_ENV: JSON.stringify("development")

@@ -22,6 +22,9 @@ module.exports = {
     publicPath: "/assets/"
   },
   module: {
+    noParse: [
+        /moment\.js$/
+    ],
     loaders: [
       { test: /\.(jpe?g|png|gif|svg)$/, loader: "file" },
       { test: /\.js$/, exclude: /node_modules/, loaders: [strip.loader("debug"), "babel"] },
@@ -48,9 +51,10 @@ module.exports = {
     new webpack.DefinePlugin({
       "process.env": {
         BROWSER: JSON.stringify(true),
-
+        _DEVELOPMENT_: false,
         // used to know we are on browser
-        NODE_ENV: JSON.stringify("production")
+        NODE_ENV: JSON.stringify("production"),
+        'process.env.NODE_ENV': JSON.stringify('production')
 
         // clean up some react stuff
       }
@@ -59,7 +63,34 @@ module.exports = {
     // optimizations
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap:false,
+      max_line_len  : 1000,
+      ie_proof      : false,
+      'screw-ie8'   : true,
+      semicolons    : false,
+      space_colon   : false,
+      compress:{
+          sequences     : false,  // join consecutive statemets with the “comma operator”
+          properties    : false,  // optimize property access: a["foo"] ? a.foo
+          dead_code     : true,  // discard unreachable code
+          drop_debugger : true,  // discard “debugger” statements
+          unsafe        : false, // some unsafe optimizations (see below)
+          conditionals  : false,  // optimize if-s and conditional expressions
+          comparisons   : false,  // optimize comparisons
+          evaluate      : false,  // evaluate constant expressions
+          booleans      : false,  // optimize boolean expressions
+          loops         : false,  // optimize loops
+          unused        : false,  // drop unused variables/functions
+          hoist_funs    : false,  // hoist function declarations
+          hoist_vars    : false, // hoist variable declarations
+          if_return     : false,  // optimize if-s followed by return/continue
+          join_vars     : false,  // join var declarations
+          cascade       : false,  // try to cascade `right` into `left` in sequences
+          side_effects  : false,  // drop side-effect-free statements
+          warnings      : false  // warn about potentially dangerous optimizations/code
+      }
+    }),
  
 
     // stats
