@@ -70,11 +70,9 @@ class ViewDetailPage extends BaseComponent {
 }
 
 ViewDetailPage = connectToStores(ViewDetailPage, ["ContentStore", "LanguageStore"], (stores, props) => {
-	debugger;
 	// console.log("ViewDetailPage: ", props);
 	var contentData = stores.ContentStore.getContentBySlug(props.slug);
 	var {lang} = stores.LanguageStore.getData();
-	console.log("ViewDetailPage: ", contentData);
 	return {
 		lang: lang,
 		viewData: contentData,

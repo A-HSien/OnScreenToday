@@ -7,7 +7,7 @@ export default {
   name: "about",
 
   read(req, resource, params, config, done) {
-
+    console.log("service read about:", data_about);
   	done(null, data_about);
 
   	// get("/about", null, done);

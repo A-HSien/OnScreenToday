@@ -80,7 +80,7 @@ const RouteActions = {
       if (err) {
         return done(err);
       }
-
+      console.log(payload);
       // set the html <head> only once we have the store filled with data
       context.executeAction(setHtmlHead, payload, done);
     });

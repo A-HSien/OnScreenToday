@@ -1,12 +1,13 @@
 import Actions from "../constants/Actions";
+import data_about from '../../db/about.js';
 
 const AboutActionCreators = {
 
   loadAboutData(context, {}, done) {
 
-    // context.dispatch(Actions.LOAD_ABOUT_DATA, { feature });
+    context.dispatch(Actions.LOAD_ABOUT_DATA, { });
 
-    context.service.read("about", {}, { timeout: 20000 },
+    context.service.read("about", {}, { timeout: 2000 },
       (err, data) => {
 
         
@@ -14,8 +15,8 @@ const AboutActionCreators = {
           context.dispatch(Actions.LOAD_ABOUT_DATA_FAILURE);
           return done(err);
         }
-
-        context.dispatch(Actions.LOAD_ABOUT_DATA_SUCCESS, data);
+        console.log("loadAboutData: ", data);
+        context.dispatch(Actions.LOAD_ABOUT_DATA_SUCCESS, data || data_about);
         done();
       }
 
