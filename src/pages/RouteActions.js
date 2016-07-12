@@ -17,8 +17,8 @@ function contentDetailPage(context, {type}, payload, done) {
   });
 };
 
-function contentListPage(context, {type}, payload, done) {
-  context.executeAction(ContentActionCreators.loadContentData, {type}, (err) => {
+function contentListPage(context, opts, payload, done) {
+  context.executeAction(ContentActionCreators.loadContentData, opts, (err) => {
     if (err) {
       return done(err);
     }
@@ -71,7 +71,7 @@ const RouteActions = {
   },
 
   conversationListPage(context, payload, done) {
-    contentListPage(context, {type : 'conversation'}, payload, done);
+    contentListPage(context, {type : 'conversation', limit: 10}, payload, done);
   },
 
   aboutPage(context, payload, done) {
@@ -80,7 +80,7 @@ const RouteActions = {
       if (err) {
         return done(err);
       }
-      console.log(payload);
+      // console.log(payload);
       // set the html <head> only once we have the store filled with data
       context.executeAction(setHtmlHead, payload, done);
     });
