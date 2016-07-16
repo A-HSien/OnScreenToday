@@ -1,5 +1,3 @@
-"use strict";
-
 import React, {Component} from 'react';
 import cn from "classnames";
 import _ from 'lodash';
@@ -29,7 +27,7 @@ class ArtWork2 extends Component {
         var styleImage = {
             height: this.props.imageHeight,
         };
-        console.log("ArtWork2 content: ", this.props.content);
+        // console.log("ArtWork2 content: ", this.props.content);
         var classnames = cn("artwork2 clearfix", this.props.addClassnames);
         var jsx;
         jsx = (

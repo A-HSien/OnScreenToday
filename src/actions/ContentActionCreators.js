@@ -2,7 +2,7 @@ import Actions from "../constants/Actions";
 
 const ContentActionCreators = {
 
-  loadContentData(context, {type, limit}, done) {
+  loadContentData(context, {type}, done) {
 
     // context.dispatch(Actions.LOAD_ABOUT_DATA, { feature });
 
@@ -15,16 +15,6 @@ const ContentActionCreators = {
           return done(err);
         }
         var result = [].concat(data);
-        if(limit) {
-          result = result.slice(0, limit).map((item) => {
-            //hack: remove articles
-            item.content.chn.article = "";
-            item.content.chnt.article = "";
-            item.content.eng.article = "";
-            return item;
-          });
-        }
-
         context.dispatch(Actions.LOAD_CONTENT_DATA_SUCCESS, result);
         done();
       }
@@ -32,7 +22,7 @@ const ContentActionCreators = {
     );
   },
 
-  loadContentDetail(context, {slug, type, limit}, done) {
+  loadContentDetail(context, {slug, type}, done) {
     // debugger;
     if (context.getStore("ContentStore").getContentBySlugFromList(slug)) {
       return done();
@@ -47,9 +37,6 @@ const ContentActionCreators = {
         }
 
         var result = [].concat(data);
-        if(limit) {
-          result = result.slice(0, limit);
-        }
 
         context.dispatch(Actions.LOAD_CONTENT_DETAIL_SUCCESS, result);
         done();
