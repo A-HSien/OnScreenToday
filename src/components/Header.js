@@ -38,8 +38,8 @@ class Header extends BaseComponent {
               url: '/about',
               name: {
                 eng: "about",
-                chn: "",
-                chnt: "",
+                chn: "关于",
+                chnt: "關於",
               }
             },
             {
