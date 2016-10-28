@@ -123,6 +123,7 @@
 			.conversation-content-subtitle {
 				font-weight: 400;
 			}
+
 			.conversation-content {
 				line-height: 1.5;
 			}
@@ -153,4 +154,8 @@
 			}
 		}
 	}
+}
+
+.content-meta strong,span {
+  padding-right: 5px;
 }

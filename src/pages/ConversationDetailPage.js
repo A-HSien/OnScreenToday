@@ -7,6 +7,7 @@ import BaseComponent from "../components/common/BaseComponent";
 import Carousel from '../components/Carousel';
 import { NavLink } from "flux-router-component";
 import {composeContent} from "../utils/Common";
+import SocialButtons from '../components/SocialButtons';
 
 
 import _ from "lodash";
@@ -89,8 +90,8 @@ class ConversationDetailPage extends BaseComponent {
 						<span>{hero.title}</span>
 					</h1>
 					<h2 className="conversation-content-subtitle">{hero.subtitle}</h2>
-					<div>
-						{this._createAuthor(hero.author)} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{hero.createdAt}
+					<div className="content-meta">
+            {this._createAuthor(hero.author)} {hero.createdAt} <SocialButtons/>
 					</div>
 					<div>
 						{this._createVideoContributor(hero.camera)}
