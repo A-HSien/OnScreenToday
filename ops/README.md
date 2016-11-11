@@ -40,3 +40,10 @@ sudo service nginx restart
 # Start screen
 pm2 start pm2.json
 ```
+
+## Deploying
+
+```bash
+git pull origin newAPI4Prod
+pm2 restart all
+```
