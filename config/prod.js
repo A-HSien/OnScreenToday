@@ -8,7 +8,7 @@ export default {
   // Google Analytics tracking id (skipped on dev)
   trackingId: "UA-62091544-1",
 
-  apiRoot: "http://screen.haohcraft.com/api",
+  apiRoot: "http://ec2-52-54-119-140.compute-1.amazonaws.com/api",
 
   publishStatus: 'published',
 
