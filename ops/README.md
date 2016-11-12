@@ -33,6 +33,7 @@ sudo swapoff /swapfile
 npm i -g pm2
 
 # Setup nginx
+sudo rm -rf /etc/nginx/sites-enabled/*
 sudo cp ops/screen.conf /etc/nginx/sites-available/screen
 sudo ln -s /etc/nginx/sites-available/screen /etc/nginx/sites-enabled/screen
 sudo service nginx restart
