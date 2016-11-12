@@ -5,6 +5,7 @@ import { connectToStores } from "fluxible/addons";
 import SubHeader from '../components/SubHeader';
 import BaseComponent from "../components/common/BaseComponent";
 import {composeContent} from "../utils/Common";
+import SocialButtons from '../components/SocialButtons';
 
 
 import _ from "lodash";
@@ -42,8 +43,8 @@ class ScreenshotDetailPage extends BaseComponent {
 				
 				<h2>{hero.title}</h2>
 				<h3><i>{hero.subtitle}</i></h3>
-				<div>
-					<strong>By {hero.author}</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{hero.createdAt}
+				<div className="content-meta">
+					<strong>By {hero.author}</strong> {hero.createdAt} <SocialButtons/>
 				</div>
 				
 				<br></br>

@@ -2,6 +2,7 @@ import React, { PropTypes } from "react";
 
 import { trackingId } from "../config";
 import ga from "./ga";
+import fb from "./fb";
 import snippet from "./richSnippet";
 import { provideContext } from "fluxible/addons";
 
@@ -56,21 +57,18 @@ class HtmlDocument extends React.Component {
             <script dangerouslySetInnerHTML={{__html: ga.replace("{trackingId}", trackingId)}} />
           }
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: snippet(htmlHead.getTitle()
-            , 
-            htmlHead.getImages().map(url => `"${url}"`), 
-            htmlHead.getDescription())}} />
-
-
-          
-          
-
-
+          <script type="application/ld+json" 
+            dangerouslySetInnerHTML={{
+              __html: snippet(htmlHead.getTitle(),
+                htmlHead.getImages().map(url => `"${url}"`),
+                htmlHead.getDescription())}}/>
+          <script dangerouslySetInnerHTML={{__html: fb}} />
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </head>
 
         <body>
           <div id="root"></div>
-          
+          <div id="fb-root"></div>
           <script dangerouslySetInnerHTML={{__html: state}} />
           { script.map((src, k) => <script key={k} src={src} />) }
         </body>
