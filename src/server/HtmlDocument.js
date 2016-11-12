@@ -62,13 +62,13 @@ class HtmlDocument extends React.Component {
               __html: snippet(htmlHead.getTitle(),
                 htmlHead.getImages().map(url => `"${url}"`),
                 htmlHead.getDescription())}}/>
-          <script dangerouslySetInnerHTML={{__html: fb}} />
-          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </head>
 
         <body>
           <div id="root"></div>
           <div id="fb-root"></div>
+          <script dangerouslySetInnerHTML={{__html: fb}} />
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
           <script dangerouslySetInnerHTML={{__html: state}} />
           { script.map((src, k) => <script key={k} src={src} />) }
         </body>
