@@ -1,6 +1,11 @@
 import React from "react";
 
 var SocialButtons = React.createClass({
+	componentDidMount () {
+		// Reload the widgets so that their icons display
+		window.FB && window.FB.XFBML.parse();
+		window.twttr && window.twttr.widgets.load();
+	},
   render () {
     return (
       <span style={{lineHeight: "12px"}}>
