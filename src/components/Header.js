@@ -35,6 +35,14 @@ class Header extends BaseComponent {
         var {lang} =  this.props;
         var navs = [
             {
+              url: '/about',
+              name: {
+                eng: "about",
+                chn: "关于",
+                chnt: "關於",
+              }
+            },
+            {
                 url: '/conversations',
                 name: {
                     eng: "conversations",
