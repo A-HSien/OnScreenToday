@@ -1,0 +1,45 @@
+@import "../constants/colors";
+
+.hero-image {
+	background-size: cover;
+	height: 500px;
+	padding: 20px 20px;
+	width: 100%;
+}
+
+.hero-title {
+	background-color: $color-black;
+	color: $color-white;
+	font-size: 36px;
+	font-weight: 900;
+	margin-top: 60px;
+	padding: 5px 20px;
+	text-transform: uppercase;
+}
+
+.hero-subtitle {
+	background-color: $color-black;
+	color: $color-white;
+	font-size: 28px;
+	font-weight: 900;
+	padding: 5px 20px;
+	text-transform: uppercase;
+}
+
+.hero-description {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: $color-white;
+	font-weight: 900;
+	padding: 10px 20px;
+}
+
+.hero-btn {
+	background-color: $color-yellow;
+	color: $color-black;
+	cursor: pointer;
+	font-size: 28px;
+	font-weight: 900;
+	margin-top: 20px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}

@@ -17,50 +17,6 @@
         cursor: pointer;
         padding: 0px 85px;
         cursor: pointer;
-        
-        .title {
-          margin-top: 60px;
-          font-size: 36px;
-          font-weight: 900;
-          color: $color-white;
-          text-transform: uppercase;
-
-          span {
-            background-color: $color-black;
-            padding: 5px 20px;
-          }
-        }
-
-        .description {
-          background-color: $color-black;
-          color: $color-white;
-          font-size: 28px;
-          font-weight: 900;
-          padding: 5px 20px;
-          text-transform: uppercase;
-        }
-
-				.long-description {
-					background-color: rgba(0, 0, 0, 0.3);
-					color: $color-white;
-					font-weight: 900;
-					padding: 10px 20px;
-				}
-
-        .more-container {
-          margin-top: 20px;
-
-
-          .more {
-            font-size: 28px;
-            text-transform: uppercase;
-            font-weight: 900;
-            background-color: $color-yellow;
-						color: $color-black;
-            padding: 10px 20px;
-            cursor: pointer;
-          }
-        }
       }
     }
   }

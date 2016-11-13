@@ -12,6 +12,7 @@ import HomeAir from './home/OnAir';
 import HomeFeature from './home/Feature';
 import HomeAds from './home/Ads';
 import Carousel from '../components/Carousel';
+import Hero from '../components/Hero';
 import _ from "lodash";
 import {composeContent, createGroupList} from "../utils/Common";
 
@@ -107,18 +108,14 @@ class HomePage extends Component {
 			};
 			slides.push(
 				<div key={i} className="slideItem" style={_styleItem}>
-						<div className="container">
-							<div className="title">
-								<span>{content.title}</span>
-							</div>
-							<span className="description">{content.subtitle}</span>
-								<NavLink key={i} className="more" href={content.url} >
-								<p className="long-description">{content.description}</p>
-								<div className="more-container" >
-									<span className="more">read more</span>
-								</div>
-								</NavLink>
-						</div>
+					<div className="container">
+						<Hero
+							contentUrl={content.url}
+							title={content.title}
+							subtitle={content.subtitle}
+							description={content.description}
+						/>
+					</div>
 				</div>
 			);
 		}

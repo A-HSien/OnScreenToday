@@ -6,42 +6,6 @@
   .screenshot-page-main-container {
     padding: 20px 0px;
     
-    .screenshot-page-hero {
-      
-      .screenshot-hero-title {
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 18px;
-      }
-      .screenshot-hero-content {
-
-        min-height: 400px;
-        background-color: $color-yellow;
-
-          .screenshot-hero-content-description {
-            font-size: 20px;
-              font-weight: 700;
-              color: $color-white;
-              padding-top: 30px;
-              line-height: 28px;
-          }
-
-          .screenshot-hero-btn {
-            width: 115px;
-            padding: 10px;
-            background-color: $color-black;
-            color: $color-white;
-            text-transform: uppercase;
-            font-weight: 900;
-            margin-top: 10px;
-          }
-      }
-
-      .screenshot-image {
-        height: 400px;
-      }
-    }
-
     .screenshot-page-main {
       margin-top: 20px;
       

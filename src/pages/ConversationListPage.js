@@ -5,6 +5,7 @@ import { connectToStores } from "fluxible/addons";
 import SubHeader from '../components/SubHeader';
 import { NavLink } from "flux-router-component";
 import BaseComponent from "../components/common/BaseComponent";
+import Hero from '../components/Hero';
 import _ from "lodash";
 import {composeContent, createGroupList} from "../utils/Common";
 
@@ -45,23 +46,15 @@ class ConversationListPage extends BaseComponent {
 		// console.log("conversationsListPage heroContent: ", heroContent);
 
 		// debugger;
-		var jsxHero = (<div className="conversation-hero row clearfix" >
-			<NavLink href={heroContent.url} >
-				<div className="conversation-hero-image" style={{backgroundImage: "url(" + heroContent.heroImage.url+ ")"}}>
-					<div>
-						<span className="conversation-hero-image-category">{heroContent.type}</span>
-					</div>
-					<span className="conversation-hero-title">{heroContent.title}</span>
-					<p className="conversation-hero-content-description">
-						{heroContent.description}
-					</p>
-					<span className="conversation-hero-btn">
-						READ MORE
-					</span>
-				</div>
-			</NavLink>
-		</div>);
-
+		var jsxHero = (
+			<Hero
+				contentUrl={heroContent.url}
+				imageUrl={heroContent.heroImage.url}
+				title={heroContent.type}
+				subtitle={heroContent.title}
+				description={heroContent.description}
+			/>
+		);
 
 		return <div className="conversation page">
 			<SubHeader />

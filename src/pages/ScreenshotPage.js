@@ -6,6 +6,7 @@ import SubHeader from '../components/SubHeader';
 import { NavLink } from "flux-router-component";
 import BaseComponent from "../components/common/BaseComponent";
 import Image from "../components/Image";
+import Hero from '../components/Hero';
 import {composeContent, createGroupList} from "../utils/Common";
 
 
@@ -46,23 +47,15 @@ class ScreenshotPage extends BaseComponent {
 				return composeContent(item, lang);
 			});
 
-			var jsxHero = (<div className="screenshot-hero row clearfix" >
-				<NavLink href={heroContent.url} >
-          <div className="screenshot-image col-sm-8" style={{backgroundImage: "url(" + heroContent.heroImage.url+ ")", backgroundSize: "cover"}}>
-          </div>
-          <div className="screenshot-hero-content col-sm-4">
-            <div className="screenshot-hero-content-description">
-              {heroContent.description.substring(0, 200) + "..."}
-            </div>
-            <div className="screenshot-hero-btn">
-              READ MORE
-            </div>
-          </div>
-          <div className="screenshot-hero-title">{heroContent.title}</div>
-          <div className="screenshot-hero-subtitle">{heroContent.subtitle}</div>
-          <div className="screenshot-hero-time">{heroContent.createdAt}</div>
-				</NavLink>
-			</div>);
+			var jsxHero = (
+				<Hero
+					contentUrl={heroContent.url}
+					imageUrl={heroContent.heroImage.url}
+					title={heroContent.type}
+					subtitle={heroContent.title}
+					description={heroContent.description}
+				/>
+			);
 
 			if (listItems && listItems.length) {
 				jsxList = createGroupList(listItems, 2, 'screenshot');

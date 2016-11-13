@@ -4,54 +4,6 @@
 	padding-top: 80px;
 
 	.conversation-page-main {
-		.conversation-page-hero {
-			padding: 30px 0px;
-			min-height: 500px;
-
-			.conversation-hero {
-				.conversation-hero-image {
-					position: relative;
-					height: 500px;
-	  			background-size: cover;
-					padding: 50px;
-
-	  				.conversation-hero-image-category, .conversation-hero-title {
-							background-color: $color-black;
-							color: $color-white;
-							font-weight: 900;
-							padding: 5px 20px;
-							text-transform: uppercase;
-	  				}
-
-						.conversation-hero-title {
-							font-size: 36px;
-							margin-top: 60px;
-						}
-
-	  				.conversation-hero-image-category {
-  						font-size: 14px;
-	  				}
-				}
-
-				.conversation-hero-content-description {
-					background-color: rgba(0, 0, 0, 0.3);
-					color: $color-white;
-					font-weight: 900;
-					padding: 10px 20px;
-				}
-
-				.conversation-hero-btn {
-					font-size: 28px;
-					text-transform: uppercase;
-					font-weight: 900;
-					background-color: $color-yellow;
-					color: $color-black;
-					padding: 10px 20px;
-					cursor: pointer;
-				}
-			}
-		}
-
 
 		.conversation-list-row {
 			margin-bottom: 50px;
