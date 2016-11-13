@@ -15,7 +15,6 @@ var SocialButtons = React.createClass({
              data-show-count="false">Tweet</a>
         </span>
         <span className="fb-share-button"
-              data-href="https://developers.facebook.com/docs/plugins/"
               data-layout="button"
               data-size="small"
               data-mobile-iframe="true"
