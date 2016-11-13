@@ -67,7 +67,7 @@ class Header extends BaseComponent {
             }, {
                 url: '/screens',
                 name: {
-                    eng: "*screen",
+                    eng: "offscreen",
                     chn: "*介面",
                     chnt: "*介面"
                 }
