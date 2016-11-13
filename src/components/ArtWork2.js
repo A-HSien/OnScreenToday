@@ -39,7 +39,7 @@ class ArtWork2 extends Component {
                         </NavLink>
                         <NavLink className="aw-content" href={this.props.content.url}>
                             <div className="aw-title">{this.props.content.title}</div>
-                            <div className="aw-description">{this.props.content.description ? this.props.content.description.substring(0,150) : this.props.content.description}</div>
+                            <div className="aw-description">{this.props.content.description}</div>
                             <div className="aw-footer">Read More</div>
                         </NavLink>
                     </ul>
