@@ -22,6 +22,13 @@ export default {
     method: "get",
     action: RouteActions.viewDetailPage
   },
+
+  views: {
+    path: "/views",
+    method: "get",
+    action: RouteActions.viewListPage
+  },
+
   screenshot: {
     path: "/screenshot/:slug",
     method: "get",

@@ -18,6 +18,7 @@ import ScreenshotDetailPage from "./pages/ScreenshotDetailPage";
 import ScreenPage from "./pages/ScreenPage";
 import OffScreenDetailPage from "./pages/OffScreenDetailPage";
 import FullScreenDetailPage from "./pages/FullScreenDetailPage";
+import ViewListPage from "./pages/ViewListPage";
 import ViewDetailPage from "./pages/ViewDetailPage";
 import TunedinPage from "./pages/Tunedin";
 import CallforartistPage from "./pages/CallforartistPage";
@@ -123,6 +124,9 @@ let Application = React.createClass({
       case "offscreen": 
         RouteHandler = OffScreenDetailPage;
         break;          
+      case "views":
+        RouteHandler = ViewListPage;
+        break;
       case "view":
         RouteHandler = ViewDetailPage;
         break;

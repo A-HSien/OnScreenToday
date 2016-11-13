@@ -45,6 +45,10 @@ const RouteActions = {
     contentDetailPage(context, {type: "view"}, payload, done);
   },
 
+  viewListPage(context, payload, done) {
+    contentListPage(context, {type: "view"}, payload, done);
+  },
+
   screenshotDetailPage(context, payload, done) {
     contentDetailPage(context, {type: "screenshot"}, payload, done);
   },
