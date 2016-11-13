@@ -24,7 +24,7 @@ class Conversation extends Component {
             jsx = (<div className="home-module conversation">
                 <NavLink href="/conversations">
                     <div className="title row">
-                        <div className="title-name">Conversation</div>
+                        <div className="title-name">Conversations</div>
                         <div className="title-all">
                             View All 
                             <div className="title-icon"></div>

@@ -25,7 +25,7 @@ class Screenshot extends Component {
             jsx = (<div className="home-module screenshot">
                 <NavLink href="/screenshots">
                 <div className="title row">
-                    <div className="title-name">screenshot</div>
+                    <div className="title-name">screenshots</div>
                     <div className="title-all">
                         View All 
                         <div className="title-icon"></div>

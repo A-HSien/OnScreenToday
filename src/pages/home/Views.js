@@ -23,7 +23,7 @@ class Views extends Component {
         jsx = (<div className="home-module views">
             <NavLink href="/views">
             <div className="title row">
-                <div className="title-name">View</div>
+                <div className="title-name">Views</div>
                 <div className="title-all">
                     View All 
                     <div className="title-icon"></div>

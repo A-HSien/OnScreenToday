@@ -22,7 +22,7 @@ class Feature extends Component {
 
         jsx = (<div className="home-module feature">
             <div className="title row">
-                <div className="title-name">feature</div>
+                <div className="title-name">features</div>
             </div>
             <div className="row">
                 <div className="video"
