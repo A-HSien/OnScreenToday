@@ -76,9 +76,6 @@ class HomePage extends Component {
 								<HomeScreenshot screenshots={screenshotContents} />
 							</div>
 							<div className="row">
-								<HomeFeature lang={lang}/>
-							</div>
-							<div className="row">
 								<HomeView views={viewContents} />
 							</div>
 						</div>
