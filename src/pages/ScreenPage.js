@@ -68,30 +68,6 @@ class ScreenPage extends BaseComponent {
 				<div className="screen-page-main-container">
 					<div className="container">
 						<div className="col-sm-9">
-
-							<div className="row screen-page-fullscreen">
-								<div className="screen-hero-header">
-									<strong>FULL SCREEN</strong>
-								</div>
-								<div key={fullscreenList[0].title} className="screen-list-item col-sm-12" >
-									<NavLink href={fullscreenList[0].subtitle} target="blank" className="screen-item-link">
-
-					                    <div className="screen-image" style={{backgroundImage: "url(" +fullscreenList[0].heroImage.url+ ")"}}></div>
-										<div className="screen-title"><strong>{fullscreenList[0].title}</strong></div>
-										<div className="screen-time">{fullscreenList[0].createdAt}</div>
-									</NavLink>
-								</div>
-								<div key={fullscreenList[1].title} className="screen-list-item col-sm-12" >
-									<NavLink href={fullscreenList[1].subtitle} target="blank" className="screen-item-link">
-
-					                    <div className="screen-image" style={{backgroundImage: "url(" +fullscreenList[1].heroImage.url+ ")"}}></div>
-										<div className="screen-title"><strong>{fullscreenList[1].title}</strong></div>
-										<div className="screen-time">{fullscreenList[1].createdAt}</div>
-									</NavLink>
-								</div>
-								<div className="screen-hero-footer">
-								</div>
-							</div>
 							<div className="row screen-page-offscreen">
 								<div className="screen-offscreen-header">
 									<strong>OFF SCREEN</strong>
