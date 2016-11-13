@@ -47,18 +47,18 @@ class ConversationListPage extends BaseComponent {
 		// debugger;
 		var jsxHero = (<div className="conversation-hero row clearfix" >
 			<NavLink href={heroContent.url} >
-			<div className="conversation-hero-image col-sm-8" style={{backgroundImage: "url(" + heroContent.heroImage.url+ ")"}} >
-				<div className="conversation-hero-image-category">{heroContent.type}</div>
-				<div className="conversation-hero-title">{heroContent.title}</div>
-			</div>
-			<div className="conversation-hero-content col-sm-4">
-				<div className="conversation-hero-content-description">
-					{heroContent.description.substring(0, 200) + "..."}
+				<div className="conversation-hero-image" style={{backgroundImage: "url(" + heroContent.heroImage.url+ ")"}}>
+					<div>
+						<span className="conversation-hero-image-category">{heroContent.type}</span>
+					</div>
+					<span className="conversation-hero-title">{heroContent.title}</span>
+					<p className="conversation-hero-content-description">
+						{heroContent.description}
+					</p>
+					<span className="conversation-hero-btn">
+						READ MORE
+					</span>
 				</div>
-				<div className="conversation-hero-btn">
-					READ MORE
-				</div>
-			</div>
 			</NavLink>
 		</div>);
 
