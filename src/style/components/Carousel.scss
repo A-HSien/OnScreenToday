@@ -32,21 +32,31 @@
         }
 
         .description {
-          width: 80%;
+          background-color: $color-black;
+          color: $color-white;
           font-size: 28px;
-          color: white;
-          padding-top: 20px;
+          font-weight: 900;
+          padding: 5px 20px;
+          text-transform: uppercase;
         }
+
+				.long-description {
+					background-color: rgba(0, 0, 0, 0.3);
+					color: $color-white;
+					font-weight: 900;
+					padding: 10px 20px;
+				}
 
         .more-container {
           margin-top: 20px;
 
 
           .more {
-            font-size: 22px;
+            font-size: 28px;
             text-transform: uppercase;
             font-weight: 900;
             background-color: $color-yellow;
+						color: $color-black;
             padding: 10px 20px;
             cursor: pointer;
           }

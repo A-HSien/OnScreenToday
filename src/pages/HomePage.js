@@ -111,8 +111,9 @@ class HomePage extends Component {
 							<div className="title">
 								<span>{content.title}</span>
 							</div>
-							<div className="description">{content.subtitle}</div>
+							<span className="description">{content.subtitle}</span>
 								<NavLink key={i} className="more" href={content.url} >
+								<p className="long-description">{content.description}</p>
 								<div className="more-container" >
 									<span className="more">read more</span>
 								</div>
