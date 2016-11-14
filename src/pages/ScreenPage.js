@@ -37,6 +37,12 @@ class ScreenPage extends BaseComponent {
 
   render() {
 		var {lang, offscreenData, AdsData} = this.props;
+
+		// FIXME: Do this for everything in the API
+		offscreenData = offscreenData.sort((a, b) => {
+			return Date.parse(a.createdAt) < Date.parse(b.createdAt);
+		});
+
 		var offscreenContents = offscreenData.map((c) => {
 			return composeContent(c, lang);
 		});
