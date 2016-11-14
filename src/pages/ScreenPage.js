@@ -6,6 +6,7 @@ import SubHeader from '../components/SubHeader';
 import { NavLink } from "flux-router-component";
 import BaseComponent from "../components/common/BaseComponent";
 import Image from "../components/Image";
+import Hero from '../components/Hero';
 import {composeContent, createGroupList} from "../utils/Common";
 import HomeAds from './home/Ads';
 
@@ -23,10 +24,10 @@ class ScreenPage extends BaseComponent {
 
 
   static propTypes = {
-	lang: PropTypes.string.isRequired,
+		lang: PropTypes.string.isRequired,
     fullscreenData: PropTypes.array.isRequired,
     offscreenData: PropTypes.array.isRequired,
-	AdsData: PropTypes.array.isRequired
+		AdsData: PropTypes.array.isRequired
   }
 
   static contextTypes = {
@@ -35,51 +36,37 @@ class ScreenPage extends BaseComponent {
 
 
   render() {
-
-  		var {lang, fullscreenData, offscreenData, AdsData} = this.props;
-  		var fullscreenContents = fullscreenData.map((c) => {
-			return composeContent(c, lang);
-		});
+		var {lang, offscreenData, AdsData} = this.props;
 		var offscreenContents = offscreenData.map((c) => {
-			return composeContent(c, lang);
-		});
-		var AdsContents = AdsData.map((c) => {
 			return composeContent(c, lang);
 		});
 
 		var jsx = <noscript />;
-		var fullscreen = <noscript />;
 		var offscreen = <noscript />;
-		if (fullscreenContents.length) {
-			var fullscreenList = fullscreenContents.slice(0,2);
-			var offscreenList = offscreenContents;
-
-			if (fullscreen && fullscreen.length) {
-				//fullscreen = createLink(fullscreenList, 1, 'screen');
-			}
-
-			if (offscreenList && offscreenList.length) {
-				offscreen = createGroupList(offscreenList, 2, 'screen');
-			}
+		if (offscreenContents.length) {
+			offscreen = createGroupList(offscreenContents, 2, 'screen');
+			var heroContent = offscreenContents.slice(0,1)[0];
+			var jsxHero = (
+				<Hero
+					contentUrl={heroContent.url}
+					imageUrl={heroContent.heroImage.url}
+					title={heroContent.type}
+					subtitle={heroContent.title}
+					description={heroContent.description}
+				/>
+			);
 
 
 			jsx = <div className="screen page">
 				<SubHeader />
 				<div className="screen-page-main-container">
 					<div className="container">
-						<div className="col-sm-9">
-							<div className="row screen-page-offscreen">
-								<div className="screen-offscreen-header">
-									<strong>OFF SCREEN</strong>
-								</div>
-								{offscreen}
+						<div className="col-sm-12">
+							<div>
+								{jsxHero}
 							</div>
-						</div>
-						<div className="col-sm-3">
-							<div className="row">
-								<div className="col-xs-12 col-sm-10 col-sm-offset-2">
-								<HomeAds ads={AdsContents} />
-								</div>
+							<div className="row screen-page-offscreen">
+								{offscreen.slice(1)}
 							</div>
 						</div>
 					</div>
