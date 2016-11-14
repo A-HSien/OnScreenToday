@@ -8,6 +8,7 @@ import { NavLink } from "flux-router-component";
 import HomeConversation from './home/Conversation';
 import HomeScreenshot from './home/Screenshot';
 import HomeView from './home/Views';
+import HomeOffscreen from './home/Offscreen';
 import HomeAir from './home/OnAir';
 import HomeFeature from './home/Feature';
 import HomeAds from './home/Ads';
@@ -33,6 +34,7 @@ class HomePage extends Component {
 		conversationData: PropTypes.array.isRequired,
 		screenshotData: PropTypes.array.isRequired,
 		viewData: PropTypes.array.isRequired,
+		offscreenData: PropTypes.array.isRequired,
 		AdsData: PropTypes.array.isRequired
 	}
 
@@ -43,7 +45,7 @@ class HomePage extends Component {
 
 	render() {
 		//debugger;
-		var {lang, conversationData, screenshotData, viewData, AdsData} = this.props;
+		var {lang, conversationData, screenshotData, viewData, offscreenData, AdsData} = this.props;
 		var conversationContents = conversationData.map((c)=> {
 			return composeContent(c, lang);
 		});
@@ -51,6 +53,9 @@ class HomePage extends Component {
 			return composeContent(c, lang);
 		});
 		var viewContents = viewData.map((c) => {
+			return composeContent(c, lang);
+		});
+		var offscreenContents = offscreenData.map((c) => {
 			return composeContent(c, lang);
 		});
 		var AdsContents = AdsData.map((c) => {
@@ -78,6 +83,9 @@ class HomePage extends Component {
 							</div>
 							<div className="row">
 								<HomeView views={viewContents} />
+							</div>
+							<div className="row">
+								<HomeOffscreen screens={offscreenContents} />
 							</div>
 						</div>
 						<div className="col-sm-3">
@@ -134,6 +142,7 @@ HomePage = connectToStores(HomePage, ["ContentStore", "LanguageStore"], (stores)
 		conversationData: _.filter(contentData, function(content) {return content.category.key === 'conversation'}),
 		screenshotData: _.filter(contentData, function(content) {return content.category.key === 'screenshot'}),
 		viewData: _.filter(contentData, function(content) {return content.category.key === 'view'}),
+		offscreenData: _.filter(contentData, function(content) {return content.category.key === 'offscreen'}),
 		AdsData: _.filter(contentData, function(content) {return content.category.key === 'advertisement'})
 
 
