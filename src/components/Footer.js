@@ -22,8 +22,6 @@ class Footer extends Component {
               </div>
               <div className="link-1 col-sm-2">
                 <ul>
-                   <a href="http://goo.gl/forms/JqwPTq1Duz" target="_blank" className="sub">Subscribe</a>
-
                     <li className="term">Term of Use</li>
                     <li className="privacy">Privacy Policy</li>
                 </ul>
