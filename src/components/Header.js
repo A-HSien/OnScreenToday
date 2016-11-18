@@ -116,7 +116,7 @@ class Header extends BaseComponent {
                         <div className="logo"></div>
                     </a>
                 </div>
-                <div className="navbar-cell navlinks hidden-sm hidden-xs col-xs-9">
+                <div className="navbar-cell navlinks hidden-sm hidden-xs col-xs-12">
                     {navLinks}
                 </div>
                 <div className="col-xs-3 nav-right hidden-sm hidden-xs">
