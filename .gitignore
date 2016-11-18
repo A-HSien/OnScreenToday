@@ -1,2 +1,5 @@
 node_modules
 .idea
+.*.sw*
+npm-debug.log
+public/assets/
