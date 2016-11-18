@@ -12,6 +12,7 @@ import HomeOffscreen from './home/Offscreen';
 import HomeAir from './home/OnAir';
 import HomeFeature from './home/Feature';
 import HomeAds from './home/Ads';
+import HomeCommercialProjects from './home/CommercialProjects';
 import Carousel from '../components/Carousel';
 import Hero from '../components/Hero';
 import _ from "lodash";
@@ -35,6 +36,7 @@ class HomePage extends Component {
 		screenshotData: PropTypes.array.isRequired,
 		viewData: PropTypes.array.isRequired,
 		offscreenData: PropTypes.array.isRequired,
+		commercialProjectData: PropTypes.array.isRequired,
 		AdsData: PropTypes.array.isRequired
 	}
 
@@ -45,7 +47,7 @@ class HomePage extends Component {
 
 	render() {
 		//debugger;
-		var {lang, conversationData, screenshotData, viewData, offscreenData, AdsData} = this.props;
+		var {lang, conversationData, screenshotData, viewData, offscreenData, AdsData, commercialProjectData} = this.props;
 		var conversationContents = conversationData.map((c)=> {
 			return composeContent(c, lang);
 		});
@@ -59,6 +61,9 @@ class HomePage extends Component {
 			return composeContent(c, lang);
 		});
 		var AdsContents = AdsData.map((c) => {
+			return composeContent(c, lang);
+		});
+		var commercialProjectsContents = commercialProjectData.map((c) => {
 			return composeContent(c, lang);
 		});
 		var jsx;
@@ -86,6 +91,9 @@ class HomePage extends Component {
 							</div>
 							<div className="row">
 								<HomeOffscreen screens={offscreenContents} />
+							</div>
+							<div className="row">
+								<HomeCommercialProjects commercialProjects={commercialProjectsContents} />
 							</div>
 						</div>
 						<div className="col-sm-3">
@@ -143,7 +151,8 @@ HomePage = connectToStores(HomePage, ["ContentStore", "LanguageStore"], (stores)
 		screenshotData: _.filter(contentData, function(content) {return content.category.key === 'screenshot'}),
 		viewData: _.filter(contentData, function(content) {return content.category.key === 'view'}),
 		offscreenData: _.filter(contentData, function(content) {return content.category.key === 'offscreen'}),
-		AdsData: _.filter(contentData, function(content) {return content.category.key === 'advertisement'})
+		AdsData: _.filter(contentData, function(content) {return content.category.key === 'advertisement'}),
+		commercialProjectData: _.filter(contentData, function(content) {return content.category.key === 'commercial-project'})
 
 
 	};

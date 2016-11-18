@@ -78,6 +78,15 @@ const RouteActions = {
     contentListPage(context, {type : 'conversation', limit: 10}, payload, done);
   },
 
+  commercialProjectsDetailPage(context, payload, done) {
+    contentDetailPage(context, {type: "commercial-project"}, payload, done);
+    contentListPage(context, {type : 'commercial-project'}, payload, done);
+  },
+
+  commercialProjectsListPage(context, payload, done) {
+    contentListPage(context, {type : 'commercial-project', limit: 10}, payload, done);
+  },
+
   aboutPage(context, payload, done) {
     context.executeAction(AboutActionCreators.loadAboutData, {}, (err) => {
 
@@ -102,4 +111,5 @@ const RouteActions = {
 
 
 
+console.log(RouteActions);
 export default RouteActions;

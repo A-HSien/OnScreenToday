@@ -71,6 +71,18 @@ export default {
     action: RouteActions.conversationDetailPage
   },
 
+  commercialProjects: {
+    path: "/commercial-projects",
+    method: "get",
+    action: RouteActions.commercialProjectsListPage
+  },
+
+  commercialProject: {
+    path: "/commercial-project/:slug",
+    method: "get",
+    action: RouteActions.commercialProjectsDetailPage
+  },
+
   home: {
     path: "/",
     method: "get",

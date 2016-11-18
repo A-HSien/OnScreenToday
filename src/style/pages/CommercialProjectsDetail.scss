@@ -1,0 +1,34 @@
+.commercial-project.page {
+	padding-top: 80px;
+
+	.commercial-project-detail-container {
+		padding: 20px 0px;
+		line-height: 1.5;
+		
+		.commercial-project-image {
+			background-size: cover;
+			width: 100%;
+			min-height: 400px;
+		}
+
+		.commercial-project-image-caption {
+			font-size: 13px;
+		}
+	}
+}
+
+
+@media (max-width: 500px) { 
+
+	.commercial-project.page {
+		padding-top: 60px !important;
+		.commercial-project-image {
+			min-height: 250px !important;
+		}
+	}
+
+}
+
+.content-meta strong,span {
+  padding-right: 5px;
+}

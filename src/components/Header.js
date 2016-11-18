@@ -71,6 +71,13 @@ class Header extends BaseComponent {
                     chn: "*介面",
                     chnt: "*介面"
                 }
+            }, {
+                url: '/commercial-projects',
+                name: {
+                    eng: "studio",
+                    chn: "",
+                    chnt: ""
+                }
             }
         ];
 

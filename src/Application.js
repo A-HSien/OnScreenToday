@@ -22,6 +22,8 @@ import ViewListPage from "./pages/ViewListPage";
 import ViewDetailPage from "./pages/ViewDetailPage";
 import TunedinPage from "./pages/Tunedin";
 import CallforartistPage from "./pages/CallforartistPage";
+import CommercialProjectsListPage from "./pages/CommercialProjectsListPage";
+import CommercialProjectsDetailPage from "./pages/CommercialProjectsDetailPage";
 import trackPageView from "./utils/trackPageView";
 
 const debug = require("debug")("onscreentoday");
@@ -135,6 +137,12 @@ let Application = React.createClass({
         break;
       case "callforartists":
         RouteHandler = CallforartistPage;
+        break;
+      case "commercialProjects":
+        RouteHandler = CommercialProjectsListPage;
+        break;
+      case "commercialProject":
+        RouteHandler = CommercialProjectsDetailPage;
         break;
       default:
         console.warn(`Missing handler for route with name ${route.name}`);
