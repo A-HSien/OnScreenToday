@@ -111,5 +111,4 @@ const RouteActions = {
 
 
 
-console.log(RouteActions);
 export default RouteActions;
