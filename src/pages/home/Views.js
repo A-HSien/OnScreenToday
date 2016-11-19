@@ -2,7 +2,7 @@
 
 
 import React, { PropTypes, Component } from "react";
-import ArtWork from "../../components/ArtWork2";
+import ArtWork from "../../components/ArtWork";
 import { NavLink } from "flux-router-component";
 
 
