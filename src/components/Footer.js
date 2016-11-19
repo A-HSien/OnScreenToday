@@ -14,19 +14,10 @@ class Footer extends Component {
         jsx = (
           <div className="footer container">
             <div className="row">
-              <div className="col-sm-3 hidden-xs">
+              <div className="col-sm-6 hidden-xs">
                 <div className="logo"></div>
               </div>
-              <div className="col-sm-3 col-xs-6">
-                <MailingListSignup/>
-              </div>
-              <div className="link-1 col-sm-2 hidden-xs">
-                <ul>
-                    <li className="term">Term of Use</li>
-                    <li className="privacy">Privacy Policy</li>
-                </ul>
-              </div>
-              <div className="icons col-sm-4 col-xs-6">
+              <div className="icons col-sm-6 col-xs-12">
                   <ul>
                       <a target="_blank" href="https://www.facebook.com/pages/Screen-%E4%BB%8B%E9%9D%A2/696130310507423" ><li className="icon fb"></li></a>
                       <a target="_blank" href="https://twitter.com/OnScreenToday?lang=en&hc_location=ufi" ><li className="icon twitter"></li></a>
@@ -34,7 +25,12 @@ class Footer extends Component {
                   </ul>
               </div>
             </div>
-            <div className="info">©2015 Screen All Rights Reserved</div>
+						<div className="row">
+              <MailingListSignup/>
+						</div>
+						<div className="row">
+							<div className="info">©2015 Screen All Rights Reserved</div>
+						</div>
           </div>
         );
 
