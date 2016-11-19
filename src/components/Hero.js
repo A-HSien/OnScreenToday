@@ -17,13 +17,17 @@ var Hero = React.createClass({
 						<div>
 							<span className="hero-title">{this.props.title}</span>
 						</div>
-						<span className="hero-subtitle">{this.props.subtitle}</span>
-						<p className="hero-description">
+						<div>
+							<span className="hero-subtitle">{this.props.subtitle}</span>
+						</div>
+						<p className="hero-description hidden-xs">
 							{this.props.description}
 						</p>
-						<span className="hero-btn">
-							read more
-						</span>
+						<div className="hero-btn-container">
+							<span className="hero-btn">
+								read more
+							</span>
+						</div>
 					</div>
 				</NavLink>
 			</div>
