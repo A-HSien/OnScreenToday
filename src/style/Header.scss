@@ -142,4 +142,14 @@
 }
 
 
-
+@media (max-width: 1200px) {
+	.header {
+		.navbar {
+			.navbar-cell {
+				.nav-item {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

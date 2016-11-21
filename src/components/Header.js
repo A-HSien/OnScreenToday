@@ -121,13 +121,13 @@ class Header extends BaseComponent {
                         <div className="logo"></div>
                     </a>
                 </div>
-                <div className="navbar-cell navlinks hidden-md hidden-sm hidden-xs col-xs-12">
+                <div className="navbar-cell navlinks hidden-sm hidden-xs col-xs-12">
                     {navLinks}
                 </div>
-                <div className="col-xs-3 nav-right hidden-md hidden-sm hidden-xs">
+                <div className="col-xs-3 nav-right hidden-sm hidden-xs">
                     {jsxLang}
                 </div>
-                <div className="menu-responsive col-xs-9 ion-android-menu visible-md visible-sm visible-xs" onClick={this._toggle}></div>
+                <div className="menu-responsive col-xs-9 ion-android-menu visible-sm visible-xs" onClick={this._toggle}></div>
             </nav>
             </header>
         </div>);
