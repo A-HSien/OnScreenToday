@@ -48,11 +48,6 @@ class AboutPage extends Component {
           <div className="about-team">
             {this._createTeamList(teamMates)}
           </div>
-          <div className="photoCredit" >Photo© Jiaxi Yang & Zhe Zhu</div>
-        </div>
-        <div className="section">
-          <h3 className="section-title">contact</h3>
-          <a href={"mailto:info@onscreentoday.com?subject=More Information About Screen"}>info@onscreentoday.com</a>
         </div>
       </div>
     </div>;
