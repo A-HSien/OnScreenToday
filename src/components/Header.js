@@ -85,7 +85,7 @@ class Header extends BaseComponent {
             var _nav = navs[i];
             var _class = classnames("nav-item");
             navLinks.push(
-                <NavLink key={i} href={_nav.url} className={_class}>
+                <NavLink key={i} href={_nav.url} className={_class} onClick={this._toggle}>
                     {_nav.name[lang]}
                     <span className="nav-icon"></span>
                 </NavLink>
@@ -101,7 +101,7 @@ class Header extends BaseComponent {
         </ul>;
 
         jsx = (<div ref="header" className="header-container">
-                <ul className="nav-sub nav-hidden-md " onClick={this._toggle}>
+                <ul className="nav-sub nav-hidden-md ">
                     <div className="mobile-nav-container" >
                         {jsxLang}
                         {navLinks}
