@@ -66,14 +66,12 @@ class ScreenPage extends BaseComponent {
 			jsx = <div className="screen page">
 				<SubHeader />
 				<div className="screen-page-main-container">
-					<div className="container">
-						<div className="col-sm-12">
-							<div>
-								{jsxHero}
-							</div>
-							<div className="row screen-page-offscreen">
-								{offscreen.slice(1)}
-							</div>
+					<div className="col-sm-12">
+						<div>
+							{jsxHero}
+						</div>
+						<div className="row screen-page-offscreen container">
+							{offscreen.slice(1)}
 						</div>
 					</div>
 				</div>

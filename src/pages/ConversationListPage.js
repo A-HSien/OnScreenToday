@@ -58,7 +58,7 @@ class ConversationListPage extends BaseComponent {
 
 		return <div className="conversation page">
 			<SubHeader />
-			<div className="conversation-page-main container">
+			<div className="conversation-page-main">
 				<div className="container">
 					<div className="conversation-page-hero">
 						{jsxHero}

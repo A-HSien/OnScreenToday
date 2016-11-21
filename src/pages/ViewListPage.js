@@ -54,7 +54,7 @@ class ViewListPage extends BaseComponent {
 
 		return <div className="view page">
 			<SubHeader />
-			<div className="view-page-main container">
+			<div className="view-page-main">
 				<div className="container">
 					<div className="view-page-hero">
 						{jsxHero}
