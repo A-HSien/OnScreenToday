@@ -75,3 +75,14 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+	.slick-slider {
+		.hero-title, .hero-btn {
+			font-size: 26px;
+		}
+		.hero-subtitle {
+			font-size: 22px;
+		}
+	}
+}
