@@ -15,7 +15,6 @@ const AboutActionCreators = {
           context.dispatch(Actions.LOAD_ABOUT_DATA_FAILURE);
           return done(err);
         }
-        console.log("loadAboutData: ", data);
         context.dispatch(Actions.LOAD_ABOUT_DATA_SUCCESS, data || data_about);
         done();
       }
