@@ -1,6 +1,27 @@
 @import 'constants/colors';
 @import "mixins/sprite";
 
+// Signup form
+// FIXME: Move to my own file
+#mc_embed_signup {
+	text-align: center;
+}
+
+#mc-embedded-subscribe-form {
+	padding: 5px;
+}
+
+#mce-EMAIL {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	width: 53%;
+}
+
+.btn-container {
+	margin-top: 5px;
+	margin-left: 7px;
+}
+
 .footer {
 //	max-width: 940px;
   padding: 17px 0;
@@ -24,7 +45,7 @@
   }
 
   .info {
-      margin-top: 30px;
+      margin-top: 10px;
       text-align: center;
   }
 
@@ -64,4 +85,12 @@
       @include sprite(0, 646);
     }  
   }
+}
+
+@media (max-width: 768px) {
+	.footer {
+		.icons {
+			text-align: center;
+		}
+	}
 }
