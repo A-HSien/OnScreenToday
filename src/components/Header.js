@@ -30,6 +30,7 @@ class Header extends BaseComponent {
 	
 	render () {
         var navLinks = [],
+						mobileNavLinks = [],
             jsx,
             jsxLang;
         var {lang} =  this.props;
@@ -84,12 +85,16 @@ class Header extends BaseComponent {
         for(var i = 0; i < navs.length; i++) {
             var _nav = navs[i];
             var _class = classnames("nav-item");
-            navLinks.push(
-                <NavLink key={i} href={_nav.url} className={_class} onClick={this._toggle}>
+
+					  // FIXME : This feels like a hack
+						var navLink = (
+                <NavLink key={i} href={_nav.url} className={_class}>
                     {_nav.name[lang]}
                     <span className="nav-icon"></span>
                 </NavLink>
-            );
+						);
+            navLinks.push(navLink);
+            mobileNavLinks.push(React.cloneElement(navLink, {onClick: this._toggle}));
         }
 
         jsxLang = <ul className="lang">
@@ -104,7 +109,7 @@ class Header extends BaseComponent {
                 <ul className="nav-sub nav-hidden-md ">
                     <div className="mobile-nav-container" >
                         {jsxLang}
-                        {navLinks}
+                        {mobileNavLinks}
                     </div>
 
                 </ul>
