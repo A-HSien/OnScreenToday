@@ -55,12 +55,14 @@ class CommercialProjectsListPage extends BaseComponent {
 		return <div className="commercial-projects page">
 			<SubHeader />
 			<div className="commercial-projects-page-main">
-				<div className="commercial-projects-page-hero">
-					{jsxHero}
-				</div>
 				<div className="container">
-					<div className="commercial-projects-page-main">
-						{createGroupList(listItemsContent, 3, 'commercial-projects')}
+					<div className="commercial-projects-page-hero">
+						{jsxHero}
+					</div>
+					<div className="container">
+						<div className="commercial-projects-page-main">
+							{createGroupList(listItemsContent, 3, 'commercial-projects')}
+						</div>
 					</div>
 				</div>
 			</div>

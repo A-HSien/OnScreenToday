@@ -66,7 +66,7 @@ class ScreenPage extends BaseComponent {
 			jsx = <div className="screen page">
 				<SubHeader />
 				<div className="screen-page-main-container">
-					<div className="col-sm-12">
+					<div className="container">
 						<div>
 							{jsxHero}
 						</div>
