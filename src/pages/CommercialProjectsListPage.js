@@ -60,7 +60,7 @@ class CommercialProjectsListPage extends BaseComponent {
 						{jsxHero}
 					</div>
 					<div className="commercial-projects-page-main">
-						{createGroupList(listItemsContent, 3, 'view')}
+						{createGroupList(listItemsContent, 3, 'commercial-projects')}
 					</div>
 				</div>
 			</div>

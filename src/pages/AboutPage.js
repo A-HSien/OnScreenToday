@@ -15,7 +15,6 @@ class AboutPage extends Component {
 
   constructor (props) {
     super(props);
-
   }
 
   static propTypes = {
@@ -34,47 +33,16 @@ class AboutPage extends Component {
     //var lang = "eng";
     var {aboutData, lang} = this.props;
 
-    var about = aboutData.about[lang],
-        contact = aboutData.contact,
-        teamMates = aboutData.team[lang];
-
-    var jsxQuote = function() {
-      if (about.quote.length) {
-        return (
-          <blockquote className="quote simple">
-            <p>{about.quote}</p>
-          </blockquote>
-        );
-      } else {
-        return <noscript />;
-      }
-    };
-
-    var jsxFormats = function() {
-      if (about.formats.length) {
-        return about.formats.map((format, k) => {
-          return (<li key={k} className="format" dangerouslySetInnerHTML={{__html: format}} />);
-        });
-      } else {
-        return <noscript />;
-      }
-    };
+    var about = aboutData.content[lang],
+        teamMates = aboutData.team;
 
     return <div className="page about">
       <SubHeader />
       <div className="about-main container">
         <div className="section">
           <h3 className="about-title section-title">About us</h3>
-          <div className="about-content">
-            {jsxQuote()}
-          </div>
         </div>
-        <div className="section">
-          <p dangerouslySetInnerHTML={{__html: about.description}} />
-          <ul>
-            {jsxFormats()}
-          </ul>
-        </div>
+        <div className="section" dangerouslySetInnerHTML={{__html: about.description}}></div>
         <div className="section">
           <h3 className="section-title">team</h3>
           <div className="about-team">
@@ -84,7 +52,7 @@ class AboutPage extends Component {
         </div>
         <div className="section">
           <h3 className="section-title">contact</h3>
-          <a href={"mailto:" + contact.email + "?subject=More Information About Screen"}>{contact.email}</a>
+          <a href={"mailto:info@onscreentoday.com?subject=More Information About Screen"}>info@onscreentoday.com</a>
         </div>
       </div>
     </div>;
@@ -92,16 +60,17 @@ class AboutPage extends Component {
 
   /*==========  Utils  ==========*/
   _createTeamList (teamMates) {
+		let { lang } = this.props;
     return teamMates.map((teamMate) => {
       return (
         <div className="row about-list-row">
           <div className="about-list-item col-md-3">
             <div className="about-image-container">
-              <img className="about-image" src={teamMate.imgUrl} />
+              <img className="about-image" src={teamMate.content.imageUrl} />
               <div className="about-name">{teamMate.name}</div>
-              <div className="about-title">{teamMate.title}</div>
+              <div className="about-title">{teamMate.content[lang].role}</div>
             </div>
-            <div className="about-bio-sm">{teamMate.bio}</div>
+            <div className="about-bio-sm">{teamMate.content[lang].bio}</div>
           </div>
         </div>
       );
