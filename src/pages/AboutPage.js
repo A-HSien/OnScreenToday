@@ -61,7 +61,7 @@ class AboutPage extends Component {
         <div className="row about-list-row">
           <div className="about-list-item col-md-3">
             <div className="about-image-container">
-              <img className="about-image" src={teamMate.content.image} />
+              <img className="about-image" src={teamMate.content.image.url} />
               <div className="about-name">{teamMate.name.first}{teamMate.name.last}</div>
               <div className="about-title">{teamMate.content[lang].role}</div>
             </div>
