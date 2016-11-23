@@ -49,6 +49,7 @@ class AboutPage extends Component {
             {this._createTeamList(teamMates)}
           </div>
         </div>
+        <div className="section" dangerouslySetInnerHTML={{__html: about.contributors}}></div>
       </div>
     </div>;
   }
