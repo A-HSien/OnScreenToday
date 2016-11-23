@@ -104,3 +104,16 @@
 
   }
 }
+
+@media (max-width: 768px) {
+	/* FIXME: TOO MUCH NESTING */
+	.page.about .about-main .about-list-row .about-list-item .about-bio-sm {
+		text-align: center;
+	}
+
+	/* FIXME: HELP */
+	.page.about .about-main .about-list-row .about-list-item .about-image-container {
+		margin: 0 auto;
+		float: none;
+	}
+}
