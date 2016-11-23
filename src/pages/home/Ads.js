@@ -14,53 +14,24 @@ if (process.env.BROWSER) {
 class Ads extends Component {
 
 	render () {
+		let ads = this.props.ads.map(function (ad) {
+			return (
+				<div className="ad-container">
+					<NavLink href={ad.title} target="blanket">
+						<image height="150px" src={ad.heroImage.url}/>
+					</NavLink>
+				</div>
+			);
+		});
 
-		var jsx;
-        var num = this.props.ads.length;
-
-        jsx = (<div className="home-module Ads">
-            <div className="title row">
-                <div className="title-name"></div>
-            </div>
-            <div>
-                <NavLink href={this.props.ads[0].title} target="blanket">
-                    <image height="150px" src={this.props.ads[0].heroImage.url}/>
-                </NavLink>
-            </div>
-            <br/>
-            <div>
-                <NavLink href={this.props.ads[1].title} target="blanket">
-                    <image height="150px" src={this.props.ads[1].heroImage.url}/>
-                </NavLink>
-            </div>
-            <br/>
-            <div>
-                <NavLink href={this.props.ads[2].title} target="blanket">
-                    <image height="150px" src={this.props.ads[2].heroImage.url}/>
-                </NavLink>
-            </div>  
-            <br/>
-            <div>
-                <NavLink href={this.props.ads[3].title} target="blanket">
-                    <image height="150px" src={this.props.ads[3].heroImage.url}/>
-                </NavLink>
-            </div>
-            <br/>
-            <div>
-                <NavLink href={this.props.ads[4].title} target="blanket">
-                    <image height="150px" src={this.props.ads[4].heroImage.url}/>
-                </NavLink>
-            </div>  
-            <br/>
-            <div>
-                <NavLink href={this.props.ads[5].title} target="blanket">
-                    <image height="150px" src={this.props.ads[5].heroImage.url}/>
-                </NavLink>
-            </div>
-        </div>);
-
-
-        return jsx;
+		return (
+			<div className="home-module Ads">
+				<div className="title row">
+					<div className="title-name"></div>
+				</div>
+				{ads}
+			</div>
+		);
 	}
 
 }
