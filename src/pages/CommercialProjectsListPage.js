@@ -45,7 +45,7 @@ class CommercialProjectsListPage extends BaseComponent {
 		var jsxHero = (
 			<Hero
 				contentUrl={heroContent.url}
-				imageUrl={heroContent.heroImage.url}
+				imageUrl={heroContent.heroImage && heroContent.heroImage.url}
 				title={heroContent.type}
 				subtitle={heroContent.title}
 				description={heroContent.description}
