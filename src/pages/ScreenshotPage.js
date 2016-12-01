@@ -51,8 +51,8 @@ class ScreenshotPage extends BaseComponent {
 				<Hero
 					contentUrl={heroContent.url}
 					imageUrl={heroContent.heroImage.url}
-					title={heroContent.type}
-					subtitle={heroContent.title}
+					title={heroContent.title}
+					subtitle={heroContent.subtitle}
 					description={heroContent.description}
 				/>
 			);

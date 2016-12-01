@@ -84,11 +84,8 @@ class ConversationDetailPage extends BaseComponent {
 				
 				<div className="container-narrow">
 					<div className="conversation-content-category clearfix">
-						<span>{hero.type}</span>
-					</div>
-					<h1 className="conversation-content-title clearfix">
 						<span>{hero.title}</span>
-					</h1>
+					</div>
 					<h2 className="conversation-content-subtitle">{hero.subtitle}</h2>
 					<div className="content-meta">
             {this._createAuthor(hero.author)} {hero.createdAt} <SocialButtons/>

@@ -83,9 +83,6 @@ class OffScreenDetailPage extends BaseComponent {
 
 				
 				<div className="container-narrow">
-					<div className="screen-content-category clearfix">
-						<span>{hero.type}</span>
-					</div>
 					<h1 className="screen-content-title clearfix">
 						<span>{hero.title}</span>
 					</h1>

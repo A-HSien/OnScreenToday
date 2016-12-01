@@ -10,6 +10,19 @@ var Hero = React.createClass({
 		const imageStyle = this.props.imageUrl
 			? {backgroundImage: "url(" + this.props.imageUrl + ")"}
 			: {};
+		const subtitle = this.props.subtitle
+			? (
+					<span className="hero-subtitle">{this.props.subtitle}</span>
+			)
+			: '';
+		const description = this.props.description
+			? (
+				<p className="hero-description hidden-xs">
+					{this.props.description}
+				</p>
+			)
+			: '';
+
 		return (
 			<div className="row clearfix" >
 				<NavLink href={this.props.contentUrl}>
@@ -18,11 +31,11 @@ var Hero = React.createClass({
 							<span className="hero-title">{this.props.title}</span>
 						</div>
 						<div>
-							<span className="hero-subtitle">{this.props.subtitle}</span>
+							{subtitle}
 						</div>
-						<p className="hero-description hidden-xs">
-							{this.props.description}
-						</p>
+						<div>
+							{description}
+						</div>
 						<div className="hero-btn-container">
 							<span className="hero-btn">
 								read more
