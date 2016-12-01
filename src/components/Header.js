@@ -76,8 +76,8 @@ class Header extends BaseComponent {
                 url: '/commercial-projects',
                 name: {
                     eng: "studio",
-                    chn: "",
-                    chnt: ""
+                    chn: "服务",
+                    chnt: "服務"
                 }
             }
         ];

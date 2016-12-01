@@ -35,7 +35,7 @@ class ArtWork2 extends Component {
                 <div className="aw-header"></div>
                     <ul className="aw-container clearfix" >
                         <NavLink className="aw-image-container " href={this.props.content.url} >
-                            <img className="image hover-image-effect" src={this.props.content.heroImage.url} />
+                            <img className="image hover-image-effect" src={this.props.content.heroImage && this.props.content.heroImage.url} />
                         </NavLink>
                         <NavLink className="aw-content" href={this.props.content.url}>
                             <div className="aw-title">{this.props.content.title}</div>
