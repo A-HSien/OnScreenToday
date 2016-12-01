@@ -58,7 +58,7 @@ class CommercialProjectsDetailPage extends BaseComponent {
 			<div className="commercial-project-detail-container">
 				<div className="container-narrow">
 					<div className="row">
-							<div className="commercial-project-image" style={{backgroundImage: 'url(' + hero.heroImage.url + ')'}} ></div>
+							<div className="commercial-project-image" style={{backgroundImage: 'url(' + (hero.heroImage ? hero.heroImage.url : '') + ')'}} ></div>
 							<div className="commercial-project-image-caption" dangerouslySetInnerHTML={{__html: hero.heroImage.caption}}></div>
 							{jsxHero}
 					</div>
