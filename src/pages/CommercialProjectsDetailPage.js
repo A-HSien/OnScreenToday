@@ -35,7 +35,7 @@ class CommercialProjectsDetailPage extends BaseComponent {
 
   render() {
 
-  		var {lang, commercialProjectData} = this.props;
+  	var {lang, commercialProjectData} = this.props;
 
 		var hero = composeContent(commercialProjectData, lang);
 		// debugger;
@@ -51,17 +51,30 @@ class CommercialProjectsDetailPage extends BaseComponent {
 				<div dangerouslySetInnerHTML={{__html: hero.article}}></div>
 			</div>
 		</div>);
+		var jsxContent;
 
+		if (hero.heroImage && hero.heroImage.url) {
+			jsxContent = (
+				<div className="row">
+					<div className="commercial-project-image" style={{backgroundImage: 'url(' + hero.heroImage.url + ')'}} ></div>
+					<div className="commercial-project-image-caption" dangerouslySetInnerHTML={{__html: hero.heroImage.caption}}></div>
+					{jsxHero}
+				</div>
+			);
+		}
+		else {
+			jsxContent = (
+				<div className="row">
+					{jsxHero}
+				</div>
+			);
+		}
 
 		return <div className="commercial-project detail page ">
 			<SubHeader />
 			<div className="commercial-project-detail-container">
 				<div className="container-narrow">
-					<div className="row">
-							<div className="commercial-project-image" style={{backgroundImage: 'url(' + (hero.heroImage ? hero.heroImage.url : '') + ')'}} ></div>
-							<div className="commercial-project-image-caption" dangerouslySetInnerHTML={{__html: hero.heroImage ? hero.heroImage.caption : ''}}></div>
-							{jsxHero}
-					</div>
+					{jsxContent}
 				</div>
 			</div>
 
