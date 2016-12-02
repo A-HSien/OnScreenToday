@@ -113,6 +113,8 @@ class HtmlHeadStore extends BaseStore {
       case "conversation":
       case "view":
       case "screenshot":
+			case "offscreen":
+			case "commercialProject":
         let store = this.dispatcher.getStore("ContentStore");
         let content = store.getContentBySlug(route.params.slug) || undefined;
         let images = [];
