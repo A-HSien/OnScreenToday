@@ -50,8 +50,9 @@ class ScreenPage extends BaseComponent {
 		var jsx = <noscript />;
 		var offscreen = <noscript />;
 		if (offscreenContents.length) {
+			var heroContent = offscreenContents[0];
+			offscreenContents = offscreenContents.slice(1);
 			offscreen = createGroupList(offscreenContents, 2, 'screen');
-			var heroContent = offscreenContents.slice(0,1)[0];
 			var jsxHero = (
 				<Hero
 					contentUrl={heroContent.url}
@@ -71,7 +72,7 @@ class ScreenPage extends BaseComponent {
 							{jsxHero}
 						</div>
 						<div className="row screen-page-offscreen container">
-							{offscreen.slice(1)}
+							{offscreen}
 						</div>
 					</div>
 				</div>
