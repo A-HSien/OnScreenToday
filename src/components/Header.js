@@ -19,13 +19,13 @@ class Header extends BaseComponent {
 		this._bind('_onLangClick', '_toggle');
 	}
 
-    static propTypes = {
-        lang: PropTypes.string.isRequired
-    }
+	static propTypes = {
+			lang: PropTypes.string.isRequired
+	}
 
-    static contextTypes = {
-        executeAction: PropTypes.func.isRequired
-    }
+	static contextTypes = {
+			executeAction: PropTypes.func.isRequired
+	}
 
 	
 	render () {
@@ -86,15 +86,24 @@ class Header extends BaseComponent {
             var _nav = navs[i];
             var _class = classnames("nav-item");
 
-					  // FIXME : This feels like a hack
+					  // FIXME : This IS a hack
+						// FIXME : This should be a component - better abstraction
 						var navLink = (
                 <NavLink key={i} href={_nav.url} className={_class}>
                     {_nav.name[lang]}
-                    <span className="nav-icon"></span>
+										<span className="nav-icon"></span>
+                </NavLink>
+						);
+						var mobileNavLink = (
+                <NavLink key={i} href={_nav.url} className={_class}>
+									<div onClick={this._toggle}>
+                    {_nav.name[lang]}
+										<span className="nav-icon"></span>
+									</div>
                 </NavLink>
 						);
             navLinks.push(navLink);
-            mobileNavLinks.push(React.cloneElement(navLink, {onClick: this._toggle}));
+            mobileNavLinks.push(mobileNavLink);
         }
 
         jsxLang = <ul className="lang">
@@ -138,12 +147,12 @@ class Header extends BaseComponent {
     /*==========  Methods  ==========*/
 
     _onLangClick(evt) {
-        var currentTarget = evt.currentTarget;
-        this.context.executeAction(changeLanguage, {lang: currentTarget.getAttribute("data-lang")});
+			var currentTarget = evt.currentTarget;
+			this.context.executeAction(changeLanguage, {lang: currentTarget.getAttribute("data-lang")});
     }
 
-    _toggle () {
-        this._toggleClass(this.refs.header.getDOMNode(), "show-mobile-nav");
+    _toggle (evt) {
+      this._toggleClass(this.refs.header.getDOMNode(), "show-mobile-nav");
     }
 
     _toggleClass (el, className) {
