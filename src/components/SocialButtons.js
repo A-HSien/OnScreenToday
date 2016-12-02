@@ -8,7 +8,7 @@ var SocialButtons = React.createClass({
 	},
   render () {
     return (
-      <span style={{lineHeight: "12px"}}>
+      <div style={{lineHeight: "12px"}}>
         <span style={{padding: "2px"}}>
           <a href="https://twitter.com/share"
              className="twitter-share-button"
@@ -23,7 +23,7 @@ var SocialButtons = React.createClass({
              target="_blank"
              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a>
         </span>
-      </span>
+      </div>
     );
   }
 });

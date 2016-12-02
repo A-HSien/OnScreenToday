@@ -4,7 +4,6 @@ import React, { PropTypes, Component } from "react";
 import { connectToStores } from "fluxible/addons";
 import SubHeader from '../components/SubHeader';
 import BaseComponent from "../components/common/BaseComponent";
-import Carousel from '../components/Carousel';
 import { NavLink } from "flux-router-component";
 import {composeContent} from "../utils/Common";
 import SocialButtons from '../components/SocialButtons';
@@ -50,45 +49,15 @@ class OffScreenDetailPage extends BaseComponent {
 		// debugger;
 		var jsxHero = (<div className=" screen-content-container row clearfix" >
 			<div className="screen-content">
-				
-				<Carousel slides={this._createSlides(hero.images)} settings={{
-					arrows: false,
-					dots: true,
-					infinite: true,
-					// autoplay: true,
-					centerMode: true,
-					centerPadding: '80px',
-					slidesToShow: hero.images.length > 3 ? 3  : hero.images.length,
-					responsive: [
-						{
-						  breakpoint: 768,
-						  settings: {
-						    arrows: false,
-						    centerMode: true,
-						    centerPadding: '40px',
-						    slidesToShow: 2
-						  }
-						},
-						{
-						  breakpoint: 480,
-						  settings: {
-						    arrows: false,
-						    centerMode: true,
-						    centerPadding: '40px',
-						    slidesToShow: 1
-						  }
-						}
-					]
-				}}/>
-
-				
 				<div className="container-narrow">
 					<h1 className="screen-content-title clearfix">
 						<span>{hero.title}</span>
 					</h1>
 					<h2 className="screen-content-subtitle">{hero.subtitle}</h2>
 					<div>
-						{this._createAuthor(hero.author)} {hero.createdAt} <SocialButtons/>
+						{this._createAuthor(hero.author)}
+						<div>{hero.createdAt}</div>
+						<SocialButtons/>
 					</div>
 					<div>
 						{this._createVideoContributor(hero.camera)}

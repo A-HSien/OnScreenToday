@@ -88,7 +88,9 @@ class ConversationDetailPage extends BaseComponent {
 					</div>
 					<h2 className="conversation-content-subtitle">{hero.subtitle}</h2>
 					<div className="content-meta">
-            {this._createAuthor(hero.author)} {hero.createdAt} <SocialButtons/>
+						{this._createAuthor(hero.author)}
+						<div>{hero.createdAt}</div>
+						<SocialButtons/>
 					</div>
 					<div>
 						{this._createVideoContributor(hero.camera)}

@@ -45,7 +45,9 @@ class ViewDetailPage extends BaseComponent {
 				
 				<h2>{hero.title}</h2>
 				<div className="content-meta">
-					<strong>By {hero.author}</strong> {hero.createdAt} <SocialButtons/>
+					<strong>By {hero.author}</strong>
+					<div>{hero.createdAt}</div>
+					<SocialButtons/>
 				</div>
 				
 				<br></br>
