@@ -52,8 +52,11 @@
 	  font-weight: bold;
 	  display: inline-block;
 	  width: 100%;
-	  padding: 12px 13px 12px 30px;
 	  border-bottom: 1px solid $color-grey;
+
+		div {
+			padding: 12px 13px 12px 30px;
+		}
 
 	  &.active {
           color: $color-yellow;
