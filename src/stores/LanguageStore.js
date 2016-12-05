@@ -20,11 +20,10 @@ class LanguageStore extends BaseStore {
 
   constructor(dispatcher) {
     super(dispatcher);
-    this.lang = "chn";
+    this.lang = "eng";
   }
 
   changeLanguage (payload) {
-      //debugger;
     this.lang = payload.lang;
   	this.emitChange();
   }
