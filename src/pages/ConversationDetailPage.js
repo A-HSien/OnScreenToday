@@ -50,39 +50,10 @@ class ConversationDetailPage extends BaseComponent {
 		// debugger;
 		var jsxHero = (<div className=" conversation-content-container row clearfix" >
 			<div className="conversation-content">
-				
-				<Carousel slides={this._createSlides(hero.images)} settings={{
-					arrows: false,
-					dots: true,
-					infinite: true,
-					// autoplay: true,
-					centerMode: true,
-					centerPadding: '80px',
-					slidesToShow: hero.images.length > 3 ? 3  : hero.images.length,
-					responsive: [
-						{
-						  breakpoint: 768,
-						  settings: {
-						    arrows: false,
-						    centerMode: true,
-						    centerPadding: '40px',
-						    slidesToShow: 2
-						  }
-						},
-						{
-						  breakpoint: 480,
-						  settings: {
-						    arrows: false,
-						    centerMode: true,
-						    centerPadding: '40px',
-						    slidesToShow: 1
-						  }
-						}
-					]
-				}}/>
-
-				
 				<div className="container-narrow">
+					<div className="row">
+						<div className="conversation-image" style={{backgroundImage: 'url(' + hero.heroImage.url + ')'}}></div>
+					</div>
 					<div className="conversation-content-category clearfix">
 						<span>{hero.title}</span>
 					</div>

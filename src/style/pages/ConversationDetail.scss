@@ -8,6 +8,13 @@
 		position: relative;
 		height: 100%;
 		padding-top: 30px;
+
+		.conversation-image {
+			background-size: cover;
+			width: 100%;
+			min-height: 400px;
+			margin-bottom: 30px;
+		}
 		
 		.conversation-video {
 			text-align: center;
