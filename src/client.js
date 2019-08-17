@@ -25,8 +25,8 @@ function renderApp() {
     debug("State has been rehydrated");
 
     const Application = app.getComponent();
-
-    React.render(<Application context={context.getComponentContext()} />, mountNode, () => {
+    const data = context.getComponentContext();
+    React.render(<Application context={data} />, mountNode, () => {
       debug("Application has been mounted");
     });
   });

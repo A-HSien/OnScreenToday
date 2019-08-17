@@ -20,19 +20,18 @@ class ContentStore extends BaseStore {
 
   constructor(dispatcher) {
     super(dispatcher);
-    this.contentData = false;
+    this.contentData = [];
     this.contentDetail = false;
-    this.contentDetails = [];
 
   }
 
   onLoadContentDetailSuccess(payload) {
     this.contentDetail = payload;
-    this.contentDetails.push(payload);
     this.emitChange();
   }
   onLoadContentDataMoreSuccess(payload) {
-    if(_.isArray(this.contentData)) {
+    debugger;
+    if (_.isArray(this.contentData)) {
       this.contentData = this.contentData.concat(payload);
     } else {
       this.contentData = payload;
@@ -41,32 +40,31 @@ class ContentStore extends BaseStore {
 
   }
   onLoadContentDataSuccess(payload) {
-  	// console.log("ContentStore onLoadSuccess:", payload);
+    // console.log("ContentStore onLoadSuccess:", payload);
     this.contentData = payload;
     this.emitChange();
   }
 
   getData() {
     return {
-      contentData:  this.contentData,
-      contentDetail:  this.contentDetail
+      contentData: this.contentData,
+      contentDetail: this.contentDetail
     };
   }
 
   getContentBySlugFromList(slug) {
-    return _.find(this.contentDetails, content => {
+    return _.find(this.contentData, content => {
       return content.slug === slug;
     });
   }
 
   getContentBySlug(slug) {
 
-    var data = this.getContentBySlugFromList(slug) || false;
-
-    if (!data) {
-      data = this.contentDetail;
+    if (this.contentDetail) {
+      return this.contentDetail;
     }
 
+    var data = this.getContentBySlugFromList(slug) || false;
     return data;
   }
 
@@ -80,12 +78,12 @@ class ContentStore extends BaseStore {
 
   dehydrate() {
     return {
-      contentData:  this.contentData,
-      contentDetail:  this.contentDetail
+      contentData: this.contentData,
+      contentDetail: this.contentDetail
     };
   }
 
-  rehydrate({ contentData, contentDetail}) {
+  rehydrate({ contentData, contentDetail }) {
     this.contentData = contentData;
     this.contentDetail = contentDetail;
 

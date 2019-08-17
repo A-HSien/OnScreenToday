@@ -4,7 +4,7 @@ import AboutActionCreators from "../actions/AboutActionCreators";
 import ContentActionCreators from "../actions/ContentActionCreators";
 import { setHtmlHead } from "../actions/HtmlHeadActionCreators";
 
-function contentDetailPage(context, {type}, payload, done) {
+function contentDetailPage(context, { type }, payload, done) {
   context.executeAction(ContentActionCreators.loadContentDetail, {
     slug: payload.params.slug,
     type: type
@@ -30,61 +30,66 @@ function contentListPage(context, opts, payload, done) {
 const RouteActions = {
 
   homePage(context, payload, done) {
-    contentListPage(context, {type : 'all'}, payload, done);
+    contentListPage(context, { type: 'all' }, payload, done);
   },
 
   callforartistPage(context, payload, done) {
-    contentListPage(context, {type : 'callforartist'}, payload, done);
+    contentListPage(context, { type: 'callforartist' }, payload, done);
   },
 
   tuneinListPage(context, payload, done) {
-    contentListPage(context, {type : 'tunedin'}, payload, done);
+    contentListPage(context, { type: 'tunedin' }, payload, done);
   },
 
   viewDetailPage(context, payload, done) {
-    contentDetailPage(context, {type: "view"}, payload, done);
+    contentDetailPage(context, { type: "view" }, payload, done);
   },
 
   viewListPage(context, payload, done) {
-    contentListPage(context, {type: "view"}, payload, done);
+    contentListPage(context, { type: "view" }, payload, done);
   },
 
   screenshotDetailPage(context, payload, done) {
-    contentDetailPage(context, {type: "screenshot"}, payload, done);
+    contentDetailPage(context, { type: "screenshot" }, payload, done);
   },
 
   screenshotListPage(context, payload, done) {
-    contentListPage(context, {type : 'screenshot'}, payload, done);
+    contentListPage(context, { type: 'screenshot' }, payload, done);
   },
 
   screenPage(context, payload, done) {
-    contentListPage(context, {type: 'all'}, payload, done);
+    contentListPage(context, { type: 'all' }, payload, done);
   },
 
   fullscreenDetailPage(context, payload, done) {
-    contentDetailPage(context, {type : 'fullscreen'}, payload, done);
+    contentDetailPage(context, { type: 'fullscreen' }, payload, done);
   },
 
   offscreenDetailPage(context, payload, done) {
-    contentDetailPage(context, {type : 'offscreen'}, payload, done);
+    contentDetailPage(context, { type: 'offscreen' }, payload, done);
   },
 
   conversationDetailPage(context, payload, done) {
-    contentDetailPage(context, {type: "conversation"}, payload, done);
-    contentListPage(context, {type : 'conversation'}, payload, done);
+    let count = 0;
+    const subTaskDone = () => {
+      count++;
+      if (count === 2) done();
+    };
+    contentDetailPage(context, { type: "conversation" }, payload, subTaskDone);
+    contentListPage(context, { type: 'conversation' }, payload, subTaskDone);
   },
 
   conversationListPage(context, payload, done) {
-    contentListPage(context, {type : 'conversation', limit: 10}, payload, done);
+    contentListPage(context, { type: 'conversation', limit: 10 }, payload, done);
   },
 
   commercialProjectsDetailPage(context, payload, done) {
-    contentDetailPage(context, {type: "commercial-project"}, payload, done);
-    contentListPage(context, {type : 'commercial-project'}, payload, done);
+    contentDetailPage(context, { type: "commercial-project" }, payload, done);
+    contentListPage(context, { type: 'commercial-project' }, payload, done);
   },
 
   commercialProjectsListPage(context, payload, done) {
-    contentListPage(context, {type : 'commercial-project', limit: 10}, payload, done);
+    contentListPage(context, { type: 'commercial-project', limit: 10 }, payload, done);
   },
 
   aboutPage(context, payload, done) {
@@ -105,7 +110,7 @@ const RouteActions = {
     done(err);
   },
 
- 
+
 
 };
 

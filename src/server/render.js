@@ -27,24 +27,26 @@ function renderApp(req, res, context, next) {
   }
 
   // dehydrate the app and expose its state
-  const state = "window.App=" + serialize(app.dehydrate(context)) + ";";
+  const state = app.dehydrate(context);
+  const serializedState = serialize(state);
+  const stateText = "window.App=" + serializedState + ";";
 
-  const Application = app.getComponent();
+  // const Application = app.getComponent();
 
   try {
     // Render the Application to string
-    const markup = React.renderToString(
-      <Application context={ context.getComponentContext() } />
-    );
+    /*    const markup = React.renderToString(
+         <Application context={context.getComponentContext()} />
+       ); */
 
     // The application component is rendered to static markup
     // and sent as response.
     const html = React.renderToStaticMarkup(
       <HtmlDocument
-        context={ context.getComponentContext() }
+        context={context.getComponentContext()}
         lang={req.locale}
-        state={state}
-        markup={markup}
+        state={stateText}
+        // markup={markup}
         script={webpackStats.script}
         css={webpackStats.css}
       />
@@ -53,11 +55,14 @@ function renderApp(req, res, context, next) {
     res.send(doctype + html);
   }
   catch (e) {
+    console.log(e);
     next(e);
   }
 }
 
 function render(req, res, next) {
+
+  console.log('ssr start')
 
   // Create a fluxible context (_csrf is needed by the fetchr plugin)
   const context = app.createContext({
@@ -69,7 +74,7 @@ function render(req, res, next) {
 
   // console.log("server/render.js render lang:", req.locale);
 
-  context.executeAction(renderAction, { url: req.url, lang: req.locale}, (err) => {
+  context.executeAction(renderAction, { url: req.url, lang: req.locale }, (err) => {
 
     // If the action return an errors, execute another action to make
     // the RouteStore register the error and show the relative page.
@@ -94,6 +99,7 @@ function render(req, res, next) {
       return;
     }
 
+    console.log('ssr renderApp start');
     renderApp(req, res, context, next);
 
   });
