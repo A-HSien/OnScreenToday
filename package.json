@@ -61,7 +61,7 @@
     "react": "^0.13.2",
     "react-intl": "^1.2.0",
     "sass-loader": "0.4.2",
-    "serialize-javascript": "^1.0.0",
+    "serialize-javascript": "^4.0.0",
     "serve-favicon": "^2.2.0",
     "strip-loader": "^0.1.0",
     "style-loader": "^0.12.0",
